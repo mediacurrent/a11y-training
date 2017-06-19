@@ -1,131 +1,51 @@
-# Composer template for Drupal projects
+#
+## Setting up a local [Vagrant](http://vagrantup.com) environment
 
-[![Build Status](https://api.shippable.com/projects/56fe83d79d043da07b098837/badge?branch=8.x)](https://app.shippable.com/projects/56fe83d79d043da07b098837)
+### Clone this repository into the directory of your choice:
+- `$ git clone git@bitbucket.org:mediacurrent/mis_profile_vagrant.git`
 
-This project template should provide a kickstart for managing your site
-dependencies with [Composer](https://getcomposer.org/).
+### Edit your local `/etc/hosts` file to include the new box IP
+    192.168.50.110 mcprofile.mcdev
 
-If you want to know how to use it as replacement for
-[Drush Make](https://github.com/drush-ops/drush/blob/master/docs/make.md) visit
-the [Documentation on drupal.org](https://www.drupal.org/node/2471553).
+### Install composer on host machine
+- On MacOS ```brew install composer```
+- Otherwise, see instructions here https://getcomposer.org/
 
-## Usage
+### Run the build script.
+- `$ ./scripts/build.sh`
 
-First you need to [install composer](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx).
+This script automates the following steps:
 
-> Note: The instructions below refer to the [global composer installation](https://getcomposer.org/doc/00-intro.md#globally).
-You might need to replace `composer` with `php composer.phar` (or similar)
-for your setup.
+* Runs composer install
+* Ensures vagrant is available
+* Starts vagrant if required
+* Installs the project Drupal site
 
-After that you can create the project:
+The initial pass of the build script downloads several dependencies and an intermittent internet connection will affect the initial build process.
 
-```
-composer create-project --repository-url=./packages.json mediacurrent/drupal-project:dev-8.x some-dir --stability dev --no-interaction
-```
+### Troubleshooting
+* Ensure Vagrant has provisioned without errors. Correct errors before proceeding. After vagrant provision is successful it maybe be helpful to vagrant halt && vagrant up`
 
-With `composer require ...` you can download new dependencies to your
-installation.
+## Drush Alias
+* Use the project's [drush alias file](drush/mcprofile.mcdev.aliases.drushrc.php)
+* Optionally copy into your user's drush directory at ~/.drush/ for global use or customization.
 
-```
-cd some-dir
-composer require drupal/devel:~1.0
-```
+## Logging In
+* Use `drush @mcprofile.mcdev uli` to login to your local installation.
 
-The `composer create-project` command passes ownership of all files to the
-project that is created. You should create a new git repository, and commit
-all files not excluded by the .gitignore file.
+## Development Settings
+* The ./web/sites/mcprofile.mcdev/settings.local.php contains settings for customizing the development environment.  This disables Drupal's built in caching and additionally activates sites/development.services.yml for further customizing the development environment.
 
-## What does the template do?
+# Development Workflow
 
-When installing the given `composer.json` some tasks are taken care of:
+* [Use Composer](https://bitbucket.org/mediacurrent/drupal-project/src/HEAD/README.md) to add 3rd party dependencies and patches.
+* Write custom modules, themes etc. to the ./web/ directory.
+* Run `drush @mcprofile.mcdev cex` to export Drupal configuration to the profile/profilename/config/sync folder.
+* Run `$ ./scripts/build.sh` before starting a new ticket. Run build.sh again to test work completed prior to submitting a pull request.
 
-* Drupal will be installed in the `web`-directory.
-* Autoloader is implemented to use the generated composer autoloader in `vendor/autoload.php`,
-  instead of the one provided by Drupal (`web/vendor/autoload.php`).
-* Modules (packages of type `drupal-module`) will be placed in `web/modules/contrib/`
-* Theme (packages of type `drupal-theme`) will be placed in `web/themes/contrib/`
-* Profiles (packages of type `drupal-profile`) will be placed in `web/profiles/contrib/`
-* Creates default writable versions of `settings.php` and `services.yml`.
-* Creates `web/sites/default/files`-directory.
-* Latest version of drush is installed locally for use at `vendor/bin/drush`.
-* Latest version of DrupalConsole is installed locally for use at `vendor/bin/drupal`.
+## Demo Content
+* TBD
 
-## Updating Drupal Core
-
-This project will attempt to keep all of your Drupal Core files up-to-date; the
-project [drupal-composer/drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold)
-is used to ensure that your scaffold files are updated every time drupal/core is
-updated. If you customize any of the "scaffolding" files (commonly .htaccess),
-you may need to merge conflicts if any of your modified files are updated in a
-new release of Drupal core.
-
-Follow the steps below to update your core files.
-
-1. Run `composer update drupal/core --with-dependencies` to update Drupal Core and its dependencies.
-1. Run `git diff` to determine if any of the scaffolding files have changed.
-   Review the files for any changes and restore any customizations to
-  `.htaccess` or `robots.txt`.
-1. Commit everything all together in a single commit, so `web` will remain in
-   sync with the `core` when checking out branches or running `git bisect`.
-1. In the event that there are non-trivial conflicts in step 2, you may wish
-   to perform these steps on a branch, and use `git merge` to combine the
-   updated core files with your customized files. This facilitates the use
-   of a [three-way merge tool such as kdiff3](http://www.gitshah.com/2010/12/how-to-setup-kdiff-as-diff-tool-for-git.html). This setup is not necessary if your changes are simple;
-   keeping all of your modifications at the beginning or end of the file is a
-   good strategy to keep merges easy.
-
-## Generate composer.json from existing project
-
-With using [the "Composer Generate" drush extension](https://www.drupal.org/project/composer_generate)
-you can now generate a basic `composer.json` file from an existing project. Note
-that the generated `composer.json` might differ from this project's file.
-
-
-## FAQ
-
-### Should I commit the contrib modules I download?
-
-Composer recommends **no**. They provide [argumentation against but also
-workrounds if a project decides to do it anyway](https://getcomposer.org/doc/faqs/should-i-commit-the-dependencies-in-my-vendor-directory.md).
-
-### Should I commit the scaffolding files?
-
-The [drupal-scaffold](https://github.com/drupal-composer/drupal-scaffold) plugin can download the scaffold files (like
-index.php, update.php, …) to the web/ directory of your project. If you have not customized those files you could choose
-to not check them into your version control system (e.g. git). If that is the case for your project it might be
-convenient to automatically run the drupal-scaffold plugin after every install or update of your project. You can
-achieve that by registering `@drupal-scaffold` as post-install and post-update command in your composer.json:
-
-```json
-"scripts": {
-    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-    "post-install-cmd": [
-        "@drupal-scaffold",
-        "..."
-    ],
-    "post-update-cmd": [
-        "@drupal-scaffold",
-        "..."
-    ]
-},
-```
-### How can I apply patches to downloaded modules?
-
-If you need to apply patches (depending on the project being modified, a pull
-request is often a better solution), you can do so with the
-[composer-patches](https://github.com/cweagans/composer-patches) plugin.
-
-To add a patch to drupal module foobar insert the patches section in the extra
-section of composer.json:
-```json
-"extra": {
-    "patches": {
-        "drupal/foobar": {
-            "Patch description": "URL to patch"
-        }
-    }
-}
-```
-### How do I switch from packagist.drupal-composer.org to packages.drupal.org?
-
-Follow the instructions in the [documentation on drupal.org](https://www.drupal.org/docs/develop/using-composer/using-packagesdrupalorg).
+## Additional Links
+* [Project Drupal Theme Guide](https://bitbucket.org/mediacurrent/mis_profile_vagrant.git/src/HEAD/web/themes/custom/project_theme/README.md?fileviewer=file-view-default)
+* [Using Vagrant](https://bitbucket.org/mediacurrent/mis_vagrant/src/HEAD/README.md)
