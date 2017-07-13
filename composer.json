@@ -25,6 +25,10 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:mediacurrent/ci-tests.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@bitbucket.org:mediacurrent/mis_profile.git"
         }
     ],
     "require": {
@@ -34,6 +38,8 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
+        "mediacurrent/mis_profile": "dev-develop",
+        "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
     },
@@ -93,7 +99,8 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "drush/contrib/{$name}": ["type:drupal-drush"],
+            "web/profiles/custom/{$name}/": ["mediacurrent/mis_profile"]
         },
         "patches": {
             "drush/drush": {

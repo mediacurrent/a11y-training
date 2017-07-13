@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b4782a8e273fbb03775cfb6842c76c09",
+    "content-hash": "452c361f7454beb8cd89fd78cb006b8a",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2161,6 +2161,21 @@
             "time": "2016-09-22T11:01:11+00:00"
         },
         {
+            "name": "mediacurrent/mis_profile",
+            "version": "dev-develop",
+            "source": {
+                "type": "git",
+                "url": "git@bitbucket.org:mediacurrent/mis_profile.git",
+                "reference": "77460b53e7d6456ff0917fb3c52bf0a2cb6c7fba"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "mc-profile",
+            "description": "MC Default profile",
+            "time": "2017-07-13 21:22:48"
+        },
+        {
             "name": "nikic/php-parser",
             "version": "v3.0.5",
             "source": {
@@ -2210,6 +2225,48 @@
                 "php"
             ],
             "time": "2017-03-05T18:23:57+00:00"
+        },
+        {
+            "name": "oomphinc/composer-installers-extender",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oomphinc/composer-installers-extender.git",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "composer/installers": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "OomphInc\\ComposerInstallersExtender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "email": "stephen@oomphinc.com",
+                    "homepage": "https://github.com/balbuf"
+                }
+            ],
+            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
+            "homepage": "http://www.oomphinc.com/",
+            "time": "2017-03-31T16:57:39+00:00"
         },
         {
             "name": "paragonie/random_compat",
@@ -5422,7 +5479,7 @@
                 "test",
                 "web"
             ],
-            "time": "2017-04-09T08:39:37+00:00"
+            "time": "2017-04-09 08:39:37"
         },
         {
             "name": "drupal/drupal-extension",
@@ -5925,7 +5982,7 @@
             ],
             "type": "library",
             "description": "Scripts helpful for testing a Drupal site on a Continuous-Integration server, or locally.",
-            "time": "2017-04-10T13:42:22+00:00"
+            "time": "2017-04-10 13:42:22"
         },
         {
             "name": "mediacurrent/mis_vagrant",
@@ -7023,6 +7080,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "mediacurrent/mis_profile": 20,
         "drupal/drupal-driver": 20,
         "mediacurrent/ci-tests": 20
     },
