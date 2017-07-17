@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "452c361f7454beb8cd89fd78cb006b8a",
+    "content-hash": "d61aeee08ab5e15f54c3775bde792b34",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2166,14 +2166,14 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mediacurrent/mis_profile.git",
-                "reference": "77460b53e7d6456ff0917fb3c52bf0a2cb6c7fba"
+                "reference": "e19d8fc60d487502ee2d54b558c2b4cf928e4e45"
             },
             "require": {
                 "composer/installers": "~1.0"
             },
-            "type": "mc-profile",
+            "type": "drupal-profile",
             "description": "MC Default profile",
-            "time": "2017-07-13 21:22:48"
+            "time": "2017-07-17 19:03:01"
         },
         {
             "name": "nikic/php-parser",
