@@ -1,6 +1,6 @@
 {
-    "name": "drupal-composer/drupal-project",
-    "description": "Project template for Drupal 8 projects with composer",
+    "name": "mediacurrent/mis_rain_vagrant",
+    "description": "Vagrant template for use with Mediacurrent Rain install profile.",
     "type": "project",
     "license": "GPL-2.0+",
     "authors": [
@@ -13,6 +13,10 @@
         {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
         },
         {
             "type": "vcs",
@@ -28,7 +32,7 @@
         },
         {
             "type": "vcs",
-            "url": "git@bitbucket.org:mediacurrent/mis_profile.git"
+            "url": "git@bitbucket.org:mediacurrent/mis_rain.git"
         }
     ],
     "require": {
@@ -38,7 +42,7 @@
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
         "drush/drush": "~8.0",
-        "mediacurrent/mis_profile": "dev-develop",
+        "mediacurrent/mis_rain": "dev-develop",
         "oomphinc/composer-installers-extender": "^1.1",
         "webflo/drupal-finder": "^0.3.0",
         "webmozart/path-util": "^2.3"
@@ -93,6 +97,19 @@
         ]
     },
     "extra": {
+        "installer-types": [
+            "library",
+            "bower-asset",
+            "npm-asset"
+        ],
+        "installer-paths": {
+            "web/core": ["type:drupal-core"],
+            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
+            "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+            "web/themes/contrib/{$name}": ["type:drupal-theme"],
+            "drush/contrib/{$name}": ["type:drupal-drush"]
+        },
         "installer-paths": {
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
@@ -102,6 +119,9 @@
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
         "patches": {
+            "drupal/core": {
+                "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-356.patch"
+            },
             "drush/drush": {
                 "https://github.com/drush-ops/drush/issues/2285": "https://patch-diff.githubusercontent.com/raw/drush-ops/drush/pull/2286.patch"
             }

@@ -4,8 +4,8 @@
 
 # If you need to run multiple instances of Drupal VM, set a unique hostname,
 # machine name, and IP address for each instance.
-vagrant_hostname: mcprofile.mcdev
-vagrant_machine_name: mcprofile_mcdev
+vagrant_hostname: mcrain.mcdev
+vagrant_machine_name: mcrain_mcdev
 vagrant_ip: 192.168.50.110
 
 # The web server software to use. Can be either 'apache' or 'nginx'.
@@ -18,7 +18,7 @@ drupal_mysql_password: password
 drupal_major_version: 8
 drupal_domain: "{{ vagrant_hostname }}"
 drupal_site_name: "MC Profile"
-drupal_install_profile: mis_profile
+drupal_install_profile: mis_rain
 drupal_enable_modules: [ 'devel' ]
 drupal_account_name: admin
 drupal_account_pass: admin

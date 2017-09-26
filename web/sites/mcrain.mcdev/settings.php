@@ -883,7 +883,7 @@ if (file_exists(__DIR__ . '/settings.local.php')) {
 }
 
 $databases['default']['default'] = array (
-  'database' => 'mcprofile_mcdev',
+  'database' => 'mcrain_mcdev',
   'username' => 'root',
   'password' => 'password',
   'prefix' => '',
@@ -892,5 +892,4 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$settings['install_profile'] = 'mis_profile';
-$config_directories['sync'] = 'sites/mcprofile.mcdev/files/config_Vzi-nSB5AosLtQ5cpCToz3Ecd4WinTugJElp-D-UC08-WdJmxezeYiGqemM7V40lEsdGufaDgg/sync';
+$config_directories['sync'] = $app_root . '/profiles/contrib/mis_rain/config/sync';
