@@ -893,7 +893,8 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
 );
 
-// Uncomment after sync directory is updated for the first time.
-# $config_directories['sync'] = $app_root . '/profiles/contrib/mis_rain/config/sync';
+// Uncomment and modify after sync directory has been updated for the first time.
+# $config_directories['sync'] = $app_root . '/profiles/mis_profile/config/sync';
 
-$settings['install_profile'] = 'rain';
+# Change once this profile has been renamed.
+$settings['install_profile'] = 'mis_profile';

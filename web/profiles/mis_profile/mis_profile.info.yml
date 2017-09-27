@@ -1,0 +1,9 @@
+name: Mediacurrent Profile
+type: profile
+description: 'Rename this profile to the appropriate client or project name.'
+version: VERSION
+core: 8.x
+base profile:
+  name: rain
+themes:
+  - seven

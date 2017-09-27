@@ -18,7 +18,8 @@ drupal_mysql_password: password
 drupal_major_version: 8
 drupal_domain: "{{ vagrant_hostname }}"
 drupal_site_name: "MC Profile"
-drupal_install_profile: rain
+# Rename to project profile name.
+drupal_install_profile: mis_profile
 drupal_enable_modules: [ 'devel' ]
 drupal_account_name: admin
 drupal_account_pass: admin
