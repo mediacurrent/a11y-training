@@ -1,8 +1,31 @@
 #
+## Mediacurrent Rain Vagrant Template
+This vagrant project serves as a template for new Mediacurrent Drupal 8 builds. 
+Developers can save time by cloning and modifying this git repo for their projects.
+The provided composer.json adds support for "Sub-profiles" and allows projects to be
+installed from existing configuration. A key piece of this project is the inclusion
+of the [Mediacurrent Rain base install profile](https://bitbucket.org/mediacurrent/mis_rain/).
+This profile includes many of the most common packages pre-configured for rapid site development. Alternatively this project
+could be exchanged for Acquia Lightning or another distribution or removed entirely.
+The advantage is that the inclusion of a base install profile reduces effort in regards
+to package management and configuration while also giving flexibility to still own the
+final configuration.  
+
 ## Setting up a local [Vagrant](http://vagrantup.com) environment
 
 ### Clone this repository into the directory of your choice:
 - `$ git clone git@bitbucket.org:mediacurrent/mis_rain_vagrant.git`
+
+### Rename/update all instances of 'mcrain' project name.
+- Update config/config.yml where 'mcrain' project name is found
+- Rename mcrain.mcdev.aliases.drushrc.php, update references to mcrain
+- Rename web/sites/mcrain.mcdev
+- Update web/sites/mcrain.mcdev/settings.php to change mcrain_mcdev
+- Update this README.md to remove above instructions and rename 'mcrain'
+
+### Rename sample 'mis_profile' install profile
+- Change this to the name of your project name
+- Find and replace all instances of 'mis_profile' with your project name
 
 ### Edit your local `/etc/hosts` file to include the new box IP
     192.168.50.110 mcrain.mcdev
@@ -32,6 +55,16 @@ The initial pass of the build script downloads several dependencies and an inter
 
 ## Logging In
 * Use `drush @mcrain.mcdev uli` to login to your local installation.
+
+## Adding the sync folder to be used with new installs 
+* The first time build.sh runs successfully you will be able to export configuration back to
+your project's sync folder.
+* Add an empty folder named 'sync' at profile/profilename/config/sync.
+* Uncomment and modify the 'sync' configuration setting in your settings.php to point
+to your new install profile folder's sync folder.
+* Run `drush @mcrain.mcdev cex` to export configuration to sync.
+* Re-run `$ ./scripts/build.sh` to test install with sync configuration.
+* Once this is working as expected, add the sync folder to git and commit.
 
 ## Development Settings
 * The ./web/sites/mcrain.mcdev/settings.local.php contains settings for customizing the development environment.  This disables Drupal's built in caching and additionally activates sites/development.services.yml for further customizing the development environment.
