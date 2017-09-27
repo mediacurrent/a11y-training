@@ -892,4 +892,8 @@ $databases['default']['default'] = array (
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-$config_directories['sync'] = $app_root . '/profiles/contrib/mis_rain/config/sync';
+
+// Uncomment after sync directory is updated for the first time.
+# $config_directories['sync'] = $app_root . '/profiles/contrib/mis_rain/config/sync';
+
+$settings['install_profile'] = 'rain';

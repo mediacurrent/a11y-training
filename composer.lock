@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "a7c5cb1275a4c22978fc0ce9bbf7f900",
+    "content-hash": "3288a5746a34f849a4852592859b7d2e",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1923,7 +1923,8 @@
             "type": "drupal-core",
             "extra": {
                 "patches_applied": {
-                    "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-356.patch"
+                    "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-360.patch",
+                    "Allow a profile to be installed from existing config (#2788777)": "https://www.drupal.org/files/issues/2788777-91.patch"
                 }
             },
             "autoload": {
@@ -5039,7 +5040,7 @@
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mediacurrent/mis_rain.git",
-                "reference": "54566472de5ff1891d0dfc88c73e5c4a8c66ccf5"
+                "reference": "922657905bef8b8eeb1b11ca4dcc985f7f542b61"
             },
             "require": {
                 "bower-asset/ckeditor": "4.5.11",
@@ -5123,7 +5124,7 @@
                 "GPL-2.0+"
             ],
             "description": "Rain install profile",
-            "time": "2017-09-22T21:01:51+00:00"
+            "time": "2017-09-27T15:45:07+00:00"
         },
         {
             "name": "nikic/php-parser",
