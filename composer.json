@@ -41,6 +41,7 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
+        "drupal/guardr": "^1.0@alpha",
         "drush/drush": "~8.0",
         "mediacurrent/mis_rain": "dev-develop",
         "oomphinc/composer-installers-extender": "^1.1",
