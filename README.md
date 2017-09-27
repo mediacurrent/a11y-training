@@ -23,9 +23,10 @@ final configuration.
 - Update web/sites/mcrain.mcdev/settings.php to change mcrain_mcdev
 - Update this README.md to remove above instructions and rename 'mcrain'
 
-### Rename sample 'mis_profile' install profile
+### Rename & configure sample 'mis_profile' install profile
 - Change this to the name of your project name
 - Find and replace all instances of 'mis_profile' with your project name
+- Enable desired base profile features and modules in the profile .info.yml file.
 
 ### Edit your local `/etc/hosts` file to include the new box IP
     192.168.50.110 mcrain.mcdev
