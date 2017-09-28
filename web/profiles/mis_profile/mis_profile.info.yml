@@ -23,6 +23,5 @@ dependencies:
   - r4032login
   - seckit
 # Shared accounts are not permitted by PCI v3.0.
-  - security_review
   - session_limit
   - username_enumeration_prevention
