@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "50c654e4632c4e87b30e646c0cb107e9",
+    "content-hash": "984efb33afa639830efe8ea4378c56da",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2820,17 +2820,11 @@
         },
         {
             "name": "drupal/guardr",
-            "version": "1.0.0-alpha1",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/guardr",
-                "reference": "8.x-1.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/guardr-8.x-1.0-alpha1.zip",
-                "reference": null,
-                "shasum": "e1c1af297968324fa3ee475720eea6f36419277c"
+                "reference": "f9997c6911f7e198546258ed8be90bdc2d578807"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -2841,8 +2835,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha1",
-                    "datestamp": "1493306418"
+                    "version": "8.x-1.x-dev",
+                    "datestamp": "1493306044"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -2894,7 +2888,8 @@
             "homepage": "https://www.drupal.org/project/guardr",
             "support": {
                 "source": "http://cgit.drupalcode.org/guardr"
-            }
+            },
+            "time": "2017-04-27T15:55:41+00:00"
         },
         {
             "name": "drupal/inline_entity_form",
@@ -10296,7 +10291,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/guardr": 15,
+        "drupal/guardr": 20,
         "mediacurrent/mis_rain": 20,
         "drupal/drupal-driver": 20,
         "mediacurrent/ci-tests": 20
