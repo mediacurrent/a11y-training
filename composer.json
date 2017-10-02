@@ -33,6 +33,10 @@
         {
             "type": "vcs",
             "url": "git@bitbucket.org:mediacurrent/mis_rain.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://git.drupal.org/project/guardr.git"
         }
     ],
     "require": {
@@ -41,10 +45,11 @@
         "drupal-composer/drupal-scaffold": "^2.2",
         "drupal/console": "~1.0",
         "drupal/core": "~8.0",
+        "guardrdistro/guardr": "dev-8.x-1.x",
         "drush/drush": "~8.0",
         "mediacurrent/mis_rain": "dev-develop",
         "oomphinc/composer-installers-extender": "^1.1",
-        "webflo/drupal-finder": "^0.3.0",
+        "webflo/drupal-finder": "~1.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {

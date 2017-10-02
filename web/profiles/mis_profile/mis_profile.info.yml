@@ -7,3 +7,6 @@ base profile:
   name: rain
 themes:
   - seven
+dependencies:
+# Installs Guardr recommended modules and configuration.
+  - guardr_core
