@@ -3,3 +3,32 @@
  * @file
  * Install methods for install profile.
  */
+
+/**
+ * Implements hook_install().
+ */
+function mis_profile_install() {
+  // Example for how to enable Rain features from hook_install(). This gets
+  // around a chicken-egg problem that can occur when enabling features via
+  // the info.yml file or from drush after the site install has been run.
+  // Once the full configuration has been dumped to config/sync this block of
+  // code will no longer be needed and can be removed.
+  // Enable feature modules.
+//  \Drupal::service('module_installer')->install(
+//    [
+//      'rain_page',
+//      'rain_homepage',
+//      'rain_landing',
+//      'rain_blog',
+//      'rain_faq',
+//      'rain_media',
+//      'rain_promo',
+//      'rain_hero_media',
+//      'rain_text',
+//      'rain_views',
+//      'rain_search',
+//      'rain_resource',
+//      'rain_article',
+//    ]
+//  );
+}
