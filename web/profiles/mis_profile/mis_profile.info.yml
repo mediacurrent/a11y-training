@@ -8,20 +8,5 @@ base profile:
 themes:
   - seven
 dependencies:
-#
-# Guardr recommended modules to install.
-#
-# PCI v3.0 requires 15 minute session timeout.
-  - autologout
-  - diff
+# Installs Guardr recommended modules and configuration.
   - guardr_core
-  - login_history
-  - login_security
-# PCI v3.0 requires 90 day password expiration
-# and 7 character minimum containing alphabetic and numeric.
-  - password_policy
-  - r4032login
-  - seckit
-# Shared accounts are not permitted by PCI v3.0.
-  - session_limit
-  - username_enumeration_prevention
