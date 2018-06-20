@@ -40,36 +40,36 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.3",
+        "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6",
-        "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/console": "~1.0",
-        "drupal/core": "~8.0",
-        "guardrdistro/guardr": "dev-8.x-1.x",
-        "drush/drush": "~8.0",
-        "mediacurrent/mis_rain": "dev-develop",
         "oomphinc/composer-installers-extender": "^1.1",
-        "webflo/drupal-finder": "~1.0",
+        "drupal-composer/drupal-scaffold": "^2.2",
+        "drupal/core": "~8.0",
+        "drush/drush": "^8.1.15",
+        "guardrdistro/guardr": "dev-8.x-1.x",
+        "mediacurrent/mis_rain": "~1.0",
+        "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
     "require-dev": {
         "behat/mink": "~1.7",
         "behat/mink-goutte-driver": "~1.2",
-        "drush-ops/behat-drush-endpoint": "*",
-        "drupal/drupal-extension": "*",
+        "boedah/robo-drush": "~3.0.0",
+        "drupal/coder": "~8.2.12",
         "drupal/drupal-driver": "dev-master",
+        "drupal/drupal-extension": "*",
+        "drush-ops/behat-drush-endpoint": "*",
         "jcalderonzumba/gastonjs": "~1.0.2",
         "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "mikey179/vfsStream": "~1.2",
-        "phpunit/phpunit": ">=4.8.28 <5",
-        "symfony/css-selector": "~2.8",
-        "mediacurrent/ci-scripts": "~0.7",
+        "symfony/css-selector": "~2.8 | ~3.0",
+        "mediacurrent/ci-scripts": "~1.2",
         "mediacurrent/ci-tests": "dev-master",
-        "mediacurrent/mis_vagrant": "~4.5.0",
-        "joestewart/robo-drupalvm": "^0.1.7",
-        "joestewart/robo-vagrant": "^0.1.6",
-        "boedah/robo-drush": "^2.2",
-        "drupal/coder": "~8.2.12"
+        "joestewart/robo-drupalvm": "~1.0.2",
+        "joestewart/robo-vagrant": "~1.0.0",
+        "mediacurrent/mis_vagrant": "~4.7.0",
+        "mikey179/vfsStream": "~1.2",
+        "phpro/grumphp": "^0.11.6",
+        "phpunit/phpunit": ">=4.8.28 <5"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -77,8 +77,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-      "sort-packages": true,
-      "bin-dir": "bin/"
+        "sort-packages": true,
+        "bin-dir": "bin/",
+        "platform": {
+            "php": "5.6"
+        }
     },
     "autoload": {
         "classmap": [
@@ -102,6 +105,7 @@
         ]
     },
     "extra": {
+        "composer-exit-on-patch-failure": true,
         "installer-types": [
             "library",
             "bower-asset",
@@ -115,17 +119,9 @@
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         },
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
         "patches": {
             "drupal/core": {
-                "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/1356276-360.patch",
+                "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/drupal-n1356276-417-d8.5.x.patch",
                 "Allow a profile to be installed from existing config (#2788777)": "https://www.drupal.org/files/issues/2788777-91.patch"
             },
             "drush/drush": {

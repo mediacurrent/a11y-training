@@ -6,7 +6,7 @@
 # machine name, and IP address for each instance.
 vagrant_hostname: mcrain.mcdev
 vagrant_machine_name: mcrain_mcdev
-vagrant_ip: 192.168.50.110
+vagrant_ip: 192.169.50.110
 
 # The web server software to use. Can be either 'apache' or 'nginx'.
 drupalvm_webserver: apache
