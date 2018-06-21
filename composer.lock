@@ -142,6 +142,25 @@
             ]
         },
         {
+            "name": "bower-asset/colorbox",
+            "version": "1.6.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jackmoore/colorbox.git",
+                "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jackmoore/colorbox/zipball/bac78120c6ca9e63370cc317ab6f400129cd6608",
+                "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608",
+                "shasum": null
+            },
+            "require": {
+                "bower-asset/jquery": ">=1.3.2"
+            },
+            "type": "bower-asset"
+        },
+        {
             "name": "bower-asset/dropzone",
             "version": "v5.1.1",
             "source": {
@@ -6173,14 +6192,15 @@
         },
         {
             "name": "mediacurrent/mis_rain",
-            "version": "1.8",
+            "version": "1.9",
             "source": {
                 "type": "git",
                 "url": "git@bitbucket.org:mediacurrent/mis_rain.git",
-                "reference": "51c19d62d2a98f39f06ba37131cb8fe2824a49f6"
+                "reference": "53aea0a21017c813f4b30a6dfb73a7c06cd17dbe"
             },
             "require": {
                 "bower-asset/ckeditor": "4.5.11",
+                "bower-asset/colorbox": "^1.6",
                 "bower-asset/dropzone": "^5.1",
                 "bower-asset/fullcalendar": "^3.5",
                 "bower-asset/jquery.easing": "^1.3",
@@ -6252,7 +6272,7 @@
                 "GPL-2.0+"
             ],
             "description": "Rain install profile",
-            "time": "2018-06-20T19:37:22+00:00"
+            "time": "2018-06-21T15:15:37+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
