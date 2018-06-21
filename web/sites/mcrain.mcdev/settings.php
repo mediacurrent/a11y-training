@@ -898,3 +898,5 @@ $databases['default']['default'] = array (
 
 # Change once this profile has been renamed.
 $settings['install_profile'] = 'mis_profile';
+
+ini_set('memory_limit', '512M');
