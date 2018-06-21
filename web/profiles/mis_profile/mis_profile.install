@@ -52,4 +52,32 @@ function mis_profile_install() {
   $config = \Drupal::configFactory()->getEditable('workflows.workflow.editorial');
   $config->set('type_settings.entity_types', ['node' => $types]);
   $config->save();
+
+  // Create demo content.
+  $path = drupal_get_path('profile', 'mis_profile');
+
+  $loader = \Drupal::service('yaml_content.content_loader');
+  $loader->setContentPath($path);
+
+  // Prepare a list of content files to import.
+  $content_files = [
+    'articles.content.yml',
+    'blogs.content.yml',
+    'events.content.yml',
+    'homepages.content.yml',
+    'landing_pages.content.yml',
+    'pages.content.yml',
+    'paragraphs.content.yml',
+    'press_releases.content.yml',
+    'products.content.yml',
+    'profiles.content.yml',
+    'resources.content.yml',
+    'webforms.content.yml',
+  ];
+
+  $loaded_entities = [];
+  foreach ($content_files as $file_name) {
+    $loaded = $loader->loadContent($file_name);
+    $loaded_entities = array_merge($loaded_entities, $loaded);
+  }
 }

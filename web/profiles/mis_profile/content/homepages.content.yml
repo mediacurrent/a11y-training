@@ -1,0 +1,206 @@
+# Generates test content for Homepages.
+---
+# Nodes for the Homepage bundle.
+- entity: "node"
+  type: "homepage"
+  title: "Welcome"
+  status: 1
+  uid: 1
+  field_summary:
+    - value: A Constant State of Innovation
+  field_thumbnail:
+    - entity: media
+      bundle: image
+      name: 'Business'
+      status: 1
+      field_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'hero-homepage.jpg'
+            alt: 'Business'
+  field_content:
+    - entity: paragraph
+      type: hero_media
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'GlobalTech'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Business'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'hero-homepage.jpg'
+                    alt: 'Business'
+    - entity: paragraph
+      type: text
+      field_body:
+        - format: "full_html"
+          summary: ''
+          value: |
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
+    - entity: paragraph
+      type: spotlight
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Service 1'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Promo 1'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'service1.jpg'
+                    alt: 'Classes & Courses'
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Service 2'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Promo 2'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'service2.png'
+                    alt: 'Serivce 2'
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Service 3'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Promo 3'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'service3.jpg'
+                    alt: 'Service 3'
+    - entity: paragraph
+      type: text
+      field_body:
+        - format: "full_html"
+          summary: ''
+          value: |
+            <h2 style="text-align: center; font-weight: bold;">About Us</h2>
+            <p style="text-align: center; font-style: italic; font-size: 120%;">“We remain dedicated to leading the world into a more prosperous and progressive future; to creating a world that is fairer, more diverse, more tolerant, more just.”</p>
+    - entity: paragraph
+      type: spotlight
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Laura Martin'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Staff'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'staff1.jpg'
+                    alt: 'Staff'
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Jeff Johnson'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Staff'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'staff2.jpg'
+                    alt: 'Staff'
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Angela Wood'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Staff'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'staff3.jpg'
+                    alt: 'Staff'
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'John Smith'
+          field_link:
+            - uri: 'http://google.com/'
+              title: 'Read more'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Staff'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'staff4.jpg'
+                    alt: 'Staff'
+

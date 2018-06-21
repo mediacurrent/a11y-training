@@ -864,7 +864,7 @@ $settings['extension_discovery_scan_tests'] = TRUE;
  * be gained by generating a query string from rebuild_token_calculator.sh and
  * using these parameters in a request to rebuild.php.
  */
-$settings['rebuild_access'] = TRUE;
+$settings['rebuild_access'] = FALSE;
 
 /**
  * Skip file system permissions hardening.
@@ -898,3 +898,9 @@ $databases['default']['default'] = array (
 
 # Change once this profile has been renamed.
 $settings['install_profile'] = 'mis_profile';
+
+ini_set('memory_limit', '512M');
+
+$settings['trusted_host_patterns'] = array(
+  '^mcrain\.mcdev$',
+);

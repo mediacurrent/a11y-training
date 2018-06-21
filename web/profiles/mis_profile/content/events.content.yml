@@ -1,0 +1,219 @@
+# Generates test content for Events.
+---
+# Nodes for the Event bundle.
+- entity: "node"
+  type: "event"
+  title: "Global Tech Investor Day"
+  status: 1
+  uid: 1
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - value: We are hosting an Investor Day in Chicago on Tuesday, March 3rd, 2018 with presentations given by Steve Jobs, Bill Gates, and Tim Collins. A live audio webcast and presentation slides will be posted on the day of the event to. Dial-in information and a more detailed agenda will be provided at a later date.
+  field_thumbnail:
+    - entity: media
+      bundle: image
+      name: 'Test Event Image 1'
+      status: 1
+      field_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'event1.jpg'
+            alt: 'Test Event Image 1'
+  field_content:
+    - entity: paragraph
+      type: hero_media
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Test Event Image 1'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Test Event Image 1'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'event1.jpg'
+                    alt: 'Test Event Image 1'
+    - entity: paragraph
+      type: text
+      field_body:
+        - format: "full_html"
+          summary: ''
+          value: |
+            <p>We are hosting an Investor Day in Chicago on Tuesday, March 3rd, 2018 with presentations given by Steve Jobs, Bill Gates, and Tim Collins. A live audio webcast and presentation slides will be posted on the day of the event to. Dial-in information and a more detailed agenda will be provided at a later date.</p>
+  field_dates:
+    - value: '2019-01-21T04:11:12'
+      end_value: '2019-01-23T04:11:12'
+  field_link:
+    - uri: 'http://www.google.com/'
+- entity: "node"
+  type: "event"
+  title: "InterConnect 2018"
+  status: 1
+  uid: 1
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - value: "Cloud. Internet of Things. Watson. How can you use the world’s biggest breakthroughs to unleash ingenuity? #GlobalTechInterconnect"
+  field_thumbnail:
+    - entity: media
+      bundle: image
+      name: 'Test Event Image 2'
+      status: 1
+      field_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'event2.png'
+            alt: 'Test Event Image 2'
+  field_content:
+    - entity: paragraph
+      type: hero_media
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Test Event Image 2'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Test Event Image 2'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'event2.png'
+                    alt: 'Test Event Image 2'
+    - entity: paragraph
+      type: text
+      field_body:
+        - format: "full_html"
+          summary: ''
+          value: |
+            "<p>Cloud. Internet of Things. Watson. How can you use the world’s biggest breakthroughs to unleash ingenuity? #GlobalTechInterconnect</p>"
+  field_dates:
+    - value: '2019-01-21T04:11:12'
+      end_value: '2019-01-23T04:11:12'
+  field_link:
+    - uri: 'http://www.google.com/'
+- entity: "node"
+  type: "event"
+  title: "TechRide 2018"
+  status: 1
+  uid: 1
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - value: Learn from peers, innovators and Global Tech leaders who will show how an IT infrastructure designed for the cognitive era transforms digital disruption into business opportunity.
+  field_thumbnail:
+    - entity: media
+      bundle: image
+      name: 'Test Event Image 3'
+      status: 1
+      field_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'event3.jpg'
+            alt: 'Test Event Image 3'
+  field_content:
+    - entity: paragraph
+      type: hero_media
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Test Event Image 3'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Test Event Image 3'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'event3.jpg'
+                    alt: 'Test Event Image 3'
+    - entity: paragraph
+      type: text
+      field_body:
+        - format: "full_html"
+          summary: ''
+          value: |
+            <p>Learn from peers, innovators and Global Tech leaders who will show how an IT infrastructure designed for the cognitive era transforms digital disruption into business opportunity.</p>
+  field_dates:
+    - value: '2019-01-21T04:11:12'
+      end_value: '2019-01-23T04:11:12'
+  field_link:
+    - uri: 'http://www.google.com/'
+- entity: "node"
+  type: "event"
+  title: "Innovate 2018"
+  status: 1
+  uid: 1
+  # Rich text fields contain multiple keys that must be provided.
+  field_summary:
+    - value: The event where the problems of tomorrow meet the minds of today. Discover how you can realize exponential outcomes through the power of Global Tech.
+  field_thumbnail:
+    - entity: media
+      bundle: image
+      name: 'Test Event Image 4'
+      status: 1
+      field_image:
+        - '#process':
+            callback: 'file'
+            args:
+              - 'image'
+              - type: 'module'
+                filename: 'event4.jpg'
+            alt: 'Test Event Image 4'
+  field_content:
+    - entity: paragraph
+      type: hero_media
+      field_promo:
+        - entity: paragraph
+          type: promo
+          field_title:
+            - value: 'Test Event Image 4'
+          field_media:
+            - entity: media
+              bundle: image
+              name: 'Test Event Image 4'
+              status: 1
+              field_image:
+                - '#process':
+                    callback: 'file'
+                    args:
+                      - 'image'
+                      - type: 'module'
+                        filename: 'event4.jpg'
+                    alt: 'Test Event Image 4'
+    - entity: paragraph
+      type: text
+      field_body:
+        - format: "full_html"
+          summary: ''
+          value: |
+            <p>The event where the problems of tomorrow meet the minds of today. Discover how you can realize exponential outcomes through the power of Global Tech.</p>
+  field_dates:
+    - value: '2019-01-21T04:11:12'
+      end_value: '2019-01-23T04:11:12'
+  field_link:
+    - uri: 'http://www.google.com/'
