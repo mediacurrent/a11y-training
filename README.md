@@ -29,19 +29,7 @@ common packages pre-configured for rapid site development and optional content f
 ## Setting up a local [Vagrant](http://vagrantup.com) environment
 
 ### Clone this repository into the directory of your choice:
-- `$ git clone git@bitbucket.org:mediacurrent/drupal-project.git`
-
-### Rename & configure sample 'mis_profile' install profile
-- Change this to the name of your project name
-- Find and replace all instances of 'mis_profile' with your project name
-- Enable desired base profile features and modules (see mis_profile.install for more instructions).
-
-### Edit your local `/etc/hosts` file to include the new box IP
-    192.168.50.4 example.mcdev
-
-### Install composer on host machine
-- On MacOS ```brew install composer```
-- Otherwise, see instructions here https://getcomposer.org/
+- `$ git clone git@bitbucket.org:mediacurrent/mis_rain_vagrant.git`
 
 ### Run the build script.
 - `$ ./scripts/build.sh`
