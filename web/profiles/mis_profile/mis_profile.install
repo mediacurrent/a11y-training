@@ -77,6 +77,7 @@ function mis_profile_install() {
 
   $loaded_entities = [];
   foreach ($content_files as $file_name) {
+    \Drupal::logger('mis_profile')->notice('Demo content created from @file_name.', ['@file_name' => $file_name]);
     $loaded = $loader->loadContent($file_name);
     $loaded_entities = array_merge($loaded_entities, $loaded);
   }
