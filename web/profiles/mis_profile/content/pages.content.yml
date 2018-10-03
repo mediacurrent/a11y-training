@@ -19,7 +19,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'aboutus.jpg'
+                filename: 'blue.jpg'
             alt: 'About Us'
   field_content:
     - entity: paragraph
@@ -40,7 +40,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'aboutus.jpg'
+                        filename: 'blue.jpg'
                     alt: 'About Us'
     - entity: paragraph
       type: text

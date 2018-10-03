@@ -135,7 +135,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'whitepaper.jpg'
+                filename: 'blue.jpg'
             alt: 'Resources'
   field_content:
     - entity: paragraph
@@ -156,7 +156,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'whitepaper.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Resources'
     - entity: paragraph
       type: page_title

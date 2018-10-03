@@ -20,7 +20,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff1.jpg'
+                filename: 'blue.jpg'
             alt: 'Laura Martin'
   field_profile_media:
     - entity: media
@@ -33,7 +33,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff1.jpg'
+                filename: 'blue.jpg'
             alt: 'Laura Martin'
   field_content:
     - entity: paragraph
@@ -76,7 +76,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff2.jpg'
+                filename: 'blue.jpg'
             alt: 'Jeff Johnson'
   field_profile_media:
     - entity: media
@@ -89,7 +89,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff2.jpg'
+                filename: 'blue.jpg'
             alt: 'Jeff Johnson'
   field_content:
     - entity: paragraph
@@ -132,7 +132,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff3.jpg'
+                filename: 'blue.jpg'
             alt: 'Test Profile Image 3'
   field_profile_media:
     - entity: media
@@ -145,7 +145,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff3.jpg'
+                filename: 'blue.jpg'
             alt: 'Angela Wood'
   field_content:
     - entity: paragraph
@@ -188,7 +188,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff3.jpg'
+                filename: 'blue.jpg'
             alt: 'Test Profile Image 3'
   field_profile_media:
     - entity: media
@@ -201,7 +201,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'staff3.jpg'
+                filename: 'blue.jpg'
             alt: 'Angela Wood'
   field_content:
     - entity: paragraph

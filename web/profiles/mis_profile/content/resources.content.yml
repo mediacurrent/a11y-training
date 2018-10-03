@@ -41,7 +41,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'whitepaper.jpg'
+                filename: 'blue.jpg'
             alt: 'Whitepaper'
   field_content:
     - entity: paragraph
@@ -62,7 +62,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'whitepaper.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Whitepaper'
 
     - entity: paragraph
@@ -123,7 +123,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'webinar.jpg'
+                filename: 'blue.jpg'
             alt: 'Webinar'
   field_content:
     - entity: paragraph
@@ -144,7 +144,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'webinar.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Webinar'
     - entity: paragraph
       type: text
@@ -204,7 +204,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'ebook.jpg'
+                filename: 'blue.jpg'
             alt: 'eBook'
   field_content:
     - entity: paragraph
@@ -225,7 +225,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'ebook.jpg'
+                        filename: 'blue.jpg'
                     alt: 'eBook'
     - entity: paragraph
       type: text

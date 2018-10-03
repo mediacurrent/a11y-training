@@ -32,7 +32,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product1.jpg'
+                filename: 'blue.jpg'
             alt: 'product1'
     - entity: media
       bundle: image
@@ -44,7 +44,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product1b.jpg'
+                filename: 'blue.jpg'
             alt: 'product1b'
     - entity: media
       bundle: image
@@ -56,7 +56,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product1c.jpg'
+                filename: 'blue.jpg'
             alt: 'product1c'
   field_product_desc:
     - format: "full_html"
@@ -158,7 +158,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product2.jpg'
+                filename: 'blue.jpg'
             alt: 'product2'
     - entity: media
       bundle: image
@@ -170,7 +170,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product2b.jpg'
+                filename: 'blue.jpg'
             alt: 'product2b'
     - entity: media
       bundle: image
@@ -182,7 +182,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product2c.jpg'
+                filename: 'blue.jpg'
             alt: 'product2c'
   field_product_desc:
     - format: "full_html"
@@ -248,7 +248,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product3.png'
+                filename: 'blue.png'
             alt: 'product3'
   field_product_media:
     - entity: media
@@ -261,7 +261,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product3.png'
+                filename: 'blue.png'
             alt: 'product3'
     - entity: media
       bundle: image
@@ -273,7 +273,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product3b.jpg'
+                filename: 'blue.jpg'
             alt: 'product3b'
     - entity: media
       bundle: image
@@ -285,7 +285,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'product3c.png'
+                filename: 'blue.png'
             alt: 'product3c'
   field_product_desc:
     - format: "full_html"
