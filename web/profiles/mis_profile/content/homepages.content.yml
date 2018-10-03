@@ -70,7 +70,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'service1.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Classes & Courses'
         - entity: paragraph
           type: promo
@@ -90,7 +90,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'service2.png'
+                        filename: 'blue.png'
                     alt: 'Serivce 2'
         - entity: paragraph
           type: promo
@@ -110,7 +110,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'service3.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Service 3'
     - entity: paragraph
       type: text
@@ -141,7 +141,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'staff1.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Staff'
         - entity: paragraph
           type: promo
@@ -161,7 +161,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'staff2.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Staff'
         - entity: paragraph
           type: promo
@@ -181,7 +181,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'staff3.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Staff'
         - entity: paragraph
           type: promo
@@ -201,6 +201,6 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'staff4.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Staff'
 

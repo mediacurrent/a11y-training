@@ -20,7 +20,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'event1.jpg'
+                filename: 'blue.jpg'
             alt: 'Test Event Image 1'
   field_content:
     - entity: paragraph
@@ -41,7 +41,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'event1.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Test Event Image 1'
     - entity: paragraph
       type: text
@@ -74,7 +74,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'event2.png'
+                filename: 'blue.png'
             alt: 'Test Event Image 2'
   field_content:
     - entity: paragraph
@@ -95,7 +95,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'event2.png'
+                        filename: 'blue.png'
                     alt: 'Test Event Image 2'
     - entity: paragraph
       type: text
@@ -128,7 +128,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'event3.jpg'
+                filename: 'blue.jpg'
             alt: 'Test Event Image 3'
   field_content:
     - entity: paragraph
@@ -149,7 +149,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'event3.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Test Event Image 3'
     - entity: paragraph
       type: text
@@ -182,7 +182,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'event4.jpg'
+                filename: 'blue.jpg'
             alt: 'Test Event Image 4'
   field_content:
     - entity: paragraph
@@ -203,7 +203,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'event4.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Test Event Image 4'
     - entity: paragraph
       type: text

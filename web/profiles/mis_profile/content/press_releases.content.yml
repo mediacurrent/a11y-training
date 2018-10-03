@@ -32,7 +32,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'press1.jpg'
+                filename: 'blue.jpg'
             alt: 'Press Release 1'
   field_content:
     - entity: paragraph
@@ -53,7 +53,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'press1.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Press Release 1'
 
     - entity: paragraph
@@ -107,7 +107,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'press2.jpg'
+                filename: 'blue.jpg'
             alt: 'Press Release 2'
   field_content:
     - entity: paragraph
@@ -128,7 +128,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'press2.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Press Release 2'
     - entity: paragraph
       type: text
@@ -181,7 +181,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'press3.jpg'
+                filename: 'blue.jpg'
             alt: 'Press Release 3'
   field_content:
     - entity: paragraph
@@ -202,7 +202,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'press3.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Press Release 3'
     - entity: paragraph
       type: text

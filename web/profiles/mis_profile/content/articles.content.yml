@@ -34,7 +34,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'blog1.jpg'
+                filename: 'blue.jpg'
             alt: 'Article 1'
   field_content:
     - entity: paragraph
@@ -55,7 +55,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'blog1.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Article 1'
     - entity: paragraph
       type: text
@@ -110,7 +110,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'blog2.jpg'
+                filename: 'blue.jpg'
             alt: 'Article 2'
   field_content:
     - entity: paragraph
@@ -131,7 +131,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'blog2.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Article 2'
     - entity: paragraph
       type: text
@@ -186,7 +186,7 @@
             args:
               - 'image'
               - type: 'module'
-                filename: 'blog3.jpg'
+                filename: 'blue.jpg'
             alt: 'Article 3'
   field_content:
     - entity: paragraph
@@ -207,7 +207,7 @@
                     args:
                       - 'image'
                       - type: 'module'
-                        filename: 'blog3.jpg'
+                        filename: 'blue.jpg'
                     alt: 'Article 3'
     - entity: paragraph
       type: text
