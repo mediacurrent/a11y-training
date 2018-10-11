@@ -2,7 +2,7 @@
     "name": "mediacurrent/mis_rain_vagrant",
     "description": "Vagrant template for use with Mediacurrent Rain install profile.",
     "type": "project",
-    "license": "GPL-2.0+",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "",
