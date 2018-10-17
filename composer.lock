@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "74a59ee2b2236798583a09901b5f4196",
+    "content-hash": "a5730d33e259ed00439e291ae73809b7",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1507,6 +1507,10 @@
                     "homepage": "https://www.drupal.org/user/36590"
                 },
                 {
+                    "name": "jvandervort",
+                    "homepage": "https://www.drupal.org/user/35604"
+                },
+                {
                     "name": "kmasood",
                     "homepage": "https://www.drupal.org/user/1262860"
                 },
@@ -2325,10 +2329,6 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                },
-                {
                     "name": "merlinofchaos",
                     "homepage": "https://www.drupal.org/user/26979"
                 },
@@ -2381,7 +2381,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-rc1",
-                    "datestamp": "1530178424",
+                    "datestamp": "1484566683",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -2744,8 +2744,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0+0-dev",
-                    "datestamp": "1536328380",
+                    "version": "8.x-2.0-alpha2+3-dev",
+                    "datestamp": "1528140780",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2891,7 +2891,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.5",
-                    "datestamp": "1527243208",
+                    "datestamp": "1527241084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3274,7 +3274,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3344,7 +3344,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.0-beta1",
-                    "datestamp": "1520956980",
+                    "datestamp": "1453154039",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -3353,7 +3353,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3523,7 +3523,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3569,7 +3569,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.3",
-                    "datestamp": "1524858184",
+                    "datestamp": "1503080044",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3578,7 +3578,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -3636,7 +3636,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-alpha4",
-                    "datestamp": "1530150527",
+                    "datestamp": "1487968083",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
@@ -3645,7 +3645,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -4526,7 +4526,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1529312013",
+                    "datestamp": "1509546906",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4722,13 +4722,9 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
-                {
-                    "name": "darksnow",
-                    "homepage": "https://www.drupal.org/user/391915"
-                },
                 {
                     "name": "deekayen",
                     "homepage": "https://www.drupal.org/user/972"
@@ -4953,7 +4949,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -5001,7 +4997,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
@@ -5157,7 +5153,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0-beta1",
-                    "datestamp": "1533049984",
+                    "datestamp": "1466633339",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Beta releases are not covered by Drupal security advisories."
@@ -5169,12 +5165,24 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
+                "GPL-2.0+"
             ],
             "authors": [
                 {
-                    "name": "nicksanta",
-                    "homepage": "https://www.drupal.org/user/87915"
+                    "name": "Matt V.",
+                    "homepage": "https://www.drupal.org/user/88338"
+                },
+                {
+                    "name": "ToneUK",
+                    "homepage": "https://www.drupal.org/user/1307446"
+                },
+                {
+                    "name": "fizk",
+                    "homepage": "https://www.drupal.org/user/473174"
+                },
+                {
+                    "name": "pbull",
+                    "homepage": "https://www.drupal.org/user/13896"
                 }
             ],
             "description": "Removes the error message produced, from the forgot password form, when an incorrect user has been supplied.",
@@ -6174,7 +6182,7 @@
             "version": "1.12",
             "source": {
                 "type": "git",
-                "url": "git@bitbucket.org:mediacurrent/mis_rain.git",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
                 "reference": "cdce9df2c61e0d8b9c26356172fec44bf697af9c"
             },
             "require": {
@@ -9996,6 +10004,12 @@
                 "type": "git",
                 "url": "https://git.drupal.org/project/coder.git",
                 "reference": "984c54a7b1e8f27ff1c32348df69712afd86b17f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/klausi/coder/zipball/984c54a7b1e8f27ff1c32348df69712afd86b17f",
+                "reference": "984c54a7b1e8f27ff1c32348df69712afd86b17f",
+                "shasum": ""
             },
             "require": {
                 "ext-mbstring": "*",
