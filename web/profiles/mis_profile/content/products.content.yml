@@ -96,7 +96,7 @@
                 args:
                   - 'image'
                   - type: 'module'
-                    filename: 'echo-image.gif'
+                    filename: 'echo-image.jpg'
                 alt: 'Echo'
     - entity: paragraph
       type: text

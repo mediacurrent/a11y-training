@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Install methods for install profile.
@@ -52,7 +53,6 @@ function mis_profile_install() {
   $config = \Drupal::configFactory()->getEditable('workflows.workflow.editorial');
   $config->set('type_settings.entity_types', ['node' => $types]);
   $config->save();
-
   // Create demo content.
   $path = drupal_get_path('profile', 'mis_profile');
 
