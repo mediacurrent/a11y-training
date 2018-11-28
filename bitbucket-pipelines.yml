@@ -63,7 +63,7 @@ pipelines:
           - CMD=$(./tests/behat/behat-run.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/ ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
           - echo "OWASP ZAP report"
           - docker version
-          - docker run -t owasp/zap2docker-stable zap-baseline.py -t http://localhost:8080
+          - docker run -t owasp/zap2docker-stable zap-baseline.py -t http://$(ifconfig en0 | grep "inet " | cut -d " " -f2):8080
         services:
           - docker
 
