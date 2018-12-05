@@ -1,5 +1,5 @@
 
-image: mediacurrent/mc-bb-pipelines:feature/mct-447--tests
+image: mediacurrent/mc-bb-pipelines:feature_mct-447--tests
 
 pipelines:
   default:
