@@ -31,6 +31,12 @@
 			"state" : "inprogress",
 			"link": "https://codeandtheory.atlassian.net/browse/MCT-551"
 		},
+		{
+			"id" : "10021",
+			"name" : "X-Content-Type-Options Header Missing",
+			"state" : "inprogress",
+			"link": "https://codeandtheory.atlassian.net/browse/MCT-551"
+		},
     {
 			"id" : "10202",
 			"name" : "Absence of Anti-CSRF Tokens",
