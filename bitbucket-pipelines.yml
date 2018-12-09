@@ -66,7 +66,7 @@ pipelines:
           # Set script to continue on failure.
           - set +e
           - docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081
-          - CMD=$(docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/ ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 0 )
+          - CMD=$(docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081 2>&1) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/ ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 0 )
           # Set script to stop on failure.
           - set -e
         services:
