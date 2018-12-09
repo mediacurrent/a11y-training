@@ -7,6 +7,7 @@ pipelines:
         caches:
           - composer
           - composer-project-vendor
+          - docker
         script:
           - uname -a
           - mkdir -p /root/.ssh
