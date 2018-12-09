@@ -65,7 +65,7 @@ pipelines:
           - docker version
           # Set script to continue regardless of failures.
           - set +e
-          - docker run -t owasp/zap2docker-stable zap-baseline.py -t http://172.17.0.1:8081
+          - docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081
           - set -e
         services:
           - docker
