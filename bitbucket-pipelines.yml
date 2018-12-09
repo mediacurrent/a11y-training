@@ -61,12 +61,13 @@ pipelines:
           # - echo "Behat tests"
           # - ./tests/behat/behat-run.sh http://172.17.0.1:8080
           # - CMD=$(./tests/behat/behat-run.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/ ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
-          - echo "OWASP ZAP report"
+          # OWASP Zap Baseline report
+          - echo "OWASP ZAP Baseline report"
           - docker version
           # Set script to continue on failure.
           - set +e
           - docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081
-          - CMD=$(docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081 2>&1) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/ ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 0 )
+          - CMD=$(docker run -t owasp/zap2docker-weekly zap-baseline.py -t http://172.17.0.1:8081 2>&1) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results($BITBUCKET_BUILD_NUMBER) ${BITBUCKET_BRANCH} OWASP Zap Baseline report - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 0 )
           # Set script to stop on failure.
           - set -e
         services:
