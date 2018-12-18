@@ -33,7 +33,7 @@ pipelines:
           - ./bin/phpunit --version
           - composer robo --version
           - composer robo list
-          - composer robo project:init example.mcdev 172.17.0.1
+          - composer robo project:init example.mcdev 127.0.0.1
           # - nvm install v7.4.0
           # - nvm use v7.4.0
           # Drupal coding standards test on custom modules
@@ -43,7 +43,7 @@ pipelines:
           # - echo "PHPUnit unit tests"
           # - composer robo test:php-unit-tests
           # - CMD=$(composer robo test:php-unit-tests 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
-          - printf "172.17.0.1 example.mcdev" >> /etc/hosts
+          - printf "127.0.0.1 example.mcdev" >> /etc/hosts
           - cp ./tests/behat/behat.local.yml.shippable ./tests/behat/behat.local.yml
           - cd ./web
           # Install site using options to disable email notification.
@@ -51,17 +51,17 @@ pipelines:
           # - /usr/bin/env PHP_OPTIONS="-d sendmail_path=$(which true)" ../bin/drush site-install config_installer install_configure_form.enable_update_status_module=NULL install_configure_form.enable_update_status_emails=NULL --verbose --yes --db-url=mysql://root:password@127.0.0.1:3306/drupal
           - ./../bin/drush status
           # Start an http server to test site pages.
-          - ./../bin/drush --verbose runserver 172.17.0.1:8080 &
+          - ./../bin/drush --verbose runserver 127.0.0.1:8080 &
           - sleep 3
           - cd ..
           # Drupal accessibiity tests
           #- echo "Accessibility tests"
-          # - ./tests/pa11y/pa11y-review.sh http://172.17.0.1:8080
-          # - CMD=$(./tests/pa11y/pa11y-review.sh http://172.17.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+          # - ./tests/pa11y/pa11y-review.sh http://127.0.0.1:8080
+          # - CMD=$(./tests/pa11y/pa11y-review.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
           # Drupal behat tests
           # - echo "Behat tests"
-          # - ./tests/behat/behat-run.sh http://172.17.0.1:8080
-          # - CMD=$(./tests/behat/behat-run.sh http://172.17.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+          # - ./tests/behat/behat-run.sh http://127.0.0.1:8080
+          # - CMD=$(./tests/behat/behat-run.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
           # OWASP Zap Baseline report
           - echo "OWASP ZAP Baseline report"
           - docker version
@@ -69,8 +69,8 @@ pipelines:
           - set +e
           - ln -s $(pwd) /zap/wrk
           - ls -l /zap/wrk/
-          #- docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py -c owasp-zap.conf -p owasp-zap-progress.json -t http://172.17.0.1:8080
-          - CMD=$(/zap/zap-baseline.py  -c owasp-zap.conf -p owasp-zap-progress.json -t http://172.17.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - OWASP Zap Baseline report \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+          #- docker run -v $(pwd):/zap/wrk/:rw -t owasp/zap2docker-weekly zap-baseline.py -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080
+          - CMD=$(/zap/zap-baseline.py  -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - OWASP Zap Baseline report \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
           # Set script to stop on failure.
           - set -e
         services:
