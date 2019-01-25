@@ -5195,6 +5195,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Composer / bower integration? Configurable paths?": "https://www.drupal.org/files/issues/2019-01-25/2907371-composer-integration-23.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6585,16 +6588,16 @@
         },
         {
             "name": "mediacurrent/mis_rain",
-            "version": "1.17",
+            "version": "1.18",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "46de6c5d72c8d082a27ea0cbc9ad7d343e382c37"
+                "reference": "20885d1bc98b8f8058801978db5bd68650d4ed98"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/46de6c5d72c8d082a27ea0cbc9ad7d343e382c37.zip",
-                "reference": "46de6c5d72c8d082a27ea0cbc9ad7d343e382c37",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/20885d1bc98b8f8058801978db5bd68650d4ed98.zip",
+                "reference": "20885d1bc98b8f8058801978db5bd68650d4ed98",
                 "shasum": ""
             },
             "require": {
@@ -6674,9 +6677,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/46de6c5d72c8d082a27ea0cbc9ad7d343e382c37/?at=1.17"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/20885d1bc98b8f8058801978db5bd68650d4ed98/?at=develop"
             },
-            "time": "2019-01-25T21:38:29+00:00"
+            "time": "2019-01-25T23:12:51+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
