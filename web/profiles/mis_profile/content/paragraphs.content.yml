@@ -71,7 +71,7 @@
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
     - entity: paragraph
-      type: spotlight
+      type: card_list
       field_card:
         - entity: paragraph
           type: card
@@ -142,7 +142,7 @@
             <h2 style="text-align: center; font-weight: bold;">Get a feel for the campus day to day life</h2>
             <p style="text-align: center; font-style: italic; font-size: 120%;">Proin pellentesque lacus tempor dui placerat, sed sodales nisl eleifend.</p>
     - entity: paragraph
-      type: spotlight
+      type: card_list
       field_card:
         - entity: paragraph
           type: card

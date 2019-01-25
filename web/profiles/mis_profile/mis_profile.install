@@ -21,7 +21,7 @@ function mis_profile_install() {
       'rain_landing',
       'rain_blog',
       'rain_webform',
-      'rain_spotlight',
+      'rain_card_list',
       'rain_faq',
       'rain_gallery',
       'rain_media',
