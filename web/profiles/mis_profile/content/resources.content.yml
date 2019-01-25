@@ -33,78 +33,78 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Phasellus auctor, turpis at luctus finibus'
+      name: "Phasellus auctor, turpis at luctus finibus"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Whitepaper'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Whitepaper"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Whitepaper'
+            - value: "Whitepaper"
           field_media:
             - entity: media
               bundle: image
-              name: 'Whitepaper'
+              name: "Whitepaper"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Whitepaper'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Whitepaper"
 
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Discover best practices for defining the roles on your workforce intelligence team, choosing the right technology, and setting up a sustainable process for managing your team’s work—all in a way that will maximize your influence on workforce strategy. Download the Whitepaper.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
   field_resource_type:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'resource'
-            name: 'Whitepaper'
+          - "taxonomy_term"
+          - vid: "resource"
+            name: "Whitepaper"
 - entity: "node"
   type: "resource"
   title: "Learn How Software Solutions Impacts Your Bottom Line in this Webinar"
@@ -115,77 +115,77 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Erat lectus convallis velit, at sodales'
+      name: "Erat lectus convallis velit, at sodales"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Webinar'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Webinar"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Webinar'
+            - value: "Webinar"
           field_media:
             - entity: media
               bundle: image
-              name: 'Webinar'
+              name: "Webinar"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Webinar'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Webinar"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Software Solutions can help you reduce IT costs and increase efficiency. Explore how your enterprise can benefit. Watch the Webinar HERE.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
   field_resource_type:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'resource'
-            name: 'Webinar'
+          - "taxonomy_term"
+          - vid: "resource"
+            name: "Webinar"
 - entity: "node"
   type: "resource"
   title: "Goodbye Tools. Hello Solutions eBook"
@@ -196,74 +196,74 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Curabitur imperdiet sapien libero'
+      name: "Curabitur imperdiet sapien libero"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'eBook'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "eBook"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'eBook'
+            - value: "eBook"
           field_media:
             - entity: media
               bundle: image
-              name: 'eBook'
+              name: "eBook"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'eBook'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "eBook"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>He had a front row seat in this market while leading TTech, the largest IT and Network Provider (acquired by SAP). Laura and co-founder Jeff Johnson’s vision was to completely reinvent the approach to analytic and software-defined solutions that virtualize routing and data storage for IP-based networks. Download the e-Book to read more.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
   field_resource_type:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'resource'
-            name: 'eBook'
+          - "taxonomy_term"
+          - vid: "resource"
+            name: "eBook"

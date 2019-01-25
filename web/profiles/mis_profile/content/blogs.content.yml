@@ -26,71 +26,71 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Phasellus auctor, turpis at luctus finibus'
+      name: "Phasellus auctor, turpis at luctus finibus"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Blog 1'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Blog 1"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Blog 1'
+            - value: "Blog 1"
           field_media:
             - entity: media
               bundle: image
-              name: 'Blog 1'
+              name: "Blog 1"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Blog 1'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Blog 1"
 
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Recent data from the U.S. Census Bureau still shows that less than ten percent of all retail transactions happen online. Retailers with traditional brick-and-mortar stores that are committed to connecting the dots between underlying IT infrastructure and customer-facing digital technology have the best opportunity to continue thriving in the digital age. But creating that underlying infrastructure is complicated, often involving dozens of vendors with distinct technologies like networking, security devices, point-of-sale, printers, employee systems, inventory management, and more. And all of this tech must work as one integrated unit to deliver a new and improved store experience. With most of this technology positioned behind the scenes, customers might never fully realize its impact on the trip they just made to buy diapers for their children, refill a prescription, or just grab a late-night snack. Nonetheless, an IT environment that is supported in a comprehensive way can have a positive impact on the future of an entire business. It can lead to more effective and concentrated IT support, more accurate data insights that IT professionals and business executives can use to outperform the competition, and a more loyal customer base.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
 - entity: "node"
   type: "blog"
   title: "Why Your Network No Longer Works"
@@ -103,70 +103,70 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Erat lectus convallis velit, at sodales'
+      name: "Erat lectus convallis velit, at sodales"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Blog 2'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Blog 2"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Blog 2'
+            - value: "Blog 2"
           field_media:
             - entity: media
               bundle: image
-              name: 'Blog 2'
+              name: "Blog 2"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Blog 2'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Blog 2"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>By 2020, members of Generation C – connected, communicating, content-centric, computerized and always clicking – will comprise 40% of the population of the U.S., Europe, Brazil, Russia, India and China. They will be the largest single category of consumers in the world. This is what makes the digitization of your business so important. And what makes your current network – assuming you use VPN – so debilitating. VPN technology was created more than 20 years ago. To put that into perspective, it was introduced the same year as the 56k dial-up modem. VPN wasn't designed to handle the 21st century business challenges of big data, cloud computing, mobile workforces and the Internet of Things. A VPN can't deliver the secure, reliable and high-performance connectivity your employees need to collaborate and your customers need to transact business with you. But don't take our word for it. Ask around.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
 - entity: "node"
   type: "blog"
   title: "Introducting a Simple, Fast Way to Import Data"
@@ -179,67 +179,67 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Curabitur imperdiet sapien libero'
+      name: "Curabitur imperdiet sapien libero"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Blog 3'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Blog 3"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Blog 3'
+            - value: "Blog 3"
           field_media:
             - entity: media
               bundle: image
-              name: 'Blog 3'
+              name: "Blog 3"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Blog 3'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Blog 3"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Designed for durability and ruggedness, Mass Data Migration portable storage devices have a useable capacity of 120 TB and feature industry-standard AES 256-bit encryption to ensure that data is well protected during transport and ingestion. Each device also uses RAID-6, a premiere standard in redundancy and protection to ensure data integrity. Using a simple process, customers copy their data to the device and ship it back to Global Tech, where the data is offloaded to Global Tech Cloud Object Storage for use across the IBM Cloud platform.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"

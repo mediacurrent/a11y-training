@@ -11,54 +11,54 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Staff'
+      name: "Staff"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-staff.jpg'
-            alt: 'Staff'
+              - "image"
+              - type: "module"
+                filename: "hero-staff.jpg"
+            alt: "Staff"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Staff'
+            - value: "Staff"
           field_media:
             - entity: media
               bundle: image
-              name: 'Staff'
+              name: "Staff"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-staff.jpg'
-                    alt: 'Staff'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-staff.jpg"
+                    alt: "Staff"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Global software solutions starts with people.</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'recent_content_by_type'
-          display_id: 'block_1'
-          argument: 'profile'
+        - target_id: "recent_content_by_type"
+          display_id: "block_1"
+          argument: "profile"
 - entity: "node"
   type: "landing"
   title: "Press Releases"
@@ -69,54 +69,54 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Press Releases'
+      name: "Press Releases"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-news.jpg'
-            alt: 'Press Releases'
+              - "image"
+              - type: "module"
+                filename: "hero-news.jpg"
+            alt: "Press Releases"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Press Releases'
+            - value: "Press Releases"
           field_media:
             - entity: media
               bundle: image
-              name: 'Press Releases'
+              name: "Press Releases"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-news.jpg'
-                    alt: 'Press Releases'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-news.jpg"
+                    alt: "Press Releases"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'recent_content_by_type'
-          display_id: 'block_1'
-          argument: 'press_release'
+        - target_id: "recent_content_by_type"
+          display_id: "block_1"
+          argument: "press_release"
 - entity: "node"
   type: "landing"
   title: "Resources"
@@ -127,53 +127,53 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Resources'
+      name: "Resources"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Resources'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Resources"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Resources'
+            - value: "Resources"
           field_media:
             - entity: media
               bundle: image
-              name: 'Resources'
+              name: "Resources"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Resources'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Resources"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Stay Ahead of the Latest Trends</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'resource_library'
-          display_id: 'block_1'
+        - target_id: "resource_library"
+          display_id: "block_1"
 - entity: "node"
   type: "landing"
   title: "Articles"
@@ -184,54 +184,54 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'News'
+      name: "News"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-news.jpg'
-            alt: 'News'
+              - "image"
+              - type: "module"
+                filename: "hero-news.jpg"
+            alt: "News"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'The Latest in Innovative Technology'
+            - value: "The Latest in Innovative Technology"
           field_media:
             - entity: media
               bundle: image
-              name: 'News'
+              name: "News"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-news.jpg'
-                    alt: 'News'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-news.jpg"
+                    alt: "News"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'recent_content_by_type'
-          display_id: 'block_1'
-          argument: 'article'
+        - target_id: "recent_content_by_type"
+          display_id: "block_1"
+          argument: "article"
 - entity: "node"
   type: "landing"
   title: "News & Blogs"
@@ -242,54 +242,54 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Blog'
+      name: "Blog"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-news.png'
-            alt: 'Blog'
+              - "image"
+              - type: "module"
+                filename: "hero-news.png"
+            alt: "Blog"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Innovate and Educate'
+            - value: "Innovate and Educate"
           field_media:
             - entity: media
               bundle: image
-              name: 'Blog'
+              name: "Blog"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-news.png'
-                    alt: 'Blog'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-news.png"
+                    alt: "Blog"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'recent_content_by_type'
-          display_id: 'block_1'
-          argument: 'blog'
+        - target_id: "recent_content_by_type"
+          display_id: "block_1"
+          argument: "blog"
 - entity: "node"
   type: "landing"
   title: "Upcoming Events"
@@ -300,53 +300,53 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Events'
+      name: "Events"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-events.jpg'
-            alt: 'Events'
+              - "image"
+              - type: "module"
+                filename: "hero-events.jpg"
+            alt: "Events"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Events'
+            - value: "Events"
           field_media:
             - entity: media
               bundle: image
-              name: 'Events'
+              name: "Events"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-events.jpg'
-                    alt: 'Events'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-events.jpg"
+                    alt: "Events"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Global Tech proudly brings regular speaking confrences, and innovative seminars to the community. See what's near you!</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'events'
-          display_id: 'block_1'
+        - target_id: "events"
+          display_id: "block_1"
 - entity: "node"
   type: "landing"
   title: "Products"
@@ -357,51 +357,51 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Products'
+      name: "Products"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-products.jpg'
-            alt: 'Products'
+              - "image"
+              - type: "module"
+                filename: "hero-products.jpg"
+            alt: "Products"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Our Products'
+            - value: "Our Products"
           field_media:
             - entity: media
               bundle: image
-              name: 'Products'
+              name: "Products"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-products.jpg'
-                    alt: 'Products'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-products.jpg"
+                    alt: "Products"
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: 'h1'
+        - value: "h1"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
     - entity: paragraph
       type: view
       field_view_ref:
-        - target_id: 'recent_content_by_type'
-          display_id: 'block_1'
-          argument: 'product'
+        - target_id: "recent_content_by_type"
+          display_id: "block_1"
+          argument: "product"

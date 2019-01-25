@@ -24,71 +24,71 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Phasellus auctor, turpis at luctus finibus'
+      name: "Phasellus auctor, turpis at luctus finibus"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Press Release 1'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Press Release 1"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Press Release 1'
+            - value: "Press Release 1"
           field_media:
             - entity: media
               bundle: image
-              name: 'Press Release 1'
+              name: "Press Release 1"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Press Release 1'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Press Release 1"
 
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Schmidt manufactures millions of precision-engineered products that help to keep the world’s machines moving – from those that go into automotive clutch systems, to those in hybrid engines and the huge industrial bearings used in wind turbines. Through the agreement, Schmidt will tap Global Tech’s cloud-based Watson IoT technologies to help transform every aspect of its business from product development, through to manufacturing and its supply chain, sales and aftersales service. Advanced technologies such as artificial intelligence, cloud computing and the Internet of Things are driving increased connectivity and automation across the manufacturing industry. At the same time, engineering companies like Schmidt are pioneering the development of innovative ‘mechatronic’ solutions which combine mechanical, electronic and software capabilities into individual components and systems which have the ability to monitor, report and manage their own performance.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
 - entity: "node"
   type: "press_release"
   title: "Miller Steel adopts Global Tech Cloud to Build an Agile IT Infrastructure"
@@ -99,70 +99,70 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Erat lectus convallis velit, at sodales'
+      name: "Erat lectus convallis velit, at sodales"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Press Release 2'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Press Release 2"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Press Release 2'
+            - value: "Press Release 2"
           field_media:
             - entity: media
               bundle: image
-              name: 'Press Release 2'
+              name: "Press Release 2"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Press Release 2'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Press Release 2"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Global Tech and Miller Steel, signed a five-year outsourcing agreement enabling the steel company to migrate core systems to the IBM Cloud while consolidating its IT infrastructure and streamlining its business operations. With the World Steel Organization stating that steel prices will continue to fall in 2016, steel companies like Miller Steel, must identify ways of creating a more efficient business model that can quickly adjust to market changes. In fact, under the Miller Group’s medium-term business plan, Miller Steel aims to increase annual JFE branded product and services to 40 million tons. As part of this agreement, Global Tech will assist Miller Steel in building much of its core business including iron and steel production management systems.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"
 - entity: "node"
   type: "press_release"
   title: "Global Tech and TBX Join Together to Offer Easy Route to Cloud for Enterprises"
@@ -173,67 +173,67 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Curabitur imperdiet sapien libero'
+      name: "Curabitur imperdiet sapien libero"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'Press Release 3'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "Press Release 3"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Press Release 3'
+            - value: "Press Release 3"
           field_media:
             - entity: media
               bundle: image
-              name: 'Press Release 3'
+              name: "Press Release 3"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'Press Release 3'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "Press Release 3"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <p>Working with Global Tech, TBX is helping its clients tackle one of the most pressing IT challenges for enterprises; moving existing TBX ware workloads from on premises environments to the cloud without incurring the cost and risk associated with re-tooling operations, re-architecting applications and re-designing security policies. With over half a million enterprises running an estimated 50 million workloads, enterprises need fast, easy and cost effective ways to deploy and move VMware workloads between on-premises and cloud environments and across geographic boundaries. The Global Tech Cloud capability helps clients meet this growing demand by extending the global footprint of Vodafone’s Hosted Private Cloud service and helping establish a new hybrid cloud offering for enterprises. This new service is designed to help Vodafone enterprise customers reduce latency by locating applications closer to users while maintaining data within a security-rich global network.</p>
   field_tags:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 1'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 1"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'tags'
-            name: 'Tag 2'
+          - "taxonomy_term"
+          - vid: "tags"
+            name: "Tag 2"
   field_authors:
-    - '#process':
-        callback: 'reference'
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'John Smith'
-    - '#process':
-        callback: 'reference'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "John Smith"
+    - "#process":
+        callback: "reference"
         args:
-          - 'taxonomy_term'
-          - vid: 'authors'
-            name: 'Jane Doe'
+          - "taxonomy_term"
+          - vid: "authors"
+            name: "Jane Doe"

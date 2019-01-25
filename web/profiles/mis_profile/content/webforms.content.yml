@@ -11,44 +11,44 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'Contact Us'
+      name: "Contact Us"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'hero-contact.jpg'
-            alt: 'Contact Us'
+              - "image"
+              - type: "module"
+                filename: "hero-contact.jpg"
+            alt: "Contact Us"
   webform:
-    - target_id: 'contact'
-      status: 'open'
+    - target_id: "contact"
+      status: "open"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'Contact Us'
+            - value: "Contact Us"
           field_media:
             - entity: media
               bundle: image
-              name: 'Contact Us'
+              name: "Contact Us"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'hero-contact.jpg'
-                    alt: 'Contact Us'
+                      - "image"
+                      - type: "module"
+                        filename: "hero-contact.jpg"
+                    alt: "Contact Us"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <h1>How Can We Hepe You?</h1><p>Got a question about GlobalTech? Give us the details and we’ll get in touch with you as quickly as we can.</p><h2>Send us a message</h2><p>Corporate Headquarters<br>GlobalTech Inc.<br>339 W Lewis Street<br>Minneapolis, MN 55402 USA</p><p><a href="mailto:info@globaltech.com">info@globaltech.com</a><br><a href="mailto:sales@globaltech.com">sales@globaltech.com</a></p>

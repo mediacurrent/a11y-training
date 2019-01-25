@@ -11,42 +11,42 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: 'About Us'
+      name: "About Us"
       status: 1
       field_image:
-        - '#process':
-            callback: 'file'
+        - "#process":
+            callback: "file"
             args:
-              - 'image'
-              - type: 'module'
-                filename: 'blue.jpg'
-            alt: 'About Us'
+              - "image"
+              - type: "module"
+                filename: "blue.jpg"
+            alt: "About Us"
   field_content:
     - entity: paragraph
       type: hero_media
-      field_promo:
+      field_card:
         - entity: paragraph
-          type: promo
+          type: card
           field_title:
-            - value: 'About Us'
+            - value: "About Us"
           field_media:
             - entity: media
               bundle: image
-              name: 'About Us'
+              name: "About Us"
               status: 1
               field_image:
-                - '#process':
-                    callback: 'file'
+                - "#process":
+                    callback: "file"
                     args:
-                      - 'image'
-                      - type: 'module'
-                        filename: 'blue.jpg'
-                    alt: 'About Us'
+                      - "image"
+                      - type: "module"
+                        filename: "blue.jpg"
+                    alt: "About Us"
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ''
+          summary: ""
           value: |
             <h1>MIssion Statement</h1>
             <p>At Global Tech we provide software-defined solutions that virtualize routing and data storage for IP-based networks. These solutions manage connectivity that avoids congestion and thwarts cyberattacks. This empowers organizations to leverage the economics of the Internet, cloud-based services, and commodity hardware.</p>

@@ -25,7 +25,7 @@ function mis_profile_install() {
       'rain_faq',
       'rain_gallery',
       'rain_media',
-      'rain_promo',
+      'rain_card',
       'rain_hero_media',
       'rain_carousel',
       'rain_quote',
