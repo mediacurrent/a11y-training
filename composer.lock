@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f61f86395afe7d3486a0fbe201956b6",
+    "content-hash": "e4bec69a16b227009a273a9ce70a7ed5",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2003,6 +2003,57 @@
             "support": {
                 "source": "https://cgit.drupalcode.org/colorbox",
                 "issues": "https://www.drupal.org/project/colorbox"
+            }
+        },
+        {
+            "name": "drupal/components",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/components",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/components-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "adb1872a655466d575c2d3396f7ca2daba0a2918"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1461060840",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "JohnAlbin",
+                    "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "RobLoach",
+                    "homepage": "https://www.drupal.org/user/61114"
+                }
+            ],
+            "description": "Registers “component libraries” defined in modules and themes with the Twig system",
+            "homepage": "https://www.drupal.org/project/components",
+            "support": {
+                "source": "http://cgit.drupalcode.org/components"
             }
         },
         {
@@ -4454,6 +4505,54 @@
             }
         },
         {
+            "name": "drupal/paragraphs_previewer",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/paragraphs_previewer",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/paragraphs_previewer-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "ce1cae69b03df264f2413a7ada8d19d8e26b352b"
+            },
+            "require": {
+                "drupal/core": "~8.0",
+                "drupal/paragraphs": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1550182980",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "recrit",
+                    "homepage": "https://www.drupal.org/user/452914"
+                }
+            ],
+            "description": "Provides a rendered preview of a paragraphs item while on an entity form.",
+            "homepage": "https://www.drupal.org/project/paragraphs_previewer",
+            "support": {
+                "source": "http://cgit.drupalcode.org/paragraphs_previewer"
+            }
+        },
+        {
             "name": "drupal/password_policy",
             "version": "3.0.0-alpha4",
             "source": {
@@ -6650,16 +6749,16 @@
         },
         {
             "name": "mediacurrent/mis_rain",
-            "version": "1.22",
+            "version": "dev-feature/2.x",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "9eeb23fcd03393375304a340bc174a5b83a7ac75"
+                "reference": "4c6f7a855829723387f41862b5c57d8afe06c5ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/9eeb23fcd03393375304a340bc174a5b83a7ac75.zip",
-                "reference": "9eeb23fcd03393375304a340bc174a5b83a7ac75",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/4c6f7a855829723387f41862b5c57d8afe06c5ba.zip",
+                "reference": "4c6f7a855829723387f41862b5c57d8afe06c5ba",
                 "shasum": ""
             },
             "require": {
@@ -6675,6 +6774,7 @@
                 "drupal/admin_toolbar": "~1.0",
                 "drupal/ckeditor_media_embed": "~1.0",
                 "drupal/colorbox": "~1.0",
+                "drupal/components": "~1.0",
                 "drupal/crop": "^1.0",
                 "drupal/ctools": "~3.0",
                 "drupal/dropzonejs": "dev-2.x",
@@ -6696,6 +6796,7 @@
                 "drupal/moderation_sidebar": "~1.0",
                 "drupal/paragraphs": "~1.0",
                 "drupal/paragraphs_features": "~1.0",
+                "drupal/paragraphs_previewer": "~1.0",
                 "drupal/pathauto": "~1.0",
                 "drupal/redirect": "~1.0",
                 "drupal/scheduler": "~1.0",
@@ -6734,13 +6835,15 @@
                     }
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
-            "time": "2019-02-09T03:24:48+00:00"
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/4c6f7a855829723387f41862b5c57d8afe06c5ba/?at=feature/2.x"
+            },
+            "time": "2019-02-25T20:47:05+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -10779,6 +10882,79 @@
             "time": "2018-12-19T17:24:54+00:00"
         },
         {
+            "name": "drupal/thunder_admin",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/thunder_admin",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "4b4d20cd3a27918c5c8f7286e22c50e84b71a6ae"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1549462080",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716",
+                    "email": "christian.fritsch@burda.com"
+                },
+                {
+                    "name": "Andreas Sahle",
+                    "homepage": "https://www.drupal.org/user/404865",
+                    "email": "andreas.sahle@wunder.io"
+                },
+                {
+                    "name": "mtodor",
+                    "homepage": "https://www.drupal.org/user/3453049"
+                },
+                {
+                    "name": "pixelmord",
+                    "homepage": "https://www.drupal.org/user/499438"
+                },
+                {
+                    "name": "thunderbot",
+                    "homepage": "https://www.drupal.org/user/3511180"
+                },
+                {
+                    "name": "tjwelde",
+                    "homepage": "https://www.drupal.org/user/3411453"
+                },
+                {
+                    "name": "volkerk",
+                    "homepage": "https://www.drupal.org/user/57527"
+                }
+            ],
+            "description": "Drupal admin theme for Thunder distribution",
+            "homepage": "https://www.drupal.org/project/thunder_admin",
+            "support": {
+                "source": "http://cgit.drupalcode.org/thunder_admin"
+            }
+        },
+        {
             "name": "drush-ops/behat-drush-endpoint",
             "version": "8.2.4",
             "source": {
@@ -11533,6 +11709,71 @@
                 "docs": "http://docs.drupalvm.com"
             },
             "time": "2017-12-04T17:43:53+00:00"
+        },
+        {
+            "name": "mediacurrent/rain_admin",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
+                "reference": "a3246bd6f48eaf7a0b94299dcc4f9e345e376c91"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/a3246bd6f48eaf7a0b94299dcc4f9e345e376c91.zip",
+                "reference": "a3246bd6f48eaf7a0b94299dcc4f9e345e376c91",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/thunder_admin": "~2.0"
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Callicott",
+                    "email": "jay.callicott@mediacurrent.com"
+                }
+            ],
+            "description": "Drupal admin theme for Rain distribution",
+            "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/rain_admin/src/a3246bd6f48eaf7a0b94299dcc4f9e345e376c91/?at=master"
+            },
+            "time": "2019-02-15T17:05:04+00:00"
+        },
+        {
+            "name": "mediacurrent/rain_theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
+                "reference": "3a2cd0c2c778fa955005d7b656f1256b5cf417bb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/3a2cd0c2c778fa955005d7b656f1256b5cf417bb.zip",
+                "reference": "3a2cd0c2c778fa955005d7b656f1256b5cf417bb",
+                "shasum": ""
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Callicott",
+                    "role": ""
+                }
+            ],
+            "description": "Mediacurrent Rain starter theme.",
+            "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/3a2cd0c2c778fa955005d7b656f1256b5cf417bb/?at=master"
+            },
+            "time": "2019-02-19T21:36:04+00:00"
         },
         {
             "name": "mikey179/vfsStream",
@@ -12463,6 +12704,7 @@
                 "mock",
                 "xunit"
             ],
+            "abandoned": true,
             "time": "2015-10-02T06:51:40+00:00"
         },
         {
@@ -13285,8 +13527,11 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "guardrdistro/guardr": 20,
+        "mediacurrent/mis_rain": 20,
         "drupal/drupal-driver": 20,
-        "mediacurrent/ci-tests": 20
+        "mediacurrent/ci-tests": 20,
+        "mediacurrent/rain_admin": 20,
+        "mediacurrent/rain_theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
