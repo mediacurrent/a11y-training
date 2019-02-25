@@ -6753,12 +6753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "4c6f7a855829723387f41862b5c57d8afe06c5ba"
+                "reference": "866b536855847a5f2cab20313e75bdd750debc18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/4c6f7a855829723387f41862b5c57d8afe06c5ba.zip",
-                "reference": "4c6f7a855829723387f41862b5c57d8afe06c5ba",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/866b536855847a5f2cab20313e75bdd750debc18.zip",
+                "reference": "866b536855847a5f2cab20313e75bdd750debc18",
                 "shasum": ""
             },
             "require": {
@@ -6841,9 +6841,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/4c6f7a855829723387f41862b5c57d8afe06c5ba/?at=feature/2.x"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/866b536855847a5f2cab20313e75bdd750debc18/?at=feature/2.x"
             },
-            "time": "2019-02-25T20:47:05+00:00"
+            "time": "2019-02-25T22:50:52+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
