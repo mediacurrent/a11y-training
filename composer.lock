@@ -6753,12 +6753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "79880936097916f2bcacd432523fac9a91159726"
+                "reference": "92bca1e46437d6031e522c69316073baa9a28f76"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/79880936097916f2bcacd432523fac9a91159726.zip",
-                "reference": "79880936097916f2bcacd432523fac9a91159726",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/92bca1e46437d6031e522c69316073baa9a28f76.zip",
+                "reference": "92bca1e46437d6031e522c69316073baa9a28f76",
                 "shasum": ""
             },
             "require": {
@@ -6827,6 +6827,9 @@
                     "drupal/entity_embed": {
                         "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                     },
+                    "drupal/paragraphs_previewer": {
+                        "Dialog improvements": "patches/previewer-updates.patch"
+                    },
                     "drupal/scheduler": {
                         "Integration with core Content moderation": "https://www.drupal.org/files/issues/scheduler-2798689-15.patch"
                     },
@@ -6841,9 +6844,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/79880936097916f2bcacd432523fac9a91159726/?at=feature/2.x"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/92bca1e46437d6031e522c69316073baa9a28f76/?at=feature/2.x"
             },
-            "time": "2019-02-26T17:08:49+00:00"
+            "time": "2019-02-26T19:45:33+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -11716,12 +11719,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
-                "reference": "a3246bd6f48eaf7a0b94299dcc4f9e345e376c91"
+                "reference": "0b0dfc9100b78ce4fe1e27c0da1bddaab12e6091"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/a3246bd6f48eaf7a0b94299dcc4f9e345e376c91.zip",
-                "reference": "a3246bd6f48eaf7a0b94299dcc4f9e345e376c91",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/0b0dfc9100b78ce4fe1e27c0da1bddaab12e6091.zip",
+                "reference": "0b0dfc9100b78ce4fe1e27c0da1bddaab12e6091",
                 "shasum": ""
             },
             "require": {
@@ -11740,7 +11743,7 @@
             ],
             "description": "Drupal admin theme for Rain distribution",
             "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
-            "time": "2019-02-15T17:05:04+00:00"
+            "time": "2019-02-26T19:27:26+00:00"
         },
         {
             "name": "mediacurrent/rain_theme",
