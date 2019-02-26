@@ -204,7 +204,7 @@
             "version": "3.3.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/jquery/jquery-dist.git",
+                "url": "git@github.com:jquery/jquery-dist.git",
                 "reference": "9e8ec3d10fad04748176144f108d7355662ae75e"
             },
             "dist": {
@@ -3005,7 +3005,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser",
-                "reference": "419c882d7f32e21f4a0925d2bf55c5e4db86a713"
+                "reference": "abc6a40cea9bd44d6dc932f33c937f0d238525cc"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -3022,8 +3022,8 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1+3-dev",
-                    "datestamp": "1550668984",
+                    "version": "8.x-2.1+4-dev",
+                    "datestamp": "1550669584",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3082,7 +3082,7 @@
                 "issues": "http://drupal.org/project/issues/entity_browser",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-02-20T13:31:51+00:00"
+            "time": "2019-02-26T17:08:52+00:00"
         },
         {
             "name": "drupal/entity_browser_entity_form",
@@ -6753,12 +6753,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "866b536855847a5f2cab20313e75bdd750debc18"
+                "reference": "79880936097916f2bcacd432523fac9a91159726"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/866b536855847a5f2cab20313e75bdd750debc18.zip",
-                "reference": "866b536855847a5f2cab20313e75bdd750debc18",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/79880936097916f2bcacd432523fac9a91159726.zip",
+                "reference": "79880936097916f2bcacd432523fac9a91159726",
                 "shasum": ""
             },
             "require": {
@@ -6841,9 +6841,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/866b536855847a5f2cab20313e75bdd750debc18/?at=feature/2.x"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/79880936097916f2bcacd432523fac9a91159726/?at=feature/2.x"
             },
-            "time": "2019-02-25T22:50:52+00:00"
+            "time": "2019-02-26T17:08:49+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -11728,6 +11728,7 @@
                 "drupal/thunder_admin": "~2.0"
             },
             "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -11739,9 +11740,6 @@
             ],
             "description": "Drupal admin theme for Rain distribution",
             "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
-            "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_admin/src/a3246bd6f48eaf7a0b94299dcc4f9e345e376c91/?at=master"
-            },
             "time": "2019-02-15T17:05:04+00:00"
         },
         {
@@ -11759,20 +11757,17 @@
                 "shasum": ""
             },
             "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Jay Callicott",
-                    "role": ""
+                    "name": "Jay Callicott"
                 }
             ],
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
-            "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/3a2cd0c2c778fa955005d7b656f1256b5cf417bb/?at=master"
-            },
             "time": "2019-02-19T21:36:04+00:00"
         },
         {
