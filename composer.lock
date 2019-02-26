@@ -4534,6 +4534,9 @@
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
                     }
+                },
+                "patches_applied": {
+                    "Dialog improvements": "https://www.drupal.org/files/issues/2019-02-26/previewer-updates.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -6753,12 +6756,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "92bca1e46437d6031e522c69316073baa9a28f76"
+                "reference": "12dbe267d85050eecd6911e7a63ed55252c10329"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/92bca1e46437d6031e522c69316073baa9a28f76.zip",
-                "reference": "92bca1e46437d6031e522c69316073baa9a28f76",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/12dbe267d85050eecd6911e7a63ed55252c10329.zip",
+                "reference": "12dbe267d85050eecd6911e7a63ed55252c10329",
                 "shasum": ""
             },
             "require": {
@@ -6828,7 +6831,7 @@
                         "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                     },
                     "drupal/paragraphs_previewer": {
-                        "Dialog improvements": "patches/previewer-updates.patch"
+                        "Dialog improvements": "https://www.drupal.org/files/issues/2019-02-26/previewer-updates.patch"
                     },
                     "drupal/scheduler": {
                         "Integration with core Content moderation": "https://www.drupal.org/files/issues/scheduler-2798689-15.patch"
@@ -6844,9 +6847,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/92bca1e46437d6031e522c69316073baa9a28f76/?at=feature/2.x"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/12dbe267d85050eecd6911e7a63ed55252c10329/?at=feature/2.x"
             },
-            "time": "2019-02-26T19:45:33+00:00"
+            "time": "2019-02-26T20:01:54+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
