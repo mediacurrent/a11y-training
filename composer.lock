@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e4bec69a16b227009a273a9ce70a7ed5",
+    "content-hash": "ca684764e532c0a33b2c84d14dacde0c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1814,6 +1814,53 @@
             "support": {
                 "source": "http://cgit.drupalcode.org/admin_toolbar",
                 "issues": "https://www.drupal.org/project/issues/admin_toolbar"
+            }
+        },
+        {
+            "name": "drupal/allowed_formats",
+            "version": "1.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupal.org/project/allowed_formats",
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/allowed_formats-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "b7bfc78d7e64f1df37ca6cad118a1ff8f7228b64"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.1",
+                    "datestamp": "1492709942",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "floretan",
+                    "homepage": "https://www.drupal.org/user/66163"
+                }
+            ],
+            "description": "Limit which text formats are available for each field instance.",
+            "homepage": "https://www.drupal.org/project/allowed_formats",
+            "support": {
+                "source": "http://cgit.drupalcode.org/allowed_formats"
             }
         },
         {
@@ -6885,12 +6932,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "31ea097f487319be3e3b26e9d13c5ddafb7c312b"
+                "reference": "e9bc041bc616f4d73bf4ac3c375e3f7159725340"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/31ea097f487319be3e3b26e9d13c5ddafb7c312b.zip",
-                "reference": "31ea097f487319be3e3b26e9d13c5ddafb7c312b",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/e9bc041bc616f4d73bf4ac3c375e3f7159725340.zip",
+                "reference": "e9bc041bc616f4d73bf4ac3c375e3f7159725340",
                 "shasum": ""
             },
             "require": {
@@ -6904,6 +6951,7 @@
                 "cweagans/composer-patches": "^1.6",
                 "drupal/addtoany": "~1.0",
                 "drupal/admin_toolbar": "~1.0",
+                "drupal/allowed_formats": "~1.0",
                 "drupal/ckeditor_media_embed": "~1.0",
                 "drupal/colorbox": "~1.0",
                 "drupal/components": "~1.0",
@@ -6977,9 +7025,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/31ea097f487319be3e3b26e9d13c5ddafb7c312b/?at=feature/2.x"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/e9bc041bc616f4d73bf4ac3c375e3f7159725340/?at=feature/2.x"
             },
-            "time": "2019-03-08T16:19:42+00:00"
+            "time": "2019-03-27T18:31:49+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -11857,12 +11905,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
-                "reference": "b84f016ba519cbb8d3405476a7aa44acbc986811"
+                "reference": "9687bf07325ecfb381c557b258f996838b9e9a6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/b84f016ba519cbb8d3405476a7aa44acbc986811.zip",
-                "reference": "b84f016ba519cbb8d3405476a7aa44acbc986811",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/9687bf07325ecfb381c557b258f996838b9e9a6d.zip",
+                "reference": "9687bf07325ecfb381c557b258f996838b9e9a6d",
                 "shasum": ""
             },
             "require": {
@@ -11881,7 +11929,7 @@
             ],
             "description": "Drupal admin theme for Rain distribution",
             "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
-            "time": "2019-03-21T13:45:51+00:00"
+            "time": "2019-03-27T18:13:03+00:00"
         },
         {
             "name": "mediacurrent/rain_theme",
