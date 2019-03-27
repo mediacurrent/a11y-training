@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca684764e532c0a33b2c84d14dacde0c",
+    "content-hash": "172f82957e0aaa288f9cb43c4530f564",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3626,182 +3626,41 @@
             }
         },
         {
-            "name": "drupal/guardr",
-            "version": "1.0.0-alpha7",
+            "name": "drupal/guardr_core",
+            "version": "dev-feature/3008975-composer-json",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/guardr",
-                "reference": "8.x-1.0-alpha7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/guardr-8.x-1.0-alpha7.zip",
-                "reference": "8.x-1.0-alpha7",
-                "shasum": "654d0611d8a9d2a18137caf27822361300421740"
+                "url": "https://git.drupal.org/project/guardr_core.git",
+                "reference": "e03609fe11957bd1a6e01d2269fc2068b0bbc5fc"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/autologout": "^1.0",
+                "drupal/diff": "^1.0-rc2",
+                "drupal/hacked": "^2.0-beta2",
+                "drupal/login_history": "^1.0",
+                "drupal/login_security": "^1.5",
+                "drupal/mass_pwreset": "^1.0-alpha5",
+                "drupal/password_policy": "^3.0-alpha4",
+                "drupal/r4032login": "^1.1",
+                "drupal/seckit": "^1.1",
+                "drupal/security_review": "1.x-dev",
+                "drupal/session_limit": "^1.0-beta3",
+                "drupal/username_enumeration_prevention": "^1.0-beta2"
             },
-            "type": "drupal-profile",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha7",
-                    "datestamp": "1547505704",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
+            "type": "drupal-module",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "bdone",
-                    "homepage": "https://www.drupal.org/user/687670"
-                },
-                {
-                    "name": "bfodeke",
-                    "homepage": "https://www.drupal.org/user/913084"
-                },
-                {
-                    "name": "catapipper",
-                    "homepage": "https://www.drupal.org/user/2837663"
-                },
-                {
-                    "name": "deekayen",
-                    "homepage": "https://www.drupal.org/user/972"
-                },
-                {
-                    "name": "deetergp",
-                    "homepage": "https://www.drupal.org/user/1134002"
-                },
-                {
-                    "name": "drupalninja99",
-                    "homepage": "https://www.drupal.org/user/42248"
-                },
-                {
-                    "name": "joestewart",
-                    "homepage": "https://www.drupal.org/user/64620"
-                },
-                {
-                    "name": "mgbellaire",
-                    "homepage": "https://www.drupal.org/user/1831932"
-                },
-                {
-                    "name": "mikebarkas",
-                    "homepage": "https://www.drupal.org/user/1982966"
-                },
-                {
-                    "name": "nathanc",
-                    "homepage": "https://www.drupal.org/user/1656668"
-                },
-                {
-                    "name": "shrop",
-                    "homepage": "https://www.drupal.org/user/14767"
-                },
-                {
-                    "name": "sjpatrick",
-                    "homepage": "https://www.drupal.org/user/114741"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/guardr",
-            "support": {
-                "source": "http://cgit.drupalcode.org/guardr"
-            }
-        },
-        {
-            "name": "drupal/guardr_core",
-            "version": "1.0.0-alpha2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/guardr_core",
-                "reference": "8.x-1.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/guardr_core-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "1b448f954d7ce09c0bf76e2366b7c01060064485"
-            },
-            "require": {
-                "drupal/autologout": "*",
-                "drupal/core": "*",
-                "drupal/diff": "*",
-                "drupal/login_history": "*",
-                "drupal/login_security": "*",
-                "drupal/password_policy": "*",
-                "drupal/r4032login": "*",
-                "drupal/seckit": "*",
-                "drupal/session_limit": "*",
-                "drupal/username_enumeration_prevention": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1514920084",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "bdone",
-                    "homepage": "https://www.drupal.org/user/687670"
-                },
-                {
-                    "name": "catapipper",
-                    "homepage": "https://www.drupal.org/user/2837663"
-                },
-                {
-                    "name": "deekayen",
-                    "homepage": "https://www.drupal.org/user/972"
-                },
-                {
-                    "name": "deetergp",
-                    "homepage": "https://www.drupal.org/user/1134002"
-                },
-                {
-                    "name": "drupalninja99",
-                    "homepage": "https://www.drupal.org/user/42248"
-                },
-                {
-                    "name": "mikebarkas",
-                    "homepage": "https://www.drupal.org/user/1982966"
-                },
-                {
-                    "name": "shrop",
-                    "homepage": "https://www.drupal.org/user/14767"
-                },
-                {
-                    "name": "sjpatrick",
-                    "homepage": "https://www.drupal.org/user/114741"
-                },
-                {
-                    "name": "tecto",
-                    "homepage": "https://www.drupal.org/user/54020"
+                    "name": "Mark Shrophire",
+                    "homepage": "https://www.drupal.org/u/shrop",
+                    "role": "Maintainer"
                 }
             ],
             "description": "Custom configuration related to the Guardr distribution.",
-            "homepage": "https://www.drupal.org/project/guardr_core",
-            "support": {
-                "source": "http://cgit.drupalcode.org/guardr_core"
-            }
+            "homepage": "https://drupal.org/project/guardr_core",
+            "time": "2018-11-01T19:04:20+00:00"
         },
         {
             "name": "drupal/hacked",
@@ -4710,9 +4569,6 @@
                         "status": "not-covered",
                         "message": "Alpha releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "'Field field_last_password_reset is unknown' while importing configuration on site without password_policy activated": "https://www.drupal.org/files/issues/password-policy-config-import-field-error-2771129-49-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4810,11 +4666,17 @@
         },
         {
             "name": "drupal/r4032login",
-            "version": "dev-1.x",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/r4032login",
-                "reference": "a10444360f0d738e7517616fa30d60b5b1da0871"
+                "reference": "8.x-1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/r4032login-8.x-1.1.zip",
+                "reference": "8.x-1.1",
+                "shasum": "dd9dc2daf8e4b960d2be1fe58e19a8ec4fbf30f1"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -4825,11 +4687,11 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.1-beta1+0-dev",
-                    "datestamp": "1532080685",
+                    "version": "8.x-1.1",
+                    "datestamp": "1533913684",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 }
             },
@@ -4883,8 +4745,7 @@
             "homepage": "https://www.drupal.org/project/r4032login",
             "support": {
                 "source": "http://cgit.drupalcode.org/r4032login"
-            },
-            "time": "2018-07-20T09:54:11+00:00"
+            }
         },
         {
             "name": "drupal/redirect",
@@ -6438,109 +6299,6 @@
                 "html"
             ],
             "time": "2018-02-23T01:58:20+00:00"
-        },
-        {
-            "name": "guardrdistro/guardr",
-            "version": "dev-core-86",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupal.org/project/guardr.git",
-                "reference": "706dfd659c31382fc1ce945b786949a67c4e2f69"
-            },
-            "require": {
-                "composer/installers": "^1.2",
-                "cweagans/composer-patches": "^1.6",
-                "drupal-composer/drupal-scaffold": "^2.2",
-                "drupal/autologout": "1.0",
-                "drupal/console": "^1.0.2",
-                "drupal/core": "~8.6.2",
-                "drupal/diff": "~1.0",
-                "drupal/guardr": "~1.0.0",
-                "drupal/guardr_core": "~1.0.0",
-                "drupal/hacked": "~2.0",
-                "drupal/login_history": "~1.0",
-                "drupal/login_security": "~1.0",
-                "drupal/mass_pwreset": "~1.0",
-                "drupal/password_policy": "~3.0",
-                "drupal/r4032login": "1.x-dev",
-                "drupal/seckit": "~1.0",
-                "drupal/security_review": "1.x-dev",
-                "drupal/session_limit": "~1.0",
-                "drupal/username_enumeration_prevention": "~1.0",
-                "drush/drush": "^8.1.15",
-                "webflo/drupal-finder": "^1.0.0",
-                "webmozart/path-util": "^2.3"
-            },
-            "conflict": {
-                "drupal/drupal": "*"
-            },
-            "require-dev": {
-                "webflo/drupal-core-require-dev": "~8.6.0"
-            },
-            "type": "drupal-profile",
-            "extra": {
-                "installer-paths": {
-                    "web/core": [
-                        "type:drupal-core"
-                    ],
-                    "web/libraries/{$name}": [
-                        "type:drupal-library"
-                    ],
-                    "web/modules/contrib/{$name}": [
-                        "type:drupal-module"
-                    ],
-                    "web/profiles/contrib/{$name}": [
-                        "type:drupal-profile"
-                    ],
-                    "web/themes/contrib/{$name}": [
-                        "type:drupal-theme"
-                    ],
-                    "drush/contrib/{$name}": [
-                        "type:drupal-drush"
-                    ]
-                },
-                "patches": {
-                    "drupal/password_policy": {
-                        "'Field field_last_password_reset is unknown' while importing configuration on site without password_policy activated": "https://www.drupal.org/files/issues/password-policy-config-import-field-error-2771129-49-D8.patch"
-                    }
-                }
-            },
-            "autoload": {
-                "classmap": [
-                    "scripts/composer/ScriptHandler.php"
-                ]
-            },
-            "scripts": {
-                "drupal-scaffold": [
-                    "DrupalComposer\\DrupalScaffold\\Plugin::scaffold"
-                ],
-                "pre-install-cmd": [
-                    "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-                ],
-                "pre-update-cmd": [
-                    "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-                ],
-                "post-install-cmd": [
-                    "@drupal-scaffold",
-                    "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-                ],
-                "post-update-cmd": [
-                    "@drupal-scaffold",
-                    "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-                ]
-            },
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Mark Shrophire",
-                    "homepage": "https://www.drupal.org/u/shrop",
-                    "role": "Maintainer"
-                }
-            ],
-            "description": "Project template for Drupal 8 sites built with the Guardr distribution.",
-            "time": "2018-11-01T15:20:27+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -11905,12 +11663,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
-                "reference": "9687bf07325ecfb381c557b258f996838b9e9a6d"
+                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/9687bf07325ecfb381c557b258f996838b9e9a6d.zip",
-                "reference": "9687bf07325ecfb381c557b258f996838b9e9a6d",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/dff8158a88a8ff61ebc28558d4f9eef528b524d4.zip",
+                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4",
                 "shasum": ""
             },
             "require": {
@@ -11929,7 +11687,7 @@
             ],
             "description": "Drupal admin theme for Rain distribution",
             "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
-            "time": "2019-03-27T18:13:03+00:00"
+            "time": "2019-03-27T18:20:51+00:00"
         },
         {
             "name": "mediacurrent/rain_theme",
@@ -13710,7 +13468,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "guardrdistro/guardr": 20,
+        "drupal/guardr_core": 20,
         "mediacurrent/mis_rain": 20,
         "drupal/drupal-driver": 20,
         "mediacurrent/ci-tests": 20,
