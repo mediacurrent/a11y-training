@@ -20,7 +20,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://git.drupal.org/project/guardr.git"
+      "url": "https://git.drupal.org/project/guardr_core.git"
     },
     {
       "type": "vcs",
@@ -33,7 +33,7 @@
     "drupal-composer/drupal-scaffold": "^2.2",
     "drupal/core": "~8.6.2",
     "drush/drush": "^8.1.15",
-    "guardrdistro/guardr": "dev-core-86",
+    "drupal/guardr_core": "dev-feature/3008975-composer-json",
     "mediacurrent/mis_rain": "dev-feature/2.x",
     "oomphinc/composer-installers-extender": "^1.1",
     "webflo/drupal-finder": "^1.0.0",
