@@ -10,26 +10,26 @@
   field_thumbnail:
     - entity: media
       bundle: image
-      name: "Paragraphs Test"
+      name: 'Paragraphs Test'
       status: 1
       field_image:
-        - "#process":
-            callback: "file"
+        - '#process':
+            callback: 'file'
             args:
-              - "image"
-              - type: "module"
-                filename: "blue.png"
-            alt: "Paragraphs Test"
+              - 'image'
+              - type: 'module'
+                filename: 'blue.png'
+            alt: 'Paragraphs Test'
   field_content:
     - entity: paragraph
       type: page_title
       field_header_tag:
-        - value: "h1"
+        - value: 'h1'
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ""
+          summary: ''
           value: |
             <p>This page demonstrates all the various types of paragraphs that can be added to most pages.</p>
     - entity: paragraph
@@ -38,36 +38,36 @@
         - entity: paragraph
           type: card
           field_title:
-            - value: "Paragraphs Test"
+            - value: 'Paragraphs Test'
           field_media:
             - entity: media
               bundle: image
-              name: "Paragraphs Test"
+              name: 'Paragraphs Test'
               status: 1
               field_image:
-                - "#process":
-                    callback: "file"
+                - '#process':
+                    callback: 'file'
                     args:
-                      - "image"
-                      - type: "module"
-                        filename: "blue.png"
-                    alt: "Paragraphs Test"
+                      - 'image'
+                      - type: 'module'
+                        filename: 'blue.png'
+                    alt: 'Paragraphs Test'
         - entity: paragraph
           type: card
           field_title:
-            - value: "Welcome"
+            - value: 'Welcome'
           field_media:
             - entity: media
               bundle: video
-              name: "Test Video"
+              name: 'Test Video'
               status: 1
               field_media_video_embed_field:
-                - value: "https://www.youtube.com/watch?v=ktCgVopf7D0"
+                - value: 'https://www.youtube.com/watch?v=ktCgVopf7D0'
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ""
+          summary: ''
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
     - entity: paragraph
@@ -76,68 +76,68 @@
         - entity: paragraph
           type: card
           field_title:
-            - value: "Lorem ipsum dolor sit amet"
+            - value: 'Lorem ipsum dolor sit amet'
           field_link:
-            - uri: "http://google.com/"
-              title: "Read more"
+            - uri: 'http://google.com/'
+              title: 'Read more'
           field_media:
             - entity: media
               bundle: image
-              name: "Promo 1"
+              name: 'Promo 1'
               status: 1
               field_image:
-                - "#process":
-                    callback: "file"
+                - '#process':
+                    callback: 'file'
                     args:
-                      - "image"
-                      - type: "module"
-                        filename: "blue.png"
-                    alt: "Test"
+                      - 'image'
+                      - type: 'module'
+                        filename: 'blue.png'
+                    alt: 'Test'
         - entity: paragraph
           type: card
           field_title:
-            - value: "Phasellus auctor, turpis"
+            - value: 'Phasellus auctor, turpis'
           field_link:
-            - uri: "http://google.com/"
-              title: "Read more"
+            - uri: 'http://google.com/'
+              title: 'Read more'
           field_media:
             - entity: media
               bundle: image
-              name: "Promo 1"
+              name: 'Promo 1'
               status: 1
               field_image:
-                - "#process":
-                    callback: "file"
+                - '#process':
+                    callback: 'file'
                     args:
-                      - "image"
-                      - type: "module"
-                        filename: "blue.png"
-                    alt: "Test"
+                      - 'image'
+                      - type: 'module'
+                        filename: 'blue.png'
+                    alt: 'Test'
         - entity: paragraph
           type: card
           field_title:
-            - value: "Nam fringilla enim leo"
+            - value: 'Nam fringilla enim leo'
           field_link:
-            - uri: "http://google.com/"
-              title: "Read more"
+            - uri: 'http://google.com/'
+              title: 'Read more'
           field_media:
             - entity: media
               bundle: image
-              name: "Promo 3"
+              name: 'Promo 3'
               status: 1
               field_image:
-                - "#process":
-                    callback: "file"
+                - '#process':
+                    callback: 'file'
                     args:
-                      - "image"
-                      - type: "module"
-                        filename: "blue.png"
-                    alt: "Test"
+                      - 'image'
+                      - type: 'module'
+                        filename: 'blue.png'
+                    alt: 'Test'
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ""
+          summary: ''
           value: |
             <h2 style="text-align: center; font-weight: bold;">Get a feel for the campus day to day life</h2>
             <p style="text-align: center; font-style: italic; font-size: 120%;">Proin pellentesque lacus tempor dui placerat, sed sodales nisl eleifend.</p>
@@ -147,263 +147,246 @@
         - entity: paragraph
           type: card
           field_title:
-            - value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+            - value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit'
           field_link:
-            - uri: "http://google.com/"
-              title: "Read more"
+            - uri: 'http://google.com/'
+              title: 'Read more'
           field_media:
             - entity: media
               bundle: image
-              name: "Promo 1"
+              name: 'Promo 1'
               status: 1
               field_image:
-                - "#process":
-                    callback: "file"
+                - '#process':
+                    callback: 'file'
                     args:
-                      - "image"
-                      - type: "module"
-                        filename: "blue.png"
-                    alt: "Test"
+                      - 'image'
+                      - type: 'module'
+                        filename: 'blue.png'
+                    alt: 'Test'
         - entity: paragraph
           type: card
           field_title:
-            - value: "Phasellus auctor, turpis at luctus finibus"
+            - value: 'Phasellus auctor, turpis at luctus finibus'
           field_link:
-            - uri: "http://google.com/"
-              title: "Read more"
+            - uri: 'http://google.com/'
+              title: 'Read more'
           field_media:
             - entity: media
               bundle: image
-              name: "Promo 1"
+              name: 'Promo 1'
               status: 1
               field_image:
-                - "#process":
-                    callback: "file"
+                - '#process':
+                    callback: 'file'
                     args:
-                      - "image"
-                      - type: "module"
-                        filename: "blue.png"
-                    alt: "Test"
-    - entity: paragraph
-      type: text
-      field_body:
-        - format: "full_html"
-          summary: ""
-          value: |
-            <h2>Events view</h2>
+                      - 'image'
+                      - type: 'module'
+                        filename: 'blue.png'
+                    alt: 'Test'
     - entity: paragraph
       type: view
+      field_title:
+        - value: 'Events view'
       field_view_ref:
-        - target_id: "events"
-          display_id: "block_1"
+        - target_id: 'events'
+          display_id: 'block_1'
     - entity: paragraph
-      type: text
-      field_body:
-        - format: "full_html"
-          summary: ""
-          value: |
-            <h2>FAQ Items</h2>
+      type: view
+      field_title:
+        - value: 'Content by type view (course)'
+      field_view_ref:
+        - target_id: 'recent_content_by_type'
+          display_id: 'block_1'
+          argument: 'course'
     - entity: paragraph
       type: faq
+      field_title:
+        - value: 'FAQ Items'
       field_faq_items:
         - entity: paragraph
           type: faq_qa
           field_question:
-            - value: "Fringilla ullamcorper nibh ullamcorper vitae"
+            - value: 'Fringilla ullamcorper nibh ullamcorper vitae'
           field_answer:
             - format: "full_html"
-              summary: ""
+              summary: ''
               value: |
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
         - entity: paragraph
           type: faq_qa
           field_question:
-            - value: "hasellus auctor, turpis at luctus finibus"
+            - value: 'hasellus auctor, turpis at luctus finibus'
           field_answer:
             - format: "full_html"
-              summary: ""
+              summary: ''
               value: |
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
         - entity: paragraph
           type: faq_qa
           field_question:
-            - value: "Fringilla ullamcorper nibh ullamcorper vitae"
+            - value: 'Fringilla ullamcorper nibh ullamcorper vitae'
           field_answer:
             - format: "full_html"
-              summary: ""
+              summary: ''
               value: |
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
         - entity: paragraph
           type: faq_qa
           field_question:
-            - value: "hasellus auctor, turpis at luctus finibus"
+            - value: 'hasellus auctor, turpis at luctus finibus'
           field_answer:
             - format: "full_html"
-              summary: ""
+              summary: ''
               value: |
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna. Curabitur imperdiet sapien libero, fringilla ullamcorper nibh ullamcorper vitae. Proin sed luctus augue. Nam fringilla enim leo, non sodales ante gravida ac.</p>
-    - entity: paragraph
-      type: text
-      field_body:
-        - format: "full_html"
-          summary: ""
-          value: |
-            <h2>Gallery</h2>
     - entity: paragraph
       type: gallery
+      field_title:
+        - value: 'Gallery'
       field_body:
         - format: "full_html"
-          summary: ""
+          summary: ''
           value: |
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       field_media_items:
         - entity: media
           bundle: image
-          name: "Item 1"
+          name: 'Item 1'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Item 1"
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Item 1'
         - entity: media
           bundle: image
-          name: "Item 2"
+          name: 'Item 2'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Item 2"
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Item 2'
         - entity: media
           bundle: image
-          name: "Item 3"
+          name: 'Item 3'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Item 3"
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Item 3'
         - entity: media
           bundle: image
-          name: "Item 4"
+          name: 'Item 4'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Item 4"
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Item 4'
         - entity: media
           bundle: image
-          name: "Item 5"
+          name: 'Item 5'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Item 5"
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Item 5'
         - entity: media
           bundle: video
-          name: "Drupal 8"
+          name: 'Drupal 8'
           status: 1
           field_media_video_embed_field:
-            - value: "https://www.youtube.com/watch?v=ktCgVopf7D0"
-    - entity: paragraph
-      type: text
-      field_body:
-        - format: "full_html"
-          summary: ""
-          value: |
-            <h2>Media - Image</h2>
+            - value: 'https://www.youtube.com/watch?v=ktCgVopf7D0'
     - entity: paragraph
       type: media
+      field_value:
+        = value: 'Media - Image'
       field_media:
         - entity: media
           bundle: image
-          name: "Item 6"
+          name: 'Item 6'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Item 6"
-    - entity: paragraph
-      type: text
-      field_body:
-        - format: "full_html"
-          summary: ""
-          value: |
-            <h2>Media - Video</h2>
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Item 6'
     - entity: paragraph
       type: media
+      field_value:
+        = value: 'Media - Video'
       field_media:
         - entity: media
           bundle: video
-          name: "Drupal 8"
+          name: 'Drupal 8'
           status: 1
           field_media_video_embed_field:
-            - value: "https://www.youtube.com/watch?v=ktCgVopf7D0"
+            - value: 'https://www.youtube.com/watch?v=ktCgVopf7D0'
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ""
+          summary: ''
           value: |
-            <h2>Individual Promo</h2>
+            <h2>Test Promo</h2>
     - entity: paragraph
       type: card
+      field_value:
+        = value: 'Individual Promo'
       field_link:
-        - uri: "http://google.com/"
-          title: "Read more"
+        - uri: 'http://google.com/'
+          title: 'Read more'
       field_media:
         - entity: media
           bundle: image
-          name: "Test media"
+          name: 'Test media'
           status: 1
           field_image:
-            - "#process":
-                callback: "file"
+            - '#process':
+                callback: 'file'
                 args:
-                  - "image"
-                  - type: "module"
-                    filename: "blue.png"
-                alt: "Test media"
+                  - 'image'
+                  - type: 'module'
+                    filename: 'blue.png'
+                alt: 'Test media'
       field_short_title:
-        - value: "Test short title"
+        - value: 'Test short title'
       field_subhead:
-        - value: "Test subhead"
+        - value: 'Test subhead'
       field_summary:
-        - value: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna."
-      field_title:
-        - value: "Test Promo"
+        - value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus auctor, turpis at luctus finibus, erat lectus convallis velit, at sodales purus lacus quis magna.'
     - entity: paragraph
       type: text
       field_body:
         - format: "full_html"
-          summary: ""
+          summary: ''
           value: |
             <h2>Quote</h2>
     - entity: paragraph
       type: quote
       field_author:
-        - value: "Jane Austen / Sense and Sensibility"
+        - value: 'Jane Austen / Sense and Sensibility'
       field_quote:
-        - value: "It isn't what we say or think that defines us, but what we do."
+        - value: 'It isn''t what we say or think that defines us, but what we do.'
