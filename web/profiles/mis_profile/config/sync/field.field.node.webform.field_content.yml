@@ -1,0 +1,71 @@
+uuid: 91cec409-8c5e-4f02-a67e-fb04a559a83a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.webform
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: wDO2WfNB1_mYHl2HnGl2Oox8ZmLJ0RQCv_qgedWXpyg
+id: node.webform.field_content
+field_name: field_content
+entity_type: node
+bundle: webform
+label: Content
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      faq_qa: faq_qa
+    target_bundles_drag_drop:
+      card:
+        weight: 11
+        enabled: false
+      card_list:
+        weight: 12
+        enabled: false
+      embed:
+        weight: 13
+        enabled: false
+      faq:
+        weight: 14
+        enabled: false
+      faq_qa:
+        enabled: true
+        weight: 15
+      form:
+        weight: 16
+        enabled: false
+      gallery:
+        weight: 17
+        enabled: false
+      hero_media:
+        weight: 18
+        enabled: false
+      map:
+        weight: 19
+        enabled: false
+      media:
+        weight: 20
+        enabled: false
+      page_title:
+        weight: 21
+        enabled: false
+      quote:
+        weight: 23
+        enabled: false
+      text:
+        weight: 25
+        enabled: false
+      view:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

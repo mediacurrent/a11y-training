@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: archived
+label: Archived
+published: false
+default_revision: true
+weight: -10
+_core:
+  default_config_hash: PsDYfuyQ-HqOtkdK1udsHxSjzI5-QXZctQ9bxjrp3k8

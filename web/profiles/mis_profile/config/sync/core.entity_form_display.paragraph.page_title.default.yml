@@ -1,0 +1,24 @@
+uuid: e0b29567-1768-4bdc-8715-aa8c42e5026d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.page_title.field_header_tag
+    - paragraphs.paragraphs_type.page_title
+_core:
+  default_config_hash: NVMLaSrT3QXCMxg9YypJ6iU9ia8Omym-P0bGS8J5Pa4
+id: paragraph.page_title.default
+targetEntityType: paragraph
+bundle: page_title
+mode: default
+content:
+  field_header_tag:
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

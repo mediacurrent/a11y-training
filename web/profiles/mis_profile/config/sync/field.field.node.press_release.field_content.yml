@@ -1,0 +1,71 @@
+uuid: 09e5a461-b852-4331-9aec-e23bdf936331
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content
+    - node.type.press_release
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: bvSdh-hxaw7qkpkdWC_ukrwJbt2ubIya8RQgWsP_wwA
+id: node.press_release.field_content
+field_name: field_content
+entity_type: node
+bundle: press_release
+label: Content
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      faq_qa: faq_qa
+    target_bundles_drag_drop:
+      card:
+        weight: 11
+        enabled: false
+      card_list:
+        weight: 12
+        enabled: false
+      embed:
+        weight: 13
+        enabled: false
+      faq:
+        weight: 14
+        enabled: false
+      faq_qa:
+        enabled: true
+        weight: 15
+      form:
+        weight: 16
+        enabled: false
+      gallery:
+        weight: 17
+        enabled: false
+      hero_media:
+        weight: 18
+        enabled: false
+      map:
+        weight: 19
+        enabled: false
+      media:
+        weight: 20
+        enabled: false
+      page_title:
+        weight: 21
+        enabled: false
+      quote:
+        weight: 23
+        enabled: false
+      text:
+        weight: 25
+        enabled: false
+      view:
+        weight: 26
+        enabled: false
+field_type: entity_reference_revisions

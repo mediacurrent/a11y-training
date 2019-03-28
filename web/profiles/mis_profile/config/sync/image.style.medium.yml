@@ -1,0 +1,18 @@
+uuid: 3f9e2990-d4a5-48a8-ba84-4cc37b492558
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: v7aBRb8ABnrYqMUiWgtItHWjLEN4Sm4TrgFUJwIIIDE
+name: medium
+label: 'Medium (16:9)'
+effects:
+  bddf0d06-42f9-4c75-a700-a33cafa25ea0:
+    uuid: bddf0d06-42f9-4c75-a700-a33cafa25ea0
+    id: image_scale_and_crop
+    weight: 0
+    data:
+      width: 220
+      height: 124
+      upscale: false
+      anchor: center-center

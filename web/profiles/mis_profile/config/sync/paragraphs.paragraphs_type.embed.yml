@@ -1,0 +1,11 @@
+uuid: dd044035-a938-405f-8f62-a8a2de303dde
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dH91KWeI1LFTBclDAKuuHixvMr5cIbWAZtppOmAXANM
+id: embed
+label: Embed
+icon_uuid: e19ec30a-bbbe-4c44-b404-0472d38154ea
+description: 'Third party embedded script.'
+behavior_plugins: {  }

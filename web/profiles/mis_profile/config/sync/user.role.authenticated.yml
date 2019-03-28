@@ -1,0 +1,15 @@
+uuid: b20f4829-4a52-4c1d-b145-2b03ebf4f2eb
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Swq9FZzFR7Hdl1QjTxO5k1qLOirmVEUpQlTKhL4xvE0
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'access shortcuts'
+  - 'use text format basic_html'
+  - 'view search api pages'

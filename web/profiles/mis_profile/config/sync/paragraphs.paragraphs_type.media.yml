@@ -1,0 +1,11 @@
+uuid: d856f126-5575-43cc-a086-c57419cf9d44
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: f8_lScxwqerNbY43nsPEztqfo3sVfu5J2xT0PLP4BJo
+id: media
+label: Media
+icon_uuid: 963990b1-52d0-47ac-a918-63f7bc7fdfa9
+description: ''
+behavior_plugins: {  }

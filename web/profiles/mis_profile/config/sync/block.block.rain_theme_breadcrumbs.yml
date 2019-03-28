@@ -1,0 +1,22 @@
+uuid: f4a3ad54-83c1-4b90-9535-1d8d1ae19c83
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rain_theme
+_core:
+  default_config_hash: LNObvOw3oGi7_PyUy_OEMevpOSRNIeHpTuVhg2hxmmo
+id: rain_theme_breadcrumbs
+theme: rain_theme
+region: breadcrumb
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

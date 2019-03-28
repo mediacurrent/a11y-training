@@ -1,0 +1,58 @@
+uuid: 23466a5c-2ef0-4219-949d-a8c3d792b05a
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.event.field_content
+    - field.field.node.event.field_dates
+    - field.field.node.event.field_link
+    - field.field.node.event.field_meta_tags
+    - field.field.node.event.field_short_title
+    - field.field.node.event.field_summary
+    - field.field.node.event.field_thumbnail
+    - node.type.event
+  module:
+    - datetime_range
+    - user
+_core:
+  default_config_hash: ac_6LPP7J9jFgYGetLw1sEGJQy3E-KtbnsJA7yAbg4o
+id: node.event.teaser
+targetEntityType: node
+bundle: event
+mode: teaser
+content:
+  field_dates:
+    type: daterange_default
+    weight: 1
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: short
+      separator: '-'
+    third_party_settings: {  }
+    region: content
+  field_summary:
+    type: basic_string
+    weight: 2
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_thumbnail:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: medium
+      link: false
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_content: true
+  field_link: true
+  field_meta_tags: true
+  field_short_title: true
+  langcode: true
+  links: true

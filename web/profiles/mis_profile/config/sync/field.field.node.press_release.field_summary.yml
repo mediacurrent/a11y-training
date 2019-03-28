@@ -1,0 +1,21 @@
+uuid: e759d0c3-9eae-4e67-a66a-dda0a4b41927
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.press_release
+_core:
+  default_config_hash: a-t3jDxQkWR4A1l1liR_IswE8C4QUjgxHk7AvyzEfM4
+id: node.press_release.field_summary
+field_name: field_summary
+entity_type: node
+bundle: press_release
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

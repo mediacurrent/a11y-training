@@ -1,0 +1,32 @@
+uuid: bc014df4-eea4-46d0-8aef-a0e3e79ae12b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_media
+    - media.type.image
+    - media.type.video
+    - paragraphs.paragraphs_type.media
+_core:
+  default_config_hash: sJSXL4CiRPwgsRggza5dMeQj61lyBkf5wAEBNumlzlw
+id: paragraph.media.field_media
+field_name: field_media
+entity_type: paragraph
+bundle: media
+label: Media
+description: 'Media library item.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+      video: video
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: image
+field_type: entity_reference

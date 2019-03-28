@@ -1,0 +1,17 @@
+uuid: 7c963992-841e-47d3-b712-51da93858416
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: SZyqroeCfKYqWkS7hP8Fl-ZYvPRjv5rKH2Sa3tC1X2s
+name: card_list
+label: 'Card List (16:9)'
+effects:
+  60ee39a1-9e21-4d92-ab81-3483dd867068:
+    uuid: 60ee39a1-9e21-4d92-ab81-3483dd867068
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 360
+      anchor: center-center

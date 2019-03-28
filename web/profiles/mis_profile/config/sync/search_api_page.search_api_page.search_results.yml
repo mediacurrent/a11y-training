@@ -1,0 +1,31 @@
+uuid: ee588ea4-cf30-4b66-b79d-32ad25d5c4cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - search_api.index.default_site_search
+_core:
+  default_config_hash: s0m9drksQlyYPSrBwZsylRJwTrbNBC1yaFtntprHzME
+id: search_results
+label: 'Search Results'
+path: search
+clean_url: true
+show_all_when_no_keys: false
+index: default_site_search
+limit: 10
+searched_fields:
+  rendered_item: rendered_item
+style: view_modes
+view_mode_configuration:
+  'entity:node_article': teaser
+  'entity:node_blog': teaser
+  'entity:node_event': teaser
+  'entity:node_homepage': teaser
+  'entity:node_landing': teaser
+  'entity:node_page': teaser
+  'entity:node_press_release': teaser
+  'entity:node_product': teaser
+  'entity:node_profile': teaser
+  'entity:node_resource': teaser
+  'entity:node_webform': teaser
+show_search_form: true

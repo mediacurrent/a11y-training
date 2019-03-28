@@ -1,0 +1,12 @@
+uuid: ec76015b-2700-4254-970c-39fa89dcd80b
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 3hxTCUMUIrp88pXLLd5awRshmn82oAO8a8d9uljQzDs
+id: media.original
+label: Original
+targetEntityType: media
+cache: true

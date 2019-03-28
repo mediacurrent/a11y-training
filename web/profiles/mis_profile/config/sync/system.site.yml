@@ -1,0 +1,14 @@
+name: MC
+mail: admin@example.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /homepage/welcome
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: N5Mba5jZqPN4UDmatfiC8WENVEr-Y9RfT6w82uQoUZo
+uuid: 9fa9e2cb-003c-451f-85f9-afbb05a95267

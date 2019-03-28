@@ -1,0 +1,25 @@
+uuid: 7d880970-ce1e-4cb1-89a0-cba428fec5cc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_meta_tags
+    - node.type.press_release
+  module:
+    - metatag
+_core:
+  default_config_hash: c23_C7yQkYDbQQYG2Tbp_Hrpf-0GcatI7bdlz1H59gc
+id: node.press_release.field_meta_tags
+field_name: field_meta_tags
+entity_type: node
+bundle: press_release
+label: 'Meta tags'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'a:0:{}'
+default_value_callback: ''
+settings: {  }
+field_type: metatag

@@ -1,0 +1,15 @@
+uuid: 08752447-3cb4-4776-9aa5-a5777bf364cc
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: JhhxVse3yaa27KT1-B8Jffe14n0wFqdPasCQZ_rRy_g
+id: anonymous
+label: 'Anonymous user'
+weight: -10
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format restricted_html'
+  - 'view media'
+  - 'view search api pages'

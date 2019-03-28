@@ -1,0 +1,24 @@
+uuid: 7686ce33-8d33-4ede-ba58-af4033b9040d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.press_release
+_core:
+  default_config_hash: HurtbMv7Re-2DHcz8sftCIuWbQF9tc3x4mOXDId1X3w
+id: node.press_release.promote
+field_name: promote
+entity_type: node
+bundle: press_release
+label: 'Promoted to front press_release'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

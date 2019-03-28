@@ -894,7 +894,7 @@ $databases['default']['default'] = array (
 );
 
 // Uncomment and modify after sync directory has been updated for the first time.
-# $config_directories['sync'] = $app_root . '/profiles/mis_profile/config/sync';
+$config_directories['sync'] = $app_root . '/profiles/mis_profile/config/sync';
 
 # Change once this profile has been renamed.
 $settings['install_profile'] = 'mis_profile';

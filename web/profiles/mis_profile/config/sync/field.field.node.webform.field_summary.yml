@@ -1,0 +1,21 @@
+uuid: c1b9ea3b-79af-4917-b057-b8a9fc6da94d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_summary
+    - node.type.webform
+_core:
+  default_config_hash: LL9MI4Uba_xzBNbpd3W8iWcXcXBYqlkX0PWQxeJR_q8
+id: node.webform.field_summary
+field_name: field_summary
+entity_type: node
+bundle: webform
+label: Summary
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

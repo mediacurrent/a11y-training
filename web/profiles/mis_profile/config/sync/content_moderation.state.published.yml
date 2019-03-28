@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: published
+label: Published
+published: true
+default_revision: true
+weight: -7
+_core:
+  default_config_hash: 459R_1Sqd0NoS2ti8gVjoSy7B6O3AIkGDnh_nmt3faE

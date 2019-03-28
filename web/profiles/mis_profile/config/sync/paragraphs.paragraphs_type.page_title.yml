@@ -1,0 +1,11 @@
+uuid: ce90d594-ff78-4e69-be96-44a5f45b1b0a
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: VRLZcBmrHOfnD9OHj7RGXKHWjYHtik67nknnsixSybo
+id: page_title
+label: 'Page Title'
+icon_uuid: 102c9db1-8b23-4411-b4ca-068eada99f8a
+description: ''
+behavior_plugins: {  }

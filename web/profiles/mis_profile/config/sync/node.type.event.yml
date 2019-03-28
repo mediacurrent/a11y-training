@@ -1,0 +1,32 @@
+uuid: 86b9c2e8-52ca-4173-b962-243d5e2c3083
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: true
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: true
+    unpublish_required: false
+    unpublish_revision: false
+_core:
+  default_config_hash: YpK5o-yS98VgyY303huO_gL4OePkpqQw3S3XjXxs-kg
+name: Event
+type: event
+description: 'Use <em>events</em> for your event calendar, such as an online webinar or public meeting.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

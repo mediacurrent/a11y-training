@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - content_moderation.state.archived
+    - content_moderation.state.published
+id: archived_published
+label: Un-archive
+stateFrom: archived
+stateTo: published
+weight: -8
+_core:
+  default_config_hash: INwV2HWuF9mUVj6dt3ub9zNef9mIO1alHBu8hVaokWg

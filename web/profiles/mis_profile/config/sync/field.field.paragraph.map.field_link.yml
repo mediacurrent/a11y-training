@@ -1,0 +1,25 @@
+uuid: 242ddf5c-7437-4e19-b38f-6362ebdb6899
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.map
+  module:
+    - link
+_core:
+  default_config_hash: JhV9EFDadH0OoG3YuEYAvdPLaE8GXV8qwt1WHSCGlZU
+id: paragraph.map.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: map
+label: Link
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

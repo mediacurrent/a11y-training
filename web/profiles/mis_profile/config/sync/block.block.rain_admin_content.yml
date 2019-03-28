@@ -1,0 +1,22 @@
+uuid: b8acc836-31af-4809-891c-6a988695651d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - rain_admin
+_core:
+  default_config_hash: _s1G9ORbTxjm9Ejue3Xq49xd5NKqXM2Rsqa8Xel47yk
+id: rain_admin_content
+theme: rain_admin
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

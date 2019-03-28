@@ -1,0 +1,147 @@
+uuid: b25cae00-85b0-4286-8c11-8397369c5d8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.product.field_content
+    - field.field.node.product.field_link
+    - field.field.node.product.field_meta_tags
+    - field.field.node.product.field_product_desc
+    - field.field.node.product.field_product_media
+    - field.field.node.product.field_short_title
+    - field.field.node.product.field_summary
+    - field.field.node.product.field_thumbnail
+    - node.type.product
+  module:
+    - entity_reference_revisions
+    - link
+    - slick_media
+    - text
+    - user
+_core:
+  default_config_hash: hn0Z2I6cHiyDamm7C83fTLBop4zG3XK3yWOX9ab1sVI
+id: node.product.default
+targetEntityType: node
+bundle: product
+mode: default
+content:
+  field_content:
+    type: entity_reference_revisions_entity_view
+    weight: 4
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 3
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_product_desc:
+    weight: 2
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_product_media:
+    type: slick_media
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      vanilla: true
+      optionset: default
+      optionset_thumbnail: ''
+      skin: default
+      skin_thumbnail: ''
+      image_style: ''
+      thumbnail_style: ''
+      responsive_image_style: ''
+      thumbnail_effect: ''
+      thumbnail_position: ''
+      media_switch: ''
+      box_style: ''
+      box_media_style: ''
+      box_caption: ''
+      box_caption_custom: ''
+      view_mode: original
+      ratio: ''
+      iframe_lazy: true
+      image: ''
+      title: ''
+      link: ''
+      layout: ''
+      thumbnail_caption: ''
+      class: ''
+      cache: 0
+      override: true
+      overridables:
+        dots: dots
+        draggable: draggable
+        infinite: infinite
+        arrows: '0'
+        autoplay: '0'
+        mouseWheel: '0'
+        randomize: '0'
+        variableWidth: '0'
+      sizes: ''
+      current_view_mode: default
+      background: false
+      caption:
+        field_image: '0'
+        field_caption: '0'
+        field_copyright: '0'
+        field_description: '0'
+      breakpoints:
+        xs:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        sm:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        md:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        lg:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+        xl:
+          breakpoint: ''
+          image_style: ''
+          width: ''
+      thumbnail: ''
+      preserve_keys: false
+      visible_items: 0
+      skin_arrows: ''
+      skin_dots: ''
+      style: ''
+      icon: ''
+      grid: 0
+      grid_header: ''
+      grid_medium: 0
+      grid_small: 0
+      id: ''
+      overlay: ''
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_meta_tags: true
+  field_short_title: true
+  field_summary: true
+  field_thumbnail: true
+  langcode: true
+  links: true

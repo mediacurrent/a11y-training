@@ -1,0 +1,12 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - content_moderation.state.published
+id: published_published
+label: Publish
+stateFrom: published
+stateTo: published
+weight: -8
+_core:
+  default_config_hash: ZJVGmXCOi5F0gSPkzpgbaL-Fi7dCN2cxxiS94ascp1A

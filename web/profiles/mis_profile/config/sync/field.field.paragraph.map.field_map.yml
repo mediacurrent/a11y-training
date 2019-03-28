@@ -1,0 +1,23 @@
+uuid: 424fd798-cbd0-4540-b0db-e0eb16dcc32e
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_map
+    - paragraphs.paragraphs_type.map
+  module:
+    - geolocation
+_core:
+  default_config_hash: F3KbYvQVMIrhDv_1oJ5xRFry7LvIw3zldm_nGn5fIko
+id: paragraph.map.field_map
+field_name: field_map
+entity_type: paragraph
+bundle: map
+label: Map
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: geolocation

@@ -1,0 +1,32 @@
+uuid: 3b7635cd-4779-4ca4-816b-47a1b412798f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_image
+    - image.style.large
+    - media.type.image
+  module:
+    - svg_image
+_core:
+  default_config_hash: marYWnvDwLmoMYiCCjyMSN__xg34jCYVj38v2O44q8o
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

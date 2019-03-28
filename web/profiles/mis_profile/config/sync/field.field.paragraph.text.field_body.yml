@@ -1,0 +1,24 @@
+uuid: dc205014-6f44-4460-8dd1-5f31fdc22068
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_body
+    - paragraphs.paragraphs_type.text
+  module:
+    - text
+_core:
+  default_config_hash: BKSj1l8v-1IB-dCUGXhcYoyLWV0Zy8Uspr3G6iwrCLw
+id: paragraph.text.field_body
+field_name: field_body
+entity_type: paragraph
+bundle: text
+label: Body
+description: 'Wysiwyg copy.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+field_type: text_with_summary

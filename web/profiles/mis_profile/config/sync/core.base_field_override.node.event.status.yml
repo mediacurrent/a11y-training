@@ -1,0 +1,24 @@
+uuid: 4237d93b-864f-40f5-8528-42be89094c20
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.event
+_core:
+  default_config_hash: 07x47VzoAuIAOrZh0gA2WfI9XfkTF9mnlYkwVlGSFt8
+id: node.event.status
+field_name: status
+entity_type: node
+bundle: event
+label: 'Publishing status'
+description: 'A boolean indicating whether the node is published.'
+required: false
+translatable: true
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

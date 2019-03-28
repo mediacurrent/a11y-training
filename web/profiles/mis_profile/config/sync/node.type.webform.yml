@@ -1,0 +1,35 @@
+uuid: 9f6a3720-eb4c-4c53-b5c2-29fa1669b2d2
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - webform_node
+  module:
+    - menu_ui
+    - scheduler
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+  scheduler:
+    expand_fieldset: when_required
+    fields_display_mode: vertical_tab
+    publish_enable: false
+    publish_past_date: error
+    publish_required: false
+    publish_revision: false
+    publish_touch: false
+    unpublish_enable: false
+    unpublish_required: false
+    unpublish_revision: false
+_core:
+  default_config_hash: aO_D-O9PvPaDjX5swJhALr5c1WvLHYTG0XdqncT1k1c
+name: Webform
+type: webform
+description: 'A basic page with a webform attached.'
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

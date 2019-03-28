@@ -1,0 +1,14 @@
+type_settings:
+  entity_types:
+    node:
+      - article
+      - blog
+      - event
+      - homepage
+      - landing
+      - page
+      - press_release
+      - product
+      - profile
+      - resource
+      - webform

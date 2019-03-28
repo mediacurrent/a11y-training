@@ -1,0 +1,23 @@
+uuid: 92009d6b-33ab-4fab-8b99-628b4dd9af2e
+langcode: en
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: SR1AFxfXUCAAGmpRTqQ_aF-OGackjks4pLO3AIbn-1o
+id: media.field_copyright
+field_name: field_copyright
+entity_type: media
+type: string
+settings:
+  max_length: 255
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,24 @@
+uuid: e70e8554-a9b8-4bee-8d10-e4bfb5a12060
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.landing
+_core:
+  default_config_hash: zcttoJOi7WN-lrnjnTQ872Gb00EW1Y6ubmvq09bcgRI
+id: node.landing.promote
+field_name: promote
+entity_type: node
+bundle: landing
+label: 'Promoted to front landing'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

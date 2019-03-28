@@ -1,0 +1,59 @@
+uuid: 2494ba27-469a-4960-b45d-35b1d1a80f4c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.paragraph.hero_media
+    - field.field.paragraph.card.field_card_layout
+    - field.field.paragraph.card.field_link
+    - field.field.paragraph.card.field_media
+    - field.field.paragraph.card.field_short_title
+    - field.field.paragraph.card.field_subhead
+    - field.field.paragraph.card.field_summary
+    - field.field.paragraph.card.field_thumb
+    - field.field.paragraph.card.field_title
+    - paragraphs.paragraphs_type.card
+  module:
+    - link
+_core:
+  default_config_hash: 3mENM6DmWa38kuU1dHV1EHUVfzU7ML5VYrQTin8JO-I
+id: paragraph.card.hero_media
+targetEntityType: paragraph
+bundle: card
+mode: hero_media
+content:
+  field_link:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+  field_media:
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: slick
+      link: false
+    third_party_settings: {  }
+    type: entity_reference_entity_view
+    region: content
+  field_title:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+hidden:
+  field_card_layout: true
+  field_short_title: true
+  field_subhead: true
+  field_summary: true
+  field_thumb: true

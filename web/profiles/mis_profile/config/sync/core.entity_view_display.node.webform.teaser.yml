@@ -1,0 +1,45 @@
+uuid: af23a20e-c088-4c1f-82b2-aecb11421872
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.webform.field_content
+    - field.field.node.webform.field_meta_tags
+    - field.field.node.webform.field_short_title
+    - field.field.node.webform.field_summary
+    - field.field.node.webform.field_thumbnail
+    - field.field.node.webform.webform
+    - node.type.webform
+  module:
+    - user
+_core:
+  default_config_hash: 3UNzADfZJUlOUjH_73HgNBIN3AOfvYNfr7eFH0QzeC0
+id: node.webform.teaser
+targetEntityType: node
+bundle: webform
+mode: teaser
+content:
+  field_summary:
+    type: basic_string
+    weight: 1
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  field_thumbnail:
+    type: entity_reference_entity_view
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      view_mode: medium
+      link: false
+    third_party_settings: {  }
+hidden:
+  field_content: true
+  field_meta_tags: true
+  field_short_title: true
+  langcode: true
+  links: true
+  webform: true

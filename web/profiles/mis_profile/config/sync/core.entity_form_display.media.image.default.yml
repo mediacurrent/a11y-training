@@ -1,0 +1,76 @@
+uuid: 9690bf57-4d08-4da7-8489-6780e92e6fb9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.image.field_image
+    - image.style.large
+    - media.type.image
+  module:
+    - content_moderation
+    - path
+    - svg_image
+_core:
+  default_config_hash: HOONWJBpk40U6cjWznjibtyVWblMQqV7TVQ3vs4OylM
+id: media.image.default
+targetEntityType: media
+bundle: image
+mode: default
+content:
+  created:
+    type: datetime_timestamp
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 11
+    settings:
+      preview_image_style: large
+      progress_indicator: throbber
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 100
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 100
+    region: content
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

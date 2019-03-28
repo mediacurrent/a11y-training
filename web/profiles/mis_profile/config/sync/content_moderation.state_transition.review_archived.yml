@@ -1,0 +1,13 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - content_moderation.state.archived
+    - content_moderation.state.needs_review
+id: review_archived
+label: Archive
+stateFrom: needs_review
+stateTo: archived
+weight: -10
+_core:
+  default_config_hash: dxmyTFJSB1kWSgMHT5BSVd5HEFSNBS75Ec_5yUWjmgo
