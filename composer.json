@@ -1,115 +1,137 @@
 {
-    "name": "mediacurrent/mis_rain_vagrant",
-    "description": "Vagrant template for use with Mediacurrent Rain install profile.",
-    "type": "project",
-    "license": "GPL-2.0-or-later",
-    "authors": [
-        {
-            "name": "",
-            "role": ""
-        }
-    ],
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "composer",
-            "url": "https://asset-packagist.org"
-        },
-        {
-            "type": "vcs",
-            "url": "https://git.drupal.org/project/guardr.git"
-        }
-    ],
-    "require": {
-        "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6",
-        "oomphinc/composer-installers-extender": "^1.1",
-        "drupal-composer/drupal-scaffold": "^2.2",
-        "drupal/core": "~8.6.2",
-        "drush/drush": "^8.1.15",
-        "guardrdistro/guardr": "dev-core-86",
-        "mediacurrent/mis_rain": "~1.0",
-        "webflo/drupal-finder": "^1.0.0",
-        "webmozart/path-util": "^2.3"
-    },
-    "require-dev": {
-        "behat/mink": "~1.7",
-        "behat/mink-goutte-driver": "~1.2",
-        "boedah/robo-drush": "~3.0.0",
-        "drupal/coder": "~8.2.12",
-        "drupal/drupal-driver": "dev-master",
-        "drupal/drupal-extension": "*",
-        "drush-ops/behat-drush-endpoint": "*",
-        "jcalderonzumba/gastonjs": "~1.0.2",
-        "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
-        "symfony/css-selector": "~2.8 | ~3.0",
-        "mediacurrent/ci-scripts": "~1.2",
-        "mediacurrent/ci-tests": "dev-master",
-        "joestewart/robo-drupalvm": "~1.0.2",
-        "joestewart/robo-vagrant": "~1.0.0",
-        "mediacurrent/mis_vagrant": "~4.7.0",
-        "mikey179/vfsStream": "~1.2",
-        "phpro/grumphp": "^0.11.6",
-        "phpunit/phpunit": ">=4.8.28 <5"
-    },
-    "conflict": {
-        "drupal/drupal": "*"
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
-    "config": {
-        "sort-packages": true,
-        "bin-dir": "bin/",
-        "platform": {
-            "php": "7.1"
-        }
-    },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ]
-    },
-    "scripts": {
-        "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
-        "robo": "$(pwd)/bin/robo --ansi --load-from $(pwd)/scripts",
-        "pre-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "pre-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
-        ],
-        "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ],
-        "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
-        ]
-    },
-    "extra": {
-        "composer-exit-on-patch-failure": true,
-        "installer-types": [
-            "library",
-            "bower-asset",
-            "npm-asset"
-        ],
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library", "type:bower-asset", "type:npm-asset"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
-        },
-        "patches": {
-            "drupal/core": {
-                "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch"
-            },
-            "drush/drush": {
-                "https://github.com/drush-ops/drush/issues/2285": "https://patch-diff.githubusercontent.com/raw/drush-ops/drush/pull/2286.patch"
-            }
-        }
+  "name": "mediacurrent/mis_rain_vagrant",
+  "description": "Vagrant template for use with Mediacurrent Rain install profile.",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "",
+      "role": ""
     }
+  ],
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://git.drupal.org/project/guardr_core.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/mediacurrent/mis_rain.git"
+    }
+  ],
+  "require": {
+    "composer/installers": "^1.2",
+    "cweagans/composer-patches": "^1.6",
+    "drupal-composer/drupal-scaffold": "^2.2",
+    "drupal/console": "^1.0.2",
+    "drupal/core": "~8.6.2",
+    "drush/drush": "^8.1.15",
+    "drupal/guardr_core": "dev-feature/3008975-composer-json",
+    "mediacurrent/mis_rain": "dev-feature/2.x",
+    "oomphinc/composer-installers-extender": "^1.1",
+    "webflo/drupal-finder": "^1.0.0",
+    "webmozart/path-util": "^2.3"
+  },
+  "require-dev": {
+    "behat/mink": "~1.7",
+    "behat/mink-goutte-driver": "~1.2",
+    "boedah/robo-drush": "~3.0.0",
+    "drupal/coder": "~8.2.12",
+    "drupal/drupal-driver": "dev-master",
+    "drupal/drupal-extension": "*",
+    "drupal/thunder_admin": "^2.3",
+    "drush-ops/behat-drush-endpoint": "*",
+    "jcalderonzumba/gastonjs": "~1.0.2",
+    "jcalderonzumba/mink-phantomjs-driver": "~0.3.1",
+    "symfony/css-selector": "~2.8 | ~3.0",
+    "mediacurrent/ci-scripts": "~1.2",
+    "mediacurrent/ci-tests": "dev-master",
+    "mediacurrent/rain_admin": "dev-master",
+    "mediacurrent/rain_theme": "dev-master",
+    "joestewart/robo-drupalvm": "~1.0.2",
+    "joestewart/robo-vagrant": "~1.0.0",
+    "mediacurrent/mis_vagrant": "~4.7.0",
+    "mikey179/vfsStream": "~1.2",
+    "phpro/grumphp": "^0.11.6",
+    "phpunit/phpunit": ">=4.8.28 <5"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "bin-dir": "bin/",
+    "platform": {
+      "php": "7.1"
+    }
+  },
+  "autoload": {
+    "classmap": [
+      "scripts/composer/ScriptHandler.php"
+    ]
+  },
+  "scripts": {
+    "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
+    "robo": "$(pwd)/bin/robo --ansi --load-from $(pwd)/scripts",
+    "pre-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+    ],
+    "pre-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::checkComposerVersion"
+    ],
+    "post-install-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ],
+    "post-update-cmd": [
+      "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+    ]
+  },
+  "extra": {
+    "composer-exit-on-patch-failure": true,
+    "installer-types": [
+      "library",
+      "bower-asset",
+      "npm-asset"
+    ],
+    "installer-paths": {
+      "web/core": [
+        "type:drupal-core"
+      ],
+      "web/libraries/{$name}": [
+        "type:drupal-library",
+        "type:bower-asset",
+        "type:npm-asset"
+      ],
+      "web/modules/contrib/{$name}": [
+        "type:drupal-module"
+      ],
+      "web/profiles/contrib/{$name}": [
+        "type:drupal-profile"
+      ],
+      "web/themes/contrib/{$name}": [
+        "type:drupal-theme"
+      ],
+      "drush/contrib/{$name}": [
+        "type:drupal-drush"
+      ]
+    },
+    "patches": {
+      "drupal/core": {
+        "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch"
+      },
+      "drush/drush": {
+        "https://github.com/drush-ops/drush/issues/2285": "https://patch-diff.githubusercontent.com/raw/drush-ops/drush/pull/2286.patch"
+      }
+    }
+  }
 }
