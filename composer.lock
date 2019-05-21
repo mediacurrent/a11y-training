@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ddbac78aca41ac6e6b2012cf51e96b0",
+    "content-hash": "cb24cb7f1ae6a792a2de86f188721a81",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -123,42 +123,6 @@
             "time": "2017-12-20T14:37:45+00:00"
         },
         {
-            "name": "bower-asset/ckeditor",
-            "version": "4.5.11",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ckeditor/ckeditor-releases.git",
-                "reference": "48155a1e1c7e84736b5a166ad3f33acea2a51255"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ckeditor/ckeditor-releases/zipball/48155a1e1c7e84736b5a166ad3f33acea2a51255",
-                "reference": "48155a1e1c7e84736b5a166ad3f33acea2a51255"
-            },
-            "type": "bower-asset",
-            "license": [
-                "For licensing, see LICENSE.md or http://ckeditor.com/license."
-            ]
-        },
-        {
-            "name": "bower-asset/colorbox",
-            "version": "1.6.4",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:jackmoore/colorbox.git",
-                "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jackmoore/colorbox/zipball/bac78120c6ca9e63370cc317ab6f400129cd6608",
-                "reference": "bac78120c6ca9e63370cc317ab6f400129cd6608"
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.3.2"
-            },
-            "type": "bower-asset"
-        },
-        {
             "name": "bower-asset/dropzone",
             "version": "v5.5.0",
             "source": {
@@ -172,103 +136,6 @@
                 "reference": "08b9e0a763b54a685404dea523a9c54242fbe1b9"
             },
             "type": "bower-asset"
-        },
-        {
-            "name": "bower-asset/fullcalendar",
-            "version": "v3.10.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fullcalendar/fullcalendar.git",
-                "reference": "5c59f51a68c20c047fa4188f7db162d190789364"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fullcalendar/fullcalendar/zipball/5c59f51a68c20c047fa4188f7db162d190789364",
-                "reference": "5c59f51a68c20c047fa4188f7db162d190789364"
-            },
-            "require": {
-                "bower-asset/jquery": ">=2,<4.0",
-                "bower-asset/moment": ">=2.20.1,<3.0.0"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "bower-asset/jquery",
-            "version": "3.4.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:jquery/jquery-dist.git",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jquery/jquery-dist/zipball/15bc73803f76bc53b654b9fdbbbc096f56d7c03d",
-                "reference": "15bc73803f76bc53b654b9fdbbbc096f56d7c03d"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "bower-asset/jquery.easing",
-            "version": "v1.3.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:jozefizso/bower-jquery-easing.git",
-                "reference": "7ddc8b25d24c78bbae8d00a3ae43bf3f274ec8b5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/jozefizso/bower-jquery-easing/zipball/7ddc8b25d24c78bbae8d00a3ae43bf3f274ec8b5",
-                "reference": "7ddc8b25d24c78bbae8d00a3ae43bf3f274ec8b5"
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.2.1"
-            },
-            "type": "bower-asset"
-        },
-        {
-            "name": "bower-asset/moment",
-            "version": "2.24.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/moment/moment.git",
-                "reference": "96d0d6791ab495859d09a868803d31a55c917de1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/moment/moment/zipball/96d0d6791ab495859d09a868803d31a55c917de1",
-                "reference": "96d0d6791ab495859d09a868803d31a55c917de1"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
-        },
-        {
-            "name": "bower-asset/slick-carousel",
-            "version": "v1.8.1",
-            "source": {
-                "type": "git",
-                "url": "git@github.com:kenwheeler/slick.git",
-                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kenwheeler/slick/zipball/0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee",
-                "reference": "0f40c9d6a02a5c08b5f4dd80fdada3a854a59bee"
-            },
-            "require": {
-                "bower-asset/jquery": ">=1.7"
-            },
-            "type": "bower-asset",
-            "license": [
-                "MIT"
-            ]
         },
         {
             "name": "brumann/polyfill-unserialize",
@@ -1677,57 +1544,6 @@
             "time": "2019-03-30T10:41:38+00:00"
         },
         {
-            "name": "drupal/addtoany",
-            "version": "1.12.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/addtoany.git",
-                "reference": "8.x-1.12"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/addtoany-8.x-1.12.zip",
-                "reference": "8.x-1.12",
-                "shasum": "f66b3cb0a95b500e4802e8ff9c29af04554327d8"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.12",
-                    "datestamp": "1554702781",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "AddToAny",
-                    "homepage": "https://www.drupal.org/user/2640913"
-                },
-                {
-                    "name": "micropat",
-                    "homepage": "https://www.drupal.org/user/260224"
-                }
-            ],
-            "description": "Share buttons by AddToAny, including the AddToAny universal sharing button, Facebook, Twitter, Google+, Pinterest, and over 100 more on the <a href=\"https://www.addtoany.com/\" target=\"_blank\">AddToAny</a> platform.",
-            "homepage": "https://www.drupal.org/project/addtoany",
-            "support": {
-                "source": "https://git.drupalcode.org/project/addtoany"
-            }
-        },
-        {
             "name": "drupal/admin_toolbar",
             "version": "1.26.0",
             "source": {
@@ -1936,189 +1752,6 @@
             "homepage": "http://drupal.org/project/autologout",
             "support": {
                 "source": "http://cgit.drupalcode.org/autologout"
-            }
-        },
-        {
-            "name": "drupal/blazy",
-            "version": "1.0.0-rc4",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/blazy.git",
-                "reference": "8.x-1.0-rc4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/blazy-8.x-1.0-rc4.zip",
-                "reference": "8.x-1.0-rc4",
-                "shasum": "cea1185469fc6d19a5162f550e12f26cff193062"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc4",
-                    "datestamp": "1545235980",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Gaus Surahman",
-                    "homepage": "https://www.drupal.org/u/gausarts",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Contributors",
-                    "homepage": "https://www.drupal.org/node/2663268/committers",
-                    "role": "Contributor"
-                },
-                {
-                    "name": "sun",
-                    "homepage": "https://www.drupal.org/user/54136"
-                }
-            ],
-            "description": "Provides basic bLazy integration for lazy loading and multi-serving images.",
-            "homepage": "https://drupal.org/project/blazy",
-            "keywords": [
-                "Drupal",
-                "bLazy",
-                "lazyload"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/blazy",
-                "issues": "https://drupal.org/project/issues/blazy"
-            }
-        },
-        {
-            "name": "drupal/ckeditor_media_embed",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ckeditor_media_embed.git",
-                "reference": "8.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor_media_embed-8.x-1.3.zip",
-                "reference": "8.x-1.3",
-                "shasum": "c063c9085c695092eb3255cedeee2e3b1ed67ed1"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.3",
-                    "datestamp": "1524666180",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Jody Lynn",
-                    "homepage": "https://www.drupal.org/user/112500"
-                },
-                {
-                    "name": "grndlvl",
-                    "homepage": "https://www.drupal.org/user/103553"
-                },
-                {
-                    "name": "jlamp",
-                    "homepage": "https://www.drupal.org/user/3507613"
-                }
-            ],
-            "description": "Adds the Media Embed CKEditor plugins to Drupal.",
-            "homepage": "https://www.drupal.org/project/embed",
-            "support": {
-                "source": "https://drupal.org/project/ckeditor_media_embed",
-                "issues": "https://drupal.org/project/issues/ckeditor_media_embed"
-            }
-        },
-        {
-            "name": "drupal/colorbox",
-            "version": "1.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/colorbox.git",
-                "reference": "8.x-1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/colorbox-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "bf163fd2d28450c1324512ad7e6a72fc48d274e3"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1493051344",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "RenatoG",
-                    "homepage": "https://www.drupal.org/user/3326031"
-                },
-                {
-                    "name": "Sam152",
-                    "homepage": "https://www.drupal.org/user/1485048"
-                },
-                {
-                    "name": "frjo",
-                    "homepage": "https://www.drupal.org/user/5546"
-                },
-                {
-                    "name": "jdwfly",
-                    "homepage": "https://www.drupal.org/user/298179"
-                },
-                {
-                    "name": "rsmylski",
-                    "homepage": "https://www.drupal.org/user/1324348"
-                }
-            ],
-            "description": "A light-weight, customizable lightbox plugin for jQuery.",
-            "homepage": "https://www.drupal.org/project/colorbox",
-            "support": {
-                "source": "https://cgit.drupalcode.org/colorbox",
-                "issues": "https://www.drupal.org/project/colorbox"
             }
         },
         {
@@ -2430,16 +2063,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "8.7.0",
+            "version": "8.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "5da135abcf5dbc0204e9a75c87381c7553a74d5e"
+                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/5da135abcf5dbc0204e9a75c87381c7553a74d5e",
-                "reference": "5da135abcf5dbc0204e9a75c87381c7553a74d5e",
+                "url": "https://api.github.com/repos/drupal/core/zipball/969f24810fb31eac71dd624de593f551bd6dc2a3",
+                "reference": "969f24810fb31eac71dd624de593f551bd6dc2a3",
                 "shasum": ""
             },
             "require": {
@@ -2484,7 +2117,7 @@
                 "symfony/validator": "~3.4.0",
                 "symfony/yaml": "~3.4.5",
                 "twig/twig": "^1.38.2",
-                "typo3/phar-stream-wrapper": "^2.0.1",
+                "typo3/phar-stream-wrapper": "^2.1.1",
                 "zendframework/zend-diactoros": "^1.1",
                 "zendframework/zend-feed": "^2.4"
             },
@@ -2673,63 +2306,7 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
-            "time": "2019-05-01T18:39:15+00:00"
-        },
-        {
-            "name": "drupal/crop",
-            "version": "1.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/crop.git",
-                "reference": "8.x-1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/crop-8.x-1.5.zip",
-                "reference": "8.x-1.5",
-                "shasum": "bb275293508cb3988ca6ab766dc1f6ecc22cc03d"
-            },
-            "require": {
-                "drupal/core": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.5",
-                    "datestamp": "1516357085",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Drupal Media Team",
-                    "homepage": "https://www.drupal.org/user/3260690"
-                },
-                {
-                    "name": "slashrsm",
-                    "homepage": "https://www.drupal.org/user/744628"
-                },
-                {
-                    "name": "woprrr",
-                    "homepage": "https://www.drupal.org/user/858604"
-                }
-            ],
-            "description": "Provides storage and API for image crops.",
-            "homepage": "https://www.drupal.org/project/crop",
-            "support": {
-                "source": "http://cgit.drupalcode.org/crop",
-                "issues": "https://www.drupal.org/project/issues/crop"
-            }
+            "time": "2019-05-08T16:00:55+00:00"
         },
         {
             "name": "drupal/ctools",
@@ -3058,75 +2635,12 @@
             }
         },
         {
-            "name": "drupal/entity",
-            "version": "1.0.0-rc2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/entity.git",
-                "reference": "8.x-1.0-rc2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity-8.x-1.0-rc2.zip",
-                "reference": "8.x-1.0-rc2",
-                "shasum": "616b4c095dc8cf67f318f2d5504aed1c4d6dd363"
-            },
-            "require": {
-                "drupal/core": "^8.6"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc2",
-                    "datestamp": "1553254684",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "RC releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Berdir",
-                    "homepage": "https://www.drupal.org/user/214652"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "dawehner",
-                    "homepage": "https://www.drupal.org/user/99340"
-                },
-                {
-                    "name": "dixon_",
-                    "homepage": "https://www.drupal.org/user/239911"
-                },
-                {
-                    "name": "fago",
-                    "homepage": "https://www.drupal.org/user/16747"
-                }
-            ],
-            "description": "Provides expanded entity APIs, which will be moved to Drupal core one day.",
-            "homepage": "http://drupal.org/project/entity",
-            "support": {
-                "source": "https://git.drupalcode.org/project/entity"
-            }
-        },
-        {
             "name": "drupal/entity_browser",
             "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/entity_browser.git",
-                "reference": "a43312090c914bd7d23da2eff8ab3eca131f9945"
+                "reference": "52b48b1571d6f8924b5c8bafebe9882ee10f782e"
             },
             "require": {
                 "drupal/core": "~8.4"
@@ -3145,8 +2659,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.1+37-dev",
-                    "datestamp": "1557244685",
+                    "version": "8.x-2.1+42-dev",
+                    "datestamp": "1557743881",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3205,7 +2719,7 @@
                 "issues": "http://drupal.org/project/issues/entity_browser",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
             },
-            "time": "2019-05-07T17:26:58+00:00"
+            "time": "2019-05-17T12:11:11+00:00"
         },
         {
             "name": "drupal/entity_browser_entity_form",
@@ -3464,57 +2978,6 @@
                 "source": "https://git.drupalcode.org/project/field_group"
             },
             "time": "2019-03-28T22:28:15+00:00"
-        },
-        {
-            "name": "drupal/focal_point",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/focal_point.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/focal_point-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "dec88d870aaa21e99984d6328ccf95b8120ee472"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/crop": "*"
-            },
-            "require-dev": {
-                "drupal/crop": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1553270584",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "bleen",
-                    "homepage": "https://www.drupal.org/user/77375"
-                }
-            ],
-            "description": "Allows users to specify the focal point of an image for use during cropping.",
-            "homepage": "https://www.drupal.org/project/focal_point",
-            "support": {
-                "source": "https://git.drupalcode.org/project/focal_point"
-            }
         },
         {
             "name": "drupal/geolocation",
@@ -3790,67 +3253,6 @@
             }
         },
         {
-            "name": "drupal/libraries",
-            "version": "3.0.0-alpha1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/libraries.git",
-                "reference": "8.x-3.0-alpha1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/libraries-8.x-3.0-alpha1.zip",
-                "reference": "8.x-3.0-alpha1",
-                "shasum": "bb07036b1eaeea7d736fc7e72416238830cd8d67"
-            },
-            "require": {
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-3.0-alpha1",
-                    "datestamp": "1517046484",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Pol",
-                    "homepage": "https://www.drupal.org/user/47194"
-                },
-                {
-                    "name": "rjacobs",
-                    "homepage": "https://www.drupal.org/user/422459"
-                },
-                {
-                    "name": "sun",
-                    "homepage": "https://www.drupal.org/user/54136"
-                },
-                {
-                    "name": "tstoeckler",
-                    "homepage": "https://www.drupal.org/user/107158"
-                }
-            ],
-            "description": "Allows version-dependent and shared usage of external libraries in Drupal.",
-            "homepage": "http://drupal.org/project/libraries",
-            "support": {
-                "source": "http://cgit.drupalcode.org/libraries",
-                "issues": "http://drupal.org/project/issues/libraries",
-                "irc": "irc://irc.freenode.org/drupal-contribute"
-            }
-        },
-        {
             "name": "drupal/linkit",
             "version": "5.0.0-beta8",
             "source": {
@@ -4105,75 +3507,12 @@
             }
         },
         {
-            "name": "drupal/media_entity_actions",
-            "version": "1.0.0-alpha2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/media_entity_actions.git",
-                "reference": "8.x-1.0-alpha2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/media_entity_actions-8.x-1.0-alpha2.zip",
-                "reference": "8.x-1.0-alpha2",
-                "shasum": "9bf7881f11fa182c1b6673c4cc8c32ce3a1bdb81"
-            },
-            "require": {
-                "drupal/core": "^8.4.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-alpha2",
-                    "datestamp": "1510588386",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "marcoscano",
-                    "homepage": "https://www.drupal.org/user/1288796"
-                },
-                {
-                    "name": "phenaproxima",
-                    "homepage": "https://www.drupal.org/user/205645"
-                },
-                {
-                    "name": "seanB",
-                    "homepage": "https://www.drupal.org/user/545912"
-                },
-                {
-                    "name": "slashrsm",
-                    "homepage": "https://www.drupal.org/user/744628"
-                }
-            ],
-            "description": "Provides Actions plugins to be used with Media in core",
-            "homepage": "https://www.drupal.org/project/media_entity_actions",
-            "support": {
-                "source": "http://cgit.drupalcode.org/media_entity_actions"
-            }
-        },
-        {
             "name": "drupal/media_entity_browser",
             "version": "dev-2.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/media_entity_browser.git",
-                "reference": "ff5532ec8a7a8aff89415624de1b17d7697557ad"
+                "reference": "5a2c6cc65819866ca6ab87d8ee1364493a83b5a4"
             },
             "require": {
                 "drupal/core": "*",
@@ -4185,7 +3524,8 @@
                 "drupal/ctools": "*",
                 "drupal/entity_browser": "^2",
                 "drupal/entity_browser_entity_form": "^2",
-                "drupal/inline_entity_form": "^1"
+                "drupal/inline_entity_form": "^1",
+                "drupal/video_embed_field": "^2"
             },
             "type": "drupal-module",
             "extra": {
@@ -4193,8 +3533,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha1+17-dev",
-                    "datestamp": "1522916284",
+                    "version": "8.x-2.0-alpha1+20-dev",
+                    "datestamp": "1558335489",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4226,9 +3566,9 @@
             "description": "This module provides an Entity Browser for Media.",
             "homepage": "https://www.drupal.org/project/media_entity_browser",
             "support": {
-                "source": "http://cgit.drupalcode.org/media_entity_browser"
+                "source": "https://git.drupalcode.org/project/media_entity_browser"
             },
-            "time": "2019-01-04T04:57:51+00:00"
+            "time": "2019-05-20T06:57:00+00:00"
         },
         {
             "name": "drupal/metatag",
@@ -4551,11 +3891,11 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "176dd7eca67bbce80ca16e37fa3e94323647bf0d"
+                "reference": "6ac0529f55f3ddf252ffb921a399946e87795a74"
             },
             "require": {
-                "drupal/core": "*",
-                "drupal/ctools": "*"
+                "drupal/core": "^8.5.0",
+                "drupal/ctools": "^3.1"
             },
             "type": "drupal-module",
             "extra": {
@@ -4563,15 +3903,12 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha4+12-dev",
-                    "datestamp": "1544199486",
+                    "version": "8.x-3.0-alpha4+16-dev",
+                    "datestamp": "1558114385",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
-                },
-                "patches_applied": {
-                    "'Field field_last_password_reset is unknown' while importing configuration on site without password_policy activated": "https://www.drupal.org/files/issues/password-policy-config-import-field-error-2771129-49-D8.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4605,7 +3942,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
             },
-            "time": "2018-12-07T16:11:36+00:00"
+            "time": "2019-05-17T19:04:42+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -5320,224 +4657,6 @@
             }
         },
         {
-            "name": "drupal/slick",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/slick.git",
-                "reference": "8.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick-8.x-1.1.zip",
-                "reference": "8.x-1.1",
-                "shasum": "8565c1e74cfb5e6316c1cdb357868107303f2be4"
-            },
-            "require": {
-                "drupal/blazy": "~1.0",
-                "drupal/core": "~8.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.1",
-                    "datestamp": "1545236281",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                },
-                "patches_applied": {
-                    "Composer / bower integration? Configurable paths?": "https://www.drupal.org/files/issues/2019-01-25/2907371-composer-integration-23.patch"
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "arshadcn",
-                    "homepage": "https://www.drupal.org/user/571032"
-                },
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                },
-                {
-                    "name": "thalles",
-                    "homepage": "https://www.drupal.org/user/3589086"
-                }
-            ],
-            "description": "Slick carousel, the last carousel you'll ever need.",
-            "homepage": "https://drupal.org/project/slick",
-            "keywords": [
-                "Drupal",
-                "carousel",
-                "slideshow"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/slick",
-                "issues": "https://drupal.org/project/issues/slick"
-            }
-        },
-        {
-            "name": "drupal/slick_media",
-            "version": "2.0.0-alpha3",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/slick_media.git",
-                "reference": "8.x-2.0-alpha3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_media-8.x-2.0-alpha3.zip",
-                "reference": "8.x-2.0-alpha3",
-                "shasum": "977a8a38c83c3fcd701230953747c2b7b6118ec4"
-            },
-            "require": {
-                "drupal/core": "^8.4",
-                "drupal/slick": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.0-alpha3",
-                    "datestamp": "1545238380",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Alpha releases are not covered by Drupal security advisories."
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "axel.rutz",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
-                    "name": "chr.fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716"
-                },
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Provides Slick carousel integration with Media entity.",
-            "homepage": "https://www.drupal.org/project/slick_media",
-            "support": {
-                "source": "http://cgit.drupalcode.org/slick_media"
-            }
-        },
-        {
-            "name": "drupal/slick_paragraphs",
-            "version": "1.0.0-rc1",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/slick_paragraphs.git",
-                "reference": "8.x-1.0-rc1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_paragraphs-8.x-1.0-rc1.zip",
-                "reference": "8.x-1.0-rc1",
-                "shasum": "2db06a243a34396192fc3a9ad5c8884b9e39afe4"
-            },
-            "require": {
-                "drupal/core": "~8.0",
-                "drupal/paragraphs": "*",
-                "drupal/slick": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-rc1",
-                    "datestamp": "1485195184",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Provides Slick integration with Paragraphs.",
-            "homepage": "https://www.drupal.org/project/slick_paragraphs",
-            "support": {
-                "source": "http://cgit.drupalcode.org/slick_paragraphs"
-            }
-        },
-        {
-            "name": "drupal/slick_views",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/slick_views.git",
-                "reference": "8.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/slick_views-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "fdb8c73f26da5e8f06f478d76b1fa7b5d153428d"
-            },
-            "require": {
-                "drupal/core": "*",
-                "drupal/slick": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1546870081",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "gausarts",
-                    "homepage": "https://www.drupal.org/user/159062"
-                }
-            ],
-            "description": "Provides Slick carousel integration with Views.",
-            "homepage": "https://www.drupal.org/project/slick_views",
-            "support": {
-                "source": "http://cgit.drupalcode.org/slick_views"
-            }
-        },
-        {
             "name": "drupal/svg_image",
             "version": "1.9.0",
             "source": {
@@ -5751,17 +4870,17 @@
         },
         {
             "name": "drupal/video_embed_field",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/video_embed_field.git",
-                "reference": "8.x-2.0"
+                "reference": "8.x-2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.0.zip",
-                "reference": "8.x-2.0",
-                "shasum": "e864f090b3cb9405376ca324d81ace83613e2019"
+                "url": "https://ftp.drupal.org/files/projects/video_embed_field-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "fa1682741b4a1404df80c709ed8e40b7d8362d67"
             },
             "require": {
                 "drupal/core": "*"
@@ -5777,13 +4896,12 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.x",
-                    "datestamp": "1523338084",
+                    "version": "8.x-2.1",
+                    "datestamp": "1557726644",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
-                    },
-                    "package": "Field types"
+                    }
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5807,7 +4925,7 @@
             "description": "A pluggable field type for storing videos from external video hosts such as Vimeo and YouTube.",
             "homepage": "https://www.drupal.org/project/video_embed_field",
             "support": {
-                "source": "http://cgit.drupalcode.org/video_embed_field"
+                "source": "https://git.drupalcode.org/project/video_embed_field"
             }
         },
         {
@@ -5983,17 +5101,17 @@
         },
         {
             "name": "drupal/yaml_content",
-            "version": "1.0.0-alpha4",
+            "version": "1.0.0-alpha5",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/yaml_content.git",
-                "reference": "8.x-1.0-alpha4"
+                "reference": "8.x-1.0-alpha5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/yaml_content-8.x-1.0-alpha4.zip",
-                "reference": "8.x-1.0-alpha4",
-                "shasum": "0c92c497c3f7327d7e599dc1384f74b9ca6b63b4"
+                "url": "https://ftp.drupal.org/files/projects/yaml_content-8.x-1.0-alpha5.zip",
+                "reference": "8.x-1.0-alpha5",
+                "shasum": "4d5063e6821904e5832cdaaa7033d01974e680c4"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -6007,11 +5125,16 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha4",
-                    "datestamp": "1530741520",
+                    "version": "8.x-1.0-alpha5",
+                    "datestamp": "1558207381",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
+                    }
+                },
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9"
                     }
                 }
             },
@@ -6028,7 +5151,7 @@
             "description": "Demo content generator using yaml content templates.",
             "homepage": "https://www.drupal.org/project/yaml_content",
             "support": {
-                "source": "http://cgit.drupalcode.org/yaml_content"
+                "source": "https://git.drupalcode.org/project/yaml_content"
             }
         },
         {
@@ -6699,74 +5822,46 @@
         },
         {
             "name": "mediacurrent/mis_rain",
-            "version": "dev-feature/2.x",
+            "version": "dev-feature/3.x-proposed",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "059b057d95bea1f2c0b4c3e7321bcccb773460db"
+                "reference": "d4e09a1baf933afd1e8547cf3f97e9d32ae03f73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/059b057d95bea1f2c0b4c3e7321bcccb773460db.zip",
-                "reference": "059b057d95bea1f2c0b4c3e7321bcccb773460db",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/d4e09a1baf933afd1e8547cf3f97e9d32ae03f73.zip",
+                "reference": "d4e09a1baf933afd1e8547cf3f97e9d32ae03f73",
                 "shasum": ""
             },
             "require": {
-                "bower-asset/ckeditor": "4.5.11",
-                "bower-asset/colorbox": "^1.6",
                 "bower-asset/dropzone": "^5.1",
-                "bower-asset/fullcalendar": "^3.5",
-                "bower-asset/jquery.easing": "^1.3",
-                "bower-asset/moment": "^2.18",
-                "bower-asset/slick-carousel": "^1.8",
                 "cweagans/composer-patches": "^1.6",
-                "drupal/addtoany": "~1.0",
                 "drupal/admin_toolbar": "~1.0",
-                "drupal/allowed_formats": "~1.0",
-                "drupal/ckeditor_media_embed": "~1.0",
-                "drupal/colorbox": "~1.0",
                 "drupal/components": "~1.0",
-                "drupal/crop": "^1.0",
                 "drupal/ctools": "~3.0",
                 "drupal/dropzonejs": "dev-2.x",
                 "drupal/embed": "~1.0",
-                "drupal/entity": "~1.0",
                 "drupal/entity_browser": "dev-2.x",
                 "drupal/entity_embed": "~1.0",
-                "drupal/entity_reference_revisions": "~1.0",
                 "drupal/field_group": "dev-3.x",
-                "drupal/focal_point": "~1.0",
-                "drupal/geolocation": "~2.0",
                 "drupal/google_analytics": "~2.0",
                 "drupal/inline_entity_form": "~1.0",
-                "drupal/libraries": "~3.0",
                 "drupal/linkit": "~5.0",
-                "drupal/media_entity_actions": "~1.0",
                 "drupal/media_entity_browser": "dev-2.x",
                 "drupal/metatag": "~1.0",
                 "drupal/moderation_sidebar": "~1.0",
-                "drupal/paragraphs": "~1.0",
-                "drupal/paragraphs_features": "~1.0",
-                "drupal/paragraphs_previewer": "~1.0",
                 "drupal/pathauto": "~1.0",
                 "drupal/redirect": "~1.0",
                 "drupal/scheduler": "~1.0",
-                "drupal/search_api": "~1.0",
-                "drupal/search_api_page": "~1.0",
-                "drupal/search_api_solr": "~1.0",
                 "drupal/simple_sitemap": "^2.0",
-                "drupal/slick": "~1.1",
-                "drupal/slick_media": "~2.0",
-                "drupal/slick_paragraphs": "~1.0",
-                "drupal/slick_views": "~1.0",
                 "drupal/svg_image": "~1.0",
                 "drupal/taxonomy_access_fix": "~2.0",
                 "drupal/token": "~1.0",
                 "drupal/video_embed_field": "~2.0",
                 "drupal/viewsreference": "~1.0",
                 "drupal/webform": "~5.0",
-                "drupal/yaml_content": "~1.0",
-                "vardot/blazy": "1.8.2.1"
+                "drupal/yaml_content": "~1.0"
             },
             "type": "drupal-profile",
             "extra": {
@@ -6779,24 +5874,71 @@
                     "drupal/entity_embed": {
                         "2832504 - Send the CKEditor instance ID to the embed.preview route": "https://www.drupal.org/files/issues/2832504-2.patch"
                     },
-                    "drupal/paragraphs_previewer": {
-                        "Dialog improvements": "https://www.drupal.org/files/issues/2019-02-26/previewer-updates.patch"
+                    "drupal/dropzonejs": {
+                        "Support more dropzone parameters (Acquia support)": "https://www.drupal.org/files/issues/dropzonejs-support_more_parameters-2910167-15.patch"
                     },
                     "drupal/scheduler": {
                         "Integration with core Content moderation": "https://www.drupal.org/files/issues/scheduler-2798689-15.patch"
-                    },
-                    "drupal/slick": {
-                        "Composer / bower integration? Configurable paths?": "https://www.drupal.org/files/issues/2019-01-25/2907371-composer-integration-23.patch"
                     }
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
-            "time": "2019-03-28T20:14:32+00:00"
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/d4e09a1baf933afd1e8547cf3f97e9d32ae03f73/?at=feature/3.x-proposed"
+            },
+            "time": "2019-05-21T20:25:33+00:00"
+        },
+        {
+            "name": "mediacurrent/mis_rain_features",
+            "version": "dev-feature/3.x-proposed",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain_features.git",
+                "reference": "2bc31701660ed54b4cca8fc951033eb77f2cae16"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain_features/get/2bc31701660ed54b4cca8fc951033eb77f2cae16.zip",
+                "reference": "2bc31701660ed54b4cca8fc951033eb77f2cae16",
+                "shasum": ""
+            },
+            "require": {
+                "cweagans/composer-patches": "^1.6",
+                "drupal/allowed_formats": "~1.0",
+                "drupal/geolocation": "~2.0",
+                "drupal/paragraphs": "~1.0",
+                "drupal/paragraphs_features": "~1.0",
+                "drupal/paragraphs_previewer": "~1.0",
+                "drupal/search_api": "~1.0",
+                "drupal/search_api_page": "~1.0",
+                "drupal/search_api_solr": "~1.0"
+            },
+            "type": "drupal-profile",
+            "extra": {
+                "installer-types": [
+                    "library",
+                    "bower-asset",
+                    "npm-asset"
+                ],
+                "patches": {
+                    "drupal/paragraphs_previewer": {
+                        "Dialog improvements": "https://www.drupal.org/files/issues/2019-02-26/previewer-updates.patch"
+                    }
+                }
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Rain install profile content features",
+            "homepage": "https://bitbucket.org/mediacurrent/mis_rain_features",
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/mis_rain_features/src/2bc31701660ed54b4cca8fc951033eb77f2cae16/?at=feature/3.x-proposed"
+            },
+            "time": "2019-05-21T20:41:46+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -9238,16 +8380,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.40.1",
+            "version": "v1.41.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "35889516bbd6bbe46a600c2c33b03515df4a076e"
+                "reference": "575cd5028362da591facde1ef5d7b94553c375c9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/35889516bbd6bbe46a600c2c33b03515df4a076e",
-                "reference": "35889516bbd6bbe46a600c2c33b03515df4a076e",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/575cd5028362da591facde1ef5d7b94553c375c9",
+                "reference": "575cd5028362da591facde1ef5d7b94553c375c9",
                 "shasum": ""
             },
             "require": {
@@ -9262,7 +8404,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.40-dev"
+                    "dev-master": "1.41-dev"
                 }
             },
             "autoload": {
@@ -9300,31 +8442,33 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2019-04-29T14:12:28+00:00"
+            "time": "2019-05-14T11:59:08+00:00"
         },
         {
             "name": "typo3/phar-stream-wrapper",
-            "version": "v2.1.1",
+            "version": "v2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/phar-stream-wrapper.git",
-                "reference": "e438b0c78652b33407983eb29d215a1a3f68f6f3"
+                "reference": "057622f5a3b92a5ffbea0fbaadce573500a62870"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/e438b0c78652b33407983eb29d215a1a3f68f6f3",
-                "reference": "e438b0c78652b33407983eb29d215a1a3f68f6f3",
+                "url": "https://api.github.com/repos/TYPO3/phar-stream-wrapper/zipball/057622f5a3b92a5ffbea0fbaadce573500a62870",
+                "reference": "057622f5a3b92a5ffbea0fbaadce573500a62870",
                 "shasum": ""
             },
             "require": {
                 "brumann/polyfill-unserialize": "^1.0",
-                "ext-fileinfo": "*",
                 "ext-json": "*",
                 "php": "^5.3.3|^7.0"
             },
             "require-dev": {
                 "ext-xdebug": "*",
                 "phpunit/phpunit": "^4.8.36"
+            },
+            "suggest": {
+                "ext-fileinfo": "For PHP builtin file type guessing, otherwise uses internal processing"
             },
             "type": "library",
             "autoload": {
@@ -9344,26 +8488,7 @@
                 "security",
                 "stream-wrapper"
             ],
-            "time": "2019-05-05T17:30:51+00:00"
-        },
-        {
-            "name": "vardot/blazy",
-            "version": "1.8.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Vardot/blazy.git",
-                "reference": "934160a4d6420d26b78371b9d341bac7c6c8ade8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Vardot/blazy/zipball/934160a4d6420d26b78371b9d341bac7c6c8ade8",
-                "reference": "934160a4d6420d26b78371b9d341bac7c6c8ade8",
-                "shasum": ""
-            },
-            "type": "drupal-library",
-            "notification-url": "https://packagist.org/downloads/",
-            "description": "forked from dinbror/blazy to be used as drupal-library",
-            "time": "2017-07-16T11:19:13+00:00"
+            "time": "2019-05-14T13:14:31+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -11058,17 +10183,17 @@
         },
         {
             "name": "drupal/thunder_admin",
-            "version": "2.6.0",
+            "version": "2.7.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/thunder_admin.git",
-                "reference": "8.x-2.6"
+                "reference": "8.x-2.7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-2.6.zip",
-                "reference": "8.x-2.6",
-                "shasum": "e096985f9dac0124c77fed15ea6cb259eb59b951"
+                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "ff222e6da5cbfac6b0b1d11740907dcab7a47040"
             },
             "require": {
                 "drupal/core": "~8.7.0"
@@ -11079,8 +10204,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.6",
-                    "datestamp": "1556773985",
+                    "version": "8.x-2.7",
+                    "datestamp": "1557490398",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -11881,7 +11006,7 @@
         },
         {
             "name": "mediacurrent/rain_admin",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
@@ -11913,16 +11038,16 @@
         },
         {
             "name": "mediacurrent/rain_theme",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
-                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77"
+                "reference": "310c74014611e6b21358a3c83c17f04bf3dcba6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/cdc01b7373d80744cad84b5f559cec82ed4f0b77.zip",
-                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/310c74014611e6b21358a3c83c17f04bf3dcba6d.zip",
+                "reference": "310c74014611e6b21358a3c83c17f04bf3dcba6d",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -11937,7 +11062,7 @@
             ],
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
-            "time": "2019-05-07T20:15:45+00:00"
+            "time": "2019-03-28T20:09:37+00:00"
         },
         {
             "name": "mikey179/vfsStream",
@@ -13692,10 +12817,9 @@
     "stability-flags": {
         "drupal/guardr_core": 20,
         "mediacurrent/mis_rain": 20,
+        "mediacurrent/mis_rain_features": 20,
         "drupal/drupal-driver": 20,
-        "mediacurrent/ci-tests": 20,
-        "mediacurrent/rain_admin": 20,
-        "mediacurrent/rain_theme": 20
+        "mediacurrent/ci-tests": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

@@ -25,6 +25,10 @@
     {
       "type": "vcs",
       "url": "https://bitbucket.org/mediacurrent/mis_rain.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/mediacurrent/mis_rain_features.git"
     }
   ],
   "require": {
@@ -35,7 +39,8 @@
     "drupal/core": "~8.7.0",
     "drush/drush": "^8.1.15",
     "drupal/guardr_core": "dev-feature/3008975-composer-json",
-    "mediacurrent/mis_rain": "dev-feature/2.x",
+    "mediacurrent/mis_rain": "dev-feature/3.x-proposed",
+    "mediacurrent/mis_rain_features": "dev-feature/3.x-proposed",
     "oomphinc/composer-installers-extender": "^1.1",
     "webflo/drupal-finder": "^1.0.0",
     "webmozart/path-util": "^2.3"
@@ -54,8 +59,8 @@
     "symfony/css-selector": "~2.8 | ~3.0",
     "mediacurrent/ci-scripts": "~1.2",
     "mediacurrent/ci-tests": "dev-master",
-    "mediacurrent/rain_admin": "dev-master",
-    "mediacurrent/rain_theme": "dev-master",
+    "mediacurrent/rain_admin": "~1.0",
+    "mediacurrent/rain_theme": "~1.0",
     "joestewart/robo-drupalvm": "~1.0.2",
     "joestewart/robo-vagrant": "~1.0.0",
     "mediacurrent/mis_vagrant": "~4.7.0",
