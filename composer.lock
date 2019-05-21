@@ -2516,6 +2516,9 @@
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
                     }
+                },
+                "patches_applied": {
+                    "Support more dropzone parameters (Acquia support)": "https://www.drupal.org/files/issues/dropzonejs-support_more_parameters-2910167-15.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -5898,12 +5901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain_features.git",
-                "reference": "2bc31701660ed54b4cca8fc951033eb77f2cae16"
+                "reference": "06b7470f2883127146b9213c75549524d72b4bc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain_features/get/2bc31701660ed54b4cca8fc951033eb77f2cae16.zip",
-                "reference": "2bc31701660ed54b4cca8fc951033eb77f2cae16",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain_features/get/06b7470f2883127146b9213c75549524d72b4bc9.zip",
+                "reference": "06b7470f2883127146b9213c75549524d72b4bc9",
                 "shasum": ""
             },
             "require": {
@@ -5917,7 +5920,7 @@
                 "drupal/search_api_page": "~1.0",
                 "drupal/search_api_solr": "~1.0"
             },
-            "type": "drupal-profile",
+            "type": "drupal-module",
             "extra": {
                 "installer-types": [
                     "library",
@@ -5936,9 +5939,9 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain_features/src/2bc31701660ed54b4cca8fc951033eb77f2cae16/?at=feature/3.x-proposed"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain_features/src/06b7470f2883127146b9213c75549524d72b4bc9/?at=feature/3.x-proposed"
             },
-            "time": "2019-05-21T20:41:46+00:00"
+            "time": "2019-05-21T21:03:09+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
