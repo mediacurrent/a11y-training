@@ -29,6 +29,10 @@
     {
       "type": "vcs",
       "url": "https://bitbucket.org/mediacurrent/mis_rain_features.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/mediacurrent/rain_theme.git"
     }
   ],
   "require": {

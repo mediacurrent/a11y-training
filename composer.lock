@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb24cb7f1ae6a792a2de86f188721a81",
+    "content-hash": "82c11eadb61baf27d2e6ae517212c8fb",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -5829,12 +5829,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "d4e09a1baf933afd1e8547cf3f97e9d32ae03f73"
+                "reference": "e112ca2e88da40939a7b5d82e6b848a3471ffaf0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/d4e09a1baf933afd1e8547cf3f97e9d32ae03f73.zip",
-                "reference": "d4e09a1baf933afd1e8547cf3f97e9d32ae03f73",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/e112ca2e88da40939a7b5d82e6b848a3471ffaf0.zip",
+                "reference": "e112ca2e88da40939a7b5d82e6b848a3471ffaf0",
                 "shasum": ""
             },
             "require": {
@@ -5891,9 +5891,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/d4e09a1baf933afd1e8547cf3f97e9d32ae03f73/?at=feature/3.x-proposed"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/e112ca2e88da40939a7b5d82e6b848a3471ffaf0/?at=feature/3.x-proposed"
             },
-            "time": "2019-05-21T20:25:33+00:00"
+            "time": "2019-05-21T21:28:28+00:00"
         },
         {
             "name": "mediacurrent/mis_rain_features",
@@ -5901,12 +5901,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain_features.git",
-                "reference": "06b7470f2883127146b9213c75549524d72b4bc9"
+                "reference": "f50053e6d5b144b9668e6e032316f94d9049fefd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain_features/get/06b7470f2883127146b9213c75549524d72b4bc9.zip",
-                "reference": "06b7470f2883127146b9213c75549524d72b4bc9",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain_features/get/f50053e6d5b144b9668e6e032316f94d9049fefd.zip",
+                "reference": "f50053e6d5b144b9668e6e032316f94d9049fefd",
                 "shasum": ""
             },
             "require": {
@@ -5939,9 +5939,9 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain_features/src/06b7470f2883127146b9213c75549524d72b4bc9/?at=feature/3.x-proposed"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain_features/src/f50053e6d5b144b9668e6e032316f94d9049fefd/?at=feature/3.x-proposed"
             },
-            "time": "2019-05-21T21:03:09+00:00"
+            "time": "2019-05-21T21:47:41+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -11041,31 +11041,34 @@
         },
         {
             "name": "mediacurrent/rain_theme",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
-                "reference": "310c74014611e6b21358a3c83c17f04bf3dcba6d"
+                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/310c74014611e6b21358a3c83c17f04bf3dcba6d.zip",
-                "reference": "310c74014611e6b21358a3c83c17f04bf3dcba6d",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/cdc01b7373d80744cad84b5f559cec82ed4f0b77.zip",
+                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77",
                 "shasum": ""
             },
             "type": "drupal-theme",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "authors": [
                 {
-                    "name": "Jay Callicott"
+                    "name": "Jay Callicott",
+                    "role": ""
                 }
             ],
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
-            "time": "2019-03-28T20:09:37+00:00"
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/cdc01b7373d80744cad84b5f559cec82ed4f0b77/?at=1.1"
+            },
+            "time": "2019-05-07T20:15:45+00:00"
         },
         {
             "name": "mikey179/vfsStream",

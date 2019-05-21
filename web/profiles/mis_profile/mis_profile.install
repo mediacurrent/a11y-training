@@ -15,7 +15,6 @@ function mis_profile_install() {
   \Drupal::service('module_installer')->install(
     [
       'rain_event',
-      'rain_calendar',
       'rain_page',
       'rain_homepage',
       'rain_landing',
@@ -27,7 +26,6 @@ function mis_profile_install() {
       'rain_media',
       'rain_card',
       'rain_hero_media',
-      'rain_carousel',
       'rain_quote',
       'rain_text',
       'rain_views',
