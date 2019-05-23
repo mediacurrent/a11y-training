@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce38d5217b29e61799f149f421455850",
+    "content-hash": "710794190f386cc41933d077d89709e0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2993,7 +2993,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/field_group.git",
-                "reference": "f6d05aafacd0ae7ef729a222b6b8d101f575cb8b"
+                "reference": "b245b85f99c48221edf5fb60344dfe53737ae0f9"
             },
             "require": {
                 "drupal/core": "*"
@@ -3043,7 +3043,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/field_group"
             },
-            "time": "2019-03-28T22:28:15+00:00"
+            "time": "2019-05-23T21:31:25+00:00"
         },
         {
             "name": "drupal/geolocation",
@@ -6114,17 +6114,17 @@
             "time": "2019-03-10T11:41:28+00:00"
         },
         {
-            "name": "mediacurrent/mis_rain",
-            "version": "dev-feature/3.x-proposed",
+            "name": "mediacurrent/rain",
+            "version": "dev-feature/3.x",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "8a9ece3bd1b851bdbe28e67c6ee8598e381de30d"
+                "url": "https://bitbucket.org/mediacurrent/rain.git",
+                "reference": "9dd640f49590104bf3028ffd6a71334e72ae4b31"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/8a9ece3bd1b851bdbe28e67c6ee8598e381de30d.zip",
-                "reference": "8a9ece3bd1b851bdbe28e67c6ee8598e381de30d",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/9dd640f49590104bf3028ffd6a71334e72ae4b31.zip",
+                "reference": "9dd640f49590104bf3028ffd6a71334e72ae4b31",
                 "shasum": ""
             },
             "require": {
@@ -6182,11 +6182,11 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Rain install profile",
-            "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
+            "homepage": "https://bitbucket.org/mediacurrent/rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/8a9ece3bd1b851bdbe28e67c6ee8598e381de30d/?at=feature/3.x-proposed"
+                "source": "https://bitbucket.org/mediacurrent/rain/src/9dd640f49590104bf3028ffd6a71334e72ae4b31/?at=feature/3.x"
             },
-            "time": "2019-05-23T19:13:43+00:00"
+            "time": "2019-05-23T21:40:51+00:00"
         },
         {
             "name": "mediacurrent/rain_admin",
@@ -6222,7 +6222,7 @@
         },
         {
             "name": "mediacurrent/rain_features",
-            "version": "dev-feature/3.x-proposed",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_features.git",
@@ -13043,8 +13043,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/guardr_core": 20,
-        "mediacurrent/mis_rain": 20,
-        "mediacurrent/rain_features": 20,
+        "mediacurrent/rain": 20,
         "drupal/drupal-driver": 20,
         "mediacurrent/ci-tests": 20
     },
