@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "82c11eadb61baf27d2e6ae517212c8fb",
+    "content-hash": "ce38d5217b29e61799f149f421455850",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4873,6 +4873,79 @@
             }
         },
         {
+            "name": "drupal/thunder_admin",
+            "version": "2.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/thunder_admin.git",
+                "reference": "8.x-2.7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-2.7.zip",
+                "reference": "8.x-2.7",
+                "shasum": "ff222e6da5cbfac6b0b1d11740907dcab7a47040"
+            },
+            "require": {
+                "drupal/core": "~8.7.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "branch-alias": {
+                    "dev-2.x": "2.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-2.7",
+                    "datestamp": "1557490398",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Christian Fritsch",
+                    "homepage": "https://www.drupal.org/user/2103716",
+                    "email": "christian.fritsch@burda.com"
+                },
+                {
+                    "name": "Andreas Sahle",
+                    "homepage": "https://www.drupal.org/user/404865",
+                    "email": "andreas.sahle@wunder.io"
+                },
+                {
+                    "name": "mtodor",
+                    "homepage": "https://www.drupal.org/user/3453049"
+                },
+                {
+                    "name": "pixelmord",
+                    "homepage": "https://www.drupal.org/user/499438"
+                },
+                {
+                    "name": "thunderbot",
+                    "homepage": "https://www.drupal.org/user/3511180"
+                },
+                {
+                    "name": "tjwelde",
+                    "homepage": "https://www.drupal.org/user/3411453"
+                },
+                {
+                    "name": "volkerk",
+                    "homepage": "https://www.drupal.org/user/57527"
+                }
+            ],
+            "description": "Drupal admin theme for Thunder distribution",
+            "homepage": "https://www.drupal.org/project/thunder_admin",
+            "support": {
+                "source": "https://git.drupalcode.org/project/thunder_admin"
+            }
+        },
+        {
             "name": "drupal/token",
             "version": "1.5.0",
             "source": {
@@ -6046,12 +6119,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/mis_rain.git",
-                "reference": "50f3c7db4bfa9d874c15829dd14397f26832acd3"
+                "reference": "8a9ece3bd1b851bdbe28e67c6ee8598e381de30d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/50f3c7db4bfa9d874c15829dd14397f26832acd3.zip",
-                "reference": "50f3c7db4bfa9d874c15829dd14397f26832acd3",
+                "url": "https://bitbucket.org/mediacurrent/mis_rain/get/8a9ece3bd1b851bdbe28e67c6ee8598e381de30d.zip",
+                "reference": "8a9ece3bd1b851bdbe28e67c6ee8598e381de30d",
                 "shasum": ""
             },
             "require": {
@@ -6111,22 +6184,54 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/mis_rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/50f3c7db4bfa9d874c15829dd14397f26832acd3/?at=feature/3.x-proposed"
+                "source": "https://bitbucket.org/mediacurrent/mis_rain/src/8a9ece3bd1b851bdbe28e67c6ee8598e381de30d/?at=feature/3.x-proposed"
             },
-            "time": "2019-05-23T17:07:41+00:00"
+            "time": "2019-05-23T19:13:43+00:00"
         },
         {
-            "name": "mediacurrent/mis_rain_features",
-            "version": "dev-feature/3.x-proposed",
+            "name": "mediacurrent/rain_admin",
+            "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain_features.git",
-                "reference": "1523e5b5b405fafab7cd92fbbb8fd34bb63dc6a7"
+                "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
+                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_rain_features/get/1523e5b5b405fafab7cd92fbbb8fd34bb63dc6a7.zip",
-                "reference": "1523e5b5b405fafab7cd92fbbb8fd34bb63dc6a7",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/dff8158a88a8ff61ebc28558d4f9eef528b524d4.zip",
+                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/thunder_admin": "~2.0"
+            },
+            "type": "drupal-theme",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Callicott",
+                    "email": "jay.callicott@mediacurrent.com"
+                }
+            ],
+            "description": "Drupal admin theme for Rain distribution",
+            "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
+            "time": "2019-03-27T18:20:51+00:00"
+        },
+        {
+            "name": "mediacurrent/rain_features",
+            "version": "dev-feature/3.x-proposed",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/mediacurrent/rain_features.git",
+                "reference": "b338be404fb10cda30d695ab13cc4b9737c69467"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/mediacurrent/rain_features/get/b338be404fb10cda30d695ab13cc4b9737c69467.zip",
+                "reference": "b338be404fb10cda30d695ab13cc4b9737c69467",
                 "shasum": ""
             },
             "require": {
@@ -6158,11 +6263,42 @@
                 "GPL-2.0-or-later"
             ],
             "description": "Rain install profile content features",
-            "homepage": "https://bitbucket.org/mediacurrent/mis_rain_features",
+            "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/mis_rain_features/src/1523e5b5b405fafab7cd92fbbb8fd34bb63dc6a7/?at=feature/3.x-proposed"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/b338be404fb10cda30d695ab13cc4b9737c69467/?at=feature/3.x-proposed"
             },
-            "time": "2019-05-22T20:46:07+00:00"
+            "time": "2019-05-23T21:29:45+00:00"
+        },
+        {
+            "name": "mediacurrent/rain_theme",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
+                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/cdc01b7373d80744cad84b5f559cec82ed4f0b77.zip",
+                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77",
+                "shasum": ""
+            },
+            "type": "drupal-theme",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Jay Callicott",
+                    "role": ""
+                }
+            ],
+            "description": "Mediacurrent Rain starter theme.",
+            "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
+            "support": {
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/cdc01b7373d80744cad84b5f559cec82ed4f0b77/?at=1.1"
+            },
+            "time": "2019-05-07T20:15:45+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
@@ -10406,79 +10542,6 @@
             "time": "2018-12-19T17:24:54+00:00"
         },
         {
-            "name": "drupal/thunder_admin",
-            "version": "2.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/thunder_admin.git",
-                "reference": "8.x-2.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/thunder_admin-8.x-2.7.zip",
-                "reference": "8.x-2.7",
-                "shasum": "ff222e6da5cbfac6b0b1d11740907dcab7a47040"
-            },
-            "require": {
-                "drupal/core": "~8.7.0"
-            },
-            "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-2.x": "2.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-2.7",
-                    "datestamp": "1557490398",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Christian Fritsch",
-                    "homepage": "https://www.drupal.org/user/2103716",
-                    "email": "christian.fritsch@burda.com"
-                },
-                {
-                    "name": "Andreas Sahle",
-                    "homepage": "https://www.drupal.org/user/404865",
-                    "email": "andreas.sahle@wunder.io"
-                },
-                {
-                    "name": "mtodor",
-                    "homepage": "https://www.drupal.org/user/3453049"
-                },
-                {
-                    "name": "pixelmord",
-                    "homepage": "https://www.drupal.org/user/499438"
-                },
-                {
-                    "name": "thunderbot",
-                    "homepage": "https://www.drupal.org/user/3511180"
-                },
-                {
-                    "name": "tjwelde",
-                    "homepage": "https://www.drupal.org/user/3411453"
-                },
-                {
-                    "name": "volkerk",
-                    "homepage": "https://www.drupal.org/user/57527"
-                }
-            ],
-            "description": "Drupal admin theme for Thunder distribution",
-            "homepage": "https://www.drupal.org/project/thunder_admin",
-            "support": {
-                "source": "https://git.drupalcode.org/project/thunder_admin"
-            }
-        },
-        {
             "name": "drush-ops/behat-drush-endpoint",
             "version": "9.3.0",
             "source": {
@@ -11227,69 +11290,6 @@
                 "docs": "http://docs.drupalvm.com"
             },
             "time": "2017-12-04T17:43:53+00:00"
-        },
-        {
-            "name": "mediacurrent/rain_admin",
-            "version": "1.0",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
-                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/dff8158a88a8ff61ebc28558d4f9eef528b524d4.zip",
-                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4",
-                "shasum": ""
-            },
-            "require": {
-                "drupal/thunder_admin": "~2.0"
-            },
-            "type": "drupal-theme",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jay Callicott",
-                    "email": "jay.callicott@mediacurrent.com"
-                }
-            ],
-            "description": "Drupal admin theme for Rain distribution",
-            "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
-            "time": "2019-03-27T18:20:51+00:00"
-        },
-        {
-            "name": "mediacurrent/rain_theme",
-            "version": "1.1",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
-                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/cdc01b7373d80744cad84b5f559cec82ed4f0b77.zip",
-                "reference": "cdc01b7373d80744cad84b5f559cec82ed4f0b77",
-                "shasum": ""
-            },
-            "type": "drupal-theme",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Jay Callicott",
-                    "role": ""
-                }
-            ],
-            "description": "Mediacurrent Rain starter theme.",
-            "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
-            "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/cdc01b7373d80744cad84b5f559cec82ed4f0b77/?at=1.1"
-            },
-            "time": "2019-05-07T20:15:45+00:00"
         },
         {
             "name": "mikey179/vfsStream",
@@ -13044,7 +13044,7 @@
     "stability-flags": {
         "drupal/guardr_core": 20,
         "mediacurrent/mis_rain": 20,
-        "mediacurrent/mis_rain_features": 20,
+        "mediacurrent/rain_features": 20,
         "drupal/drupal-driver": 20,
         "mediacurrent/ci-tests": 20
     },
