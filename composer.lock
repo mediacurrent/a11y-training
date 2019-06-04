@@ -6190,16 +6190,16 @@
         },
         {
             "name": "mediacurrent/rain_admin",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_admin.git",
-                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4"
+                "reference": "b36967b732132a250fa45a231af3a6e5aad67bb0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/dff8158a88a8ff61ebc28558d4f9eef528b524d4.zip",
-                "reference": "dff8158a88a8ff61ebc28558d4f9eef528b524d4",
+                "url": "https://bitbucket.org/mediacurrent/rain_admin/get/b36967b732132a250fa45a231af3a6e5aad67bb0.zip",
+                "reference": "b36967b732132a250fa45a231af3a6e5aad67bb0",
                 "shasum": ""
             },
             "require": {
@@ -6218,7 +6218,7 @@
             ],
             "description": "Drupal admin theme for Rain distribution",
             "homepage": "https://bitbucket.org/mediacurrent/rain_admin",
-            "time": "2019-03-27T18:20:51+00:00"
+            "time": "2019-06-04T16:55:32+00:00"
         },
         {
             "name": "mediacurrent/rain_features",
