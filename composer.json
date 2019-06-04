@@ -43,7 +43,7 @@
     "drupal/core": "~8.7.0",
     "drush/drush": "^8.1.15",
     "drupal/guardr_core": "dev-feature/3008975-composer-json",
-    "mediacurrent/rain": "dev-feature/3.x",
+    "mediacurrent/rain": "dev-develop",
     "mediacurrent/rain_features": "~1.0",
     "mediacurrent/rain_admin": "~1.0",
     "mediacurrent/rain_theme": "~1.0",

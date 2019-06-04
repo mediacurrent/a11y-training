@@ -44,15 +44,6 @@ function mis_profile_install() {
 
   $types = [];
 
-  // Enable moderation for all content types.
-  foreach (NodeType::loadMultiple() as $type) {
-    $types[] = $type->id();
-  }
-
-  $config = \Drupal::configFactory()->getEditable('workflows.workflow.editorial');
-  $config->set('type_settings.entity_types', ['node' => $types]);
-  $config->save();
-  // Create demo content.
   $path = drupal_get_path('profile', 'mis_profile');
 
   $loader = \Drupal::service('yaml_content.content_loader');
