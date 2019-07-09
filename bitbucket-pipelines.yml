@@ -57,7 +57,7 @@ pipelines:
           - web/core/**
           - web/modules/contrib/**
           - web/themes/contrib/**
-          - web/sites/default/files
+          - web/sites/default/files/**
           - web/sites/default/settings.php
     - parallel:
       - step:
