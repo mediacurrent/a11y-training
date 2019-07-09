@@ -13,7 +13,7 @@ var defaultPaths = ['/']; // default path just checks the homepage
 var scenarios = []; // The array that'll have the URL paths to check
 
 var environments = {
-  'local': 'https://example.mcdev',
+  'local': 'https://mcrain.mcdev',
   'ci': 'http://127.0.0.1:8080',
   'dev': 'dev URL',
   'staging': 'staging URL',
@@ -100,6 +100,7 @@ module.exports =
     saveDirectories,
   // "casperFlags": ["--ignore-ssl-errors=true", "--ssl-protocol=any"],
   "engine": "puppeteer", // alternate can be chromy, in which case uncomment the engineOptions below
+  "engineOptions": {"args": ["--no-sandbox", "--disable-setuid-sandbox"]},
     // "engineOptions": {
     //   chromeFlags: ["--allow-insecure-localhost"]
     // },
