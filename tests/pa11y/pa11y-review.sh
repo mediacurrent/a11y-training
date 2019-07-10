@@ -17,5 +17,7 @@ if [[ -z $URI ]]; then
   exit 1;
 fi
 
+export PATH=$PATH:$(npm config --global get prefix)/bin
+
 # Run pa11y.
 pa11y --standard=WCAG2AA --timeout=120000 --ignore=WCAG2AA.Principle1.Guideline1_4.1_4_3.G18.Fail $URI

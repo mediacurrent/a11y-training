@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -e
 usage()
 {
 cat << EOF
@@ -17,10 +17,6 @@ if [[ -z $SITE_PATH ]]; then
   exit 1;
 fi
 
-if [ ! -d ${SITE_PATH}/modules/custom ]; then
-  echo "No coder-sniffer tests run. custom modules directory not found."; exit 0;
-fi
-
 # Set the phpcs standards config.
 # phpcs --config-set installed_paths ${HOME}/.composer/vendor/drupal/coder/coder_sniffer
 
@@ -32,7 +28,23 @@ else
   PHPCS='phpcs --standard=Drupal'
 fi
 
-# Run php code sniffer.
-${PHPCS} --extensions=php,module,inc,install,test,profile,theme ${SITE_PATH}/modules/custom
-# Run PHP Lint.
-# find ${SITE_PATH}/sites/all/modules/custom -name '.module' -or -name '.inc'  -or -name "*.php" -print0 | xargs -0 -n1 -P8 php -l 1>/dev/null
+if [ -d ${SITE_PATH}/modules/custom ]; then
+  echo "Running coding standards tests for custom modules."
+  ${PHPCS} --extensions=php,module,inc,install,test,profile,theme ${SITE_PATH}/modules/custom
+  echo "Running PHP lint for custom modules."
+  find ${SITE_PATH}/modules/custom \( -name "*.module" -o -name "*.install" -o -name "*.php" \) -print0 | xargs -0 -n1 -P8 php -l 1>/dev/null
+fi
+
+if [ -d ${SITE_PATH}/profiles/custom ]; then
+  echo "Running coding standards tests for custom profiles."
+  ${PHPCS} --extensions=php,module,inc,install,test,profile,theme ${SITE_PATH}/profiles/custom
+  echo "Running PHP lint for custom profiles."
+  find ${SITE_PATH}/profiles/custom \( -name "*.module" -o -name "*.install" -o -name "*.profile" -o -name "*.php" \) -print0 | xargs -0 -n1 -P8 php -l 1>/dev/null
+fi
+
+if [ -d ${SITE_PATH}/themes/custom ]; then
+  echo "Running coding standards tests for custom themes."
+  ${PHPCS} --extensions=php,module,inc,install,test,profile,theme ${SITE_PATH}/themes/custom
+  echo "Running PHP lint for custom themes."
+  find ${SITE_PATH}/themes/custom \( -name "*.theme" \) -print0 | xargs -0 -n1 -P8 php -l 1>/dev/null
+fi
