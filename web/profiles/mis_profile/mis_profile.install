@@ -39,6 +39,8 @@ function mis_profile_install() {
       'rain_form',
       'rain_map',
       'rain_embed',
+      'rain_breaker',
+      'rain_gallery_carousel',
     ]
   );
 
