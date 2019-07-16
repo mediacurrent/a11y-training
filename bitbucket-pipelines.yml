@@ -85,6 +85,7 @@ pipelines:
           caches:
             - docker
           script:
+            - echo "expose_php = Off" >> /etc/php/7.2/cli/php.ini
             - cd web
             - ../bin/drush sqlc < ../bin/db.sql
             - ../bin/drush status
@@ -97,8 +98,8 @@ pipelines:
             - set +e
             - ln -s $(pwd) /zap/wrk
             - ls -l /zap/wrk/
-            - /zap/zap-baseline.py -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080
-            # - CMD=$(/zap/zap-baseline.py -d -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - OWASP Zap Baseline report \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+            # - /zap/zap-baseline.py -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080
+            - CMD=$(/zap/zap-baseline.py -d -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - OWASP Zap Baseline report \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
             # Set script to stop on failure.
             - set -e
           services:
