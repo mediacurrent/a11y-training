@@ -4037,6 +4037,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "Field field_last_password_reset is unknown": "https://www.drupal.org/files/issues/2019-07-02/password_policy-config_import_field_error-2771129-91.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4069,7 +4072,8 @@
             "homepage": "https://www.drupal.org/project/password_policy",
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
-            }
+            },
+            "time": "2019-06-28T14:54:21+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -6139,7 +6143,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/9cf20700a8c27e02871a28ed3e1c788d813747ed.zip",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/f8e5a71f95a774a39239920c107f16b146f03fbe.zip",
                 "reference": "9cf20700a8c27e02871a28ed3e1c788d813747ed",
                 "shasum": ""
             },
@@ -6235,16 +6239,16 @@
         },
         {
             "name": "mediacurrent/rain_features",
-            "version": "1.5",
+            "version": "1.7",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_features.git",
-                "reference": "f288a9d6a179c686d5f6ee730218578590399466"
+                "reference": "d43233ef536ef61bb46b7437f471db29825a037a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_features/get/f288a9d6a179c686d5f6ee730218578590399466.zip",
-                "reference": "f288a9d6a179c686d5f6ee730218578590399466",
+                "url": "https://bitbucket.org/mediacurrent/rain_features/get/d43233ef536ef61bb46b7437f471db29825a037a.zip",
+                "reference": "d43233ef536ef61bb46b7437f471db29825a037a",
                 "shasum": ""
             },
             "require": {
@@ -6278,9 +6282,9 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/f288a9d6a179c686d5f6ee730218578590399466/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=develop"
             },
-            "time": "2019-06-17T15:55:22+00:00"
+            "time": "2019-07-18T17:48:58+00:00"
         },
         {
             "name": "mediacurrent/rain_theme",

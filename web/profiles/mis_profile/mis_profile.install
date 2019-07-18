@@ -41,6 +41,7 @@ function mis_profile_install() {
       'rain_embed',
       'rain_breaker',
       'rain_gallery_carousel',
+      'rain_library',
     ]
   );
 

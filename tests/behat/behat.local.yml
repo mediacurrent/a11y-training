@@ -3,3 +3,6 @@ default:
   extensions:
     Behat\MinkExtension:
       base_url: http://mcrain.mcdev
+    Drupal\DrupalExtension:
+      drupal: 
+        drupal_root: '/vagrant/web'

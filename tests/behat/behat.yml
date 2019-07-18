@@ -20,7 +20,9 @@ default:
             # wd_host: 'http://192.168.50.4:4444/wd/hub'
     Drupal\DrupalExtension:
       blackbox: ~
-
+      api_driver: 'drupal'
+      drush:
+        alias: 'local'
 
 # run all 'ready' tests
 ci:
@@ -44,7 +46,7 @@ smoke:
         tags: '@smoke-test,@smoke'
 
 # dont run slow tests
-no-slow:
+no-slow: 
   suites:
     default:
       filters:
