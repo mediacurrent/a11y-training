@@ -13,4 +13,4 @@ default:
         username_field: 'E-mail or username'
         log_in: 'Login to account'
       drupal: 
-        drupal_root: './web'
+        drupal_root: '../../web'
