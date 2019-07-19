@@ -33,6 +33,6 @@ elif [ -f ../../bin/behat ]; then
   export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
   ../../bin/behat ${@:2}
 else
-  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI"}}}'
+  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
   behat ${@:2}
 fi
