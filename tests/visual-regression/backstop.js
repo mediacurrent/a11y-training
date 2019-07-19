@@ -92,7 +92,7 @@ module.exports =
       "name": "tablet",
       "width": 768,
       "height": 2000
-    }
+    },
     {
       "name": "mobile",
       "width": 375,
