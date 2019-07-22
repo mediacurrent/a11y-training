@@ -6,6 +6,8 @@ default:
     Drupal\DrupalExtension:
       drupal: 
         drupal_root: '/vagrant/web'
+      text:
+        username_field: "Username"  
 
 # default:
 #   extensions:

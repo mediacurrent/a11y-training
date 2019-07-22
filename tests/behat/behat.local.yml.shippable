@@ -10,7 +10,6 @@ default:
         root: '/opt/atlassian/pipelines/agent/build/docroot'
         binary: '../../bin/drush'
       text:
-        username_field: 'E-mail or username'
-        log_in: 'Login to account'
+        username_field: 'Username'
       drupal: 
         drupal_root: '../../web'
