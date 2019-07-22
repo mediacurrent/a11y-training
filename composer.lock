@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bdd28eb0dac3ca6fabe880c23d64881",
+    "content-hash": "2101c27c750475401ab1e4b4bbeeac6c",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -6457,16 +6457,16 @@
         },
         {
             "name": "mediacurrent/rain_gatsby",
-            "version": "dev-feature/jsonapi-config-tweaks",
+            "version": "1.13",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_gatsby.git",
-                "reference": "3be459bb2f6e9fd07c87dd65736692483f539945"
+                "reference": "e1e5863c7abe7e499d27bc28a08a4b89d7c5ae20"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_gatsby/get/3be459bb2f6e9fd07c87dd65736692483f539945.zip",
-                "reference": "3be459bb2f6e9fd07c87dd65736692483f539945",
+                "url": "https://bitbucket.org/mediacurrent/rain_gatsby/get/e1e5863c7abe7e499d27bc28a08a4b89d7c5ae20.zip",
+                "reference": "e1e5863c7abe7e499d27bc28a08a4b89d7c5ae20",
                 "shasum": ""
             },
             "require": {
@@ -6485,7 +6485,7 @@
             ],
             "description": "Kickstart feature to make it easier to integrate Gatsby starter with Rain distribution.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_gatsby",
-            "time": "2019-07-22T18:34:23+00:00"
+            "time": "2019-07-22T18:48:25+00:00"
         },
         {
             "name": "mediacurrent/rain_theme",
@@ -13705,7 +13705,6 @@
     "stability-flags": {
         "drupal/guardr_core": 20,
         "mediacurrent/rain": 20,
-        "mediacurrent/rain_gatsby": 20,
         "mediacurrent/ci-tests": 20
     },
     "prefer-stable": true,
