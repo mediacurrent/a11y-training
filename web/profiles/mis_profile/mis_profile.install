@@ -15,6 +15,7 @@ function mis_profile_install() {
   // Enable feature modules.
   \Drupal::service('module_installer')->install(
     [
+      'rain_gatsby',
       'rain_event',
       'rain_page',
       'rain_homepage',

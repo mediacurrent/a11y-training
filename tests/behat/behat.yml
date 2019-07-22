@@ -29,7 +29,7 @@ ci:
   suites:
     default:
       filters:
-        tags: '~@bug&&~@wip'
+        tags: 'ci&&~@bug&&~@wip'
 
 # run tests that are still in dev
 wip:
