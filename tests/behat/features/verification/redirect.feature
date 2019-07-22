@@ -6,4 +6,4 @@ Feature: Redirect
 
   Scenario: Redirect to Article page
     When I go to "test-redirect"
-    Then I should see "Paragraphs Test Page"
+    Then I should see "Paragraphs Test Page (JSON API)"

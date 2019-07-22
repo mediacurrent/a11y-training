@@ -7,4 +7,4 @@ Feature: Meta tag
   Scenario: View How To Connect Innovations Blog Fields
     Given I am on the homepage
     And I should see an "title" element
-    Then the "title" element should contain "Welcome | MC"
+    Then the "title" element should contain "Welcome"
