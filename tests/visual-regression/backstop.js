@@ -85,7 +85,12 @@ module.exports =
   "viewports": [
     {
       "name": "desktop",
-      "width": 1600,
+      "width": 1025,
+      "height": 2000
+    },
+    {
+      "name": "tablet",
+      "width": 768,
       "height": 2000
     },
     {
