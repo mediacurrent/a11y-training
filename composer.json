@@ -48,7 +48,7 @@
     "mediacurrent/rain": "dev-develop",
     "mediacurrent/rain_admin": "~1.0",
     "mediacurrent/rain_features": "~1.0",
-    "mediacurrent/rain_gatsby": "^1.9",
+    "mediacurrent/rain_gatsby": "dev-feature/jsonapi-config-tweaks",
     "mediacurrent/rain_theme": "~1.0",
     "oomphinc/composer-installers-extender": "^1.1",
     "webflo/drupal-finder": "^1.0.0",
