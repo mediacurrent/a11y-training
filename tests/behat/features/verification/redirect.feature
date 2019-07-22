@@ -1,5 +1,5 @@
 @smoke @ci
-Feature: Redirect
+Feature: Redirect test
   When I visit a redirect
   As an anonymous user
   I should be redirected to the correct page

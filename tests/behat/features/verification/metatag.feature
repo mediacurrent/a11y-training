@@ -1,5 +1,5 @@
 @smoke @ci
-Feature: Meta tag
+Feature: Meta tag title renders
   When I view the homepage
   As an anonymous user
   I should be able to a validate title Meta tag

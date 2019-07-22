@@ -1,5 +1,5 @@
 @api @smoke @ci
-Feature: Cron
+Feature: Cron runs successfully
   When I run cron
   As an administrator
   I should see that cron has run successfully

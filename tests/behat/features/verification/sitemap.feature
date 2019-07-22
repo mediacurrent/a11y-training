@@ -1,5 +1,5 @@
 @smoke @ci
-Feature: Sitemap.xml
+Feature: Sitemap.xml renders
   When I hit /sitemap.xml
   Then I should get a "200" HTTP response
 
