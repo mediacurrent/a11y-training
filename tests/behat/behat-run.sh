@@ -27,9 +27,12 @@ cd `dirname $0`
 
 # Run behat.
 if [ -f bin/behat ]; then
-  BEHAT_PARAMS='{"extensions":{"Behat\\MinkExtension":{"base_url":"$URI"}}}' bin/behat
+  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
+  bin/behat ${@:2}
 elif [ -f ../../bin/behat ]; then
-  BEHAT_PARAMS='{"extensions":{"Behat\\MinkExtension":{"base_url":"$URI"}}}' ../../bin/behat
+  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
+  ../../bin/behat ${@:2}
 else
-  BEHAT_PARAMS='{"extensions":{"Behat\\MinkExtension":{"base_url":"$URI"}}}' behat
+  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
+  behat ${@:2}
 fi
