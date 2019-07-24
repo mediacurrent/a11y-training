@@ -147,7 +147,6 @@ pipelines:
             - fi
           services:
             - docker
-                memory: 2048
             - mysql
           artifacts:
             - tests/visual-regression/backstop_data/**
@@ -159,6 +158,8 @@ definitions:
     visual-regression-ci-reference: tests/visual-regression/backstop_data/ci_reference
     visual-regression-node-modules: tests/visual-regression/node_modules
   services:
+    docker:
+      memory: 2048
     mysql:
       image: mysql:5.7
       environment:
