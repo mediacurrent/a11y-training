@@ -14,7 +14,7 @@ var scenarios = []; // The array that'll have the URL paths to check
 
 var environments = {
   'local': 'https://mcrain.mcdev',
-  'ci': 'http://127.0.0.1:8080',
+  'ci': 'http://172.17.0.1:8080',
   'dev': 'dev URL',
   'staging': 'staging URL',
   'prod': 'prod URL'
