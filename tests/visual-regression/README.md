@@ -50,7 +50,7 @@ This section is for using BackstopJS after it's already been set up on a project
 
 If BackstopJS is already set up on a project, but you haven't used it yet, you'll need to run through the following steps first:
 
-* `npm install -g backstopjs`
+* `npm install -g backstopjs` ( skip if using Docker)
 * Navigate to the `/tests/backstop` folder and run `npm install`
 
 NOTE: The project's `.gitignore` file includes `/tests/backstop/backstop_data`, so you won't see this when you visit the project for the first time. The `backstop_data` folder is created automatically when you run references and tests, and its location in the `backstop` directory is determined by the `saveDirectories` variable in the `backstop.js` configuration.
@@ -65,6 +65,10 @@ If you're using BackstopJS to check on regressions during local development, you
 
 Make commands look like this:
 * `make prod-reference` or `make prod-test`
+
+The Makefile supports using docker to run the tests:
+
+* `make DOCKER=true local-reference` or `make DOCKER=true local-test`
 
 ## Long-Form BackstopJS Commands
 
