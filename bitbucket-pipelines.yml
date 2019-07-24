@@ -114,6 +114,7 @@ pipelines:
             - aws --version
             - ls -l
             - ls -l ./bin
+            - ls -l backstop_data/
             - cd web
             - ../bin/drush sqlc < ../bin/db.sql
             - ../bin/drush status
