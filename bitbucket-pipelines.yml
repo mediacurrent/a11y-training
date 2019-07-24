@@ -114,7 +114,6 @@ pipelines:
             - aws --version
             - ls -l
             - ls -l ./bin
-            - ls -l backstop_data/
             - cd web
             - ../bin/drush sqlc < ../bin/db.sql
             - ../bin/drush status
@@ -133,6 +132,7 @@ pipelines:
             - fi
             - ls -l ..
             - ls -l
+            - ls -l backstop_data/
             - make DOCKER=true ci-test
             - aws s3 cp backstop_data s3://mis-ci-tests/vrt/test-${BITBUCKET_REPO_SLUG}-${BITBUCKET_BUILD_NUMBER} --recursive
             # link to results posted to Bitbucket
