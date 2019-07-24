@@ -147,6 +147,7 @@ pipelines:
             - fi
           services:
             - docker
+                memory: 2048
             - mysql
           artifacts:
             - tests/visual-regression/backstop_data/**
