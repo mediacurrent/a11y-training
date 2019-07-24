@@ -117,7 +117,7 @@ pipelines:
             - cd web
             - ../bin/drush sqlc < ../bin/db.sql
             - ../bin/drush status
-            - ../bin/drush -vvv --debug runserver 8080 &
+            - ../bin/drush -vvv --debug runserver 172.17.0.1:8080 &
             - sleep 3
             - cd ..
             - cd tests/visual-regression
