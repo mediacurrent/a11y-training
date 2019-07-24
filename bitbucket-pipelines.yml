@@ -133,6 +133,7 @@ pipelines:
             - ls -l ..
             - ls -l
             - ls -l backstop_data/
+            - mkdir -p ./backstop_data/ci_test ./backstop_data/ci_html_report
             - make DOCKER=true ci-test
             - aws s3 cp backstop_data s3://mis-ci-tests/vrt/test-${BITBUCKET_REPO_SLUG}-${BITBUCKET_BUILD_NUMBER} --recursive
             # link to results posted to Bitbucket
