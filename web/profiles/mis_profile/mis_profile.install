@@ -6,6 +6,7 @@
  */
 
 use Drupal\node\Entity\NodeType;
+use Drupal\redirect\Entity\Redirect;
 
 /**
  * Implements hook_install().
@@ -42,6 +43,7 @@ function mis_profile_install() {
       'rain_embed',
       'rain_breaker',
       'rain_gallery_carousel',
+      'rain_library',
     ]
   );
 
@@ -77,4 +79,12 @@ function mis_profile_install() {
     $loaded = $loader->loadContent($file_name);
     $loaded_entities = array_merge($loaded_entities, $loaded);
   }
+
+  // Create a sample redirect for testing purposes.
+  Redirect::create([
+    'redirect_source' => 'test-redirect',
+    'redirect_redirect' => 'internal:/node/1',
+    'language' => 'und',
+    'status_code' => '301',
+  ])->save();
 }
