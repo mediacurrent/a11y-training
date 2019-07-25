@@ -1,5 +1,5 @@
 @api @user @smoke @ci
-Feature: User
+Feature: User pages
   As a visitor I should be able to load the user page
   And log in as an "authenticated user" role
 

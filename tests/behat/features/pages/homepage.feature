@@ -1,11 +1,11 @@
 @front @smoke @ci
-Feature: 
+Feature: Homepage content type
   When I view the homepage
   As an anonymous user
   I should be able to view homepage content and its fields
   And I should see the Card List components render
 
-  Scenario: Home page loads
+  Scenario: View test homepage fields
     Given I am on the homepage
     Then I should see "Welcome"
     And I should see an "img" element

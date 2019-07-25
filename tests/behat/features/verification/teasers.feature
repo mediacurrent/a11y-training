@@ -1,7 +1,7 @@
 @smoke @ci
-Feature: Teaser Displays Configured
+Feature: Teaser displays
 
-  Scenario Outline: As an anonymous user I see a teaser display for all content types.
+  Scenario Outline: As an anonymous user I see a teaser display for all content types
     When I visit <path>
     Then I should see a "article.node--view-mode-teaser" element
 

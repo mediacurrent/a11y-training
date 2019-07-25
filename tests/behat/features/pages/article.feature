@@ -1,10 +1,10 @@
 @smoke @ci
-Feature: Article Content Type
+Feature: Article content type
   When I view article pages
   As an anonymous user
   I should be able to view article content and its fields
 
-  Scenario: View Minnesota ISO Article Fields
+  Scenario: View test article page fields
     When I go to "article/minnesota-iso-market-notice-iso-new-resource-implementation-process-enhancement"
     Then I should see "Minnesota ISO Market Notice"
     And I should see "Curabitur imperdiet sapien libero"

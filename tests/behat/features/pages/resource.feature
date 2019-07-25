@@ -1,10 +1,10 @@
 @smoke @ci
-Feature: Resource Content Type
+Feature: Resource content type
   When I view resource pages
   As an anonymous user
   I should be able to view resource content and its fields
 
-  Scenario: View Goodbye Tools Fields
+  Scenario: View test resource page fields
     When I go to "resource/goodbye-tools-hello-solutions-ebook"
     Then I should see "Goodbye Tools. Hello Solutions eBook"
     And I should see "He had a front row seat in this market"

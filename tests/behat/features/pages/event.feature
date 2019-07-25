@@ -1,10 +1,10 @@
 @smoke @ci
-Feature: Event Content Type
+Feature: Event content type
   When I view event pages
   As an anonymous user
   I should be able to view event content and its fields
 
-  Scenario: View Innovate 2018 Event Page Fields
+  Scenario: View test event page fields
     When I go to "event/innovate-2018"
     Then I should see "Innovate 2018"
     And I should see "The event where the problems of tomorrow"

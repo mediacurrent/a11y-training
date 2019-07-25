@@ -1,10 +1,10 @@
 @smoke @ci
-Feature: Page Content Type
+Feature: Page content type
   When I view basic pages
   As an anonymous user
   I should be able to view basic page content and its fields
 
-  Scenario: View About Page Fields
+  Scenario: View test page fields
     When I go to "page/about-us"
     Then I should see "About Us"
     And I should see "Mission Statement"

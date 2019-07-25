@@ -1,11 +1,11 @@
 @smoke @ci
-Feature: Product Content Type
+Feature: Product content type
   When I view product pages
   As an anonymous user
   I should be able to view product content and its fields
   And I should see the Related Products view
 
-  Scenario: View Echo Show Product Page Fields
+  Scenario: View test product page fields
     When I go to "product/echo-show"
     Then I should see "Echo Show"
     And I should see "Echo Show brings you everything you love about Alexa"

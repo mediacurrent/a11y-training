@@ -1,5 +1,5 @@
 @api @smoke @ci
-Feature: Cache clears successfully
+Feature: Clear cache
   When I clear cache
   Then I should get a "200" HTTP response
 
