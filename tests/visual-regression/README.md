@@ -66,9 +66,9 @@ If you're using BackstopJS to check on regressions during local development, you
 Make commands look like this:
 * `make prod-reference` or `make prod-test`
 
-The Makefile supports using docker to run the tests:
+The Makefile defaults to using docker to run the tests.  To use the command installed in the PATH ( npm global install):
 
-* `make DOCKER=true local-reference` or `make DOCKER=true local-test`
+* `make DOCKER=false local-reference` or `make DOCKER=false local-test`
 
 ## Long-Form BackstopJS Commands
 
