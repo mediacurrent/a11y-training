@@ -1,7 +1,7 @@
 BACKSTOP_BASE := ./
-BACKSTOP_BINARY := backstop
-ifdef DOCKER
-	BACKSTOP_BINARY := docker run --rm -v $(PWD):/src backstopjs/backstopjs
+BACKSTOP_BINARY := docker run --rm -v $(PWD):/src backstopjs/backstopjs
+ifeq ($(DOCKER),false)
+	BACKSTOP_BINARY := backstop
 endif
 # ------------------------------------------------------------------------------
 
