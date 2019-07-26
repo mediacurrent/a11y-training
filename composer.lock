@@ -6312,7 +6312,7 @@
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/7826904463e862392808517cc995fb1cb0fedee9.zip",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/b18e6d579c91f7a39f9ecb6ac627e46d6c7e480c.zip",
                 "reference": "7826904463e862392808517cc995fb1cb0fedee9",
                 "shasum": ""
             },
@@ -6451,7 +6451,7 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=1.6"
             },
             "time": "2019-07-18T17:48:58+00:00"
         },
@@ -6489,16 +6489,16 @@
         },
         {
             "name": "mediacurrent/rain_theme",
-            "version": "1.4",
+            "version": "1.5",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
-                "reference": "a0468cede13118410e724f41deb7f8a51e46c7d0"
+                "reference": "76a1e32650605a525ca202d5c0bc4349ee710bf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/a0468cede13118410e724f41deb7f8a51e46c7d0.zip",
-                "reference": "a0468cede13118410e724f41deb7f8a51e46c7d0",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/76a1e32650605a525ca202d5c0bc4349ee710bf3.zip",
+                "reference": "76a1e32650605a525ca202d5c0bc4349ee710bf3",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -6514,9 +6514,9 @@
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/a0468cede13118410e724f41deb7f8a51e46c7d0/?at=master"
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/76a1e32650605a525ca202d5c0bc4349ee710bf3/?at=1.5"
             },
-            "time": "2019-07-23T15:29:10+00:00"
+            "time": "2019-07-26T13:14:57+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
