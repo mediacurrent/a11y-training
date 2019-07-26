@@ -6489,16 +6489,16 @@
         },
         {
             "name": "mediacurrent/rain_theme",
-            "version": "1.7",
+            "version": "1.9",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
-                "reference": "94384913ed7aaddc45f398f635101e880c1311cc"
+                "reference": "fe0e9de11b522a8579af13687c743e6ad3baf2ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/94384913ed7aaddc45f398f635101e880c1311cc.zip",
-                "reference": "94384913ed7aaddc45f398f635101e880c1311cc",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/fe0e9de11b522a8579af13687c743e6ad3baf2ea.zip",
+                "reference": "fe0e9de11b522a8579af13687c743e6ad3baf2ea",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -6514,9 +6514,9 @@
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/94384913ed7aaddc45f398f635101e880c1311cc/?at=master"
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=master"
             },
-            "time": "2019-07-26T17:06:23+00:00"
+            "time": "2019-07-26T18:25:29+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
