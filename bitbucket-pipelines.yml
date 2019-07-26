@@ -128,6 +128,7 @@ pipelines:
             - if [ ! "$(ls -A backstop_data/ci_reference)" ]; then
             - aws s3 cp s3://mis-ci-tests/vrt/reference-${BITBUCKET_REPO_SLUG} backstop_data --recursive
             - if [ ! "$(ls -A backstop_data/ci_reference)" ]; then
+            - rm -rf backstop_data/ci_reference
             - make -i ci-reference
             - fi
             - fi
