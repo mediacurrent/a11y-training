@@ -6451,7 +6451,7 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=1.6"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=develop"
             },
             "time": "2019-07-18T17:48:58+00:00"
         },
@@ -6489,16 +6489,16 @@
         },
         {
             "name": "mediacurrent/rain_theme",
-            "version": "1.5",
+            "version": "1.7",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_theme.git",
-                "reference": "76a1e32650605a525ca202d5c0bc4349ee710bf3"
+                "reference": "94384913ed7aaddc45f398f635101e880c1311cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/76a1e32650605a525ca202d5c0bc4349ee710bf3.zip",
-                "reference": "76a1e32650605a525ca202d5c0bc4349ee710bf3",
+                "url": "https://bitbucket.org/mediacurrent/rain_theme/get/94384913ed7aaddc45f398f635101e880c1311cc.zip",
+                "reference": "94384913ed7aaddc45f398f635101e880c1311cc",
                 "shasum": ""
             },
             "type": "drupal-theme",
@@ -6514,9 +6514,9 @@
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/76a1e32650605a525ca202d5c0bc4349ee710bf3/?at=1.5"
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/94384913ed7aaddc45f398f635101e880c1311cc/?at=master"
             },
-            "time": "2019-07-26T13:14:57+00:00"
+            "time": "2019-07-26T17:06:23+00:00"
         },
         {
             "name": "mkalkbrenner/php-htmldiff-advanced",
