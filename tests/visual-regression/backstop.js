@@ -69,7 +69,7 @@ for (var k = 0; k < paths.length; k++) {
       "label": paths[k],
       "referenceUrl": args.refHost+paths[k],
       "url": args.testHost+paths[k],
-      "hideSelectors": [],
+      "hideSelectors": ['iframe'],
       "removeSelectors": [],
       "selectors": ["document"], // "document" will snapshot the entire page
       "delay": 1000,
