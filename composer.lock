@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2101c27c750475401ab1e4b4bbeeac6c",
+    "content-hash": "9f1c1352110e41e3bf80c1c9c7920824",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -3172,20 +3172,21 @@
         },
         {
             "name": "drupal/guardr_core",
-            "version": "dev-feature/3008975-composer-json",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupal.org/project/guardr_core.git",
-                "reference": "894ca7eb690c9c0813f6a5ca2e674a71294f3cb0"
+                "url": "https://git.drupalcode.org/project/guardr_core.git",
+                "reference": "02c379f994a5f7a751e1a963876cc5bd4cbaf970"
             },
             "require": {
                 "drupal/autologout": "^1.0",
+                "drupal/core": "*",
                 "drupal/diff": "^1.0-rc2",
                 "drupal/hacked": "^2.0-beta2",
                 "drupal/login_history": "^1.0",
                 "drupal/login_security": "^1.5",
                 "drupal/mass_pwreset": "^1.0-alpha5",
-                "drupal/password_policy": "3.x-dev",
+                "drupal/password_policy": "3.x-dev#6165eb0f31dba34e83dee369a74757eb2f3ad43e",
                 "drupal/r4032login": "^1.1",
                 "drupal/seckit": "^1.1",
                 "drupal/security_review": "1.x-dev",
@@ -3193,6 +3194,20 @@
                 "drupal/username_enumeration_prevention": "^1.0-beta2"
             },
             "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.0-alpha1+2-dev",
+                    "datestamp": "1507054743",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0-or-later"
             ],
@@ -3201,11 +3216,50 @@
                     "name": "Mark Shrophire",
                     "homepage": "https://www.drupal.org/u/shrop",
                     "role": "Maintainer"
+                },
+                {
+                    "name": "catapipper",
+                    "homepage": "https://www.drupal.org/user/2837663"
+                },
+                {
+                    "name": "deekayen",
+                    "homepage": "https://www.drupal.org/user/972"
+                },
+                {
+                    "name": "deetergp",
+                    "homepage": "https://www.drupal.org/user/1134002"
+                },
+                {
+                    "name": "drupalninja99",
+                    "homepage": "https://www.drupal.org/user/42248"
+                },
+                {
+                    "name": "joestewart",
+                    "homepage": "https://www.drupal.org/user/64620"
+                },
+                {
+                    "name": "mikebarkas",
+                    "homepage": "https://www.drupal.org/user/1982966"
+                },
+                {
+                    "name": "shrop",
+                    "homepage": "https://www.drupal.org/user/14767"
+                },
+                {
+                    "name": "sjpatrick",
+                    "homepage": "https://www.drupal.org/user/114741"
+                },
+                {
+                    "name": "tecto",
+                    "homepage": "https://www.drupal.org/user/54020"
                 }
             ],
             "description": "Custom configuration related to the Guardr distribution.",
             "homepage": "https://drupal.org/project/guardr_core",
-            "time": "2019-03-28T15:35:08+00:00"
+            "support": {
+                "source": "https://git.drupalcode.org/project/guardr_core"
+            },
+            "time": "2019-07-30T19:04:52+00:00"
         },
         {
             "name": "drupal/hacked",
@@ -4080,7 +4134,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/password_policy.git",
-                "reference": "ce2a23083601b7d0106c553a715617dcddf26fa1"
+                "reference": "de2b0e92f21cfb10ff68d972166bd562a038fcf5"
             },
             "require": {
                 "drupal/core": "^8.5.0",
@@ -4092,15 +4146,15 @@
                     "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-3.0-alpha5+12-dev",
-                    "datestamp": "1561666981",
+                    "version": "8.x-3.0-alpha5+15-dev",
+                    "datestamp": "1562944386",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 },
                 "patches_applied": {
-                    "Field field_last_password_reset is unknown": "https://www.drupal.org/files/issues/2019-07-02/password_policy-config_import_field_error-2771129-91.patch"
+                    "Field field_last_password_reset is unknown": "https://www.drupal.org/files/issues/2019-07-23/password_policy-n2771129-95.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -4134,7 +4188,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/password_policy"
             },
-            "time": "2019-06-28T14:54:21+00:00"
+            "time": "2019-07-23T04:48:29+00:00"
         },
         {
             "name": "drupal/pathauto",
@@ -5803,23 +5857,23 @@
         },
         {
             "name": "ezyang/htmlpurifier",
-            "version": "v4.10.0",
+            "version": "v4.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ezyang/htmlpurifier.git",
-                "reference": "d85d39da4576a6934b72480be6978fb10c860021"
+                "reference": "83ab08bc1af7d808a9e0fbf024f1c24bfd73c0a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/d85d39da4576a6934b72480be6978fb10c860021",
-                "reference": "d85d39da4576a6934b72480be6978fb10c860021",
+                "url": "https://api.github.com/repos/ezyang/htmlpurifier/zipball/83ab08bc1af7d808a9e0fbf024f1c24bfd73c0a7",
+                "reference": "83ab08bc1af7d808a9e0fbf024f1c24bfd73c0a7",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.2"
             },
             "require-dev": {
-                "simpletest/simpletest": "^1.1"
+                "simpletest/simpletest": "dev-master#72de02a7b80c6bb8864ef9bf66d41d2f58f826bd"
             },
             "type": "library",
             "autoload": {
@@ -5832,7 +5886,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL"
+                "LGPL-2.1-or-later"
             ],
             "authors": [
                 {
@@ -5846,7 +5900,7 @@
             "keywords": [
                 "html"
             ],
-            "time": "2018-02-23T01:58:20+00:00"
+            "time": "2019-07-14T18:58:38+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -6451,7 +6505,7 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/d43233ef536ef61bb46b7437f471db29825a037a/?at=1.6"
             },
             "time": "2019-07-18T17:48:58+00:00"
         },
@@ -6514,7 +6568,7 @@
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=master"
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=1.9"
             },
             "time": "2019-07-26T18:25:29+00:00"
         },
