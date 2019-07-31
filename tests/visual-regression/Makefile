@@ -17,7 +17,7 @@ prod-test:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) test --configPath=backstop.js --pathFile=paths --env=prod
 
 prod-report:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) openReport --configPath=backstop.js --env=prod
+	@cd $(BACKSTOP_BASE) && open ./backstop_data/prod_html_report/index.html
 
 prod-approve:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=prod
@@ -29,7 +29,7 @@ staging-test:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) test --configPath=backstop.js --pathFile=paths --env=staging
 
 staging-report:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) openReport --configPath=backstop.js --env=staging
+	@cd $(BACKSTOP_BASE) && open ./backstop_data/staging_html_report/index.html
 
 staging-approve:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=staging
@@ -41,7 +41,7 @@ dev-test:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) test --configPath=backstop.js --pathFile=paths --env=dev
 
 dev-report:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) openReport --configPath=backstop.js --env=dev
+	@cd $(BACKSTOP_BASE) && open ./backstop_data/dev_html_report/index.html
 
 dev-approve:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=dev
@@ -53,7 +53,7 @@ ci-test:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) test --configPath=backstop.js --pathFile=paths --env=ci
 
 ci-report:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) openReport --configPath=backstop.js --env=ci
+	@cd $(BACKSTOP_BASE) && open ./backstop_data/ci_html_report/index.html
 
 ci-approve:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=ci
@@ -65,7 +65,7 @@ local-test:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) test --configPath=backstop.js --pathFile=paths --env=local
 
 local-report:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) openReport --configPath=backstop.js --env=local
+	@cd $(BACKSTOP_BASE) && open ./backstop_data/local_html_report/index.html
 
 local-approve:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=local

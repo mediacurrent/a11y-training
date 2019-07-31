@@ -20,6 +20,20 @@ BackstopJS is an npm package used for visual regression testing. It creates scre
 
 By default, BackstopJS uses JSON config files. This setup means that you need a separate config file for different environments, which gets pretty tedious if you need to update URL paths. Instead, we've started using JavaScript config files, which allow us to create an array of relative URLs to use against any environment, based on arguments used in your BackstopJS commands. Many thanks to [Tom Phippen](http://fivemilemedia.co.uk/blog/backstopjs-javascript-configuration) for his blog post on Javascript config setup.
 
+# Quick Start with Docker
+
+* `cd tests/visual-regression`
+* `npm install`
+* `make local-reference`
+* `make local-test`
+* `make local-report`
+
+# Development Workflow
+
+* Run `make local-reference` before beginning new development
+* Run `make local-test` to create report of development state
+* Run `make local-report` to open report for review of changes
+
 # BackstopJS Setup for Local Machines
 
 This is for a fresh setup of BackstopJS on a project. See [BackstopJS Commands and Use](#backstopjs-commands-and-use) below for information on running visual regression tests when BackstopJS is already set up on a project.

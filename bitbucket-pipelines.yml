@@ -140,7 +140,7 @@ pipelines:
             - curl -H "Content-Type:application/json" -X POST --user "${BB_AUTH_STRING}" -d "${BUILD_STATUS}" "https://api.bitbucket.org/2.0/repositories/${BITBUCKET_REPO_OWNER}/${BITBUCKET_REPO_SLUG}/commit/${BITBUCKET_COMMIT}/statuses/build"
             # Use current develop as reference
             - if [ "${BITBUCKET_BRANCH}" == "develop" ]; then
-            - make -i ci-approve;
+            - make -i ci-reference;
             - aws s3 cp backstop_data s3://mis-ci-tests/vrt/reference-${BITBUCKET_REPO_SLUG} --recursive
             - fi
           services:
