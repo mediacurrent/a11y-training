@@ -6370,12 +6370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain.git",
-                "reference": "a4b59d2479456277b444caddfcc063ed19287b23"
+                "reference": "ab11a447553d8bacd00d21922fb6bcd25c49d1d5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/a4b59d2479456277b444caddfcc063ed19287b23.zip",
-                "reference": "a4b59d2479456277b444caddfcc063ed19287b23",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/ab11a447553d8bacd00d21922fb6bcd25c49d1d5.zip",
+                "reference": "ab11a447553d8bacd00d21922fb6bcd25c49d1d5",
                 "shasum": ""
             },
             "require": {
@@ -6388,7 +6388,6 @@
                 "drupal/embed": "~1.0",
                 "drupal/entity_browser": "dev-2.x",
                 "drupal/entity_embed": "~1.0",
-                "drupal/field_group": "dev-3.x",
                 "drupal/google_analytics": "~2.0",
                 "drupal/inline_entity_form": "~1.0",
                 "drupal/linkit": "~5.0",
@@ -6428,9 +6427,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain/src/a4b59d2479456277b444caddfcc063ed19287b23/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain/src/ab11a447553d8bacd00d21922fb6bcd25c49d1d5/?at=develop"
             },
-            "time": "2019-08-20T20:21:40+00:00"
+            "time": "2019-08-20T21:14:48+00:00"
         },
         {
             "name": "mediacurrent/rain_admin",
