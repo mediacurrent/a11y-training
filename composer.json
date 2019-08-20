@@ -29,6 +29,10 @@
     {
       "type": "vcs",
       "url": "https://bitbucket.org/mediacurrent/rain_theme.git"
+    },
+    {
+      "type": "vcs",
+      "url": "https://bitbucket.org/mediacurrent/rain_admin.git"
     }
   ],
   "require": {
@@ -39,7 +43,6 @@
     "drupal/console": "^1.0.2",
     "drupal/core": "~8.7.0",
     "drupal/guardr_core": "1.x-dev",
-    "drupal/thunder_admin": "^2.3",
     "drush/drush": "^8.1.15",
     "mediacurrent/rain": "dev-develop",
     "mediacurrent/rain_admin": "~1.0",
