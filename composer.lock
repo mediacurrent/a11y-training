@@ -1818,16 +1818,16 @@
         },
         {
             "name": "drupal/console",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console.git",
-                "reference": "3bcce31018ea61f6f83f090c598835669f8e7e5a"
+                "reference": "03b20de476d01b60647726ef507ca66abc904086"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/3bcce31018ea61f6f83f090c598835669f8e7e5a",
-                "reference": "3bcce31018ea61f6f83f090c598835669f8e7e5a",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console/zipball/03b20de476d01b60647726ef507ca66abc904086",
+                "reference": "03b20de476d01b60647726ef507ca66abc904086",
                 "shasum": ""
             },
             "require": {
@@ -1835,7 +1835,7 @@
                 "composer/installers": "~1.0",
                 "doctrine/annotations": "^1.2",
                 "doctrine/collections": "^1.3",
-                "drupal/console-core": "1.9.1",
+                "drupal/console-core": "1.9.2",
                 "drupal/console-extend-plugin": "~0",
                 "php": "^5.5.9 || ^7.0",
                 "psy/psysh": "0.6.* || ~0.8",
@@ -1893,25 +1893,25 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2019-07-15T22:02:23+00:00"
+            "time": "2019-08-20T18:57:52+00:00"
         },
         {
             "name": "drupal/console-core",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-core.git",
-                "reference": "6a196d67633d12cce4c62e4707c91c2c469af77f"
+                "reference": "54fdb622d5cf5163063bbb78eb20c1776e68ff02"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/6a196d67633d12cce4c62e4707c91c2c469af77f",
-                "reference": "6a196d67633d12cce4c62e4707c91c2c469af77f",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-core/zipball/54fdb622d5cf5163063bbb78eb20c1776e68ff02",
+                "reference": "54fdb622d5cf5163063bbb78eb20c1776e68ff02",
                 "shasum": ""
             },
             "require": {
                 "dflydev/dot-access-configuration": "^1.0",
-                "drupal/console-en": "1.9.1",
+                "drupal/console-en": "1.9.2",
                 "guzzlehttp/guzzle": "~6.1",
                 "php": "^5.5.9 || ^7.0",
                 "stecman/symfony-console-completion": "~0.7",
@@ -1954,10 +1954,6 @@
                     "homepage": "http://jmolivas.com"
                 },
                 {
-                    "name": "Drupal Console Contributors",
-                    "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
-                },
-                {
                     "name": "Eduardo Garcia",
                     "email": "enzo@enzolutions.com",
                     "homepage": "http://enzolutions.com/"
@@ -1965,6 +1961,10 @@
                 {
                     "name": "Omar Aguirre",
                     "email": "omersguchigu@gmail.com"
+                },
+                {
+                    "name": "Drupal Console Contributors",
+                    "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
                 }
             ],
             "description": "Drupal Console Core",
@@ -1975,20 +1975,20 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2019-07-03T00:45:07+00:00"
+            "time": "2019-08-20T18:40:00+00:00"
         },
         {
             "name": "drupal/console-en",
-            "version": "1.9.1",
+            "version": "1.9.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/hechoendrupal/drupal-console-en.git",
-                "reference": "167660cde15de0be6c98af20556beff2c23bc498"
+                "reference": "5c2aaefd9511867fc6ab1029938f505f6e43ef83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/167660cde15de0be6c98af20556beff2c23bc498",
-                "reference": "167660cde15de0be6c98af20556beff2c23bc498",
+                "url": "https://api.github.com/repos/hechoendrupal/drupal-console-en/zipball/5c2aaefd9511867fc6ab1029938f505f6e43ef83",
+                "reference": "5c2aaefd9511867fc6ab1029938f505f6e43ef83",
                 "shasum": ""
             },
             "type": "drupal-console-language",
@@ -2008,10 +2008,6 @@
                     "homepage": "http://jmolivas.com"
                 },
                 {
-                    "name": "Drupal Console Contributors",
-                    "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
-                },
-                {
                     "name": "Eduardo Garcia",
                     "email": "enzo@enzolutions.com",
                     "homepage": "http://enzolutions.com/"
@@ -2019,6 +2015,10 @@
                 {
                     "name": "Omar Aguirre",
                     "email": "omersguchigu@gmail.com"
+                },
+                {
+                    "name": "Drupal Console Contributors",
+                    "homepage": "https://github.com/hechoendrupal/DrupalConsole/graphs/contributors"
                 }
             ],
             "description": "Drupal Console English Language",
@@ -2029,7 +2029,7 @@
                 "drupal",
                 "symfony"
             ],
-            "time": "2019-07-15T21:59:24+00:00"
+            "time": "2019-08-05T20:11:09+00:00"
         },
         {
             "name": "drupal/console-extend-plugin",
@@ -4849,29 +4849,30 @@
         },
         {
             "name": "drupal/simple_sitemap",
-            "version": "2.12.0",
+            "version": "3.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/simple_sitemap.git",
-                "reference": "8.x-2.12"
+                "reference": "8.x-3.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-2.12.zip",
-                "reference": "8.x-2.12",
-                "shasum": "fe1c1a636adfba8358399a5a1ccdf20685066573"
+                "url": "https://ftp.drupal.org/files/projects/simple_sitemap-8.x-3.3.zip",
+                "reference": "8.x-3.3",
+                "shasum": "690605c75cc75bc088d0506505c71d78f7d46c8c"
             },
             "require": {
-                "drupal/core": "~8.0"
+                "drupal/core": "~8.0",
+                "ext-xmlwriter": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "branch-alias": {
-                    "dev-2.x": "2.x-dev"
+                    "dev-3.x": "3.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.12",
-                    "datestamp": "1523203180",
+                    "version": "8.x-3.3",
+                    "datestamp": "1563488885",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4895,12 +4896,11 @@
                     "role": "Maintainer"
                 },
                 {
-                    "name": "Sam Becker (Sam152)",
-                    "homepage": "https://www.drupal.org/u/sam152",
-                    "role": "Co-maintainer"
+                    "name": "gbyte.co",
+                    "homepage": "https://www.drupal.org/user/2381352"
                 }
             ],
-            "description": "Simple XML sitemap creates a standard conform XML sitemap of your content.",
+            "description": "Creates a standard conform hreflang XML sitemap of the site content and provides a framework for developing other sitemap types.",
             "homepage": "https://drupal.org/project/simple_sitemap",
             "support": {
                 "source": "https://cgit.drupalcode.org/simple_sitemap",
@@ -6372,12 +6372,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain.git",
-                "reference": "b18e6d579c91f7a39f9ecb6ac627e46d6c7e480c"
+                "reference": "a4b59d2479456277b444caddfcc063ed19287b23"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/b18e6d579c91f7a39f9ecb6ac627e46d6c7e480c.zip",
-                "reference": "b18e6d579c91f7a39f9ecb6ac627e46d6c7e480c",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/a4b59d2479456277b444caddfcc063ed19287b23.zip",
+                "reference": "a4b59d2479456277b444caddfcc063ed19287b23",
                 "shasum": ""
             },
             "require": {
@@ -6400,8 +6400,7 @@
                 "drupal/multiline_config": "~1.0",
                 "drupal/pathauto": "~1.0",
                 "drupal/redirect": "~1.0",
-                "drupal/scheduler": "~1.0",
-                "drupal/simple_sitemap": "^2.0",
+                "drupal/simple_sitemap": "^3.0",
                 "drupal/svg_image": "~1.0",
                 "drupal/taxonomy_access_fix": "~2.0",
                 "drupal/token": "~1.0",
@@ -6422,9 +6421,6 @@
                 "patches": {
                     "drupal/dropzonejs": {
                         "Support more dropzone parameters (Acquia support)": "https://www.drupal.org/files/issues/dropzonejs-support_more_parameters-2910167-15.patch"
-                    },
-                    "drupal/scheduler": {
-                        "Integration with core Content moderation": "https://www.drupal.org/files/issues/scheduler-2798689-15.patch"
                     }
                 }
             },
@@ -6434,9 +6430,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain/src/b18e6d579c91f7a39f9ecb6ac627e46d6c7e480c/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain/src/a4b59d2479456277b444caddfcc063ed19287b23/?at=develop"
             },
-            "time": "2019-07-25T18:40:38+00:00"
+            "time": "2019-08-20T20:21:40+00:00"
         },
         {
             "name": "mediacurrent/rain_admin",
