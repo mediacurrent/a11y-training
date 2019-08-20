@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "095c0a244f3ac017956ecb8ee0fad38b",
+    "content-hash": "1fb346912bd60da5c32b5bc8145b1def",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -231,16 +231,16 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.7.0",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0"
+                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/141b272484481432cda342727a427dc1e206bfa0",
-                "reference": "141b272484481432cda342727a427dc1e206bfa0",
+                "url": "https://api.github.com/repos/composer/installers/zipball/cfcca6b1b60bc4974324efb5783c13dca6932b5b",
+                "reference": "cfcca6b1b60bc4974324efb5783c13dca6932b5b",
                 "shasum": ""
             },
             "require": {
@@ -296,7 +296,6 @@
                 "RadPHP",
                 "SMF",
                 "Thelia",
-                "Whmcs",
                 "WolfCMS",
                 "agl",
                 "aimeos",
@@ -319,7 +318,6 @@
                 "installer",
                 "itop",
                 "joomla",
-                "known",
                 "kohana",
                 "laravel",
                 "lavalite",
@@ -349,7 +347,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2019-08-12T15:00:31+00:00"
+            "time": "2018-08-27T06:10:37+00:00"
         },
         {
             "name": "composer/semver",
@@ -3798,7 +3796,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1563995941",
+                    "datestamp": "1564708406",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6580,7 +6578,7 @@
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=master"
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=1.9"
             },
             "time": "2019-07-26T18:25:29+00:00"
         },
