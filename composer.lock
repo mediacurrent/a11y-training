@@ -6467,16 +6467,16 @@
         },
         {
             "name": "mediacurrent/rain_features",
-            "version": "1.10",
+            "version": "1.11",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_features.git",
-                "reference": "f97862e125ef03c2ae6587e770dd35852c241133"
+                "reference": "b9ff2e88dd8daf73a00b3c50320058efd436ceef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_features/get/f97862e125ef03c2ae6587e770dd35852c241133.zip",
-                "reference": "f97862e125ef03c2ae6587e770dd35852c241133",
+                "url": "https://bitbucket.org/mediacurrent/rain_features/get/b9ff2e88dd8daf73a00b3c50320058efd436ceef.zip",
+                "reference": "b9ff2e88dd8daf73a00b3c50320058efd436ceef",
                 "shasum": ""
             },
             "require": {
@@ -6485,13 +6485,17 @@
                 "drupal/entity_usage": "~2.0",
                 "drupal/field_group": "dev-3.x",
                 "drupal/geolocation": "~3.0",
+                "drupal/metatag": "~1.0",
                 "drupal/paragraphs": "~1.0",
                 "drupal/paragraphs_features": "~1.0",
                 "drupal/paragraphs_previewer": "~1.0",
                 "drupal/scheduler": "~1.0",
                 "drupal/search_api": "~1.0",
                 "drupal/search_api_page": "~1.0",
-                "drupal/search_api_solr": "~1.0"
+                "drupal/search_api_solr": "~1.0",
+                "drupal/svg_image": "~1.0",
+                "drupal/viewsreference": "~1.0",
+                "drupal/webform": "~5.0"
             },
             "type": "drupal-module",
             "extra": {
@@ -6515,9 +6519,9 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/f97862e125ef03c2ae6587e770dd35852c241133/?at=1.10"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/b9ff2e88dd8daf73a00b3c50320058efd436ceef/?at=1.11"
             },
-            "time": "2019-08-20T20:54:14+00:00"
+            "time": "2019-08-20T21:39:59+00:00"
         },
         {
             "name": "mediacurrent/rain_gatsby",
