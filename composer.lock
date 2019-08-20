@@ -6370,12 +6370,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain.git",
-                "reference": "ab11a447553d8bacd00d21922fb6bcd25c49d1d5"
+                "reference": "128ed94972f4259af7d2017dc1b8d4bd55b1d8d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/ab11a447553d8bacd00d21922fb6bcd25c49d1d5.zip",
-                "reference": "ab11a447553d8bacd00d21922fb6bcd25c49d1d5",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/128ed94972f4259af7d2017dc1b8d4bd55b1d8d8.zip",
+                "reference": "128ed94972f4259af7d2017dc1b8d4bd55b1d8d8",
                 "shasum": ""
             },
             "require": {
@@ -6398,14 +6398,11 @@
                 "drupal/pathauto": "~1.0",
                 "drupal/redirect": "~1.0",
                 "drupal/simple_sitemap": "^3.0",
-                "drupal/svg_image": "~1.0",
                 "drupal/taxonomy_access_fix": "~2.0",
                 "drupal/token": "~1.0",
                 "drupal/twig_field_value": "~1.0",
                 "drupal/twig_tweak": "~2.0",
                 "drupal/video_embed_field": "~2.0",
-                "drupal/viewsreference": "~1.0",
-                "drupal/webform": "~5.0",
                 "drupal/yaml_content": "~1.0"
             },
             "type": "drupal-profile",
@@ -6427,9 +6424,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain/src/ab11a447553d8bacd00d21922fb6bcd25c49d1d5/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain/src/128ed94972f4259af7d2017dc1b8d4bd55b1d8d8/?at=develop"
             },
-            "time": "2019-08-20T21:14:48+00:00"
+            "time": "2019-08-20T21:59:41+00:00"
         },
         {
             "name": "mediacurrent/rain_admin",
