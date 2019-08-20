@@ -3796,7 +3796,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.9",
-                    "datestamp": "1564708406",
+                    "datestamp": "1563995941",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6468,22 +6468,23 @@
         },
         {
             "name": "mediacurrent/rain_features",
-            "version": "1.8",
+            "version": "1.10",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_features.git",
-                "reference": "1187442b078920a3f2b84e13788bc45a509badf9"
+                "reference": "f97862e125ef03c2ae6587e770dd35852c241133"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_features/get/1187442b078920a3f2b84e13788bc45a509badf9.zip",
-                "reference": "1187442b078920a3f2b84e13788bc45a509badf9",
+                "url": "https://bitbucket.org/mediacurrent/rain_features/get/f97862e125ef03c2ae6587e770dd35852c241133.zip",
+                "reference": "f97862e125ef03c2ae6587e770dd35852c241133",
                 "shasum": ""
             },
             "require": {
                 "cweagans/composer-patches": "^1.6",
                 "drupal/allowed_formats": "~1.0",
                 "drupal/entity_usage": "~2.0",
+                "drupal/field_group": "dev-3.x",
                 "drupal/geolocation": "~3.0",
                 "drupal/paragraphs": "~1.0",
                 "drupal/paragraphs_features": "~1.0",
@@ -6515,9 +6516,9 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/1187442b078920a3f2b84e13788bc45a509badf9/?at=1.8"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/f97862e125ef03c2ae6587e770dd35852c241133/?at=1.10"
             },
-            "time": "2019-08-20T17:33:38+00:00"
+            "time": "2019-08-20T20:54:14+00:00"
         },
         {
             "name": "mediacurrent/rain_gatsby",
@@ -6578,7 +6579,7 @@
             "description": "Mediacurrent Rain starter theme.",
             "homepage": "https://bitbucket.org/mediacurrent/rain_theme",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=1.9"
+                "source": "https://bitbucket.org/mediacurrent/rain_theme/src/fe0e9de11b522a8579af13687c743e6ad3baf2ea/?at=master"
             },
             "time": "2019-07-26T18:25:29+00:00"
         },
