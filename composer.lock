@@ -4177,6 +4177,9 @@
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
                     }
+                },
+                "patches_applied": {
+                    "'Field field_last_password_reset is unknown' while importing configuration on site without password_policy activated": "https://www.drupal.org/files/issues/2019-07-23/password_policy-n2771129-95.patch"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
