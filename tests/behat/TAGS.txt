@@ -13,11 +13,15 @@ Tags to assist in selectively running tests
 @ci
     Used to include a feature or scenario in the continuous integration system.
 
+@api
+   To invoke the Drupal/Drush driver, tag the scenario with @api
+	"Its biggest limitation is that the tests must run on the same server as the Drupal site".
+
 @dependent
     Used to indicate a scenario that is dependent on data created previously in the same feature file. In a perfect world, scenarios like this would not exist, and the tag will help us isolate the scenarios if/when we come up with a better solution. Scenarios should *never* depend on data from a different feature file.
 
 @javascript
-    Used when the feature being tested relies on CSS or javascript and must use a fully-featured browser for accurate testing. Note: Selenium must be running on the system executing tests or these scenarios will fail.
+    Used when the feature being tested relies on CSS or javascript and must use a fully-featured browser for accurate testing. Note: Selenium or a headless browser must be running on the system executing tests or these scenarios will fail.
 
 @slow
     Used for scenarios that are, well, slow. There is not, as yet, a definitive metric like, requires more than 10 seconds to complete.

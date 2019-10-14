@@ -10,19 +10,28 @@ default:
       filters:
         tags: '~@bug&&~@wip'
   extensions:
+    DMore\ChromeExtension\Behat\ServiceContainer\ChromeExtension: ~
     Behat\MinkExtension:
-      goutte: ~
+      goutte:
+        guzzle_parameters:
+          verify: false
       selenium2: ~
+      javascript_session: chrome_session
       sessions:
-        selenium_firefox_session:
-          selenium2:
-            browser: firefox
-            # wd_host: 'http://192.168.50.4:4444/wd/hub'
+        chrome_session:
+          chrome:
+            api_url: "http://localhost:9222"
+            validate_certificate: false
     Drupal\DrupalExtension:
       blackbox: ~
       api_driver: 'drupal'
       drush:
-        alias: 'local'
+        root: '../../web'
+        binary: '../../bin/drush'
+      text:
+        username_field: 'Username'
+      drupal:
+        drupal_root: '../../web'
 
 # run all 'ready' tests
 ci:
@@ -46,16 +55,16 @@ smoke:
         tags: '@smoke-test,@smoke'
 
 # dont run slow tests
-no-slow: 
+no-slow:
   suites:
     default:
       filters:
         tags: '@~bug&&~@slow'
 
-firefox:
+chrome:
   extensions:
     Behat\MinkExtension:
-      default_session: selenium_firefox_session
+      default_session: chrome_session
 
 imports:
   - behat.local.yml

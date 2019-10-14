@@ -1,7 +1,9 @@
 BACKSTOP_BASE := ./
 BACKSTOP_BINARY := docker run --rm -v $(PWD):/src backstopjs/backstopjs
+BACKSTOP_BINARY_LOCAL := docker run --net="host" --rm -v $(PWD):/src backstopjs/backstopjs
 ifeq ($(DOCKER),false)
 	BACKSTOP_BINARY := backstop
+	BACKSTOP_BINARY_LOCAL := backstop
 endif
 # ------------------------------------------------------------------------------
 
@@ -59,13 +61,13 @@ ci-approve:
 	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=ci
 
 local-reference:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) reference --configPath=backstop.js --pathFile=paths --env=local
+	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY_LOCAL) reference --configPath=backstop.js --pathFile=paths --env=local
 
 local-test:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) test --configPath=backstop.js --pathFile=paths --env=local
+	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY_LOCAL) test --configPath=backstop.js --pathFile=paths --env=local
 
 local-report:
 	@cd $(BACKSTOP_BASE) && open ./backstop_data/local_html_report/index.html
 
 local-approve:
-	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY) approve --configPath=backstop.js --env=local
+	@cd $(BACKSTOP_BASE) && $(BACKSTOP_BINARY_LOCAL) approve --configPath=backstop.js --env=local
