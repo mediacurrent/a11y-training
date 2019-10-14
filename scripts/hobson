@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Uncomment for Vagrant projects
-# DDEV_PROJECT=false
+DDEV_PROJECT=false
 
 # To run some commands on the host use the environment variable.
 # example: "DDEV_PROJECT=false ./scripts/hobson list"
