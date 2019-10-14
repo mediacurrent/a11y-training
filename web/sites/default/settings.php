@@ -764,3 +764,7 @@ $settings['file_scan_ignore_directories'] = [
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
 $config_directories['sync'] = '../config/sync';
+
+if (file_exists('/var/www/site-php')) {
+  require('/var/www/site-php/misrain/misrain-settings.inc');
+}
