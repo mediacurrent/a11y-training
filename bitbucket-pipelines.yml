@@ -17,8 +17,6 @@ pipelines:
           - chmod 600 ~/.ssh/id_rsa.pub
           - chmod 700 ~/.ssh
           - php --version
-          - service mysql start
-          - mysql -uroot -ppassword -e "CREATE DATABASE drupal"
           - source /root/.bashrc
           - composer selfupdate
           - composer validate --no-check-all --no-check-publish
