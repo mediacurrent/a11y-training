@@ -2501,11 +2501,17 @@
         },
         {
             "name": "drupal/dropzonejs",
-            "version": "dev-2.x",
+            "version": "2.0.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/dropzonejs.git",
-                "reference": "22afb9b4ada81a17d4b8e8bd1860f0d541cbeb58"
+                "reference": "8.x-2.0-alpha4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/dropzonejs-8.x-2.0-alpha4.zip",
+                "reference": "8.x-2.0-alpha4",
+                "shasum": "df7214e2992ecf3d5f5d4fba12611017a42e6211"
             },
             "require": {
                 "drupal/core": "*"
@@ -2522,8 +2528,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha3+9-dev",
-                    "datestamp": "1553860081",
+                    "version": "8.x-2.0-alpha4",
+                    "datestamp": "1555407785",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Project has not opted into security advisory coverage!"
@@ -2581,8 +2587,7 @@
                 "source": "https://www.drupal.org/project/dropzonejs",
                 "issues": "https://www.drupal.org/project/issues/dropzonejs",
                 "irc": "irc://irc.freenode.org/drupal-contribute"
-            },
-            "time": "2019-08-28T10:09:34+00:00"
+            }
         },
         {
             "name": "drupal/embed",
@@ -3188,7 +3193,7 @@
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/guardr_core.git",
-                "reference": "9c6b991af2ce1cbcaf6c244a76a4f6c141ee9a32"
+                "reference": "6e44a3eca135aa914e1bc1eb34cc079eccedeb8d"
             },
             "require": {
                 "drupal/autologout": "^1.0",
@@ -3211,8 +3216,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha2+7-dev",
-                    "datestamp": "1566788589",
+                    "version": "8.x-1.0-beta1+1-dev",
+                    "datestamp": "1570556285",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -3221,6 +3226,9 @@
                 "patches": {
                     "drupal/password_policy": {
                         "'Field field_last_password_reset is unknown' while importing configuration on site without password_policy activated": "https://www.drupal.org/files/issues/2019-07-23/password_policy-n2771129-95.patch"
+                    },
+                    "drupal/security_review": {
+                        "2912708 Update Drush Command files": "https://www.drupal.org/files/issues/2019-08-29/2912708-port-drush-11.patch"
                     }
                 }
             },
@@ -3276,7 +3284,7 @@
             "support": {
                 "source": "https://git.drupalcode.org/project/guardr_core"
             },
-            "time": "2019-08-26T03:01:21+00:00"
+            "time": "2019-10-08T19:48:11+00:00"
         },
         {
             "name": "drupal/hacked",
@@ -4221,20 +4229,20 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.4.0",
+            "version": "1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/pathauto.git",
-                "reference": "8.x-1.4"
+                "reference": "8.x-1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.4.zip",
-                "reference": "8.x-1.4",
-                "shasum": "ddfb047ae04ca2ddf475d65f6c09bceb44169e25"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.5.zip",
+                "reference": "8.x-1.5",
+                "shasum": "ae3c13f26d625e63da3b13dc64016888eca519c7"
             },
             "require": {
-                "drupal/core": "^8.5",
+                "drupal/core": "^8.6",
                 "drupal/ctools": "*",
                 "drupal/token": "*"
             },
@@ -4244,8 +4252,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.4",
-                    "datestamp": "1554239887",
+                    "version": "8.x-1.5",
+                    "datestamp": "1570828084",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6404,12 +6412,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain.git",
-                "reference": "128ed94972f4259af7d2017dc1b8d4bd55b1d8d8"
+                "reference": "34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/128ed94972f4259af7d2017dc1b8d4bd55b1d8d8.zip",
-                "reference": "128ed94972f4259af7d2017dc1b8d4bd55b1d8d8",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9.zip",
+                "reference": "34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9",
                 "shasum": ""
             },
             "require": {
@@ -6418,7 +6426,7 @@
                 "drupal/admin_toolbar": "~1.0",
                 "drupal/components": "~1.0",
                 "drupal/ctools": "~3.0",
-                "drupal/dropzonejs": "dev-2.x",
+                "drupal/dropzonejs": "^2.0",
                 "drupal/embed": "~1.0",
                 "drupal/entity_browser": "dev-2.x",
                 "drupal/entity_embed": "~1.0",
@@ -6458,9 +6466,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain/src/128ed94972f4259af7d2017dc1b8d4bd55b1d8d8/?at=develop"
+                "source": "https://bitbucket.org/mediacurrent/rain/src/34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9/?at=8.x-3.x"
             },
-            "time": "2019-08-20T21:59:41+00:00"
+            "time": "2019-10-14T18:06:14+00:00"
         },
         {
             "name": "mediacurrent/rain_admin",
@@ -6498,16 +6506,16 @@
         },
         {
             "name": "mediacurrent/rain_features",
-            "version": "1.14",
+            "version": "1.15",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain_features.git",
-                "reference": "010d3c3c7566c104dd4abb6dc761d00548a17243"
+                "reference": "190d633d1c4efbe234ce369917c2df4865a79e2f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain_features/get/010d3c3c7566c104dd4abb6dc761d00548a17243.zip",
-                "reference": "010d3c3c7566c104dd4abb6dc761d00548a17243",
+                "url": "https://bitbucket.org/mediacurrent/rain_features/get/190d633d1c4efbe234ce369917c2df4865a79e2f.zip",
+                "reference": "190d633d1c4efbe234ce369917c2df4865a79e2f",
                 "shasum": ""
             },
             "require": {
@@ -6550,9 +6558,9 @@
             "description": "Rain install profile content features",
             "homepage": "https://bitbucket.org/mediacurrent/rain_features",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain_features/src/010d3c3c7566c104dd4abb6dc761d00548a17243/?at=1.14"
+                "source": "https://bitbucket.org/mediacurrent/rain_features/src/190d633d1c4efbe234ce369917c2df4865a79e2f/?at=1.15"
             },
-            "time": "2019-09-24T16:05:41+00:00"
+            "time": "2019-10-07T18:59:25+00:00"
         },
         {
             "name": "mediacurrent/rain_gatsby",
@@ -11602,18 +11610,16 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/ci-tests.git",
-                "reference": "2fb82b4dc63c12e25944c18a4df4b6f1fb365c8c"
+                "reference": "3e7d2d8344b085b8d7c9b366e9ab20e4f5f2af99"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/ci-tests/get/2fb82b4dc63c12e25944c18a4df4b6f1fb365c8c.zip",
-                "reference": "2fb82b4dc63c12e25944c18a4df4b6f1fb365c8c",
+                "url": "https://bitbucket.org/mediacurrent/ci-tests/get/3e7d2d8344b085b8d7c9b366e9ab20e4f5f2af99.zip",
+                "reference": "3e7d2d8344b085b8d7c9b366e9ab20e4f5f2af99",
                 "shasum": ""
             },
             "require": {
-                "dmore/behat-chrome-extension": "^1.3",
-                "drupal/drupal-extension": "^3.4",
-                "drush-ops/behat-drush-endpoint": "^9.3.0"
+                "dmore/behat-chrome-extension": "^1.3"
             },
             "bin": [
                 "scripts/tests-init.sh"
@@ -11625,7 +11631,7 @@
             ],
             "description": "Scripts helpful for testing a Drupal site on a Continuous-Integration server, or locally.",
             "homepage": "https://bitbucket.org/mediacurrent/ci-tests",
-            "time": "2019-09-17T18:28:53+00:00"
+            "time": "2019-10-09T13:36:56+00:00"
         },
         {
             "name": "mediacurrent/mis_vagrant",
