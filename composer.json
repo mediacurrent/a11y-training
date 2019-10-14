@@ -141,9 +141,6 @@
       "drupal/core": {
         "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch"
       },
-      "drush/drush": {
-        "https://github.com/drush-ops/drush/issues/2285": "https://patch-diff.githubusercontent.com/raw/drush-ops/drush/pull/2286.patch"
-      },
       "drupal/security_review": {
         "2912708 Update Drush Command files": "https://www.drupal.org/files/issues/2019-08-29/2912708-port-drush-11.patch"
       }
