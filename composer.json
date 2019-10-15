@@ -43,7 +43,7 @@
     "drupal/console": "^1.0.2",
     "drupal/core": "~8.7.0",
     "drupal/guardr_core": "1.x-dev",
-    "drush/drush": "^9.0.0",
+    "drush/drush": "^8.1.15",
     "mediacurrent/rain": "dev-develop",
     "mediacurrent/rain_admin": "~1.0",
     "mediacurrent/rain_features": "~1.0",
@@ -142,9 +142,6 @@
     "patches": {
       "drupal/core": {
         "1356276 - Allow profiles to provide a base/parent profile and load them in the correct order": "https://www.drupal.org/files/issues/2018-10-23/1356276-549-8.6.x.patch"
-      },
-      "drupal/security_review": {
-        "2912708 Update Drush Command files": "https://www.drupal.org/files/issues/2019-08-29/2912708-port-drush-11.patch"
       }
     }
   }
