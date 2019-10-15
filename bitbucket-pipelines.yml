@@ -27,7 +27,7 @@ pipelines:
           - ../bin/drupal --version
           - cd ..
           - ./bin/drush version
-          # - ./bin/phpunit --version
+          - ./bin/phpunit --version
           - composer robo --version
           - composer robo list
           - composer robo project:init example.mcdev 127.0.0.1
@@ -36,35 +36,45 @@ pipelines:
           # Drupal coding standards test on custom modules
           - echo "Coding Standards"
           - ./tests/code-sniffer.sh ./web
-          # - CMD=$(./tests/code-sniffer.sh ./web 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
-          # - echo "PHPUnit unit tests"
-          # - composer robo test:php-unit-tests
-          # - CMD=$(composer robo test:php-unit-tests 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+          # - CMD=$(./tests/code-sniffer.sh ./web 2>&1) && echo ${CMD}|| ( slackcli -h alerts-mis-devops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/ ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+          - echo "PHPUnit unit tests"
+          - if [ "$(ls -A web/modules/custom/)" ]; then
+          - composer robo test:php-unit-tests
+          - fi
+          - echo "Drupal-check custom modules for Drupal 9 readiness"
+          - if [ "$(ls -A web/modules/custom/)" ]; then
+          - ./bin/drupal-check ./web/modules/custom/
+          - fi
+          # - CMD=$(composer robo test:php-unit-tests 2>&1) && echo ${CMD}|| ( slackcli -h alerts-mis-devops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
           - printf "127.0.0.1 example.mcdev" >> /etc/hosts
           - cd ./web
+          # # Check for pending security updates.
+          # - PMSECURITY=$(../bin/drush pm:security 2>&1)
+          # - echo ${PMSECURITY}
+          # - if grep -vq '[success]' <<< ${PMSECURITY} ; then
+          # - slackcli -h alerts-mis-devops -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - pm:security \`\`\`${PMSECURITY}\`\`\`"
+          # # - exit 1
+          # - fi
           # Install site using options to disable email notification.
+          - echo "\$config['system.mail']['interface']['default'] = 'test_mail_collector';" >> ./sites/default/settings.php
           - /usr/bin/env PHP_OPTIONS="-d sendmail_path=$(which true)" ../bin/drush site-install mis_profile install_configure_form.enable_update_status_module=NULL install_configure_form.enable_update_status_emails=NULL --verbose --yes --db-url=mysql://drupal:drupal@127.0.0.1:3306/drupal
-          # - /usr/bin/env PHP_OPTIONS="-d sendmail_path=$(which true)" ../bin/drush site-install config_installer install_configure_form.enable_update_status_module=NULL install_configure_form.enable_update_status_emails=NULL --verbose --yes --db-url=mysql://root:password@127.0.0.1:3306/drupal
+          # - /usr/bin/env PHP_OPTIONS="-d sendmail_path=$(which true)" ../bin/drush site-install config_installer install_configure_form.enable_update_status_module=NULL install_configure_form.enable_update_status_emails=NULL --verbose --yes --db-url=mysql://drupal:drupal@127.0.0.1:3306/drupal
           - ../bin/drush status
+          - ../bin/drush sget system.test_mail_collector
           - ../bin/drush sql-dump > ../bin/db.sql
           - cd ..
         services:
           - mysql
         artifacts:
           - bin/*
+          - tests/**
           - vendor/**
-          - web/core/**
-          - web/modules/contrib/**
-          - web/profiles/contrib/**
-          - web/themes/contrib/**
-          - web/sites/default/files/**
-          - web/sites/default/settings.php
+          - web/**
     - parallel:
       - step:
           script:
             - ls -l
             - ls -l ./bin
-            - cp ./tests/behat/behat.local.yml.shippable ./tests/behat/behat.local.yml
             - cd web
             - ../bin/drush sqlc < ../bin/db.sql
             - ../bin/drush status
@@ -75,11 +85,11 @@ pipelines:
             - echo "Accessibility tests"
             - pa11y --version
             - ./tests/pa11y/pa11y-review.sh http://127.0.0.1:8080/themes/contrib/rain_theme/dist/style-guide/section-components.html
-            # - CMD=$(./tests/pa11y/pa11y-review.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+            # - CMD=$(./tests/pa11y/pa11y-review.sh http://127.0.0.1:8080/themes/contrib/rain_theme/dist/style-guide/section-components.html 2>&1) && echo ${CMD}|| ( slackcli -h alerts-mis-devops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
             # Drupal behat tests
             - echo "Behat tests"
             - ./tests/behat/behat-run.sh http://127.0.0.1:8080
-            # - CMD=$(./tests/behat/behat-run.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -g private-chatops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+            # - CMD=$(./tests/behat/behat-run.sh http://127.0.0.1:8080 2>&1) && echo ${CMD}|| ( slackcli -h alerts-mis-devops -e ":rage3:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER ${BITBUCKET_BRANCH} error - \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
           services:
             - mysql
       - step:
@@ -90,7 +100,7 @@ pipelines:
             - cd web
             - ../bin/drush sqlc < ../bin/db.sql
             - ../bin/drush status
-            - ../bin/drush -vvv --debug runserver 8080 &
+            - ../bin/drush -vvv --debug runserver 172.17.0.1:8080 &
             - cd ..
             # OWASP Zap Baseline report
             - echo "OWASP ZAP Baseline report"
@@ -100,9 +110,19 @@ pipelines:
             - ln -s $(pwd) /zap/wrk
             - ls -l /zap/wrk/
             # - /zap/zap-baseline.py -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080
-            - CMD=$(/zap/zap-baseline.py -d -c owasp-zap.conf -p owasp-zap-progress.json -t http://127.0.0.1:8080) && echo ${CMD}|| ( slackcli -h alerts-rain -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - OWASP Zap Baseline report \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
+            - CMD=$(/zap/zap-baseline.py -d -c owasp-zap.conf -p owasp-zap-progress.json -t http://172.17.0.1:8080) && echo ${CMD}|| ( slackcli -h alerts-mis-devops -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - OWASP Zap Baseline report \`\`\`${CMD}\`\`\`" && echo ${CMD} && exit 1 )
             # Set script to stop on failure.
             - set -e
+            # Run Security Review checks
+            - cd web
+            # Check security review.
+            - ../bin/drush en security_review -y
+            - SECURITYREVIEW=$(../bin/drush secrev --skip=failed_logins,file_perms,views_access,trusted_hosts 2>&1)
+            - echo ${SECURITYREVIEW}
+            - if grep -q 'failed' <<< ${SECURITYREVIEW} ; then
+            - slackcli -h alerts-mis-devops -e ":lock:" -m "https://bitbucket.org/mediacurrent/${BITBUCKET_REPO_SLUG}/addon/pipelines/home#!/results/$BITBUCKET_BUILD_NUMBER - ${BITBUCKET_BRANCH} - secrev \`\`\`${SECURITYREVIEW}\`\`\`"
+            - exit 1
+            - fi
           services:
             - docker
             - mysql
@@ -140,7 +160,7 @@ pipelines:
             - curl -H "Content-Type:application/json" -X POST --user "${BB_AUTH_STRING}" -d "${BUILD_STATUS}" "https://api.bitbucket.org/2.0/repositories/${BITBUCKET_REPO_OWNER}/${BITBUCKET_REPO_SLUG}/commit/${BITBUCKET_COMMIT}/statuses/build"
             # Use current develop as reference
             - if [ "${BITBUCKET_BRANCH}" == "develop" ]; then
-            - make -i ci-reference;
+            - make -i ci-approve;
             - aws s3 cp backstop_data s3://mis-ci-tests/vrt/reference-${BITBUCKET_REPO_SLUG} --recursive
             - fi
           services:

@@ -3,13 +3,3 @@ default:
   extensions:
     Behat\MinkExtension:
       base_url: http://127.0.0.1:8080
-    Drupal\DrupalExtension:
-      blackbox: ~
-      api_driver: 'drush'
-      drush:
-        root: '/opt/atlassian/pipelines/agent/build/docroot'
-        binary: '../../bin/drush'
-      text:
-        username_field: 'Username'
-      drupal: 
-        drupal_root: '../../web'

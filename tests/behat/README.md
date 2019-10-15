@@ -48,7 +48,7 @@ Example commands:
 
   bin/behat - run all
 
-  bin/behat --tags="anon&&~wip"   - test the scenario's that do not require logging in and are not a "work in progress"
+  bin/behat --tags="@anon&&~@wip"   - test the scenario's that do not require logging in and are not a "work in progress"
 
   bin/behat features/pages/frontpage.feature - test the scenarios in the frontpage feature
 
@@ -57,18 +57,25 @@ Example commands:
 
   Profiles - these contain helpful configuration combinations
 
-  bin/behat --profile="firefox" - run all tests through firefox using selenium2
+  bin/behat --profile="chrome" - run all tests through headless Chrome
   bin/behat --profile="wip" - work-in-progress, run tests that are still in dev
   bin/behat --profile="smoke" - run key tests (fast test)
   bin/behat --profile="no-slow" - don't run slow tests
 
-Note:  Some tests may require Phantomjs or Selenium to launch a browser like Firefox to test javascript functionality.  The included behat-run.sh ensures that phantomjs is running.
+Example behat-run.sh usage:
 
-To manually start phantomjs:
+  ./behat-run.sh https://example.mcdev
 
-'phantomjs --webdriver=8643 &'
-or for vagrant
-'vagrant ssh -c "forever start  /usr/bin/phantomjs --webdriver=8643"'
+  Argument examples above can be added such as:
+
+  ./behat-run.sh https://example.mcdev --tags="~@api&&~@javascript" - test the scenario's that do not use drush/api and do not require javascript
+
+Note:  Some tests may require Chrome to launch a browser to test javascript functionality.  The included behat-run.sh ensures that Chromium is running.
+
+To manually start chromium:
+
+'chromium-browser --disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 &'
+
 
 FEATURES AND SCENARIOS
 ----------------------

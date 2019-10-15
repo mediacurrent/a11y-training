@@ -13,7 +13,7 @@ var defaultPaths = ['/']; // default path just checks the homepage
 var scenarios = []; // The array that'll have the URL paths to check
 
 var environments = {
-  'local': 'https://mcrain.mcdev',
+  'local': 'http://mcrain.mcdev',
   'ci': 'http://172.17.0.1:8080',
   'dev': 'dev URL',
   'staging': 'staging URL',

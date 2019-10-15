@@ -17,22 +17,25 @@ if [[ -z $URI ]]; then
   exit 1;
 fi
 
-phantomjs=$(which phantomjs)
+# Use environment variable if specified
+if [[ -z ${BEHAT_BROWSER} ]]; then
+  BEHAT_BROWSER="chromium-browser"
+  BEHAT_BROWSER_OPTIONS="--disable-gpu --headless --remote-debugging-address=0.0.0.0 --remote-debugging-port=9222 --no-sandbox > /dev/null 2>&1"
+fi
 
-if [ ! -z ${phantomjs} ] && !(pgrep -f "${phantomjs} --webdriver=8643" > /dev/null); then
-  forever start ${phantomjs} --webdriver=8643
+if [ ! -z ${BEHAT_BROWSER} ] && !(pgrep -f "${BEHAT_BROWSER}" > /dev/null); then
+  ${BEHAT_BROWSER} ${BEHAT_BROWSER_OPTIONS} &
 fi
 
 cd `dirname $0`
 
+export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
+
 # Run behat.
 if [ -f bin/behat ]; then
-  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
   bin/behat ${@:2}
 elif [ -f ../../bin/behat ]; then
-  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
   ../../bin/behat ${@:2}
 else
-  export BEHAT_PARAMS='{"extensions" : {"Behat\\MinkExtension" : {"base_url" : "'$URI'"}}}'
   behat ${@:2}
 fi

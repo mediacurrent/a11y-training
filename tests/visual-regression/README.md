@@ -4,6 +4,8 @@ Default configuration and README for visual regression testing
 
 * [Overview of BackstopJS](#overview-of-backstopjs)
 * [Using a JavaScript Config File](#using-a-javascript-config-file)
+* [Quick Start with Docker](quick-start-with-docker)
+* [Development Workflow](development-workflow)
 * [BackstopJS Setup for Local Machines](#backstopjs-setup-for-local-machines)
 * [BackstopJS Commands and Use](#backstopjs-commands-and-use)
 * [Sites with Basic Auth](#sites-with-basic-auth)
@@ -11,6 +13,7 @@ Default configuration and README for visual regression testing
 * [Using BackstopJS for Deploys](#using-backstopjs-for-deploys)
 * [Using BackstopJS to Compare Two Different Environments](#using-backstopjs-to-compare-two-different-environments)
 * [Additional Notes](#additional-notes)
+* [Credits](#credits)
 
 # Overview of BackstopJS
 
@@ -175,3 +178,6 @@ kern.sysv.shmall=1179648
 kern.maxfilesperproc=65536
 kern.maxfiles=65536
 ```
+# Credits
+
+* Forked from Angela Riggs' https://github.com/angelariggs/visual-regression

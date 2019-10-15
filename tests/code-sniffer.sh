@@ -44,7 +44,7 @@ fi
 
 if [ -d ${SITE_PATH}/themes/custom ]; then
   echo "Running coding standards tests for custom themes."
-  ${PHPCS} --extensions=php,module,inc,install,test,profile,theme ${SITE_PATH}/themes/custom
+  ${PHPCS} --ignore=/themes/custom/*/node_modules/ --extensions=php,module,inc,install,test,profile,theme ${SITE_PATH}/themes/custom
   echo "Running PHP lint for custom themes."
   find ${SITE_PATH}/themes/custom \( -name "*.theme" \) -print0 | xargs -0 -n1 -P8 php -l 1>/dev/null
 fi
