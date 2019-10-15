@@ -116,7 +116,7 @@ pipelines:
             # Run Security Review checks
             - cd web
             # Check security review.
-            - ../bin/drush en security_review
+            - ../bin/drush en security_review -y
             - SECURITYREVIEW=$(../bin/drush secrev --skip=failed_logins,file_perms,views_access,trusted_hosts 2>&1)
             - echo ${SECURITYREVIEW}
             - if grep -q 'failed' <<< ${SECURITYREVIEW} ; then
