@@ -64,7 +64,8 @@ composer_add_project_to_path: true
 #   - "{{ config_dir }}/../vendor/mediacurrent/mis_vagrant/examples/scripts/configure-solr.sh"
 
 
-drupal_webroot: docroot
+
+drupal_webroot: web
 project_repo: git@bitbucket.org:mediacurrent/mis_rain_vagrant.git
 project_drupal_root: web
 release_repo: misrain@svn-6796.devcloud.hosting.acquia.com:misrain.git
