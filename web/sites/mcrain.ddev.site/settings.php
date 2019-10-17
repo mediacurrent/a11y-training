@@ -928,7 +928,7 @@ $settings['install_profile'] = 'mis_profile';
 ini_set('memory_limit', '512M');
 
 $settings['trusted_host_patterns'] = array(
-  '^mcrain\.mcdev$',
+  '^mcrain\.ddev\.site$',
 );
 
 if (file_exists(__DIR__ . '/settings.local.php')) {
