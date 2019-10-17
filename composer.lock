@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4edc24c4d7ca76e1970fdf00256b7f5e",
+    "content-hash": "afa4e5e84cce99d5617066067d3c2d2b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1575,7 +1575,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.27",
-                    "datestamp": "1558552081",
+                    "datestamp": "1558553350",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1724,8 +1724,16 @@
                     "homepage": "https://www.drupal.org/user/981944"
                 },
                 {
+                    "name": "boshtian",
+                    "homepage": "https://www.drupal.org/user/1773456"
+                },
+                {
                     "name": "dandrews",
                     "homepage": "https://www.drupal.org/user/2014490"
+                },
+                {
+                    "name": "darksnow",
+                    "homepage": "https://www.drupal.org/user/391915"
                 },
                 {
                     "name": "johnennew",
@@ -1734,10 +1742,6 @@
                 {
                     "name": "jrglasgow",
                     "homepage": "https://www.drupal.org/user/36590"
-                },
-                {
-                    "name": "jvandervort",
-                    "homepage": "https://www.drupal.org/user/35604"
                 },
                 {
                     "name": "kmasood",
@@ -1759,7 +1763,7 @@
             "description": "Adds automated timed logout.",
             "homepage": "http://drupal.org/project/autologout",
             "support": {
-                "source": "http://cgit.drupalcode.org/autologout"
+                "source": "https://git.drupalcode.org/project/autologout"
             }
         },
         {
@@ -2646,7 +2650,7 @@
             "description": "Provide a framework for various different types of embeds in WYSIWYG editors, common functionality, interfaces, and standards.",
             "homepage": "https://www.drupal.org/project/embed",
             "support": {
-                "source": "http://cgit.drupalcode.org/embed",
+                "source": "https://git.drupalcode.org/project/embed",
                 "issues": "https://www.drupal.org/project/issues/embed",
                 "irc": "irc://irc.freenode.org/drupal-media"
             }
@@ -2752,8 +2756,8 @@
                     "dev-2.x": "2.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-2.0-alpha2+3-dev",
-                    "datestamp": "1528140780",
+                    "version": "8.x-2.2+4-dev",
+                    "datestamp": "1570326185",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -2765,6 +2769,10 @@
                 "GPL-2.0-or-later"
             ],
             "authors": [
+                {
+                    "name": "Berdir",
+                    "homepage": "https://www.drupal.org/user/214652"
+                },
                 {
                     "name": "Dave Reid",
                     "homepage": "https://www.drupal.org/user/53892"
@@ -2786,6 +2794,10 @@
                     "homepage": "https://www.drupal.org/user/77320"
                 },
                 {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
+                },
+                {
                     "name": "samuel.mortenson",
                     "homepage": "https://www.drupal.org/user/2582268"
                 },
@@ -2797,7 +2809,7 @@
             "description": "Entity browser inline entity form integration.",
             "homepage": "https://www.drupal.org/project/entity_browser",
             "support": {
-                "source": "http://cgit.drupalcode.org/entity_browser"
+                "source": "https://git.drupalcode.org/project/entity_browser"
             }
         },
         {
@@ -2828,7 +2840,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.0",
-                    "datestamp": "1561765981",
+                    "datestamp": "1562161679",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2859,6 +2871,10 @@
                 {
                     "name": "cs_shadow",
                     "homepage": "https://www.drupal.org/user/2828287"
+                },
+                {
+                    "name": "oknate",
+                    "homepage": "https://www.drupal.org/user/471638"
                 },
                 {
                     "name": "phenaproxima",
@@ -3026,7 +3042,7 @@
                 },
                 "drupal": {
                     "version": "8.x-3.0-rc1",
-                    "datestamp": "1558647185",
+                    "datestamp": "1558678323",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "RC releases are not covered by Drupal security advisories."
@@ -3330,12 +3346,16 @@
                 {
                     "name": "colan",
                     "homepage": "https://www.drupal.org/user/58704"
+                },
+                {
+                    "name": "itcrowd72",
+                    "homepage": "https://www.drupal.org/user/3547706"
                 }
             ],
             "description": "Shows if drupal or any of its modules have been changed",
             "homepage": "https://www.drupal.org/project/hacked",
             "support": {
-                "source": "http://cgit.drupalcode.org/hacked"
+                "source": "https://git.drupalcode.org/project/hacked"
             }
         },
         {
@@ -3559,7 +3579,7 @@
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "authors": [
                 {
@@ -3578,7 +3598,7 @@
             "description": "A history of the site's user logins.",
             "homepage": "https://www.drupal.org/project/login_history",
             "support": {
-                "source": "http://cgit.drupalcode.org/login_history"
+                "source": "https://git.drupalcode.org/project/login_history"
             }
         },
         {
@@ -3645,7 +3665,7 @@
             "description": "Enable security options in the login flow of the site.",
             "homepage": "https://www.drupal.org/project/login_security",
             "support": {
-                "source": "http://cgit.drupalcode.org/login_security"
+                "source": "https://git.drupalcode.org/project/login_security"
             }
         },
         {
@@ -3724,7 +3744,7 @@
             "description": "Reset all user accounts!",
             "homepage": "https://www.drupal.org/project/mass_pwreset",
             "support": {
-                "source": "http://cgit.drupalcode.org/mass_pwreset"
+                "source": "https://git.drupalcode.org/project/mass_pwreset"
             }
         },
         {
@@ -4670,7 +4690,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.2",
-                    "datestamp": "1509546906",
+                    "datestamp": "1559917500",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4797,7 +4817,7 @@
                 },
                 "drupal": {
                     "version": "8.x-1.x-dev",
-                    "datestamp": "1532558881",
+                    "datestamp": "1532659087",
                     "security-coverage": {
                         "status": "not-covered",
                         "message": "Dev releases are not covered by Drupal security advisories."
@@ -4832,7 +4852,7 @@
             "description": "Site security and configuration review module.",
             "homepage": "https://www.drupal.org/project/security_review",
             "support": {
-                "source": "http://cgit.drupalcode.org/security_review"
+                "source": "https://git.drupalcode.org/project/security_review"
             },
             "time": "2018-07-27T02:32:58+00:00"
         },
@@ -4884,7 +4904,7 @@
             "description": "Limit simultaneous user sessions.",
             "homepage": "https://www.drupal.org/project/session_limit",
             "support": {
-                "source": "http://cgit.drupalcode.org/session_limit"
+                "source": "https://git.drupalcode.org/project/session_limit"
             }
         },
         {
@@ -5043,7 +5063,7 @@
             "description": "Fixes the crooked access checks for Taxonomy pages.",
             "homepage": "https://www.drupal.org/project/taxonomy_access_fix",
             "support": {
-                "source": "http://cgit.drupalcode.org/taxonomy_access_fix"
+                "source": "https://git.drupalcode.org/project/taxonomy_access_fix"
             }
         },
         {
@@ -5183,7 +5203,7 @@
             "description": "Provides a user interface for the Token API and some missing core tokens.",
             "homepage": "https://www.drupal.org/project/token",
             "support": {
-                "source": "http://cgit.drupalcode.org/token"
+                "source": "https://git.drupalcode.org/project/token"
             }
         },
         {
@@ -5260,7 +5280,7 @@
                 },
                 "drupal": {
                     "version": "8.x-2.4",
-                    "datestamp": "1563096785",
+                    "datestamp": "1563099329",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5332,7 +5352,7 @@
             "description": "Prevents username enumeration on password reset and user pages.",
             "homepage": "https://www.drupal.org/project/username_enumeration_prevention",
             "support": {
-                "source": "http://cgit.drupalcode.org/username_enumeration_prevention"
+                "source": "https://git.drupalcode.org/project/username_enumeration_prevention"
             }
         },
         {
@@ -5436,12 +5456,12 @@
             ],
             "authors": [
                 {
-                    "name": "New Zeal",
-                    "homepage": "https://www.drupal.org/user/93571"
-                },
-                {
                     "name": "joekers",
                     "homepage": "https://www.drupal.org/user/2229066"
+                },
+                {
+                    "name": "kent@passingphase.nz",
+                    "homepage": "https://www.drupal.org/user/93571"
                 },
                 {
                     "name": "seanB",
@@ -6409,12 +6429,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/mediacurrent/rain.git",
-                "reference": "34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9"
+                "reference": "1fe2c8bd11cf7885700df9243193fb5a47e94b51"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/rain/get/34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9.zip",
-                "reference": "34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9",
+                "url": "https://bitbucket.org/mediacurrent/rain/get/1fe2c8bd11cf7885700df9243193fb5a47e94b51.zip",
+                "reference": "1fe2c8bd11cf7885700df9243193fb5a47e94b51",
                 "shasum": ""
             },
             "require": {
@@ -6430,7 +6450,7 @@
                 "drupal/google_analytics": "~2.0",
                 "drupal/inline_entity_form": "~1.0",
                 "drupal/linkit": "~5.0",
-                "drupal/media_entity_browser": "dev-2.x",
+                "drupal/media_entity_browser": "^2.0",
                 "drupal/metatag": "~1.0",
                 "drupal/moderation_sidebar": "~1.0",
                 "drupal/multiline_config": "~1.0",
@@ -6463,9 +6483,9 @@
             "description": "Rain install profile",
             "homepage": "https://bitbucket.org/mediacurrent/rain",
             "support": {
-                "source": "https://bitbucket.org/mediacurrent/rain/src/34cb1e0a7f99725c05c0f9e9f2b735c0eeee2dd9/?at=8.x-3.x"
+                "source": "https://bitbucket.org/mediacurrent/rain/src/1fe2c8bd11cf7885700df9243193fb5a47e94b51/?at=3.11"
             },
-            "time": "2019-10-14T18:06:14+00:00"
+            "time": "2019-10-15T19:28:49+00:00"
         },
         {
             "name": "mediacurrent/rain_admin",
@@ -11542,45 +11562,6 @@
             "time": "2019-10-09T13:36:56+00:00"
         },
         {
-            "name": "mediacurrent/mis_vagrant",
-            "version": "5.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://bitbucket.org/mediacurrent/mis_vagrant.git",
-                "reference": "31941ba780fc208f7b9d22ef1d595cb903407e0b"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://bitbucket.org/mediacurrent/mis_vagrant/get/31941ba780fc208f7b9d22ef1d595cb903407e0b.zip",
-                "reference": "31941ba780fc208f7b9d22ef1d595cb903407e0b",
-                "shasum": ""
-            },
-            "type": "vm",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Jeff Geerling",
-                    "homepage": "https://www.jeffgeerling.com"
-                },
-                {
-                    "name": "Oskar Schöldström",
-                    "homepage": "http://oxy.fi"
-                }
-            ],
-            "description": "A VM for local Drupal development, built with Vagrant + Ansible",
-            "homepage": "https://www.drupalvm.com",
-            "keywords": [
-                "drupal",
-                "vagrant",
-                "virtual machine",
-                "vm"
-            ],
-            "time": "2019-09-12T19:21:01+00:00"
-        },
-        {
             "name": "mglaman/drupal-check",
             "version": "1.0.13",
             "source": {
@@ -11792,8 +11773,8 @@
             "authors": [
                 {
                     "name": "Frank Kleine",
-                    "role": "Developer",
-                    "homepage": "http://frankkleine.de/"
+                    "homepage": "http://frankkleine.de/",
+                    "role": "Developer"
                 }
             ],
             "description": "Virtual file system to mock the real file system in unit tests.",
