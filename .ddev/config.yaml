@@ -1,4 +1,4 @@
-APIVersion: v1.11.1
+APIVersion: v1.11.2
 name: mcrain
 type: drupal8
 docroot: web
@@ -16,7 +16,7 @@ use_dns_when_possible: true
 timezone: ""
 
 
-# This config.yaml was created with ddev version v1.11.1 
+# This config.yaml was created with ddev version v1.11.2 
 # webimage: drud/ddev-webserver:v1.11.0
 # dbimage: drud/ddev-dbserver:v1.11.0-10.2
 # dbaimage: drud/phpmyadmin:v1.11.0
