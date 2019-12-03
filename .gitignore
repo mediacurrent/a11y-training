@@ -1,5 +1,6 @@
 # Ignore mysql files, other than the starter file.
 /*.sql
+/*.sql.gz
 # The starter database is included to simplify the training. Normally, databases
 # should NEVER be committed to the repository. Remove this line if using the
 # repo outside of the training.
