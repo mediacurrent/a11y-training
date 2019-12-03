@@ -25,7 +25,7 @@ Third, import the included database.
 > IMPORTANT NOTE! We've included a copy of a starter database in this repo to simplify the training process and avoid having to do a site install. You should **never commit a database** in your own projects.
 
 ```bash
-ddev import-db --src=mysql/dev-starter-db.sql
+ddev import-db --src=mysql/dev-starter-db.sql.gz
 ddev . drush cr
 ```
 
