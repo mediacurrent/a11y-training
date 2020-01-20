@@ -1,1 +1,3 @@
-# Accessibility training
+# Introduction
+
+Building accessible websites for everyone.
