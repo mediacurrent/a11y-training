@@ -7,3 +7,7 @@
 ## Principles of Accessibility​
 
 * [Web design is more than graphic design](principles/web-design-is-more-than-graphic-design.md)
+
+## Common Accessibility mistakes and how to avoid them
+
+## Accessibility testing & tools
