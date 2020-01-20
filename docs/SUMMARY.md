@@ -36,3 +36,11 @@
 * [Testing tools overview](testing/testing-tools-overview.md)
 * [Automated testing tools](testing/automated-testing-tools.md)
 * [Manual testing tools](testing/manual-testing-tools.md)
+
+## Exercises
+
+* [Exercises](exercises/first.md)
+
+## Resources
+
+* [Resources](resources/resources.md)
