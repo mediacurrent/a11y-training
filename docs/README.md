@@ -1,3 +1,3 @@
 # Introduction
 
-Welcometo Accessibility training.
+Welcometo Accessibility training.  A hands-on training workshop by MC.
