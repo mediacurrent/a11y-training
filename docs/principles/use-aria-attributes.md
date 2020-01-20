@@ -4,7 +4,7 @@ Another tenant for accessible development is to communicate with your computer. 
 
 Accessible Rich Internet Applications (ARIA) are a set of attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.
 
-It supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism. For example, ARIA enables accessible navigation landmarks in HTML4, JavaScript widgets, form hints and error messages, live content updates, and more.1
+It supplements HTML so that interactions and widgets commonly used in applications can be passed to assistive technologies when there is not otherwise a mechanism. For example, ARIA enables accessible navigation landmarks in HTML4, JavaScript widgets, form hints and error messages, live content updates, and more.
 
 ARIA works behind the scenes to provide extra context to your browser without anything visible to the user.
 
