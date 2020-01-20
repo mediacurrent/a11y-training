@@ -10,4 +10,8 @@
 
 ## Common Accessibility mistakes and how to avoid them
 
+* [Poor color contrast](common-mistakes/poor-color-contrast.md)
+
 ## Accessibility testing & tools
+
+* [Test planning](testing/test-planning.md)
