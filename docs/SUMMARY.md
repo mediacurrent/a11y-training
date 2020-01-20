@@ -1,5 +1,10 @@
 ‌# Summary​
 
+## About the project
+
+* [Course Project](about/project.md)
+* [Local setup](about/local-setup.md)
+
 ## Accessibility​ Fundamentals
 
 * [What is accessibility and why it matters](fundamentals/what-is-accessibility.md)
