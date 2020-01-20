@@ -8,4 +8,4 @@
 
 ## Common accessibility mistakes and how to avoid them
 
-## Accessibility testing & tools
+## Accessibility testing and tools
