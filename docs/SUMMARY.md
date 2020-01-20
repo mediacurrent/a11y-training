@@ -1,9 +1,9 @@
 ‌# Summary​
 
-## Use headings to create page groups like this one​
+## Fundamentals of  Accessibility​
 
-* [This  is the intro](README.md)
+* [What is accessibility and why it matters](fundamentals/second-page.md)
 
-## A second-page group​
+## Principles of Accessibility​
 
-* [Yet another page](second-page.md)
+* [Be as semantic as possible](principles/new-page.md)
