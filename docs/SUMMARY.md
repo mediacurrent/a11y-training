@@ -1,5 +1,9 @@
-# Table of contents
+‌# Summary​
 
-* [Introduction](README.md)
+## Use headings to create page groups like this one​
 
-## Accessibility Fundamentals
+* [This  is the intro](README.md)
+
+## A second-page group​
+
+* [Yet another page](second-page.md)
