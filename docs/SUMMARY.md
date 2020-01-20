@@ -3,6 +3,11 @@
 ## Accessibility​ Fundamentals
 
 * [What is accessibility and why it matters](fundamentals/what-is-accessibility.md)
+* [Accessibility considerations & inclusive design](accessibility-considerations.md)
+* [The value of accessibility](value-of-accessibility.md)
+* [Types of disabilities](types-of-disabilities.md)
+* [Assistive technologies](assistive-technologies.md)
+* [Statistics, laws and more](statistics.md)
 
 ## Principles of Accessibility​
 
