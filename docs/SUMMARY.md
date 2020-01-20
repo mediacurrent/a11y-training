@@ -1,9 +1,9 @@
 ‌# Summary​
 
-## Fundamentals of  Accessibility​
+## Accessibility​ Fundamentals
 
-* [What is accessibility and why it matters](fundamentals/second-page.md)
+* [What is accessibility and why it matters](fundamentals/what-is-accessibility.md)
 
 ## Principles of Accessibility​
 
-* [Be as semantic as possible](principles/new-page.md)
+* [Web design is more than graphic design](principles/web-design-is-more-than-graphic-design.md)
