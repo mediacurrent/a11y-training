@@ -17,7 +17,7 @@
 ## Principles of Accessibility​
 
 * [Web design is more than graphic design](principles/web-design-is-more-than-graphic-design.md)
-* [Be as semantic as possible](principles/be-semantic.md)
+* [Be semantic](principles/be-semantic.md)
 * [A website should be accessible without CSS](principles/accessible-without-css.md)
 * [Use ARIA attributes to communicate context](principles/use-aria-attributes.md)
 
