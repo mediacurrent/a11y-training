@@ -15,3 +15,7 @@
 ## Accessibility testing & tools
 
 * [Test planning](testing/test-planning.md)
+* [Documenting findings](testing/documenting-findings.md)
+* [Testing tools overview](testing/testing-tools-overview.md)
+* [Automated testing tools](testing/automated-testing-tools.md)
+* [Manual testing tools](testing/manual-testing-tools.md)
