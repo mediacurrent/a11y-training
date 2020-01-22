@@ -11,7 +11,7 @@
 
 name: A11y Theme
 type: theme
-description: A theme for the Mediacurrent accessibility demo site. 
+description: A theme created for use of Mediacurrent&#39;s accessibility training site. 
 package: Other
 core: 8.x
 # Classy vs. Stable as a base theme: https://www.lullabot.com/articles/a-tale-of-two-base-themes-in-drupal-8-core
