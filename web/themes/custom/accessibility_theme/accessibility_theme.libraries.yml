@@ -28,3 +28,18 @@ global:
 #   dependencies:
 #     - accessibility_theme/clearfix
 #     - accessibility_theme/visually-hidden
+
+button:
+  css:
+    component:
+      dist/css/button.css: {}
+
+message:
+  css:
+    component:
+      dist/css/message.css: {}
+
+tabs:
+  css:
+    component:
+      dist/css/tabs.css: {}

@@ -9,9 +9,9 @@
 # the "drush cr" command or by simply visiting the Appearance page at
 # admin/appearance.
 
-name: A11y Theme
+name: Accessibility Theme
 type: theme
-description: A theme created for use of Mediacurrent&#39;s accessibility training site. 
+description: A theme created for the Mediacurrent accessibility demo site. 
 package: Other
 core: 8.x
 # Classy vs. Stable as a base theme: https://www.lullabot.com/articles/a-tale-of-two-base-themes-in-drupal-8-core

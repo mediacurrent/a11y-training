@@ -17,7 +17,7 @@ accessibility_theme.srcset.16_9:
   weight: 0
   multipliers:
     - 1x
-  group: A11y Theme Srcset
+  group: Accessibility Theme Srcset
 
 accessibility_theme.srcset.2_1:
   label: '2:1'
@@ -25,4 +25,4 @@ accessibility_theme.srcset.2_1:
   weight: 1
   multipliers:
     - 1x
-  group: A11y Theme Srcset
+  group: Accessibility Theme Srcset
