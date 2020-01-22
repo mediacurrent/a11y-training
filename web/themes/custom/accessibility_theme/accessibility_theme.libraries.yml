@@ -33,12 +33,13 @@ button:
   css:
     component:
       dist/css/button.css: {}
-tabs:
-  css:
-    component:
-      dist/css/tabs.css: {}
+
 message:
   css:
     component:
       dist/css/message.css: {}
 
+tabs:
+  css:
+    component:
+      dist/css/tabs.css: {}
