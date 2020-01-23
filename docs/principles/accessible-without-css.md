@@ -13,7 +13,7 @@ You can save this in the bookmarks tab of your browser to make this easy to impl
 {% endhint %}
 
 
-### Firefox broweser
+### Firefox browser
 1. While in Firefox, click **View | Page Styles**
 2. Select **No styles**
 
