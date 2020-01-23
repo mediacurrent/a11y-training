@@ -5,13 +5,18 @@ Your markup should make your page like a well-structured outline. This way, if s
 The best way to check to ensure your markup is structured adequately is by removing CSS from your site to see how a screen reader would read the content.
 
 ## To remove CSS from a site:
-
+### Chrome browser
 1. In the Chrome devtools console (right-click > Inspect),
 2. enter the following into the Console tab: ```document.head.parentNode.removeChild.(document.head);```
-
 {% hint style="info" %}
 You can save this in the bookmarks tab of your browser to make this easy to implement across any page quickly.
 {% endhint %}
+
+
+### Firefox broweser
+1. While in Firefox, click **View | Page Styles**
+2. Select **No styles**
+
 
 You’ll see the CSS disappear from the page.
 
