@@ -14,7 +14,6 @@ nfs_mount_enabled: false
 provider: default
 hooks:
   post-import-db:
-  - exec: drush cr
   - exec: drush updb
   - exec: drush cim
 use_dns_when_possible: true
