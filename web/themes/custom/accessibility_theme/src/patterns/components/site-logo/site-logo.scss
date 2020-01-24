@@ -1,0 +1,13 @@
+// Site Logo
+//
+// Markup: site-logo.twig
+//
+// Style guide: Components.site-logo
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.site-logo {
+  width: 150px;
+  height: 90px;
+}

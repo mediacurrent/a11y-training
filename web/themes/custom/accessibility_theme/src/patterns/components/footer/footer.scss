@@ -1,0 +1,87 @@
+// Footer
+//
+// The main footer component.
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.footer {
+  padding: 60px 20px 20px;
+  background: #f0f0f0;
+}
+
+.footer__container {
+  margin: 0 auto;
+  max-width: 1008px;
+}
+
+.footer__content {
+  display: flex;
+  flex-flow: row wrap;
+
+  @include breakpoint($bp-xsm) {
+    justify-content: space-around;
+  }
+}
+
+.footer__content,
+.footer__subcontent {
+
+  & > div {
+    margin-bottom: 30px;
+  }
+
+  @include breakpoint($bp-md) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.footer__logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include breakpoint($bp-sm) {
+    width: auto;
+  }
+}
+
+.footer__contact {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+
+  @include breakpoint($bp-xsm) {
+    width: auto;
+  }
+}
+
+.footer__contact--address {
+  @include breakpoint($bp-xsm) {
+    margin-right: 30px;
+  }
+
+  @include breakpoint($bp-md) {
+    margin-right: 0;
+  }
+}
+
+// Placeholder styles until social component complete.
+.footer__social {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  min-height: 100px;
+  background: #333;
+
+  @include breakpoint($bp-md) {
+    width: 300px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.footer__copyright {
+  text-align: center;
+}

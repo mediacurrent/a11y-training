@@ -1,0 +1,57 @@
+{
+  "logo": {
+    "link":"https://www.mediacurrent.com/",
+    "class": "site-logo--footer"
+  },
+  "contact": {
+     "address": [
+        {
+          "line": "3180 North Point Parkway"
+        },
+        {
+          "line": "Building 200, Suite 208"
+        },
+        {
+          "line": "Alpharetta, Georgia 30005"
+        }
+     ],
+     "items": [
+      {
+        "text": "info@mediacurrent.com",
+        "url": "mailto:info@mediacurrent.com"
+      },
+      {
+        "preText": "Phone: ",
+        "text": "678.580.1690",
+        "url": "tel:678.580.1690"
+      },
+      {
+        "preText": "Toll Free: ",
+        "text": "866.507.0005",
+        "url": "tel:866.507.0005"
+      },
+      {
+        "preText": "Fax: ",
+        "text": "770.360.5776",
+        "url": "tel:770.360.5776"
+      }
+     ]
+  },
+  "menu": {
+    "items": [
+      {
+        "text": "Legal",
+        "link": "https://www.mediacurrent.com/legal"
+      },
+      {
+        "text": "Privacy",
+        "link": "https://www.mediacurrent.com/privacy-policy"
+      },
+      {
+        "text": "Accessibility",
+        "link": "https://www.mediacurrent.com/accessibility"
+      }
+    ]
+  },
+  "copyright":"© 2007 - 2020 Mediacurrent Interactive Solutions LLC - All Rights Reserved"
+}
