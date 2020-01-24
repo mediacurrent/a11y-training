@@ -1,0 +1,37 @@
+uuid: b6aaec98-2eb1-4c3c-81e4-2d4b1e24498d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_cards
+    - paragraphs.paragraphs_type.card
+    - paragraphs.paragraphs_type.card_deck
+  module:
+    - entity_reference_revisions
+id: paragraph.card_deck.field_cards
+field_name: field_cards
+entity_type: paragraph
+bundle: card_deck
+label: Cards
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      card: card
+    target_bundles_drag_drop:
+      card:
+        enabled: true
+        weight: 4
+      card_deck:
+        weight: 5
+        enabled: false
+      hero:
+        weight: 6
+        enabled: false
+field_type: entity_reference_revisions
