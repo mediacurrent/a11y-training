@@ -1,0 +1,9 @@
+uuid: b58e1121-2c82-43f9-ab05-ee6334392f07
+langcode: en
+status: true
+dependencies: {  }
+id: card_deck
+label: 'Card Deck'
+icon_uuid: null
+description: 'Holds the Cards'
+behavior_plugins: {  }

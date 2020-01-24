@@ -1,0 +1,52 @@
+uuid: 6a3f96ee-3c14-4dd6-a1c2-cc226fcb0779
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_sections
+    - node.type.page
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.card_deck
+    - paragraphs.paragraphs_type.faq_accordion
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+id: node.page.field_sections
+field_name: field_sections
+entity_type: node
+bundle: page
+label: Sections
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      hero: hero
+      banner: banner
+      card_deck: card_deck
+      faq_accordion: faq_accordion
+    target_bundles_drag_drop:
+      hero:
+        enabled: true
+        weight: -13
+      banner:
+        enabled: true
+        weight: -12
+      card:
+        weight: -11
+        enabled: false
+      card_deck:
+        enabled: true
+        weight: -10
+      faq_accordion:
+        enabled: true
+        weight: -9
+      faq_item:
+        weight: -8
+        enabled: false
+field_type: entity_reference_revisions
