@@ -23,6 +23,8 @@
         "drupal/admin_toolbar": "^2.0",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.7.0",
+        "drupal/paragraphs": "^1.10",
+        "drupal/yaml_content": "^1.0@alpha",
         "drush/drush": "^9.0.0",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
