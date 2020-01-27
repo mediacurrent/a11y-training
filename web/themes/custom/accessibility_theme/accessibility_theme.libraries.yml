@@ -34,10 +34,30 @@ button:
     component:
       dist/css/button.css: {}
 
+contact:
+  css:
+    component:
+      dist/css/contact.css: {}
+
+footer:
+  css:
+    component:
+      dist/css/footer.css: {}
+
+footer-menu:
+  css:
+    component:
+      dist/css/footer-menu.css: {}
+
 message:
   css:
     component:
       dist/css/message.css: {}
+
+site-logo:
+  css:
+    component:
+      dist/css/site-logo.css: {}
 
 tabs:
   css:

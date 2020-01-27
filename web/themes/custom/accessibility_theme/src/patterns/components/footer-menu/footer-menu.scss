@@ -1,0 +1,31 @@
+// Footer Menu
+//
+// The footer menu is part of the main footer component.
+
+// Import site utilities.
+@import '../../global/utils/init';
+
+.footer-menu__list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.footer-menu__item {
+
+  &::after {
+    content: '|';
+    color: #000;
+    font-size: 16px;
+    margin-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  &:last-child {
+
+    &::after {
+      display: none;
+    }
+  }
+}
