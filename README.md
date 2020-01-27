@@ -10,7 +10,7 @@ This project assumes that you have the following installed:
 First, clone this repository:
 
 ```bash
-git clone https://github.com/mediacurrent/a11y-training.git
+git clone git@github.com:mediacurrent/a11y-training.git
 ```
 
 Second, open the location where you cloned/downloaded the project in your terminal/prompt and start DDEV.
