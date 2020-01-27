@@ -1,0 +1,24 @@
+{
+  "networks": [
+    {
+      "className": "facebook",
+      "followText": "Like us on Facebook",
+      "url": "https://www.facebook.com/mediacurrent/"
+    },
+    {
+      "className": "twitter",
+      "followText": "Follow us on Twitter",
+      "url": "https://twitter.com/mediacurrent"
+    },
+    {
+      "className": "youtube",
+      "followText": "Watch us on YouTube",
+      "url": "https://www.youtube.com/user/MediacurrentDrupal"
+    },
+    {
+      "className": "linkedin",
+      "followText": "Connect with us on LinkedIn",
+      "url": "https://www.linkedin.com/company/mediacurrent"
+    },
+  ]
+}
