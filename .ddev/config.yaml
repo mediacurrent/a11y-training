@@ -14,12 +14,11 @@ nfs_mount_enabled: false
 provider: default
 hooks:
   post-import-db:
-  - exec: drush updb
-  - exec: drush cim
+    - exec: drush updb
+    - exec: drush cr
+    - exec: drush uli
 use_dns_when_possible: true
 timezone: ""
-
-
 # This config.yaml was created with ddev version v1.12.2
 # webimage: drud/ddev-webserver:v1.12.2
 # dbimage: drud/ddev-dbserver-mariadb-10.2:v1.12.0
