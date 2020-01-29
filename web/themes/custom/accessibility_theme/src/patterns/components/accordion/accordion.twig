@@ -1,0 +1,33 @@
+<div class="accordion">
+  <h2 class="accordion__title">{{ title }}</h2>
+
+  <div class="accordion__wrapper">
+    {% for section in sections %}
+   
+   <div class="accordion__section">
+      <h3 class="section__tile">
+        <button class="accordion-trigger" 
+          aria-expanded="false"
+          aria-controls="{{section.section_id}}"
+          id="trigger_id">
+        
+          <span class="accordion-title">
+            {{section.section_title}} <span class="accordion-icon"></span>
+          </span>
+        </button>
+      </h3>
+      <div id="{{section.section_id}}"
+        role="region"
+        aria-labelledby="trigger_id"
+        class="accordion-panel"
+        hidden>
+      
+        <div class="section__content">
+          {{section.content}}
+        </div>
+      </div>
+    </div>
+  
+    {% endfor %}   
+  </div>
+</div>
