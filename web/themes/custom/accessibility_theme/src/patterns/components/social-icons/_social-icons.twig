@@ -3,7 +3,7 @@
   <address>
     <ul class="social-icons__icons">
       {% for network in networks %}
-        <li class="social-icons__item" data-network="{{ network.className }}">
+        <li class="social-icons__item" data-network="{{ network.name }}">
           <a href="{{ network.url }}">{{ network.followText }}</a>
         </li>
       {% endfor %}
