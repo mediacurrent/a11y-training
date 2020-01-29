@@ -1,7 +1,8 @@
 {{ attach_library('accessibility_theme/heading') }}
 
 {# Defaults to h2 (heading level 2) if no heading level is supplied. #}
-<h{{ heading_level|default('2') }} class="heading {{ modifier }}" {{ extra_attributes }}>
+<h{{ heading_level|default('2') }} class="heading {{ modifier }} {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
 
   {% if url %}
     <a href="{{ url }}" class="heading__link">{{ title }}</a>

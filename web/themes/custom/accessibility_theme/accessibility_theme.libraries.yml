@@ -73,6 +73,7 @@ hero:
   css:
     component:
       dist/css/hero.css: {}
+
 media-item:
   css:
     component:

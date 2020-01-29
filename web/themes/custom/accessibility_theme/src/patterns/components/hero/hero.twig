@@ -1,16 +1,7 @@
 {{ attach_library('accessibility_theme/hero') }}
 
-<div class="hero {{ modifier }}" {{ extra_attributes }}>
-  {#
-    Optional: Pass in Drupal specific functionality.
-    Note that this is only needed with nodes and blocks.
-    This isn't needed for Drupal Paragraphs.
-  #}
-  {#
-    {{ title_prefix }}
-    {{ title_suffix }}
-  #}
-
+<div class="hero {{ modifier }} {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
   {# Media could be an image or video. #}
   {% if image %}
     <div class="hero__media">
@@ -24,15 +15,13 @@
 
   <div class="hero__content">
     {% if title %}
-      <div class="hero__heading">
-        {%
-          include '@accessibility_theme/heading/heading.twig' with {
-            "title": title,
-            "heading_level": heading_level,
-            "modifier": "hero__heading"
-          } only
-        %}
-      </div>
+      {%
+        include '@accessibility_theme/heading/heading.twig' with {
+          "title": title,
+          "heading_level": heading_level,
+          "modifier": "hero__heading"
+        } only
+      %}
     {% endif %}
 
     {% if body %}
