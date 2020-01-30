@@ -23,6 +23,7 @@
         "drupal/admin_toolbar": "^2.0",
         "drupal/console": "^1.0.2",
         "drupal/core": "~8.8",
+        "drupal/menu_link_attributes": "^1.0",
         "drupal/paragraphs": "^1.10",
         "drupal/yaml_content": "^1.0@alpha",
         "drush/drush": "^9.0.0",
