@@ -1,0 +1,25 @@
+uuid: 71428797-2f35-4df0-bcce-ef13c653a681
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.social-links
+  module:
+    - system
+  theme:
+    - bartik
+id: sociallinks
+theme: bartik
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'system_menu_block:social-links'
+settings:
+  id: 'system_menu_block:social-links'
+  label: 'Social Links'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }
