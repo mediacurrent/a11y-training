@@ -323,6 +323,10 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
             return $this->validate($request, $entry, $catch);
         }
 
+        if ($entry->headers->hasCacheControlDirective('no-cache')) {
+            return $this->validate($request, $entry, $catch);
+        }
+
         $this->record($request, 'fresh');
 
         $entry->headers->set('Age', $entry->getAge());
@@ -352,7 +356,9 @@ class HttpCache implements HttpKernelInterface, TerminableInterface
         }
 
         // add our cached last-modified validator
-        $subRequest->headers->set('if_modified_since', $entry->headers->get('Last-Modified'));
+        if ($entry->headers->has('Last-Modified')) {
+            $subRequest->headers->set('if_modified_since', $entry->headers->get('Last-Modified'));
+        }
 
         // Add our cached etag validator to the environment.
         // We keep the etags from the client to handle the case when the client

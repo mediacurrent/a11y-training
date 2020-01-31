@@ -1,4 +1,4 @@
-# Generated on 2019-12-05 using generator-mc-d8-theme 2.1.0
+# Generated on 2020-01-22 using generator-mc-d8-theme 2.2.0
 
 # Drupal's .info.yml files allow themers to easily specify some of the static
 # properties of your theme. Properties such as its name, libraries of style
@@ -11,7 +11,7 @@
 
 name: Accessibility Theme
 type: theme
-description: A custom Drupal 8 theme for accessibility training. 
+description: A theme created for the Mediacurrent accessibility demo site. 
 package: Other
 core: 8.x
 # Classy vs. Stable as a base theme: https://www.lullabot.com/articles/a-tale-of-two-base-themes-in-drupal-8-core

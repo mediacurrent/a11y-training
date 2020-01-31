@@ -1,0 +1,19 @@
+uuid: 6318f94b-5d0a-4fcb-aece-c75e10bc0056
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_eyebrow
+    - paragraphs.paragraphs_type.card
+id: paragraph.card.field_eyebrow
+field_name: field_eyebrow
+entity_type: paragraph
+bundle: card
+label: Eyebrow
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
