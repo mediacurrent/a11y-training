@@ -45,3 +45,13 @@
     #{$property}: $value;
   }
 }
+
+// Hides element text for image replacement.
+@mixin hide-text {
+  font-size: 0.1px;
+  text-indent: 100%;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+}
