@@ -26,6 +26,7 @@ $available-icons: ['facebook', 'instagram', 'linkedin', 'pinterest', 'twitter', 
   background-size: contain;
 
   @each $icon in $available-icons {
+
     &[data-network='#{$icon}'] {
       display: block;
       background-image: url('../images/#{$icon}.svg');
@@ -38,7 +39,9 @@ $available-icons: ['facebook', 'instagram', 'linkedin', 'pinterest', 'twitter', 
     height: 100%;
     border-radius: 9999px;
 
-    &:hover, &:active, &:focus {
+    &:hover,
+    &:active,
+    &:focus {
       background-color: rgba(white, 0.1);
     }
   }

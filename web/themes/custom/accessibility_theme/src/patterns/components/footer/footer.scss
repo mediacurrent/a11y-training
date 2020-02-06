@@ -7,7 +7,12 @@
 
 .footer {
   padding: 60px 20px 20px;
-  background: #f0f0f0;
+  background: $color-mediacurrent-primary;
+  color: $color-white;
+
+  a {
+    color: $color-white;
+  }
 }
 
 .footer__container {
@@ -22,18 +27,32 @@
   @include breakpoint($bp-xsm) {
     justify-content: space-around;
   }
-}
-
-.footer__content,
-.footer__subcontent {
-
-  & > div {
-    margin-bottom: 30px;
-  }
 
   @include breakpoint($bp-md) {
     display: flex;
     justify-content: space-between;
+  }
+
+  & > div {
+    margin-bottom: 30px;
+
+    @include breakpoint($bp-lg) {
+      margin-bottom: 72px;
+    }
+  }
+
+  .footer__subcontent {
+    margin-bottom: 0;
+    width: 100%;
+
+    @include breakpoint($bp-md) {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    @include breakpoint($bp-lg) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -44,6 +63,10 @@
 
   @include breakpoint($bp-sm) {
     width: auto;
+  }
+
+  .site-logo__icon {
+    fill: $color-white;
   }
 }
 
@@ -57,6 +80,13 @@
   }
 }
 
+.footer__contact--links {
+
+  a {
+    text-decoration: none;
+  }
+}
+
 .footer__contact--address {
   @include breakpoint($bp-xsm) {
     margin-right: 30px;
@@ -67,13 +97,10 @@
   }
 }
 
-// Placeholder styles until social component complete.
 .footer__social {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  min-height: 100px;
-  background: #333;
 
   @include breakpoint($bp-md) {
     width: 300px;
