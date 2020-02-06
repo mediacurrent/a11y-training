@@ -24,7 +24,11 @@
         %}
       </div>
       <div class="footer__social">
-        {# TODO: put social icons in here once component is complete #}
+        {%
+          include "@accessibility_theme/social-icons/_social-icons.twig" with {
+            networks: social.items
+          } only
+        %}
       </div>
     </div>
     <div class="footer__subcontent">
