@@ -6,19 +6,24 @@
 @import '../../global/utils/init';
 
 .button {
-  background-color: $color-navy-blue;
+  background-color: $color-ocean-blue;
   border: 1px solid transparent;
   border-radius: 0;
+  color: $color-white;
   cursor: pointer;
   display: inline-block;
   font-weight: bold;
+  height: 50px;
   padding: 10px 20px;
   text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   transition: background-color $transition, color $transition;
 
   &:hover,
-  &:active {
-    background-color: darken($color-navy-blue, 15);
+  &:active,
+  &:focus {
+    background-color: $color-deep-blue;
     color: $color-white;
   }
 

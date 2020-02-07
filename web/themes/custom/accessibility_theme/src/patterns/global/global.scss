@@ -41,8 +41,15 @@ html {
 
 // Sections.
 body {
-  margin: 0;
+  color: $color-navy-blue;
   font-size: 1.8rem;
+  font-weight: $font-weight-normal;
+  margin: 0;
+}
+
+a {
+  color: $color-ocean-blue;
+  text-decoration: underline;
 }
 
 // Render the `main` element consistently in IE11.
@@ -231,16 +238,4 @@ dl {
 li {
   margin: 0;
   padding: 0;
-}
-
-// Headings are always 'just a bit bigger' than body copy.
-// https://csswizardry.com/2016/02/managing-typography-on-large-apps/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.25rem;
-  margin: 0 0 1rem;
 }
