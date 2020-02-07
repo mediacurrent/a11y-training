@@ -2,8 +2,14 @@
 //
 // Typography variables.
 
-$font-sans: 'Lato', 'Arial', sans-serif;
-$font-serif: 'Georgia', serif;
+$font-sans: 'Raleway', sans-serif;
+$font-serif: serif;
+
+// Font-Weights.
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-italic: italic;
 
 @mixin font-stack-primary {
   font-family: $font-sans;
@@ -12,12 +18,6 @@ $font-serif: 'Georgia', serif;
 @mixin font-stack-secondary {
   font-family: $font-serif;
 }
-
-// Font-Weights.
-$font-weight-light: 200;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-italic: italic;
 
 // Heading mixins.
 @mixin heading-1-style {

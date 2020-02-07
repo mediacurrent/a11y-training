@@ -5,11 +5,6 @@
 // Only variables / mixins / settings.
 @import 'utils/init';
 
-// Import font-face fonts.
-//
-// This should only be imported and loaded once.
-@import 'fonts/fonts';
-
 // Base
 //
 // Plain html element styling. Shouldn't require
@@ -38,8 +33,8 @@
 
 html {
   @include font-stack-primary;
-  font-size: 100%;
-  line-height: 1.15;
+  font-size: 62.5%;
+  line-height: 1.5;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
 }
@@ -47,6 +42,7 @@ html {
 // Sections.
 body {
   margin: 0;
+  font-size: 1.8rem;
 }
 
 // Render the `main` element consistently in IE11.
@@ -159,7 +155,7 @@ button:-moz-focusring,
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring {
-  outline: 1px dotted $color-danube;
+  outline: 1px dotted $color-ocean-blue;
 }
 
 // Correct the padding in Firefox.

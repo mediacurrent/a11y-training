@@ -39,6 +39,11 @@ contact:
     component:
       dist/css/contact.css: {}
 
+fonts:
+  css:
+    theme:
+      'https://fonts.googleapis.com/css?family=Raleway:400,700': { type: external, minified: true }
+
 footer:
   css:
     component:

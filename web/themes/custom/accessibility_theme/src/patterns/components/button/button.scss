@@ -6,7 +6,7 @@
 @import '../../global/utils/init';
 
 .button {
-  background-color: $color-tradewind;
+  background-color: $color-navy-blue;
   border: 1px solid transparent;
   border-radius: 0;
   cursor: pointer;
@@ -18,7 +18,7 @@
 
   &:hover,
   &:active {
-    background-color: darken($color-tradewind, 15);
+    background-color: darken($color-navy-blue, 15);
     color: $color-white;
   }
 
@@ -30,16 +30,16 @@
 
 .button--primary {
   background-color: $color-white;
-  border: 3px solid $color-tradewind;
+  border: 3px solid $color-navy-blue;
   border-radius: 3px;
-  color: $color-tradewind;
+  color: $color-navy-blue;
   text-decoration: none;
 
   &:hover,
   &:active {
     background-color: rgba($color-white, 0.85);
-    border: 3px solid darken($color-tradewind, 15);
-    color: darken($color-tradewind, 15);
+    border: 3px solid darken($color-navy-blue, 15);
+    color: darken($color-navy-blue, 15);
     text-decoration: none;
   }
 }
