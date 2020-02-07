@@ -5,11 +5,6 @@
 // Only variables / mixins / settings.
 @import 'utils/init';
 
-// Import font-face fonts.
-//
-// This should only be imported and loaded once.
-@import 'fonts/fonts';
-
 // Base
 //
 // Plain html element styling. Shouldn't require
@@ -38,15 +33,23 @@
 
 html {
   @include font-stack-primary;
-  font-size: 100%;
-  line-height: 1.15;
+  font-size: 62.5%;
+  line-height: 1.5;
   box-sizing: border-box;
   -webkit-text-size-adjust: 100%;
 }
 
 // Sections.
 body {
+  color: $color-navy-blue;
+  font-size: 1.8rem;
+  font-weight: $font-weight-normal;
   margin: 0;
+}
+
+a {
+  color: $color-ocean-blue;
+  text-decoration: underline;
 }
 
 // Render the `main` element consistently in IE11.
@@ -159,7 +162,7 @@ button:-moz-focusring,
 [type='button']:-moz-focusring,
 [type='reset']:-moz-focusring,
 [type='submit']:-moz-focusring {
-  outline: 1px dotted $color-danube;
+  outline: 1px dotted $color-ocean-blue;
 }
 
 // Correct the padding in Firefox.
@@ -235,16 +238,4 @@ dl {
 li {
   margin: 0;
   padding: 0;
-}
-
-// Headings are always 'just a bit bigger' than body copy.
-// https://csswizardry.com/2016/02/managing-typography-on-large-apps/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 1.25rem;
-  margin: 0 0 1rem;
 }

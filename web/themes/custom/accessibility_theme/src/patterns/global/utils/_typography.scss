@@ -2,8 +2,32 @@
 //
 // Typography variables.
 
-$font-sans: 'Lato', 'Arial', sans-serif;
-$font-serif: 'Georgia', serif;
+$font-sans: 'Raleway', sans-serif;
+$font-serif: serif;
+
+// Font-Weights.
+$font-weight-light: 200;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$font-italic: italic;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-navy-blue;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  font-weight: $font-weight-bold;
+  margin: 0 0 1rem;
+}
+
+h5,
+h6 {
+  font-weight: $font-weight-normal;
+}
 
 @mixin font-stack-primary {
   font-family: $font-sans;
@@ -13,22 +37,91 @@ $font-serif: 'Georgia', serif;
   font-family: $font-serif;
 }
 
-// Font-Weights.
-$font-weight-light: 200;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-$font-italic: italic;
-
 // Heading mixins.
 @mixin heading-1-style {
-  @include font-stack-secondary;
-  font-size: 1.5rem;
-  // 28px.
-  line-height: 1.16;
+  font-size: 3.8rem;
 
-  @include breakpoint($bp-sm) {
-    font-size: 3rem;
-    // 56px.
-    line-height: 1.16;
+  @include breakpoint($bp-md) {
+    font-size: 5.5rem;
   }
+
+  @include breakpoint($bp-lg) {
+    font-size: 7.2rem;
+  }
+}
+
+@mixin heading-2-style {
+  font-size: 3rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 4.2rem;
+  }
+
+  @include breakpoint($bp-lg) {
+    font-size: 5.5rem;
+  }
+}
+
+@mixin heading-3-style {
+  font-size: 2.7rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 3.2rem;
+  }
+
+  @include breakpoint($bp-lg) {
+    font-size: 4.2rem;
+  }
+}
+
+@mixin heading-4-style {
+  font-size: 2.4rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 2.6rem;
+  }
+}
+
+@mixin heading-5-style {
+  font-size: 1.6rem;
+
+  @include breakpoint($bp-md) {
+    font-size: 1.8rem;
+  }
+
+  @include breakpoint($bp-lg) {
+    font-size: 2rem;
+  }
+}
+
+@mixin heading-6-style {
+  font-size: 1.4rem;
+
+  @include breakpoint($bp-lg) {
+    font-size: 1.6rem;
+  }
+}
+
+h1 {
+  @include heading-1-style;
+}
+
+h2 {
+  @include heading-2-style;
+}
+
+h3 {
+  @include heading-3-style;
+}
+
+h4 {
+  @include heading-4-style;
+}
+
+h5 {
+  @include heading-5-style;
+}
+
+h6 {
+  @include heading-6-style;
 }

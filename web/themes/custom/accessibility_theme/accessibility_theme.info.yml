@@ -11,7 +11,7 @@
 
 name: Accessibility Theme
 type: theme
-description: A theme created for the Mediacurrent accessibility demo site. 
+description: A theme created for the Mediacurrent accessibility demo site.
 package: Other
 core: 8.x
 # Classy vs. Stable as a base theme: https://www.lullabot.com/articles/a-tale-of-two-base-themes-in-drupal-8-core
@@ -39,6 +39,7 @@ libraries-override:
 # The "libraries:" section will add a library to _all_ pages.
 libraries:
   - accessibility_theme/global
+  - accessibility_theme/fonts
   # Example adding the webfonts library to every page.
   # See accessibility_theme.libraries.yml for more info.
   #- accessibility_theme/webfonts
