@@ -1,14 +1,14 @@
-uuid: 67b8ffe7-5cb1-42f1-a605-db9724409e5c
+uuid: 1de98a56-726f-4d23-9b2a-6b525095fbf0
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_title
-    - paragraphs.paragraphs_type.faq_accordion
-id: paragraph.faq_accordion.field_title
+    - paragraphs.paragraphs_type.50_50
+id: paragraph.50_50.field_title
 field_name: field_title
 entity_type: paragraph
-bundle: faq_accordion
+bundle: '50_50'
 label: Title
 description: ''
 required: false

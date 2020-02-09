@@ -1,29 +1,35 @@
-uuid: d7269eff-0c23-4f4a-a16f-61af3f5045f8
+uuid: 13a803d6-6ca8-4c23-90cc-a8c227bc740b
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.faq_accordion.field_faq_items
-    - field.field.paragraph.faq_accordion.field_title
-    - paragraphs.paragraphs_type.faq_accordion
+    - field.field.paragraph.accordion.field_faq_items
+    - field.field.paragraph.accordion.field_title
+    - paragraphs.paragraphs_type.accordion
   module:
     - paragraphs
-id: paragraph.faq_accordion.default
+id: paragraph.accordion.default
 targetEntityType: paragraph
-bundle: faq_accordion
+bundle: accordion
 mode: default
 content:
   field_faq_items:
-    type: entity_reference_paragraphs
     weight: 1
     settings:
       title: Paragraph
       title_plural: Paragraphs
       edit_mode: open
+      closed_mode: summary
+      autocollapse: none
+      closed_mode_threshold: 0
       add_mode: dropdown
       form_display_mode: default
       default_paragraph_type: ''
+      features:
+        duplicate: duplicate
+        collapse_edit_all: collapse_edit_all
     third_party_settings: {  }
+    type: paragraphs
     region: content
   field_title:
     weight: 0

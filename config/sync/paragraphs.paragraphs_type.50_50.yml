@@ -1,0 +1,9 @@
+uuid: 71321f6e-a89c-4df0-acd4-913edeae44cc
+langcode: en
+status: true
+dependencies: {  }
+id: '50_50'
+label: 50/50
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

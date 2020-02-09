@@ -1,9 +1,9 @@
-uuid: 42e9107d-a65a-4862-9e73-9dcb0c340d9c
+uuid: cab80410-8bec-494b-bf75-caa7508a15a3
 langcode: en
 status: true
 dependencies: {  }
-id: faq_accordion
-label: 'FAQ Accordion'
+id: accordion
+label: Accordion
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

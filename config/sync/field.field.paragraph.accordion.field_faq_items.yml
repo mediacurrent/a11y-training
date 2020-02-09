@@ -1,21 +1,21 @@
-uuid: df03d540-6df0-4674-8f6e-879c824c0480
+uuid: 6d1b79bd-8aec-481c-a9ca-75111c3c414b
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.paragraph.field_faq_items
-    - paragraphs.paragraphs_type.faq_accordion
+    - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.faq_item
   module:
     - entity_reference_revisions
-id: paragraph.faq_accordion.field_faq_items
+id: paragraph.accordion.field_faq_items
 field_name: field_faq_items
 entity_type: paragraph
-bundle: faq_accordion
+bundle: accordion
 label: Questions
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -25,19 +25,28 @@ settings:
     target_bundles:
       faq_item: faq_item
     target_bundles_drag_drop:
+      '50_50':
+        weight: 9
+        enabled: false
+      accordion:
+        weight: 10
+        enabled: false
+      banner:
+        weight: 11
+        enabled: false
       card:
-        weight: 6
+        weight: 12
         enabled: false
       card_deck:
-        weight: 7
+        weight: 13
         enabled: false
       faq_accordion:
-        weight: 8
+        weight: 14
         enabled: false
       faq_item:
         enabled: true
-        weight: 9
+        weight: 15
       hero:
-        weight: 10
+        weight: 16
         enabled: false
 field_type: entity_reference_revisions
