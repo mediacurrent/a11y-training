@@ -1,0 +1,62 @@
+uuid: d156925a-4840-417c-b836-446c5b8b0414
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.50_50.field_eyebrow
+    - field.field.paragraph.50_50.field_image
+    - field.field.paragraph.50_50.field_subtitle
+    - field.field.paragraph.50_50.field_text
+    - field.field.paragraph.50_50.field_title
+    - image.style.thumbnail
+    - paragraphs.paragraphs_type.50_50
+  module:
+    - image
+id: paragraph.50_50.default
+targetEntityType: paragraph
+bundle: '50_50'
+mode: default
+content:
+  field_eyebrow:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_image:
+    weight: 0
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_subtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_text:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
