@@ -29,7 +29,7 @@
 * [Not descriptive links](common-mistakes/not-descriptive-links.md)
 * [Inputs missing labels](common-mistakes/inputs-missing-lables.md)
 * [Change markup order with CSS](common-mistakes/change-markup-order.md)
-* [Images alternative text](common-mistakes/alternative-text.md)
+* [Alternate text in images](common-mistakes/alternative-text.md)
 * [Turning off focus](common-mistakes/turning-off-focus.md)
 * [Keyboard navigation](common-mistakes/keyboard-navigation.md)
 * [Hiding content](common-mistakes/hiding-content.md)
