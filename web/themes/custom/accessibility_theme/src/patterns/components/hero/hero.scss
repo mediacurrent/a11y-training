@@ -5,15 +5,8 @@
   position: relative;
 }
 
-.media-item__image {
-
-  img {
-    width: 100%;
-  }
-}
-
 .hero__content-wrapper {
-  background-color: rgba(0, 126, 154, 0.6);
+  background-color: rgba($color-ocean-blue, 0.6);
   position: relative;
   z-index: 1;
 
@@ -46,7 +39,7 @@
   &::before {
 
     @include breakpoint ($bp-md) {
-      background-color: rgba(0, 126, 154, 0.6);
+      background-color: rgba($color-ocean-blue, 0.6);
       content: '';
       display: block;
       height: 100%;
@@ -72,9 +65,7 @@
 }
 
 .hero__body {
-  font-size: 1.8rem;
   font-weight: 300;
-  line-height: 1.625;
 
   @include breakpoint ($bp-md) {
     font-size: 2.4rem;

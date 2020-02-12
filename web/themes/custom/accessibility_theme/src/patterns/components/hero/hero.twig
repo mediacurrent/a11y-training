@@ -30,22 +30,11 @@
           %}
         {% endif %}
 
-          {% if title %}
-            {%
-              include '@accessibility_theme/heading/heading.twig' with {
-                "title": title,
-                "heading_level": heading_level,
-                "modifier": "hero__heading"
-              } only
-            %}
-          {% endif %}
-
-          {% if body %}
-            <div class="hero__body">
-              {{ body }}
-            </div>
-          {% endif %}
-        </div>
+        {% if body %}
+          <div class="hero__body">
+            {{ body }}
+          </div>
+        {% endif %}
       </div>
     </div>
   {% endif %}
