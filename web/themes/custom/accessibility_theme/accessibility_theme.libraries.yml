@@ -93,3 +93,13 @@ eyebrow:
   css:
     component:
       dist/css/eyebrow.css: {}
+
+accordion:
+  css:
+    component:
+      dist/css/accordion.css: {}
+  js:
+    dist/js/accordion.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
