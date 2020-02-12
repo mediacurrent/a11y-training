@@ -12,8 +12,6 @@
 }
 
 .hero__content-wrapper {
-  margin-top: -40%;
-  padding-bottom: calc(40% - 245px);
   position: relative;
   z-index: 1;
 }
@@ -22,11 +20,11 @@
   background-color: $color-white;
   color: $color-navy-blue;
   left: 20rem;
+  margin-top: -40%;
   max-width: 70rem;
   padding: 32px;
-  position: relative;
+  position: absolute;
   text-align: left;
-  top: 50%;
   border: 1px solid;
 
   &::before {
