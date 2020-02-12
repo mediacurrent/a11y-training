@@ -14,12 +14,16 @@
   {% endif %}
 
   <div class="hero__content">
-    {% if title %}
+    {% if eyebrow %}
+      <div class="hero__eyebrow">
+        {{ eyebrow }}
+      </div>
+    {% endif %}
+
+    {% if heading %}
       {%
         include '@accessibility_theme/heading/heading.twig' with {
-          "title": title,
-          "heading_level": heading_level,
-          "modifier": "hero__heading"
+          "heading": heading
         } only
       %}
     {% endif %}
@@ -30,11 +34,10 @@
       </div>
     {% endif %}
 
-    {% if button_text %}
+    {% if button %}
       {%
         include '@accessibility_theme/button/button.twig' with {
-          "text": button_text,
-          "url": url
+          "button": button
         } only
       %}
     {% endif %}
