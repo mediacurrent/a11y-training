@@ -18,7 +18,11 @@
       <div class="hero__content">
         {% if eyebrow %}
           <div class="hero__eyebrow">
-            {{ eyebrow }}
+            {%
+              include '@accessibility_theme/eyebrow/eyebrow.twig' with {
+                "eyebrow": eyebrow
+              } only
+            %}
           </div>
         {% endif %}
 
