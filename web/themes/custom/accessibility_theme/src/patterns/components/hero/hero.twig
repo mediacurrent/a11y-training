@@ -13,13 +13,21 @@
     </div>
   {% endif %}
 
-  <div class="hero__content-wrapper">
-    <div class="hero__content">
-      {% if eyebrow %}
-        <div class="hero__eyebrow">
-          {{ eyebrow }}
-        </div>
-      {% endif %}
+
+  <div class="hero__content">
+    {% if eyebrow %}
+      <div class="hero__eyebrow">
+        {{ eyebrow }}
+      </div>
+    {% endif %}
+
+    {% if heading %}
+      {%
+        include '@accessibility_theme/heading/heading.twig' with {
+          "heading": heading
+        } only
+      %}
+    {% endif %}
 
       {% if title %}
         {%

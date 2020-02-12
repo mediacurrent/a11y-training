@@ -1,8 +1,16 @@
 {
-    "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
-    "title": "Why be Accessibile?",
-    "eyebrow": "Understanding the benefits",
-    "heading_level": "2",
-    "body": "A11y lawsuits have more than tripled in the last few years, but there are unexpected benefits, too!",
-    "url": "#"
+  "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
+  "eyebrow": "This is the eyebrow text",
+  "heading": {
+    "title": "Title of the hero",
+    "heading_level": "",
+    "modifier": "",
+    "url": ""
+  },
+  "body": "Some sites need a tagline mauris ac dui sit amet sem facilisis finibus vitae et mi.",
+  "button": {
+    "text": "This is a button",
+    "url": "",
+    "modifier": ""
+  }
 }
