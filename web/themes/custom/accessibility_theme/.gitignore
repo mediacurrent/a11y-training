@@ -26,3 +26,4 @@ dist/js/*
 patternlab
 dependencyGraph.json
 
+*.DS_Store

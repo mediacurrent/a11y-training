@@ -84,6 +84,11 @@ media-item:
     component:
       dist/css/media-item.css: {}
 
+main-menu:
+  css:
+    component:
+      dist/css/main-menu.css: {}
+
 eyebrow:
   css:
     component:
