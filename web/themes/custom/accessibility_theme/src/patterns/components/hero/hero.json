@@ -1,13 +1,13 @@
 {
   "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
-  "eyebrow": "This is the eyebrow text",
+  "eyebrow": "A teaching website by Mediacurrent",
   "heading": {
-    "title": "Title of the hero",
+    "title": "Access for Everyone",
     "heading_level": "",
     "modifier": "",
     "url": ""
   },
-  "body": "Some sites need a tagline mauris ac dui sit amet sem facilisis finibus vitae et mi.",
+  "body": "1 in 4 adults in the US have some type of disability. Expand your reach with accessible, inclusive design.",
   "button": {
     "text": "This is a button",
     "url": "",

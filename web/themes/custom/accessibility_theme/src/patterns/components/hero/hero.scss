@@ -6,38 +6,57 @@
 }
 
 .media-item__image {
+
   img {
     width: 100%;
   }
 }
 
 .hero__content-wrapper {
+  background-color: rgba(0, 126, 154, 0.6);
   position: relative;
   z-index: 1;
+
+  @include breakpoint ($bp-md) {
+    background-color: transparent;
+  }
 }
 
 .hero__content {
   background-color: $color-white;
   color: $color-navy-blue;
-  left: 20rem;
-  margin-top: -40%;
-  max-width: 70rem;
-  padding: 32px;
-  position: absolute;
-  text-align: left;
-  border: 1px solid;
+  margin: 0 auto;
+  padding: 16px;
+  text-align: center;
+  transform: translateY(-2.4rem);
+  width: 90%;
+
+  @include breakpoint ($bp-md) {
+    left: 20rem;
+    margin: 0;
+    margin-top: -40%;
+    max-width: 70rem;
+    padding: 32px;
+    position: absolute;
+    text-align: left;
+    transform: none;
+    width: 100%;
+  }
 
   &::before {
-    background-color: rgba(0, 126, 154, 0.6);
-    content: '';
-    display: block;
-    height: 100%;
-    left: 0;
-    margin-left: -20rem;
-    position: absolute;
-    top: 2.4rem;
-    width: 87.5rem;
-    z-index: -1
+
+    @include breakpoint ($bp-md) {
+      background-color: rgba(0, 126, 154, 0.6);
+      content: '';
+      display: block;
+      height: 100%;
+      left: 0;
+      margin-left: -20rem;
+      position: absolute;
+      top: 2.4rem;
+      width: 87.5rem;
+      z-index: -1;
+    }
   }
 }
 
@@ -53,7 +72,11 @@
 }
 
 .hero__body {
-  font-size: 2.4rem;
+  font-size: 1.8rem;
   font-weight: 300;
   line-height: 1.625;
+
+  @include breakpoint ($bp-md) {
+    font-size: 2.4rem;
+  }
 }

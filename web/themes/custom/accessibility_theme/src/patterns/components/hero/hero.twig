@@ -13,37 +13,40 @@
     </div>
   {% endif %}
 
+  {% if eybrow or heading or title or body %}
+    <div class="hero__content-wrapper">
+      <div class="hero__content">
+        {% if eyebrow %}
+          <div class="hero__eyebrow">
+            {{ eyebrow }}
+          </div>
+        {% endif %}
 
-  <div class="hero__content">
-    {% if eyebrow %}
-      <div class="hero__eyebrow">
-        {{ eyebrow }}
-      </div>
-    {% endif %}
+        {% if heading %}
+          {%
+            include '@accessibility_theme/heading/heading.twig' with {
+              "heading": heading
+            } only
+          %}
+        {% endif %}
 
-    {% if heading %}
-      {%
-        include '@accessibility_theme/heading/heading.twig' with {
-          "heading": heading
-        } only
-      %}
-    {% endif %}
+          {% if title %}
+            {%
+              include '@accessibility_theme/heading/heading.twig' with {
+                "title": title,
+                "heading_level": heading_level,
+                "modifier": "hero__heading"
+              } only
+            %}
+          {% endif %}
 
-      {% if title %}
-        {%
-          include '@accessibility_theme/heading/heading.twig' with {
-            "title": title,
-            "heading_level": heading_level,
-            "modifier": "hero__heading"
-          } only
-        %}
-      {% endif %}
-
-      {% if body %}
-        <div class="hero__body">
-          {{ body }}
+          {% if body %}
+            <div class="hero__body">
+              {{ body }}
+            </div>
+          {% endif %}
         </div>
-      {% endif %}
+      </div>
     </div>
-  </div>
+  {% endif %}
 </section>
