@@ -13,33 +13,33 @@
     </div>
   {% endif %}
 
-  <div class="hero__content">
-    {% if eyebrow %}
-      <div class="hero__eyebrow">
-        {{ eyebrow }}
+  {% if eybrow or heading or title or body %}
+    <div class="hero__content-wrapper">
+      <div class="hero__content">
+        {% if eyebrow %}
+          <div class="hero__eyebrow">
+            {%
+              include '@accessibility_theme/eyebrow/eyebrow.twig' with {
+                "eyebrow": eyebrow
+              } only
+            %}
+          </div>
+        {% endif %}
+
+        {% if heading %}
+          {%
+            include '@accessibility_theme/heading/heading.twig' with {
+              "heading": heading
+            } only
+          %}
+        {% endif %}
+
+        {% if body %}
+          <div class="hero__body">
+            {{ body }}
+          </div>
+        {% endif %}
       </div>
-    {% endif %}
-
-    {% if heading %}
-      {%
-        include '@accessibility_theme/heading/heading.twig' with {
-          "heading": heading
-        } only
-      %}
-    {% endif %}
-
-    {% if body %}
-      <div class="hero__body">
-        {{ body }}
-      </div>
-    {% endif %}
-
-    {% if button %}
-      {%
-        include '@accessibility_theme/button/button.twig' with {
-          "button": button
-        } only
-      %}
-    {% endif %}
-  </div>
+    </div>
+  {% endif %}
 </section>

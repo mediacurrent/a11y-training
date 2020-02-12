@@ -88,3 +88,8 @@ main-menu:
   css:
     component:
       dist/css/main-menu.css: {}
+
+eyebrow:
+  css:
+    component:
+      dist/css/eyebrow.css: {}
