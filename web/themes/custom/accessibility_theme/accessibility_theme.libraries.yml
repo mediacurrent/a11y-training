@@ -29,6 +29,11 @@ global:
 #     - accessibility_theme/clearfix
 #     - accessibility_theme/visually-hidden
 
+banner:
+  css:
+    component:
+      dist/css/banner.css: {}
+
 button:
   css:
     component:
@@ -38,6 +43,11 @@ contact:
   css:
     component:
       dist/css/contact.css: {}
+
+eyebrow:
+  css:
+    component:
+      dist/css/eyebrow.css: {}
 
 fonts:
   css:
@@ -54,6 +64,26 @@ footer-menu:
     component:
       dist/css/footer-menu.css: {}
 
+heading:
+  css:
+    component:
+      dist/css/heading.css: {}
+
+hero:
+  css:
+    component:
+      dist/css/hero.css: {}
+
+main-menu:
+  css:
+    component:
+      dist/css/main-menu.css: {}
+
+media-item:
+  css:
+    component:
+      dist/css/media-item.css: {}
+
 message:
   css:
     component:
@@ -68,33 +98,3 @@ tabs:
   css:
     component:
       dist/css/tabs.css: {}
-
-heading:
-  css:
-    component:
-      dist/css/heading.css: {}
-
-hero:
-  css:
-    component:
-      dist/css/hero.css: {}
-
-media-item:
-  css:
-    component:
-      dist/css/media-item.css: {}
-
-main-menu:
-  css:
-    component:
-      dist/css/main-menu.css: {}
-
-eyebrow:
-  css:
-    component:
-      dist/css/eyebrow.css: {}
-
-card-full:
-  css:
-    component:
-      dist/css/card-full.css: {}
