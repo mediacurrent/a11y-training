@@ -1,16 +1,40 @@
+/* eslint-disable max-len */
 !((document, Drupal, $) => {
   'use strict';
 
-  /**
-   * Use this to describe what your behavior does.
-   */
   Drupal.behaviors.accordion = {
-
     attach: function(context) {
-      // If you don't need jQuery:
-      // 1. Remove the `jQuery` and `$` refrences from this file.
-      // 2. Remove the `core/jquery` dependency from the accordion library
-      //    within the accessibility_theme.libraries.yml file.
+      const self = this;
+      const $trigger = $('.accordion__trigger', context);
+
+      if (!$trigger.length) {
+        return;
+      }
+
+      $trigger.once('accordion-trigger').on('click', function() {
+        self.toggleState($(this));
+      });
+    },
+
+    toggleState: function($toggle) {
+      const $accordionContainer = $toggle.closest('.accordion__items');
+      const toggleExpandedValue = $toggle.attr('aria-expanded');
+
+      $toggle.attr(
+        'aria-expanded',
+        toggleExpandedValue === 'true' ? 'false' : 'true'
+      );
+
+      const $accordionContent = $(
+        '#' + $toggle.attr('aria-controls'),
+        $accordionContainer
+      );
+      const accordionHiddenValue = $accordionContent.attr('aria-hidden');
+
+      $accordionContent.attr(
+        'aria-hidden',
+        accordionHiddenValue === 'true' ? 'false' : 'true'
+      );
     }
   };
 })(document, Drupal, jQuery);

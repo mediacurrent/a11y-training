@@ -1,5 +1,49 @@
-{{ attach_library('accessibility_theme/accordion') }}
-<div class="accordion">
-  <h2 class="accordion__heading">{{ heading }}</h2>
-  <p class="accordion__body">{{ body }}</p>
-</div>
+{{ attach_library('pwc_bw3_theme/accordion') }}
+
+{%
+  set classes = [
+    'accordion__wrapper',
+    accordion.modifier,
+  ]
+%}
+
+{# Preserve the Drupal attributes if they're available. #}
+
+{% set attributes = attributes ? attributes.addClass(classes) : ' class="' ~ classes|join(' ') ~ '"' %}
+
+<section {{ attributes|raw }}>
+  <div class="accordion__container">
+    {% block heading %}
+      {% if heading %}
+        <div class="accordion__title">
+          {%
+            include '@accessibility_theme/heading/heading.twig' with {
+              "heading": heading
+            } only
+          %}
+        </div>
+      {% endif %}
+    {% endblock %}
+
+    <div class="accordion__items">
+      {% block accordion_list %}
+        {% for item in accordion_items %}
+          <div class="accordion_item">
+            <h3 class="accordion__heading">
+              <button type="button" class="accordion__trigger" aria-controls="{{ item.id }}" aria-expanded="false" id="{{ item.id }}_trigger">
+                <span>{{ item.title }}</span>
+              </button>
+            </h3>
+
+            <div id="{{ item.id }}" class="accordion__panel" aria-hidden="true">
+              <div class="accordion__panel-interior body-text body-text--long-form">
+                {{ item.body }}
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% endblock %}
+    </div>
+
+  </div>
+</section>

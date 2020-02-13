@@ -1,2 +1,150 @@
-// Import site utilities.
 @import '../../global/utils/init';
+
+// Accordion container element.
+.accordion__wrapper {
+  padding: 1.6rem;
+  padding-left: 4rem;
+
+  @include breakpoint($bp-md) {
+    padding-left: 7rem;
+  }
+}
+
+.accordion__container {
+  position: relative;
+}
+
+.accordion__title {
+
+  .heading {
+    @include font-stack-secondary;
+    color: $color-ocean-blue;
+    font-size: 1.75rem;
+    font-weight: $font-weight-normal;
+    margin-bottom: 2rem;
+
+    @include breakpoint($bp-sm) {
+      font-size: 2.5rem;
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.accordion__items {
+  border-bottom: 1px solid $color-gray-dk;
+}
+
+// Accordion Heading.
+.accordion__heading {
+  font-size: inherit;
+  margin: 0;
+  border-top: 1px solid $color-gray-dk;
+
+  .accordion__trigger {
+    @include font-stack-primary;
+    align-items: center;
+    appearance: none;
+    background-color: $color-white;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: $color-gray-mid;
+    cursor: pointer;
+    display: flex;
+    font-size: 1.125rem;
+    font-weight: $font-weight-bold;
+    margin: 0;
+    padding: 1rem 2.5rem 1rem 1rem;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    z-index: 1;
+
+    @include breakpoint($bp-md) {
+      padding: 1.5rem;
+    }
+
+    &[aria-disabled='true']:hover {
+      cursor: not-allowed;
+    }
+
+    &:focus {
+      // Disabling default outline and targeting
+      // interior <span>.
+      outline: 0;
+
+      span {
+        text-decoration: underline;
+      }
+    }
+
+    &[aria-expanded='true'] {
+      color: $color-ocean-blue;
+
+      &::after {
+        background-image: url('../images/icon-chevron-right-orange.svg');
+        opacity: 1;
+        transform: translateY(-50%) rotate(90deg);
+        transition: visibility $motion-default linear, opacity $transition, transform $transition;
+        visibility: visible;
+      }
+    }
+
+    &::after {
+      background-image: url('../images/icon-chevron-right.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 10px;
+      content: '';
+      display: block;
+      height: 20px;
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 10px;
+      will-change: transform, opacity;
+
+      @include breakpoint($bp-md) {
+        right: 1.5rem;
+      }
+    }
+  }
+}
+
+// Content Panel exposed in the accordion.
+.accordion__panel {
+  @include font-stack-primary;
+  background-color: inherit;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: $font-weight-normal;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  transition: max-height $transition, padding-top $transition, padding-bottom $transition;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1;
+}
+
+.accordion__panel[aria-hidden='false'] {
+  background-color: $color-gray-mid;
+  border-top: 1px solid $color-black;
+  font-size: 1.125rem;
+  max-height: 300vh;
+  overflow: visible;
+  padding: 1rem;
+  visibility: visible;
+
+  @include breakpoint($bp-md) {
+    padding: 1rem 1.5rem 1rem 5rem;
+  }
+}
+
+.accordion__panel-interior {
+  max-width: 100%;
+  width: 100%;
+}

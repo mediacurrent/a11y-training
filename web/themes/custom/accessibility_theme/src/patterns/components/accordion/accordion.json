@@ -1,4 +1,20 @@
 {
   "heading": "accordion component",
-  "body": "This is mock data from the accordion.json file"
+  "accordion_items": {
+    "accordion_item_1": {
+      "id": "panel_1",
+      "title": "Question 1",
+      "body": "This is mock data from the accordion.json file"
+    },
+    "accordion_item_2": {
+      "id": "panel_2",
+      "title": "Question 2",
+      "body": "This is mock data from the accordion.json file"
+    },
+    "accordion_item_3": {
+      "id": "panel_3",
+      "title": "Question 4",
+      "body": "This is mock data from the accordion.json file"
+    }
+  }
 }
