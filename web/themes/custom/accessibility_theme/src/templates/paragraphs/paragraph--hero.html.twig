@@ -43,7 +43,9 @@
   include '@accessibility_theme/hero/hero.twig' with {
     image: content.field_image|render|trim is not empty ? content.field_image,
     eyebrow: content.field_eyebrow|render|trim is not empty ? content.field_eyebrow,
-    heading: content.field_title|render|trim is not empty ? content.field_title,
+    heading: {
+      title: content.field_title|render|trim is not empty ? content.field_title
+    },
     body: content.field_body|render|trim is not empty ? content.field_body,
   }
 %}
