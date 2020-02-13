@@ -38,14 +38,20 @@
  * @ingroup themeable
  */
 #}
+{% set cta = {
+    url: '#',
+    text: 'Take the survey'|t,
+    modifier: ""
+  }
+%}
 
 {%
-  include '@accessibility_theme/hero/hero.twig' with {
+  include '@accessibility_theme/banner/banner.twig' with {
     image: content.field_image|render|trim is not empty ? content.field_image,
-    eyebrow: content.field_eyebrow|render|trim is not empty ? content.field_eyebrow,
     heading: {
       title: content.field_title|render|trim is not empty ? content.field_title
     },
     body: content.field_body|render|trim is not empty ? content.field_body,
+    button: cta
   }
 %}

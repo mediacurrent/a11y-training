@@ -52,6 +52,48 @@ a {
   text-decoration: underline;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $color-navy-blue;
+  line-height: 1.2;
+  font-size: 1.25rem;
+  font-weight: $font-weight-bold;
+  margin: 0 0 1rem;
+}
+
+h5,
+h6 {
+  font-weight: $font-weight-normal;
+}
+
+h1 {
+  @include heading-1-style;
+}
+
+h2 {
+  @include heading-2-style;
+}
+
+h3 {
+  @include heading-3-style;
+}
+
+h4 {
+  @include heading-4-style;
+}
+
+h5 {
+  @include heading-5-style;
+}
+
+h6 {
+  @include heading-6-style;
+}
+
 // Render the `main` element consistently in IE11.
 main {
   display: block;
