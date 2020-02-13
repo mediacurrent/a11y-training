@@ -98,3 +98,13 @@ tabs:
   css:
     component:
       dist/css/tabs.css: {}
+
+accordion:
+  css:
+    component:
+      dist/css/accordion.css: {}
+  js:
+    dist/js/accordion.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
