@@ -1,0 +1,47 @@
+{{ attach_library('accessibility_theme/card-full') }}
+
+<div class="card-full {{ modifier }} {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
+  {# Media could be an image or video. #}
+  {% if image %}
+    <div class="card-full__media">
+      {%
+        include '@accessibility_theme/media-item/media-item.twig' with {
+          "image": image
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {% if eybrow or heading or body %}
+    <div class="card-full__content">
+      {% if eyebrow %}
+        <div class="card-full__eyebrow">
+          {%
+            include '@accessibility_theme/eyebrow/eyebrow.twig' with {
+              "eyebrow": eyebrow
+            } only
+          %}
+        </div>
+      {% endif %}
+
+      {% if heading %}
+        {%
+          include '@accessibility_theme/heading/heading.twig' with {
+            "heading": heading
+          } only
+        %}
+      {% endif %}
+
+      {% if body %}
+        <div class="card-full__body">
+          {{ body }}
+        </div>
+      {% endif %}
+
+      {% if button %}
+        {% include '@accessibility_theme/button/button.twig' %}
+      {% endif %}
+    </div>
+  {% endif %}
+</section>

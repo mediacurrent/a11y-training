@@ -93,3 +93,8 @@ eyebrow:
   css:
     component:
       dist/css/eyebrow.css: {}
+
+card-full:
+  css:
+    component:
+      dist/css/card-full.css: {}
