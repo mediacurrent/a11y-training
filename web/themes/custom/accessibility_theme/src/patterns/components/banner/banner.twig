@@ -1,10 +1,10 @@
-{{ attach_library('accessibility_theme/card-full') }}
+{{ attach_library('accessibility_theme/banner') }}
 
-<div class="card-full {{ modifier }} {{- attributes ? attributes.class -}}"
+<div class="banner {{ modifier }} {{- attributes ? attributes.class -}}"
   {{- attributes ? attributes|without(class) -}}>
   {# Media could be an image or video. #}
   {% if image %}
-    <div class="card-full__media">
+    <div class="banner__media">
       {%
         include '@accessibility_theme/media-item/media-item.twig' with {
           "image": image
@@ -14,9 +14,9 @@
   {% endif %}
 
   {% if eybrow or heading or body %}
-    <div class="card-full__content">
+    <div class="banner__content">
       {% if eyebrow %}
-        <div class="card-full__eyebrow">
+        <div class="banner__eyebrow">
           {%
             include '@accessibility_theme/eyebrow/eyebrow.twig' with {
               "eyebrow": eyebrow
@@ -34,7 +34,7 @@
       {% endif %}
 
       {% if body %}
-        <div class="card-full__body">
+        <div class="banner__body">
           {{ body }}
         </div>
       {% endif %}
