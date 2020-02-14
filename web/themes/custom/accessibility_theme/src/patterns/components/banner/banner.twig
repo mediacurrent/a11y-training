@@ -39,9 +39,11 @@
         </div>
       {% endif %}
 
-      {% if button %}
-        {% include '@accessibility_theme/button/button.twig' %}
-      {% endif %}
+      {% block cta %}
+        {% if cta.url %}
+          <a href="{{ cta.url }}" class="{{ cta.modifier }}">{{ cta.text }}</a>
+        {% endif %}
+      {% endblock %}
     </div>
   {% endif %}
 </section>
