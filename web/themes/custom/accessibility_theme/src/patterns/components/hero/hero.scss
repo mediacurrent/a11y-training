@@ -7,11 +7,18 @@
 
 .hero__content-wrapper {
   background-color: rgba($color-ocean-blue, 0.6);
-  position: relative;
+  padding: 0;
+  padding-bottom: 40px;
+  width: 100%;
   z-index: 1;
 
   @include breakpoint ($bp-md) {
-    background-color: transparent;
+    display: flex;
+    flex-grow: 1;
+    left: 0;
+    position: absolute;
+    top: calc(50% - 100px);
+    width: 60%;
   }
 }
 
@@ -21,35 +28,16 @@
   margin: 0 auto;
   padding: 16px;
   text-align: center;
-  transform: translateY(-1.6rem);
   width: 90%;
 
   @include breakpoint ($bp-md) {
-    @include vertical-align(absolute);
-    left: 20rem;
     margin: 0;
-    margin-top: -40%;
-    max-width: 70rem;
+    margin-left: auto;
+    margin-top: -40px;
+    margin-right: -40px;
     padding: 32px;
     text-align: left;
-    transform: none;
-    width: 100%;
-  }
-
-  &::before {
-
-    @include breakpoint ($bp-md) {
-      @include vertical-align(absolute);
-      background-color: rgba($color-ocean-blue, 0.6);
-      content: '';
-      height: 100%;
-      left: 0;
-      margin-left: -20rem;
-      top: 2.4rem;
-      transform: none;
-      width: 87.5rem;
-      z-index: -1;
-    }
+    width: 70%;
   }
 }
 
