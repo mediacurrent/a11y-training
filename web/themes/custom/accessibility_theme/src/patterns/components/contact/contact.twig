@@ -1,20 +1,20 @@
 {% if address %}
-<div class="contact-item">
-  {% for item in address %}
-    <div class="contact-item__line">{{ item.line }}</div>
-  {% endfor %}
-</div>
-{% endif %}
+  <div class="contact-item">
+    {% for item in address %}
+      <div class="contact-item__line">{{ item.line }}</div>
+    {% endfor %}
+  </div>
+  {% endif %}
 
-{% if items %}
-<div class="contact-item">
-  {% for item in items %}
-    <div class="contact-item__line">
-      {% if item.preText %}
-        <span>{{ item.preText }}</span>
-      {% endif %}
-      <a class="contact-item__link" href="{{ item.url }}">{{ item.text }}</a>
-    </div>
-  {% endfor %}
-</div>
+  {% if items %}
+  <div class="contact-item">
+    {% for item in items %}
+      <div class="contact-item__line">
+        {% if item.preText %}
+          <span>{{ item.preText }}</span>
+        {% endif %}
+        <a class="contact-item__link" href="{{ item.url }}">{{ item.text }}</a>
+      </div>
+    {% endfor %}
+  </div>
 {% endif %}

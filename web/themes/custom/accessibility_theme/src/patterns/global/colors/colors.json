@@ -2,34 +2,34 @@
   "sections": {
     "Primary": [
       {
-        "name": "$color-mandy",
-        "hex": "#EC5f67"
+        "name": "$color-navy-blue",
+        "hex": "#012635"
       },
       {
-        "name": "$color-tan-hide",
-        "hex": "#F99157"
+        "name": "$color-deep-blue",
+        "hex": "#003954"
       },
       {
-        "name": "$color-saffron-mango",
-        "hex": "#FAC863"
+        "name": "$color-ocean-blue",
+        "hex": "#007e9a"
       },
       {
-        "name": "$color-de-york",
-        "hex": "#99C794"
+        "name": "$color-cyan-blue",
+        "hex": "#02a3c0"
       },
       {
-        "name": "$color-tradewind",
-        "hex": "#5FB3B3"
+        "name": "$color-blue-gray",
+        "hex": "#99b0ba"
       },
       {
-        "name": "$color-danube",
-        "hex": "#6699CC"
+        "name": "$color-tech-gray",
+        "hex": "#ccd7dd"
       }
     ],
     "Black &amp; White": [
       {
         "name": "$color-black",
-        "hex": "#1B2B34"
+        "hex": "#000000"
       },
       {
         "name": "$color-white",
@@ -39,19 +39,19 @@
     "Grays": [
       {
         "name": "$color-gray-dk",
-        "hex": "#343D46"
+        "hex": "#343d46"
       },
       {
         "name": "$color-gray-mid",
-        "hex": "#4F5B66"
+        "hex": "#4f5b66"
       },
       {
         "name": "$color-gray-lt",
-        "hex": "#65737E"
+        "hex": "#65737e"
       },
       {
         "name": "$color-gray-xlt",
-        "hex": "#A7ADBA"
+        "hex": "#a7adba"
       }
     ]
   }
