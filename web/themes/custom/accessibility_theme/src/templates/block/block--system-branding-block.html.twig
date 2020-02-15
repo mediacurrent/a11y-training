@@ -1,0 +1,24 @@
+{% extends "block.html.twig" %}
+{#
+/**
+ * @file
+ * Theme override for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ */
+#}
+{% block content %}
+{{ attach_library('accessibility_theme/site-logo') }}
+  <a href="{{ path('<front>') }}" rel="home" title="{{ 'Home'|t }}">
+    <svg aria-hidden="true" class="site-logo__logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192.55 96.77"><path fill="#007e9a" d="M100.08 96.73H87.55v-84.2h-9.12V0h21.65v96.73zm30.78 0h-12.54v-84.2h-9.12V0h21.66v96.73z"/><path d="M29.76 96.73A29.76 29.76 0 1159.52 67a29.79 29.79 0 01-29.76 29.73zm0-47A17.23 17.23 0 1047 67a17.22 17.22 0 00-17.24-17.27z" fill="#012635"/><circle cx="29.76" cy="66.97" r="7.78" fill="#012635"/><path d="M78.43 96.73H59.21v-43.2a21.46 21.46 0 00-21.42-21.42H6.85V19.58h30.94a34 34 0 0133.95 34V84.2h6.69zM180 18.69v40.75h-20.47a7 7 0 01-7-7V18.69H140v33.72A19.58 19.58 0 00159.53 72H180v1.58a10.71 10.71 0 01-10.69 10.69h-30v12.5h30a23.24 23.24 0 0023.22-23.22V18.69z" fill="#012635"/></svg>
+    <span class="visually-hidden">
+      {{ site_name }}
+    </span>
+  </a>
+{% endblock %}

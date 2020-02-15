@@ -20,7 +20,8 @@
   border-bottom: 4px solid transparent;
 
   &:hover,
-  &:focus {
+  &:focus,
+  .main-menu__item--active-trail & {
     border-color: $color-ocean-blue;
   }
 }

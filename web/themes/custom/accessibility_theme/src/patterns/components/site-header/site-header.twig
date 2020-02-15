@@ -1,10 +1,12 @@
 {{ attach_library('accessibility_theme/site-header') }}
 
 <header class="site-header" role="banner">
-  <div class="site-header__brand">
-    {% include '@accessibility_theme/site-logo/site-logo.twig' %}
-  </div>
-  <div class="site-header__main-menu">
-    {% include '@accessibility_theme/main-menu/main-menu.twig' %}
+  <div class="site-header__inner">
+    <div class="site-header__brand">
+      {% include '@accessibility_theme/site-logo/site-logo.twig' %}
+    </div>
+    <div class="site-header__main-menu">
+      {% include '@accessibility_theme/main-menu/main-menu.twig' %}
+    </div>
   </div>
 </header>
