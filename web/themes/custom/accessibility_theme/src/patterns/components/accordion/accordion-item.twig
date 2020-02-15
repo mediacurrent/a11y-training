@@ -1,0 +1,13 @@
+<div class="accordion__item">
+  <h3 class="accordion__heading">
+    <button type="button" class="accordion__trigger" aria-controls="{{ item.id }}" aria-expanded="false" id="{{ item.id }}_trigger">
+      <span>{{ item.title }}</span>
+    </button>
+  </h3>
+
+  <div id="{{ item.id }}" class="accordion__panel" aria-hidden="true">
+    <div class="accordion__panel-interior body-text body-text--long-form">
+      {{ item.body }}
+    </div>
+  </div>
+</div>
