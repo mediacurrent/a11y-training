@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: faq_item
-label: 'FAQ Item'
+label: 'Accordion item'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

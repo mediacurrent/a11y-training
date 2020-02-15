@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - field.field.paragraph.faq_item.field_body
-    - field.field.paragraph.faq_item.field_cta
     - field.field.paragraph.faq_item.field_title
     - paragraphs.paragraphs_type.faq_item
   module:
-    - link
     - text
 id: paragraph.faq_item.default
 targetEntityType: paragraph
@@ -16,26 +14,14 @@ bundle: faq_item
 mode: default
 content:
   field_body:
-    weight: 0
+    weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
     type: text_default
     region: content
-  field_cta:
-    weight: 2
-    label: hidden
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
   field_title:
-    weight: 1
+    weight: 0
     label: hidden
     settings:
       link_to_entity: false
