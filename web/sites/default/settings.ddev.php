@@ -43,3 +43,7 @@ $settings['class_loader_auto_detect'] = FALSE;
 
 // This specifies the default configuration sync directory.
 $settings['config_sync_directory'] = '../config/sync';
+
+// TODO: This enables twig debugging and should be removed
+// on a prod site.
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
