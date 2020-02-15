@@ -7,6 +7,7 @@ For an organized list of all HTML elements available, Mozilla has a fantastic re
 This has every HTML element listed by the element and its purpose. Having this information clarifies how each element was made for each specific purpose.
 
 Some examples of alternative HTML elements to `<div>`:
+
 * `<section>`: for a part of your page that’s a standalone section
 * `<article>`: for blogs or any kind of discreet content that can be published
 * `<ul>` or `<ol>`: unordered lists or ordered lists for several pieces of content that are similar - this makes it easy to understand for those who are using screen readers
@@ -16,3 +17,4 @@ Some examples of alternative HTML elements to `<div>`:
 * `<button>`: any clickable buttons. This is key - anytime something is clickable and it’s not a link, you should use a button.
 
 Mozilla Development Network’s HTML resource makes finding proper semantic elements easy!
+

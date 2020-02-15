@@ -18,7 +18,7 @@ Most brands, however, are not black and white.
 
 Branding may be a challenge, but is not one that can not be overcome. Slight changes in color shade without changing the base color can make a site compliant.
 
-There are several tools available to assess your site’s compliance with color contrast. With these tools and results, you can see to what extent your site is compliant or not.  See our testing and tools section for more details.
+There are several tools available to assess your site’s compliance with color contrast. With these tools and results, you can see to what extent your site is compliant or not. See our testing and tools section for more details.
 
-Resource:
-Colors on the web: http://www.colorsontheweb.com/Color-Theory/Color-Contrast
+Resource: Colors on the web: [http://www.colorsontheweb.com/Color-Theory/Color-Contrast](http://www.colorsontheweb.com/Color-Theory/Color-Contrast)
+

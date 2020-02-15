@@ -16,3 +16,4 @@ Although it is more helpful to include text in the alt attribute, there may be i
 Additionally, you may want to leave out alt text if other elements around the image, such as the heading, tell the user what the image is about. Doing this can help you avoid sending the user duplicate content. For instance, if the heading or title includes a person’s name and the alt text is the same name of the person in the photo, then the user experiencing the page with a screen reader may hear the name two times.
 
 Bottom line: always include the alt attribute, but you don’t always need to include text inside of it to describe the image.
+

@@ -7,12 +7,13 @@ According to the [Centers of Disease Control and Prevention](https://www.cdc.gov
 Other issues can be overlooked because they don’t have a tendency to last. These are known as Temporary Conditions/Disabilities.
 
 ## Temporary Conditions/Disabilities
-A temporary disability is a short-term medical condition that can result in needing the same attention that individuals with permanent disabilities require. Examples of temporary disabilities may include but are not limited to: broken limbs, hand injuries, or short term impairments following surgery or medical treatments.
-As an example, somebody who works around a lot of tiny bits of debris might accidentally get something in their eye, damaging their retina. It may take time to heal and as such, they now have to deal with the same issues of low vision that somebody with macular degeneration may suffer with. This same person may even be at a point where they are essentially blind for a short period of time, and now they have to make their way around similar to somebody that is permanently blind.
+
+A temporary disability is a short-term medical condition that can result in needing the same attention that individuals with permanent disabilities require. Examples of temporary disabilities may include but are not limited to: broken limbs, hand injuries, or short term impairments following surgery or medical treatments. As an example, somebody who works around a lot of tiny bits of debris might accidentally get something in their eye, damaging their retina. It may take time to heal and as such, they now have to deal with the same issues of low vision that somebody with macular degeneration may suffer with. This same person may even be at a point where they are essentially blind for a short period of time, and now they have to make their way around similar to somebody that is permanently blind.
 
 Unlike these others, this condition won’t last but while the issue persists they have to be able to use the same tools that somebody with a permanent disability uses.
 
 ### Screen glare, slow internet connection
+
 While sometimes a nuisance that is difficult to avoid, screen glare can be considered a temporary condition that can hamper website accessibility because the environmental factors that cause screen glare can make it difficult to see.
 
 Just as in suddenly facing some of the same issues of low vision, so too can conditions like screen glare cause you to have difficulties seeing a website. If there are low contrasting colors, for instance, as you are navigating on a screen that has glare, you are more likely to make errors or have frustrations with the website or application.
@@ -22,12 +23,14 @@ Making a more accessible web experience should also include addressing the needs
 * Make sure you add alternative text to images, multimedia and other non-text objects. Doing this means people with low bandwidth connections, who may have disabled images and other media, can still understand the meaning of your content.
 * Use style sheets to decrease file size and increase download speed. This includes avoiding inline style where possible.
 * Cache pages or sections on your site, such as the document footer or navigation, on your site which don't change very often.
-* Consider making an alternative lightweight version (like a mobile site) that is used for slower bandwidths.
+* Consider making an alternative lightweight version \(like a mobile site\) that is used for slower bandwidths.
 
 ## Permanent Conditions/Disabilities
+
 Permanent conditions are lifelong disabilities. They can encompass any number of issues from vision, auditory, cognitive, motor functionality, and aging. Each of these presents their own hurdles that need to be tackled when it comes to web accessibility.
 
 ### Age Conditions
+
 Although age is not a disability, many older users may experience some of the same challenges as people with disabilities as they navigate the web. Some of the challenges may include:
 
 * Vision - As we age, our vision may become worse over time. Some of these abilities may mean issues with color sensitivity, color perception, and near-focus
@@ -38,7 +41,8 @@ Although age is not a disability, many older users may experience some of the sa
 It is important to understand the needs of various age conditions and create an experience that can work for all users, not just those of specific age groups.
 
 ### Vision
-Vision impairment can range from mild or moderate vision loss in one or both eyes (low vision) to substantial and uncorrectable vision loss in both eyes (blindness). Some have reduced or no sensitivity to certain colors (color blindness), or increased sensitivity to bright colors. These variations in perception of colors and brightness can be independent of the visual acuity. Some issues affecting those with vision impairment are:
+
+Vision impairment can range from mild or moderate vision loss in one or both eyes \(low vision\) to substantial and uncorrectable vision loss in both eyes \(blindness\). Some have reduced or no sensitivity to certain colors \(color blindness\), or increased sensitivity to bright colors. These variations in perception of colors and brightness can be independent of the visual acuity. Some issues affecting those with vision impairment are:
 
 * Images, controls, video, and other elements without alternate text or audio alternatives
 * Text, images, and layouts that cannot be resized accurately
@@ -47,7 +51,8 @@ Vision impairment can range from mild or moderate vision loss in one or both eye
 * Incorrect use of fonts that may affect people with Dyslexia-like symptoms
 
 ### Auditory
-Auditory disabilities range from mild or moderate hearing loss in one or both ears (hard of hearing) to substantial and uncorrectable hearing loss in both ears (deafness). Some people with auditory disabilities can hear sounds but sometimes not sufficiently to understand all speech, especially when there is background noise.
+
+Auditory disabilities range from mild or moderate hearing loss in one or both ears \(hard of hearing\) to substantial and uncorrectable hearing loss in both ears \(deafness\). Some people with auditory disabilities can hear sounds but sometimes not sufficiently to understand all speech, especially when there is background noise.
 
 Some issues affecting those with auditory disabilities are:
 
@@ -57,6 +62,7 @@ Some issues affecting those with auditory disabilities are:
 * Web-based services that rely on interaction using voice only
 
 ### Cognitive
+
 Cognitive disabilities involve individuals with difficulty processing information and how it is delivered, whether written, read, or spoken. Specific learning disabilities can affect the ability to focus.
 
 Some individuals learn more slowly or have difficulty understanding complex concepts. Some issues affecting those with cognitive disabilities are:
@@ -68,6 +74,7 @@ Some individuals learn more slowly or have difficulty understanding complex conc
 * Background audio that cannot be turned off
 
 ### Dyslexia
+
 Over 40 million US adults and 20% of school-aged children have dyslexia, according to [Austin Learning Solutions](https://www.austinlearningsolutions.com/blog/38-dyslexia-facts-and-statistics.html). Dyslexia is considered a learning disorder and the signs of its presence vary by age, but in general someone who has dyslexia may struggle with reading, pronouncing words, or finding the “right” words when they are learning to read.
 
 Viewing content on the web can be a struggle for people with dyslexia, especially as websites have evolved over time to use script fonts that look similar to cursive but may cause problems for people with a learning disorder like dyslexia.
@@ -80,3 +87,4 @@ There are many factors to take into consideration to improve digital accessibili
 * Break up lengthy paragraphs so they're more digestible for users
 * Keep consistent text alignment
 * Avoid formatting such as all caps text, italics, or underlining when not needed
+
