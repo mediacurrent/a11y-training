@@ -1,10 +1,6 @@
 {
+  "link": "https://www.mediacurrent.com/",
   "items": [
-    {
-      "title":  "Home",
-      "url":  "#",
-      "menu_level": "0"
-    },
     {
       "title":  "About",
       "url":  "#",

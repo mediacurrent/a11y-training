@@ -1,2 +1,26 @@
 // Import site utilities.
 @import '../../global/utils/init';
+
+.main-menu__list {
+  display: flex;
+  list-style: none;
+}
+
+.main-menu__item {
+  padding: 0 2.5rem 2.1rem;
+}
+
+.main-menu__link {
+  color: $color-navy-blue;
+  display: inline-block;
+  font-weight: $font-weight-bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2.5rem 0 1px;
+  border-bottom: 4px solid transparent;
+
+  &:hover,
+  &:focus {
+    border-color: $color-ocean-blue;
+  }
+}
