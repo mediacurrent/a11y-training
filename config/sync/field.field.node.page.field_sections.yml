@@ -49,7 +49,7 @@ settings:
       card:
         weight: -10
         enabled: false
-      faq_item:
+      accordion_item:
         weight: -9
         enabled: false
 field_type: entity_reference_revisions

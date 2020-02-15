@@ -5,8 +5,8 @@ dependencies:
   module:
     - entity_reference_revisions
     - paragraphs
-id: paragraph.field_faq_items
-field_name: field_faq_items
+id: paragraph.field_accordion_items
+field_name: field_accordion_items
 entity_type: paragraph
 type: entity_reference_revisions
 settings:

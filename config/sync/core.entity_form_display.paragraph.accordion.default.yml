@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.accordion.field_faq_items
+    - field.field.paragraph.accordion.field_accordion_items
     - field.field.paragraph.accordion.field_title
     - paragraphs.paragraphs_type.accordion
   module:
@@ -13,7 +13,7 @@ targetEntityType: paragraph
 bundle: accordion
 mode: default
 content:
-  field_faq_items:
+  field_accordion_items:
     weight: 1
     settings:
       title: Paragraph
