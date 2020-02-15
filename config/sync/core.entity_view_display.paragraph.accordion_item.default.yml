@@ -1,26 +1,24 @@
-uuid: 630d8fcf-07c3-4ce8-b789-5b49276a1f03
+uuid: fe0ecaa2-2218-4a2c-ba3d-a875b51374f0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.faq_item.field_body
-    - field.field.paragraph.faq_item.field_title
-    - paragraphs.paragraphs_type.faq_item
-  module:
-    - text
-id: paragraph.faq_item.default
+    - field.field.paragraph.accordion_item.field_accordion_body
+    - field.field.paragraph.accordion_item.field_accordion_title
+    - paragraphs.paragraphs_type.accordion_item
+id: paragraph.accordion_item.default
 targetEntityType: paragraph
-bundle: faq_item
+bundle: accordion_item
 mode: default
 content:
-  field_body:
+  field_accordion_body:
     weight: 1
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: text_default
+    type: basic_string
     region: content
-  field_title:
+  field_accordion_title:
     weight: 0
     label: hidden
     settings:

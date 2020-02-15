@@ -1,4 +1,4 @@
-uuid: 6d1b79bd-8aec-481c-a9ca-75111c3c414b
+uuid: 1fc1d2bf-1f29-4d9d-bcba-9d0df62955a2
 langcode: en
 status: true
 dependencies:
@@ -15,7 +15,7 @@ bundle: accordion
 label: Questions
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -26,27 +26,27 @@ settings:
       accordion_item: accordion_item
     target_bundles_drag_drop:
       '50_50':
-        weight: 9
+        weight: 8
         enabled: false
       accordion:
-        weight: 10
+        weight: 9
         enabled: false
       banner:
-        weight: 11
-        enabled: false
-      card:
-        weight: 12
-        enabled: false
-      card_deck:
-        weight: 13
-        enabled: false
-      faq_accordion:
-        weight: 14
+        weight: 10
         enabled: false
       accordion_item:
         enabled: true
-        weight: 15
+        weight: 11
+      card:
+        weight: 11
+        enabled: false
+      card_deck:
+        weight: 12
+        enabled: false
+      faq_item:
+        weight: 13
+        enabled: false
       hero:
-        weight: 16
+        weight: 14
         enabled: false
 field_type: entity_reference_revisions

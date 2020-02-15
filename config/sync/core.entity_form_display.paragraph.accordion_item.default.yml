@@ -1,27 +1,25 @@
-uuid: 18fe0470-a097-403e-b6f8-1a1928b0c1ba
+uuid: 07d7c78f-d110-45a1-a20e-ac4c7314588f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.faq_item.field_body
-    - field.field.paragraph.faq_item.field_title
-    - paragraphs.paragraphs_type.faq_item
-  module:
-    - text
-id: paragraph.faq_item.default
+    - field.field.paragraph.accordion_item.field_accordion_body
+    - field.field.paragraph.accordion_item.field_accordion_title
+    - paragraphs.paragraphs_type.accordion_item
+id: paragraph.accordion_item.default
 targetEntityType: paragraph
-bundle: faq_item
+bundle: accordion_item
 mode: default
 content:
-  field_body:
+  field_accordion_body:
     weight: 1
     settings:
       rows: 5
       placeholder: ''
     third_party_settings: {  }
-    type: text_textarea
+    type: string_textarea
     region: content
-  field_title:
+  field_accordion_title:
     weight: 0
     settings:
       size: 60
