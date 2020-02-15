@@ -113,3 +113,8 @@ site-header:
   css:
     component:
       dist/css/site-header.css: {}
+
+50-50-card:
+  css:
+    component:
+      dist/css/50-50-card.css: {}
