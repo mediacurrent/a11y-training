@@ -1,0 +1,34 @@
+{{ attach_library('accessibility_theme/50-50-card') }}
+
+<section class="50-50-card {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
+  {# Media could be an image or video. #}
+  {% if image %}
+    <div class="50-50-card__media">
+      {%
+        include '@accessibility_theme/media-item/media-item.twig' with {
+          "image": image
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {% if heading or body %}
+    <div class="50-50-card__content">
+      {% if heading %}
+        {%
+          include '@accessibility_theme/heading/heading.twig' with {
+            "heading": heading
+          } only
+        %}
+      {% endif %}
+
+      {% if body %}
+        <div class="50-50-card__body">
+          {{ body }}
+        </div>
+      {% endif %}
+    </div>
+  {% endif %}
+</section>
+
