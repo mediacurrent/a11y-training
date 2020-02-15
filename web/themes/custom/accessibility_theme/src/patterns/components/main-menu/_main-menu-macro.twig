@@ -6,8 +6,7 @@
   {% import _self as menus %}
   {% if items %}
     {% if item.menu_level == 0 %}
-      <nav class="main-menu" role="navigation">
-        <ul class="main-menu__list">
+      <ul class="main-menu__list">
     {% else %}
       <ul class="main-menu__submenu">
     {% endif %}
@@ -22,9 +21,6 @@
         {% endif %}
       </li>
     {% endfor %}
-      </ul>
-    {% if item.menu_level == 0 %}
-      </nav>
-    {% endif %}
+    </ul>
   {% endif %}
 {% endmacro %}
