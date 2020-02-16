@@ -1,0 +1,23 @@
+uuid: d62c0f69-e27f-47dd-b159-4a05b54e0437
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - accessibility_theme
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: accessibility_theme_search
+theme: accessibility_theme
+region: footer
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }
