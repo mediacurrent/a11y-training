@@ -33,10 +33,10 @@
 }
 
 // Accordion Heading.
-.accordion__item--title {
+.accordion__item--question {
   margin: 0;
 
-  .accordion__trigger {
+  .accordion__toggle {
     align-items: center;
     appearance: none;
     background-color: $color-ocean-blue;
@@ -118,7 +118,7 @@
 }
 
 // Content Panel exposed in the accordion.
-.accordion__panel {
+.accordion__content {
   @include font-stack-primary;
   background-color: inherit;
   display: flex;
@@ -133,7 +133,7 @@
   z-index: 1;
 }
 
-.accordion__panel[aria-hidden='false'] {
+.accordion__content[aria-hidden='false'] {
   background-color: $color-white;
   border: 2px solid $color-ocean-blue;
   border-top-width: 0;
@@ -148,7 +148,7 @@
   }
 }
 
-.accordion__panel-interior {
+.accordion__content-interior {
   max-width: 100%;
   width: 100%;
 }

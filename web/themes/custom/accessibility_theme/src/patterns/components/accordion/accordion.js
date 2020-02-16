@@ -5,7 +5,7 @@
   Drupal.behaviors.accordion = {
     attach: function(context) {
       const self = this;
-      const $trigger = $('.accordion__trigger', context);
+      const $trigger = $('.accordion__toggle', context);
 
       if (!$trigger.length) {
         return;

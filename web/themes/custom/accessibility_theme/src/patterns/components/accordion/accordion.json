@@ -1,5 +1,10 @@
 {
-  "heading": "accordion component",
+  "heading": {
+    "title": "Frquently asked Accessibility Questions",
+    "heading_level": "2",
+    "modifier": "accordion__title",
+    "url": ""
+  },
   "items": [
     {
       "title": "Curabitur aliquet quam id dui posuere blandit.",
