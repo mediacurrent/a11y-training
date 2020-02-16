@@ -38,14 +38,14 @@
  * @ingroup themeable
  */
 #}
-{% set rendered_content = content|render %}
-
-{%
-  include '@accessibility_theme/accordion/accordion-item.twig' with {
-    attributes: attributes,
-    title_prefix: title_prefix,
-    title_suffix: title_suffix,
-    title: content.field_title|render|trim is not empty ? content.field_title,
-    body: content.field_body|render|trim is not empty ? content.field_body,
-  }
+{% embed '@accessibility_theme/accordion/_accordion-item.twig' with {
+    "item": {
+      "title": content.field_accordion_title
+    },
+    "content": content
+  } only
 %}
+  {% block accordion_content %}
+    {{ content.field_accordion_body }}
+  {% endblock %}
+{% endembed %}

@@ -38,18 +38,20 @@
  * @ingroup themeable
  */
 #}
-{% set rendered_content = content|render %}
-
 {%
-  include '@accessibility_theme/hero/hero.twig' with {
-    attributes: attributes,
-    title_prefix: title_prefix,
-    title_suffix: title_suffix,
-    image: content.field_image|render|trim is not empty ? content.field_image,
-    eyebrow: content.field_eyebrow|render|trim is not empty ? content.field_eyebrow,
+  include '@accessibility_theme/heading/heading.twig' with {
     heading: {
       title: content.field_title|render|trim is not empty ? content.field_title
-    },
-    body: content.field_body|render|trim is not empty ? content.field_body,
+    }
   } only
 %}
+{% embed '@accessibility_theme/accordion/accordion.twig' with
+  {
+    content: content
+  } only
+%}
+
+  {% block accordion_items %}
+    {{ content.field_accordion_items }}
+  {% endblock accordion_items %}
+{% endembed %}
