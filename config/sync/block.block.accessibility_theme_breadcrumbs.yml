@@ -1,0 +1,22 @@
+uuid: 79b5ed43-bde3-4894-9d2d-88afad2abc31
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - accessibility_theme
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: accessibility_theme_breadcrumbs
+theme: accessibility_theme
+region: footer
+weight: -4
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

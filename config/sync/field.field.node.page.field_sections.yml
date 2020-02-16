@@ -6,7 +6,9 @@ dependencies:
     - field.storage.node.field_sections
     - node.type.page
     - paragraphs.paragraphs_type.50_50
+    - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.card
     - paragraphs.paragraphs_type.card_deck
     - paragraphs.paragraphs_type.hero
   module:
@@ -30,6 +32,8 @@ settings:
       banner: banner
       card_deck: card_deck
       '50_50': '50_50'
+      card: card
+      accordion: accordion
     target_bundles_drag_drop:
       hero:
         enabled: true
@@ -43,13 +47,13 @@ settings:
       '50_50':
         enabled: true
         weight: -12
-      faq_accordion:
-        enabled: true
-        weight: -11
       card:
+        enabled: true
         weight: -10
-        enabled: false
-      faq_item:
-        weight: -9
+      accordion:
+        enabled: true
+        weight: 9
+      accordion_item:
+        weight: 10
         enabled: false
 field_type: entity_reference_revisions

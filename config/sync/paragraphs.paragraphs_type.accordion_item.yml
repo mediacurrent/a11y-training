@@ -1,9 +1,9 @@
-uuid: caa3304a-1b50-463a-a231-be589073170b
+uuid: 22f12d8b-7827-4ed9-a88d-c12ab6abfa27
 langcode: en
 status: true
 dependencies: {  }
-id: faq_item
-label: 'FAQ Item'
+id: accordion_item
+label: 'Accordion Item'
 icon_uuid: null
 description: ''
 behavior_plugins: {  }

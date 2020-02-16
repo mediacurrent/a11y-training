@@ -1,0 +1,22 @@
+uuid: e9c38608-ff3d-4865-a228-971592da37c4
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - accessibility_theme
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: accessibility_theme_content
+theme: accessibility_theme
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

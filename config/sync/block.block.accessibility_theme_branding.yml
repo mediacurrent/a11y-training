@@ -1,0 +1,25 @@
+uuid: 67ba2682-adcb-449e-820f-0c4ccfa2c5c6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - accessibility_theme
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: accessibility_theme_branding
+theme: accessibility_theme
+region: header
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

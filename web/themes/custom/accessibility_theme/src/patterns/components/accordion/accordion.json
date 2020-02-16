@@ -2,17 +2,17 @@
   "heading": "accordion component",
   "accordion_items": {
     "accordion_item_1": {
-      "id": "panel_1",
+      "id": "1",
       "title": "Question 1",
       "body": "This is mock data from the accordion.json file"
     },
     "accordion_item_2": {
-      "id": "panel_2",
+      "id": "2",
       "title": "Question 2",
       "body": "This is mock data from the accordion.json file"
     },
     "accordion_item_3": {
-      "id": "panel_3",
+      "id": "3",
       "title": "Question 4",
       "body": "This is mock data from the accordion.json file"
     }
