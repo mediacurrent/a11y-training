@@ -64,3 +64,4 @@ regions:
   header: Header
   content: Content
   footer: Footer
+  bottom: Bottom

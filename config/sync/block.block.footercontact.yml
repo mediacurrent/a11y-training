@@ -1,0 +1,25 @@
+uuid: da75759a-660d-4d94-b3c5-1183c19c82d5
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:813a9564-d933-4c5d-8703-364b77a190c3'
+  module:
+    - block_content
+  theme:
+    - accessibility_theme
+id: footercontact
+theme: accessibility_theme
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:813a9564-d933-4c5d-8703-364b77a190c3'
+settings:
+  id: 'block_content:813a9564-d933-4c5d-8703-364b77a190c3'
+  label: 'Footer Contact'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
