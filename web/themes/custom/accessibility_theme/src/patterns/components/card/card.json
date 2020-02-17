@@ -1,55 +1,12 @@
 {
-  "button_text": "Learn more",
+  "body": "This is mock data from the card.json file",
+  "eyebrow": "This is an eyebrow",
   "heading": {
-    "title": "Access for Everyone",
     "heading_level": "",
     "modifier": "",
+    "title": "Individual Card Title",
     "url": ""
   },
-  "items": [
-    {
-      "body": "This is mock data from the card.json file",
-      "eyebrow": "This is an eyebrow",
-      "heading": {
-        "title": "Individual Card Title",
-        "heading_level": "",
-        "modifier": "",
-        "url": ""
-      },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
-    },
-    {
-      "body": "This is mock data from the card.json file",
-      "eyebrow": "This is an eyebrow",
-      "heading": {
-        "title": "Individual Card Title",
-        "heading_level": "",
-        "modifier": "",
-        "url": ""
-      },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
-    },
-    {
-      "body": "This is mock data from the card.json file",
-      "eyebrow": "This is an eyebrow",
-      "heading": {
-        "title": "Individual Card Title",
-        "heading_level": "",
-        "modifier": "",
-        "url": ""
-      },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
-    },
-    {
-      "body": "This is mock data from the card.json file",
-      "eyebrow": "This is an eyebrow",
-      "heading": {
-        "title": "Individual Card Title",
-        "heading_level": "",
-        "modifier": "",
-        "url": ""
-      },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
-    }
-  ]
+  "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
+  "modifier": ""
 }

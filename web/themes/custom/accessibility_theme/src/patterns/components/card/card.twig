@@ -1,25 +1,43 @@
 {{ attach_library('accessibility_theme/card') }}
 
-<section class="card {{- attributes ? attributes.class -}}"
-  {{- attributes ? attributes|without(class) -}}>
-  {% if heading %}
-    {%
-      include '@accessibility_theme/heading/heading.twig' with {
-        "heading": heading
-      } only
-    %}
+<div class="card">
+  {% if item.image %}
+    <div class="card__media">
+      {%
+        include '@accessibility_theme/media-item/media-item.twig' with {
+          "image": item.image
+        } only
+      %}
+    </div>
   {% endif %}
 
-  <div class="card__items">
-    {% block card__items %}
-      {% for item in items %}
-        {% include '@accessibility_theme/card/_card-item.twig' with {
-          item: item
+  {% if item.eyebrow or item.heading or item.body %}
+    <div class="card__content">
+      {% if item.eyebrow %}
+        <div class="card__eyebrow">
+          {%
+            include '@accessibility_theme/eyebrow/eyebrow.twig' with {
+              "eyebrow": item.eyebrow
+            } only
+          %}
+        </div>
+      {% endif %}
+
+      {% if item.heading %}
+        {%
+          include '@accessibility_theme/heading/heading.twig' with {
+            "heading": {
+              "heading_level": '3',
+              "title": item.heading.title
+            }
           } only
         %}
-      {% endfor %}
-    {% endblock %}
-  </div>
+      {% endif %}
 
-  {{ button_text }}
-</section>
+      {% if item.body %}
+        <div class="card__body">
+          {{ item.body }}
+        </div>
+      {% endif %}
+  {% endif %}
+</div>
