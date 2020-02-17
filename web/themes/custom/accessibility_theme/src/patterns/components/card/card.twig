@@ -1,5 +1,25 @@
 {{ attach_library('accessibility_theme/card') }}
-<div class="card">
-  <h2 class="card__heading">{{ heading }}</h2>
-  <p class="card__body">{{ body }}</p>
-</div>
+
+<section class="card {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
+  {% if heading %}
+    {%
+      include '@accessibility_theme/heading/heading.twig' with {
+        "heading": heading
+      } only
+    %}
+  {% endif %}
+
+  <div class="card__items">
+    {% block card__items %}
+      {% for item in items %}
+        {% include '@accessibility_theme/card/_card-item.twig' with {
+          item: item
+          } only
+        %}
+      {% endfor %}
+    {% endblock %}
+  </div>
+
+  {{ button_text }}
+</section>
