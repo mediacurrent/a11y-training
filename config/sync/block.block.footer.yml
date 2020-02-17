@@ -1,22 +1,22 @@
-uuid: cf7fa309-0256-4bf8-af3d-714db4bf87a2
+uuid: b81835c8-6c15-48e3-9889-e8a7a2813b26
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.social-links
+    - system.menu.footer
   module:
     - system
   theme:
     - accessibility_theme
-id: accessibility_theme_sociallinks
+id: footer
 theme: accessibility_theme
-region: footer
-weight: -7
+region: bottom
+weight: -5
 provider: null
-plugin: 'system_menu_block:social-links'
+plugin: 'system_menu_block:footer'
 settings:
-  id: 'system_menu_block:social-links'
-  label: 'Social Links'
+  id: 'system_menu_block:footer'
+  label: Footer
   provider: system
   label_display: '0'
   level: 1

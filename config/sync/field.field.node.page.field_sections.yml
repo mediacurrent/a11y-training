@@ -8,6 +8,7 @@ dependencies:
     - paragraphs.paragraphs_type.50_50
     - paragraphs.paragraphs_type.accordion
     - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.basic_text
     - paragraphs.paragraphs_type.card
     - paragraphs.paragraphs_type.card_deck
     - paragraphs.paragraphs_type.hero
@@ -29,6 +30,7 @@ settings:
     negate: 0
     target_bundles:
       hero: hero
+      basic_text: basic_text
       banner: banner
       card_deck: card_deck
       '50_50': '50_50'
@@ -37,23 +39,26 @@ settings:
     target_bundles_drag_drop:
       hero:
         enabled: true
-        weight: -15
+        weight: -17
+      basic_text:
+        enabled: true
+        weight: -16
       banner:
         enabled: true
-        weight: -14
+        weight: -15
       card_deck:
         enabled: true
-        weight: -13
+        weight: -14
       '50_50':
         enabled: true
-        weight: -12
+        weight: -13
       card:
         enabled: true
-        weight: -10
+        weight: -12
       accordion:
         enabled: true
-        weight: 9
+        weight: -11
       accordion_item:
-        weight: 10
+        weight: -10
         enabled: false
 field_type: entity_reference_revisions
