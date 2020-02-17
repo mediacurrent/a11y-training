@@ -39,15 +39,21 @@
  */
 #}
 {{ attach_library('accessibility_theme/accordion') }}
-{%
+
+{# Prints accordion section title. #}
+{# {%
   include '@accessibility_theme/heading/heading.twig' with {
     heading: {
       title: content.field_title|render|trim is not empty ? content.field_title
     }
   } only
-%}
-{% embed '@accessibility_theme/accordion/accordion.twig' with
-  {
+%} #}
+
+{# Embeds accordion and its items. #}
+{% embed '@accessibility_theme/accordion/accordion.twig' with {
+    heading: {
+      title: content.field_title|render|trim is not empty ? content.field_title
+    },
     content: content
   } only
 %}
