@@ -108,6 +108,7 @@ accordion:
   dependencies:
     - core/drupal
     - core/jquery
+    - core/jquery.once
 
 site-header:
   css:

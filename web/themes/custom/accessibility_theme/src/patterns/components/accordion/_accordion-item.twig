@@ -1,0 +1,27 @@
+{{ attach_library('accessibility_theme/accordion') }}
+
+<div class="accordion__item">
+  <h3 class="accordion__item--question">
+    <span class="icon-chevron icon-chevron__down">
+      <svg class="accordion__chevron" height="56" width="56" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.22 14.5"><path fill="none" stroke="#ffffff" stroke-miterlimit="10" stroke-width="2" d="M.63.78l8 6.47-8 6.47"/></svg>
+    </span>
+    <span class="icon-chevron icon-chevron__up">
+      <svg class="accordion__chevron" height="56" width="56" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.22 14.5"><path fill="none" stroke="#007e9a" stroke-miterlimit="10" stroke-width="2" d="M.63.78l8 6.47-8 6.47"/></svg>
+    </span>
+    <button
+      type="button"
+      class="accordion__toggle"
+      aria-controls="accordion__content"
+      aria-expanded="false"
+      aria-selected="false">
+      <span class="accordion__question--text">{{ item.title }}</span>
+    </button>
+  </h3>
+  <div class="accordion__content"
+    aria-hidden="true"
+    aria-labelledby="accordion__content">
+    {% block accordion_content %}
+      {{ item.body }}
+    {% endblock %}
+  </div>
+</div>

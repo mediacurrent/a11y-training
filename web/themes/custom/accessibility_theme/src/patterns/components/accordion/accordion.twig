@@ -1,42 +1,25 @@
 {{ attach_library('accessibility_theme/accordion') }}
 
-{%
-  set classes = [
-    'accordion__wrapper',
-  ]
-%}
-
-{# Preserve the Drupal attributes if they're available. #}
-
-{% set attributes = attributes ? attributes.addClass(classes) : ' class="' ~ classes|join(' ') ~ '"' %}
-
-<section {{ attributes|raw }}>
+<div class="accordion{{ attributes ? ' ' ~ attributes.class}}"
+{{- attributes ? attributes|without(class) -}}>
   <div class="accordion__container">
-    {% block heading %}
-      {% if heading %}
-        <div class="accordion__title">
-          {%
-            include '@accessibility_theme/heading/heading.twig' with {
-              "heading": heading
-            } only
-          %}
-        </div>
-      {% endif %}
-    {% endblock %}
+    {% if heading %}
+      {%
+        include '@accessibility_theme/heading/heading.twig' with {
+          "heading": heading
+        } only
+      %}
+    {% endif %}
 
     <div class="accordion__items">
-      {% block accordion_list %}
-        {% for item in accordion_items %}
-          {%
-            include '@accessibility_theme/accordion/accordion-item.twig' with {
-              id: item.id,
-              title: item.title,
-              body: item.body
-            } only
-          %}
-        {% endfor %}
+      {% block accordion_items %}
+          {% for item in items %}
+            {% include '@accessibility_theme/accordion/_accordion-item.twig' with {
+              item: item
+              } only
+            %}
+          {% endfor %}
       {% endblock %}
     </div>
-
   </div>
 </section>
