@@ -3,9 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - field.field.paragraph.50_50.field_eyebrow
     - field.field.paragraph.50_50.field_image
-    - field.field.paragraph.50_50.field_subtitle
     - field.field.paragraph.50_50.field_text
     - field.field.paragraph.50_50.field_title
     - image.style.thumbnail
@@ -17,14 +15,6 @@ targetEntityType: paragraph
 bundle: '50_50'
 mode: default
 content:
-  field_eyebrow:
-    weight: 4
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
-    region: content
   field_image:
     weight: 0
     settings:
@@ -32,14 +22,6 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
-    region: content
-  field_subtitle:
-    weight: 2
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
-    type: string_textfield
     region: content
   field_text:
     weight: 3
