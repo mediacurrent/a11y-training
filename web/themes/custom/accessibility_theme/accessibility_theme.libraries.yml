@@ -117,7 +117,7 @@ site-header:
     component:
       dist/css/site-header.css: {}
 
-50-50-card:
+card-50-50:
   css:
     component:
-      dist/css/50-50-card.css: {}
+      dist/css/card-50-50.css: {}
