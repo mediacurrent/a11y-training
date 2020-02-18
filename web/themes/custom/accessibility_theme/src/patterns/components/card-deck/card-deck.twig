@@ -13,10 +13,15 @@
   <div class="card__items">
     {% block card__items %}
       {% for item in items %}
-        {% include '@accessibility_theme/card/_card-item.twig' with {
-          item: item
-          } only
-        %}
+        <div class="card__item">
+          {% include '@accessibility_theme/card/card.twig' with {
+            image: item.image,
+            eyebrow: item.eyebrow,
+            heading: item.heading,
+            body: item.body
+            } only
+          %}
+        </div>
       {% endfor %}
     {% endblock %}
   </div>
