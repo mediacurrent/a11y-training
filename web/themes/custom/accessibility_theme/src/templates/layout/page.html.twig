@@ -61,12 +61,18 @@
     <div class="layout-content">
       {{ page.content }}
     </div>{# /.layout-content #}
-    
+
   </main>
 
   {% if page.footer %}
     <footer role="contentinfo">
       {{ page.footer }}
+
+      {% if page.bottom %}
+      <div class="bottom">
+        {{ page.bottom }}
+      </div>
+      {% endif %}
     </footer>
   {% endif %}
 

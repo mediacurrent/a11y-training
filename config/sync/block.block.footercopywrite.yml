@@ -1,0 +1,25 @@
+uuid: fe8b8a50-14e2-480e-93ad-0522991e73ac
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:2758b9ff-83c8-4de8-adeb-26ee23fa1269'
+  module:
+    - block_content
+  theme:
+    - accessibility_theme
+id: footercopywrite
+theme: accessibility_theme
+region: bottom
+weight: -6
+provider: null
+plugin: 'block_content:2758b9ff-83c8-4de8-adeb-26ee23fa1269'
+settings:
+  id: 'block_content:2758b9ff-83c8-4de8-adeb-26ee23fa1269'
+  label: 'Footer Copywrite'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

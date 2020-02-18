@@ -39,11 +39,11 @@
         </div>
       {% endif %}
 
-      {% block cta %}
-        {% if cta.url %}
+      {% if cta.url %}
+        <div class="banner__cta">
           <a href="{{ cta.url }}" class="{{ cta.modifier }}">{{ cta.text }}</a>
-        {% endif %}
-      {% endblock %}
+        </div>
+      {% endif %}
     </div>
   {% endif %}
 </section>

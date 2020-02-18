@@ -39,22 +39,27 @@
  */
 #}
 {% set rendered_content = content|render %}
-{% set cta = content.field_cta|field_value %}
 
-{% embed '@accessibility_theme/banner/banner.twig' with
+{# Sets variable for cta. #}
+{# TODO:  Improve this with twig_field_value. #}
+{% set cta = {
+    text: content.field_cta.0['#title'],
+    url: content.field_cta.0['#url'].uri,
+    modifier: 'button',
+  }
+%}
+
+{% include '@accessibility_theme/banner/banner.twig' with
   {
     attributes: attributes,
     title_prefix: title_prefix,
     title_suffix: title_suffix,
     image: content.field_image|render|trim is not empty ? content.field_image,
     heading: {
-      title: content.field_title|render|trim is not empty ? content.field_title
+      title: content.field_title|render|trim is not empty ? content.field_title,
+      modifier: 'banner__title'
     },
     body: content.field_body|render|trim is not empty ? content.field_body,
     cta: cta
   } only
 %}
-  {% block cta %}
-    {{ cta }}
-  {% endblock %}
-{% endembed %}

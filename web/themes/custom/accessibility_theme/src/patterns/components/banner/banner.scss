@@ -1,2 +1,40 @@
 // Import site utilities.
 @import '../../global/utils/init';
+
+.banner {
+  margin: 0 auto;
+  max-width: $bp-lg;
+  width: 100%;
+}
+
+.banner__content {
+  background-color: $color-white;
+  border: 1px solid $color-gray-xlt;
+  margin: -112px auto 0;
+  max-width: 70%;
+  padding: 30px;
+  position: relative;
+
+  &::before {
+    background-color: rgba($color-ocean-blue, 0.6);
+    content: '';
+    display: block;
+    height: 122px;
+    left: -10px;
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+
+.banner__eyebrow,
+.banner__title,
+.banner__body {
+  margin-bottom: 30px;
+}
+
+.banner__cta {
+  margin: 0 auto;
+  text-align: center;
+}
