@@ -1,0 +1,43 @@
+{{ attach_library('accessibility_theme/card') }}
+
+<div class="card">
+  {% if image %}
+    <div class="card__media">
+      {%
+        include '@accessibility_theme/media-item/media-item.twig' with {
+          "image": image
+        } only
+      %}
+    </div>
+  {% endif %}
+
+  {% if eyebrow or heading or body %}
+    <div class="card__content">
+      {% if eyebrow %}
+        <div class="card__eyebrow">
+          {%
+            include '@accessibility_theme/eyebrow/eyebrow.twig' with {
+              "eyebrow": eyebrow
+            } only
+          %}
+        </div>
+      {% endif %}
+
+      {% if heading %}
+        {%
+          include '@accessibility_theme/heading/heading.twig' with {
+            "heading": {
+              "heading_level": '3',
+              "title": heading.title
+            }
+          } only
+        %}
+      {% endif %}
+
+      {% if body %}
+        <div class="card__body">
+          {{ body }}
+        </div>
+      {% endif %}
+  {% endif %}
+</div>

@@ -1,0 +1,30 @@
+{{ attach_library('accessibility_theme/card-deck') }}
+
+<section class="card {{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
+  {% if heading %}
+    {%
+      include '@accessibility_theme/heading/heading.twig' with {
+        "heading": heading
+      } only
+    %}
+  {% endif %}
+
+  <div class="card__items">
+    {% block card__items %}
+      {% for item in items %}
+        <div class="card__item">
+          {% include '@accessibility_theme/card/card.twig' with {
+            image: item.image,
+            eyebrow: item.eyebrow,
+            heading: item.heading,
+            body: item.body
+            } only
+          %}
+        </div>
+      {% endfor %}
+    {% endblock %}
+  </div>
+
+  {{ button_text }}
+</section>

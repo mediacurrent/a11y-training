@@ -117,7 +117,19 @@ site-header:
     component:
       dist/css/site-header.css: {}
 
-card-50-50:
+card:
   css:
     component:
-      dist/css/card-50-50.css: {}
+      dist/css/card.css: {}
+
+50-50-card:
+  css:
+    component:
+      dist/css/50-50-card.css: {}
+
+card-deck:
+  css:
+    component:
+      dist/css/card-deck.css: {}
+    dependencies:
+      - card
