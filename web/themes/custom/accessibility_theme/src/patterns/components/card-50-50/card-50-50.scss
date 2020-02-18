@@ -3,7 +3,13 @@
 
 .card-50-50 {
   display: flex;
+  margin: 0 auto;
   max-width: $bp-lg;
+}
+
+.card-50-50__media,
+.card-50-50__content {
+  flex: 1 1 50%;
 }
 
 .card-50-50__content {

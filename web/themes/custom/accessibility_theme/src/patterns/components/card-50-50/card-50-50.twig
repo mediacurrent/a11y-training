@@ -1,10 +1,10 @@
-{{ attach_library('accessibility_theme/50-50-card') }}
+{{ attach_library('accessibility_theme/card-50-50') }}
 
-<section class="50-50-card {{- attributes ? attributes.class -}}"
+<section class="card-50-50 {{- attributes ? attributes.class -}}"
   {{- attributes ? attributes|without(class) -}}>
   {# Media could be an image or video. #}
   {% if image %}
-    <div class="50-50-card__media">
+    <div class="card-50-50__media">
       {%
         include '@accessibility_theme/media-item/media-item.twig' with {
           "image": image
@@ -14,7 +14,7 @@
   {% endif %}
 
   {% if heading or body %}
-    <div class="50-50-card__content">
+    <div class="card-50-50__content">
       {% if heading %}
         {%
           include '@accessibility_theme/heading/heading.twig' with {
@@ -24,11 +24,10 @@
       {% endif %}
 
       {% if body %}
-        <div class="50-50-card__body">
+        <div class="card-50-50__body">
           {{ body }}
         </div>
       {% endif %}
     </div>
   {% endif %}
 </section>
-
