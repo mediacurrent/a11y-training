@@ -1,0 +1,10 @@
+{{ attach_library('accessibility_theme/heading') }}
+
+{% for item in items %}
+  {% include '@accessibility_theme/heading/heading.twig' with  {
+    heading: item
+    } only
+  %}
+  Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Curabitur blandit tempus ardua ridiculus sed magna. Tu quoque, Brute, fili mi, nihil timor populi, nihil! Curabitur est gravida et libero vitae dictum. Quam diu etiam furor iste tuus nos eludet?<br/>
+Prima luce, cum quibus mons aliud  consensu ab eo. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Qui ipsorum lingua Celtae, nostra Galli appellantur.
+{% endfor %}
