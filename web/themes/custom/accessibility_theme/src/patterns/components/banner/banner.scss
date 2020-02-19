@@ -7,24 +7,39 @@
   width: 100%;
 }
 
+.banner__media {
+  margin-bottom: 30px;
+
+  @include breakpoint($bp-sm) {
+    margin-bottom: 0;
+    position: relative;
+    z-index: $zi-below-ground;
+  }
+}
+
 .banner__content {
   background-color: $color-white;
-  border: 1px solid $color-gray-xlt;
-  margin: -112px auto 0;
-  max-width: 70%;
-  padding: 30px;
-  position: relative;
 
-  &::before {
-    background-color: rgba($color-ocean-blue, 0.6);
-    content: '';
-    display: block;
-    height: 122px;
-    left: -10px;
-    position: absolute;
-    top: -10px;
-    width: 100%;
-    z-index: -1;
+  @include breakpoint($bp-sm) {
+    border: 1px solid $color-gray-xlt;
+    border-top: 0;
+    margin: -112px auto 0;
+    max-width: 70%;
+    padding: 30px;
+    position: relative;
+    box-shadow: 5px 5px 4px -3px rgba($color-gray-lt, 0.2);
+
+    &::before {
+      background-color: rgba($color-ocean-blue, 0.4);
+      content: '';
+      display: block;
+      height: 122px;
+      left: -10px;
+      position: absolute;
+      top: -10px;
+      width: 100%;
+      z-index: -1;
+    }
   }
 }
 
@@ -37,4 +52,8 @@
 .banner__cta {
   margin: 0 auto;
   text-align: center;
+
+  @include breakpoint($bp-under-xsm) {
+    display: block;
+  }
 }
