@@ -2,9 +2,12 @@
 @import '../../global/utils/init';
 
 .card-50-50 {
-  display: flex;
   margin: 0 auto;
   max-width: $bp-lg;
+
+  @include breakpoint($bp-sm) {
+    display: flex;
+  }
 }
 
 .card-50-50__media,
@@ -13,5 +16,9 @@
 }
 
 .card-50-50__content {
-  padding-left: 40px;
+  margin-top: 20px;
+
+  @include breakpoint($bp-sm) {
+    padding-left: 40px;
+  }
 }
