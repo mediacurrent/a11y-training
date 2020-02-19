@@ -1,6 +1,7 @@
 {{ attach_library('accessibility_theme/card') }}
 
-<div class="card">
+<article class="card{{ modifier ? ' ' ~ modifier : ''}}{{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
   {% if image %}
     <div class="card__media">
       {%
@@ -11,7 +12,7 @@
     </div>
   {% endif %}
 
-  {% if eyebrow or heading or body %}
+  {% if eyebrow or heading or text %}
     <div class="card__content">
       {% if eyebrow %}
         <div class="card__eyebrow">
@@ -34,10 +35,11 @@
         %}
       {% endif %}
 
-      {% if body %}
-        <div class="card__body">
-          {{ body }}
+      {% if text %}
+        <div class="card__text">
+          {{ text }}
         </div>
       {% endif %}
+    </div>
   {% endif %}
-</div>
+</article>

@@ -38,18 +38,28 @@
  * @ingroup themeable
  */
 #}
-{{ attach_library('accessibility_theme/accordion') }}
-
-{# Embeds accordion and its items. #}
-{% embed '@accessibility_theme/accordion/accordion.twig' with {
-    heading: {
-      title: content.field_title|render|trim is not empty ? content.field_title
-    },
-    content: content
-  } only
+{# Sets variable for cta. #}
+{# TODO:  Improve this with twig_field_value. #}
+{% set cta = {
+    text: content.field_cta.0['#title'],
+    url: content.field_cta.0['#url'].uri,
+    modifier: 'button',
+  }
 %}
 
-  {% block accordion_items %}
-    {{ content.field_accordion_items }}
+{% set rendered_content = content|render %}
+{% embed '@accessibility_theme/card-deck/card-deck.twig' with {
+    items: {
+      heading: content.field_title|render|trim is not empty ? content.field_title,
+      text: content.field_text|render|trim is not empty ? content.field_text
+    },
+    heading: content.field_title|render|trim is not empty ? {
+      title: content.field_title
+    },
+    button: cta
+  }
+%}
+  {% block card_items %}
+    {{ content.field_cards }}
   {% endblock %}
 {% endembed %}

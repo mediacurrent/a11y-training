@@ -1,5 +1,9 @@
 {
-  "button_text": "This is a button",
+  "button": {
+    "text": "More about accessibility",
+    "url": "#",
+    "modifier": "card-deck__cta"
+  },
   "heading": {
     "heading_level": "",
     "modifier": "",
@@ -8,7 +12,7 @@
   },
   "items": [
     {
-      "body": "This is mock data from the card.json file",
+      "text": "This is mock data from the card.json file",
       "eyebrow": "This is an eyebrow",
       "heading": {
         "heading_level": "",
@@ -19,7 +23,7 @@
       "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
     },
     {
-      "body": "This is mock data from the card.json file",
+      "text": "This is mock data from the card.json file",
       "eyebrow": "This is an eyebrow",
       "heading": {
         "heading_level": "",
@@ -30,7 +34,7 @@
       "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
     },
     {
-      "body": "This is mock data from the card.json file",
+      "text": "This is mock data from the card.json file",
       "eyebrow": "This is an eyebrow",
       "heading": {
         "heading_level": "",
@@ -41,7 +45,7 @@
       "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
     },
     {
-      "body": "This is mock data from the card.json file",
+      "text": "This is mock data from the card.json file",
       "eyebrow": "This is an eyebrow",
       "heading": {
         "heading_level": "",
