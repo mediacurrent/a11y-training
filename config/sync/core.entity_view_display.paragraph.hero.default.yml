@@ -8,8 +8,9 @@ dependencies:
     - field.field.paragraph.hero.field_image
     - field.field.paragraph.hero.field_title
     - paragraphs.paragraphs_type.hero
+    - responsive_image.styles.hero
   module:
-    - image
+    - responsive_image
     - text
 id: paragraph.hero.default
 targetEntityType: paragraph
@@ -35,10 +36,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: hero
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_title:
     weight: 2

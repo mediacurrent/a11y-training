@@ -1,0 +1,15 @@
+uuid: b8a05811-2a4e-4575-9387-c4c9c5aa0098
+langcode: en
+status: true
+dependencies: {  }
+name: hero_max_720px
+label: 'Hero max 720px'
+effects:
+  eb2a59bb-dead-460b-8c6f-b729370ad186:
+    uuid: eb2a59bb-dead-460b-8c6f-b729370ad186
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 400
+      anchor: center-center

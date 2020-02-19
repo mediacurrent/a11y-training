@@ -1,0 +1,15 @@
+uuid: 8abea4c7-96f4-4171-8a77-2bed245ca55f
+langcode: en
+status: true
+dependencies: {  }
+name: 16_9_720x405
+label: '16:9 720x405'
+effects:
+  1670cfe7-a81e-443f-984a-1d7e30b5bb6b:
+    uuid: 1670cfe7-a81e-443f-984a-1d7e30b5bb6b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 720
+      height: 405
+      anchor: center-center

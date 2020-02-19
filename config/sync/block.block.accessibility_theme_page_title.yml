@@ -1,6 +1,6 @@
 uuid: f2112fd3-5b68-44f9-ab61-a71ef1d4c29e
 langcode: en
-status: true
+status: false
 dependencies:
   theme:
     - accessibility_theme

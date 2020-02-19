@@ -7,8 +7,9 @@ dependencies:
     - field.field.paragraph.50_50.field_text
     - field.field.paragraph.50_50.field_title
     - paragraphs.paragraphs_type.50_50
+    - responsive_image.styles.16_9_max_1280px
   module:
-    - image
+    - responsive_image
 id: paragraph.50_50.default
 targetEntityType: paragraph
 bundle: '50_50'
@@ -18,10 +19,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      responsive_image_style: 16_9_max_1280px
       image_link: ''
     third_party_settings: {  }
-    type: image
+    type: responsive_image
     region: content
   field_text:
     weight: 3

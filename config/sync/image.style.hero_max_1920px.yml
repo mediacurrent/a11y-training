@@ -1,0 +1,15 @@
+uuid: fee36a9f-3820-47d8-94f3-d40561055749
+langcode: en
+status: true
+dependencies: {  }
+name: hero_max_1920px
+label: 'Hero max 1920px'
+effects:
+  f50ecd7e-70c5-4a7f-bf2f-7dce639e634f:
+    uuid: f50ecd7e-70c5-4a7f-bf2f-7dce639e634f
+    id: image_scale
+    weight: 1
+    data:
+      width: 1920
+      height: null
+      upscale: false
