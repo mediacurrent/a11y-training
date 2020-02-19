@@ -12,14 +12,9 @@
  * @see template_preprocess_region()
  */
 #}
-{{ attach_library('accessibility_theme/site-header') }}
-
+{{ attach_library('accessibility_theme/site-footer') }}
 {% set rendered_content = content|render %}
 
 {% if content %}
-  <header attributes.addClass('site-header') }} role="banner">
-    <div class="site-header__inner">
-      {{ content }}
-    </div>
-  </header>
+  {{ content }}
 {% endif %}

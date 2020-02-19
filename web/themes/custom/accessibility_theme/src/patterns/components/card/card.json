@@ -1,0 +1,12 @@
+{
+  "text": "This is mock data from the card.json file",
+  "eyebrow": "This is an eyebrow",
+  "heading": {
+    "heading_level": "",
+    "modifier": "",
+    "title": "Individual Card Title",
+    "url": ""
+  },
+  "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/640x640' alt='test image' />",
+  "modifier": ""
+}

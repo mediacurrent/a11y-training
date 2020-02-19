@@ -56,10 +56,13 @@ fonts:
     theme:
       'https://fonts.googleapis.com/css?family=Raleway:400,700': { type: external, minified: true }
 
-footer:
+site-footer:
   css:
     component:
-      dist/css/footer.css: {}
+      dist/css/site-footer.css: {}
+  dependencies:
+    - accessibility_theme/contact
+    - accessibility_theme/footer-menu
 
 footer-menu:
   css:
@@ -117,7 +120,19 @@ site-header:
     component:
       dist/css/site-header.css: {}
 
+card:
+  css:
+    component:
+      dist/css/card.css: {}
+
 card-50-50:
   css:
     component:
       dist/css/card-50-50.css: {}
+
+card-deck:
+  css:
+    component:
+      dist/css/card-deck.css: {}
+  dependencies:
+    - accessibility_theme/card

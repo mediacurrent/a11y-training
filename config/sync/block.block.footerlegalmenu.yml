@@ -1,22 +1,22 @@
-uuid: b81835c8-6c15-48e3-9889-e8a7a2813b26
+uuid: aff87110-87cb-4c3a-b60d-fe594c514f47
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.footer
+    - system.menu.footer-legal-menu
   module:
     - system
   theme:
     - accessibility_theme
-id: footer
+id: footerlegalmenu
 theme: accessibility_theme
 region: bottom
-weight: -5
+weight: 0
 provider: null
-plugin: 'system_menu_block:footer'
+plugin: 'system_menu_block:footer-legal-menu'
 settings:
-  id: 'system_menu_block:footer'
-  label: Footer
+  id: 'system_menu_block:footer-legal-menu'
+  label: 'Footer Legal Menu'
   provider: system
   label_display: '0'
   level: 1

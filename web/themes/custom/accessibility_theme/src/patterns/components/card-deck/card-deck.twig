@@ -1,0 +1,37 @@
+{{ attach_library('accessibility_theme/card-deck') }}
+
+<section class="card-deck{{ modifier ? ' ' ~ modifier : ''}}{{- attributes ? attributes.class -}}"
+  {{- attributes ? attributes|without(class) -}}>
+  <div class="card-deck__inner">
+    {% if heading %}
+      {%
+        include '@accessibility_theme/heading/heading.twig' with {
+          "heading": heading
+        } only
+      %}
+    {% endif %}
+
+    <div class="card-deck__items">
+      {% block card_items %}
+        {% for item in items %}
+          {% include '@accessibility_theme/card/card.twig' with {
+            image: item.image,
+            eyebrow: item.eyebrow,
+            heading: item.heading,
+            text: item.text,
+            modifier: 'card-deck__item'
+            } only
+          %}
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </div>
+
+  <div class="card-deck__cta--wrapper">
+    {%
+      include '@accessibility_theme/button/button.twig' with {
+        button: button
+      } only
+    %}
+  </div>
+</section>

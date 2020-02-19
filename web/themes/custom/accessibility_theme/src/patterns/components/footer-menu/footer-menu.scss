@@ -5,12 +5,14 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
+.footer-menu > ul,
 .footer-menu__list {
   display: flex;
   justify-content: center;
   list-style: none;
 }
 
+.footer-menu > ul li,
 .footer-menu__item {
 
   &::after {
