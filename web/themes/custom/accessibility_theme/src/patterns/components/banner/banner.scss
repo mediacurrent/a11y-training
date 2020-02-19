@@ -2,9 +2,8 @@
 @import '../../global/utils/init';
 
 .banner {
-  margin: 0 auto;
-  max-width: $bp-lg;
-  width: 100%;
+  @include component-wrapper;
+  @include component-space;
 }
 
 .banner__media {

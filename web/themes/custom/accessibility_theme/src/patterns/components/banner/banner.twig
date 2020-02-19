@@ -1,6 +1,6 @@
 {{ attach_library('accessibility_theme/banner') }}
 
-<section class="banner component__wrapper{{ modifier ? ' ' ~ modifier }}{{- attributes ? attributes.class -}}"
+<section class="banner{{ modifier ? ' ' ~ modifier }}{{- attributes ? attributes.class -}}"
   {{- attributes ? attributes|without(class) -}}>
   {# Media could be an image or video. #}
   {% if image %}

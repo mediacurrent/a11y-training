@@ -1,9 +1,8 @@
 @import '../../global/utils/init';
 
 .accordion {
-  margin: 0 auto;
-  max-width: 1024px;
-  width: 100%;
+  @include component-wrapper;
+  @include component-space;
 }
 
 .accordion__title {

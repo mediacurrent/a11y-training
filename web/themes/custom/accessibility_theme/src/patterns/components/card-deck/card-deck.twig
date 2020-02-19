@@ -1,6 +1,6 @@
 {{ attach_library('accessibility_theme/card-deck') }}
 
-<section class="card-deck component__wrapper{{ modifier ? ' ' ~ modifier : ''}}{{- attributes ? attributes.class -}}"
+<section class="card-deck{{ modifier ? ' ' ~ modifier : ''}}{{- attributes ? attributes.class -}}"
   {{- attributes ? attributes|without(class) -}}>
   <div class="card-deck__inner">
     {% if heading %}

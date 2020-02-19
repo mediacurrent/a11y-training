@@ -78,3 +78,21 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+// Mixins for page and components layouts,
+// spacing and alignment.
+// Max width for non-full width components.
+@mixin component-wrapper {
+  margin: 0 auto;
+  max-width: $bp-lg;
+  width: 100%;
+}
+
+// Adds bottom space to component.
+@mixin component-space {
+  margin-bottom: 50px;
+
+  @include breakpoint($bp-sm) {
+    margin-bottom: 100px;
+  }
+}
