@@ -30,7 +30,9 @@
   <div class="card-deck__cta--wrapper">
     {%
       include '@accessibility_theme/button/button.twig' with {
-        button: button
+        text: button.text,
+        modifier: button.modifier,
+        url: button.url
       } only
     %}
   </div>
