@@ -27,7 +27,7 @@
     color: $color-white;
   }
 
-  &:disabled {
+  &.disabled {
     cursor: not-allowed;
     opacity: 0.5;
   }
