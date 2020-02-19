@@ -122,14 +122,14 @@ card:
     component:
       dist/css/card.css: {}
 
-50-50-card:
+card-50-50:
   css:
     component:
-      dist/css/50-50-card.css: {}
+      dist/css/card-50-50.css: {}
 
 card-deck:
   css:
     component:
       dist/css/card-deck.css: {}
-    dependencies:
-      - card
+  dependencies:
+    - accessibility_theme/card
