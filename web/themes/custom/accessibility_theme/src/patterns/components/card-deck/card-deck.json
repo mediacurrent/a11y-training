@@ -20,7 +20,7 @@
         "title": "Individual Card Title",
         "url": ""
       },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
+      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
     },
     {
       "text": "This is mock data from the card.json file",
@@ -31,7 +31,7 @@
         "title": "Individual Card Title",
         "url": ""
       },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
+      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
     },
     {
       "text": "This is mock data from the card.json file",
@@ -42,7 +42,7 @@
         "title": "Individual Card Title",
         "url": ""
       },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
+      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
     },
     {
       "text": "This is mock data from the card.json file",
@@ -53,7 +53,7 @@
         "title": "Individual Card Title",
         "url": ""
       },
-      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />",
+      "image": "<img src='https://source.unsplash.com/FIKD9t5_5zQ/1400x787' alt='test image' />"
     }
   ],
   "modifier": ""
