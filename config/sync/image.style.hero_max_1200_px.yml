@@ -1,0 +1,15 @@
+uuid: b286c9cc-c126-4ae3-9572-0c7ecaca1091
+langcode: en
+status: true
+dependencies: {  }
+name: hero_max_1200_px
+label: 'Hero max 1200 px'
+effects:
+  f37654d0-6171-41d0-ac24-b646e39516e2:
+    uuid: f37654d0-6171-41d0-ac24-b646e39516e2
+    id: image_scale
+    weight: 1
+    data:
+      width: 1200
+      height: null
+      upscale: false
