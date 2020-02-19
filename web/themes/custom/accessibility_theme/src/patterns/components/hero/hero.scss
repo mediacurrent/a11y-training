@@ -3,6 +3,10 @@
 
 .hero {
   position: relative;
+
+  @include breakpoint($bp-sm) {
+    margin-top: -80px;
+  }
 }
 
 .hero__content-wrapper {

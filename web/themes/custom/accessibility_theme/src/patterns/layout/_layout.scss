@@ -1,0 +1,15 @@
+// Layout styles for page and components.
+
+// Site's container.
+.a11y__layout-container {
+  margin: 0 auto;
+  max-width: $bp-max;
+  width: 100%;
+}
+
+// Max width for non-full width components.
+.component__wrapper {
+  margin: 0 auto;
+  max-width: $bp-lg;
+  width: 100%;
+}
