@@ -5,7 +5,7 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.footer {
+.site-footer {
   padding: 60px 20px 20px;
   background: $color-navy-blue;
   color: $color-white;
@@ -15,12 +15,12 @@
   }
 }
 
-.footer__container {
+.site-footer__container {
   margin: 0 auto;
   max-width: 1008px;
 }
 
-.footer__content {
+.site-footer__content {
   display: flex;
   flex-flow: row wrap;
 
@@ -41,7 +41,7 @@
     }
   }
 
-  .footer__subcontent {
+  .site-footer__bottom {
     margin-bottom: 0;
     width: 100%;
 
@@ -56,7 +56,7 @@
   }
 }
 
-.footer__logo {
+.site-footer__logo {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -70,7 +70,7 @@
   }
 }
 
-.footer__contact {
+.site-footer__contact {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -80,14 +80,14 @@
   }
 }
 
-.footer__contact--links {
+.site-footer__contact--links {
 
   a {
     text-decoration: none;
   }
 }
 
-.footer__contact--address {
+.site-footer__address {
   @include breakpoint($bp-xsm) {
     margin-right: 30px;
   }
@@ -97,7 +97,7 @@
   }
 }
 
-.footer__social {
+.site-footer__social {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
@@ -109,6 +109,6 @@
   }
 }
 
-.footer__copyright {
+.site-footer__copyright {
   text-align: center;
 }

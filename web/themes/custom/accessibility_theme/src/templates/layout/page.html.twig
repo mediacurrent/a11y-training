@@ -45,9 +45,7 @@
 #}
 <div class="layout-container">
 
-  <header role="banner">
-    {{ page.header }}
-  </header>
+  {{ page.header }}
 
   {{ page.primary_menu }}
 
@@ -65,14 +63,18 @@
   </main>
 
   {% if page.footer %}
-    <footer role="contentinfo">
-      {{ page.footer }}
+    <footer role="contentinfo" class="site-footer">
+      <div class="site-footer__container">
+        <div class="site-footer__content">
+          {{ page.footer }}
 
-      {% if page.bottom %}
-      <div class="bottom">
-        {{ page.bottom }}
+          {% if page.bottom %}
+          <div class="site-footer__bottom">
+            {{ page.bottom }}
+          </div>
+          {% endif %}
+        </div>
       </div>
-      {% endif %}
     </footer>
   {% endif %}
 

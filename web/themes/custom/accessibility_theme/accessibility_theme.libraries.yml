@@ -56,10 +56,13 @@ fonts:
     theme:
       'https://fonts.googleapis.com/css?family=Raleway:400,700': { type: external, minified: true }
 
-footer:
+site-footer:
   css:
     component:
-      dist/css/footer.css: {}
+      dist/css/site-footer.css: {}
+  dependencies:
+    - accessibility_theme/contact
+    - accessibility_theme/footer-menu
 
 footer-menu:
   css:

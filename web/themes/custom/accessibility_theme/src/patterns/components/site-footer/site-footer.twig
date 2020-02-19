@@ -1,29 +1,29 @@
-{{ attach_library('accessibility_theme/footer') }}
-<footer class="footer">
-  <div class="footer__container">
-    <div class="footer__content">
-      <div class="footer__logo">
+{{ attach_library('accessibility_theme/site-footer') }}
+<footer class="site-footer">
+  <div class="site-footer__container">
+    <div class="site-footer__content">
+      <div class="site-footer__logo">
         {%
           include "@accessibility_theme/site-logo/_site-logo.twig" with {
             link: logo.link
           } only
         %}
       </div>
-      <div class="footer__contact footer__contact--address">
+      <div class="site-footer__contact site-footer__address">
         {%
           include "@accessibility_theme/contact/contact.twig" with {
             address: contact.address
           } only
         %}
       </div>
-      <div class="footer__contact footer__contact--links">
+      <div class="site-footer__contact site-footer__contact--links">
         {%
           include "@accessibility_theme/contact/contact.twig" with {
             items: contact.items
           } only
         %}
       </div>
-      <div class="footer__social">
+      <div class="site-footer__social">
         {%
           include "@accessibility_theme/social-icons/_social-icons.twig" with {
             networks: social.items
@@ -31,11 +31,11 @@
         %}
       </div>
     </div>
-    <div class="footer__subcontent">
-      <div class="footer__copyright">
+    <div class="site-footer__bottom">
+      <div class="site-footer__copyright">
           {{ copyright }}
       </div>
-      <div class="footer__menu">
+      <div class="site-footer__legal">
         {%
           include "@accessibility_theme/footer-menu/footer-menu.twig" with {
             items: menu.items
