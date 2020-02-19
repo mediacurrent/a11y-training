@@ -1,6 +1,6 @@
 {{ attach_library('accessibility_theme/card-50-50') }}
 
-<section class="card-50-50 {{- attributes ? attributes.class -}}"
+<section class="card-50-50{{- attributes ? attributes.class -}}"
   {{- attributes ? attributes|without(class) -}}>
   {# Media could be an image or video. #}
   {% if image %}

@@ -1,45 +1,47 @@
 {{ attach_library('accessibility_theme/hero') }}
 
-<div class="hero {{ modifier }} {{- attributes ? attributes.class -}}"
+<section class="hero{{ modifier ? ' ' ~ modifier : ''}}{{- attributes ? attributes.class -}}"
   {{- attributes ? attributes|without(class) -}}>
-  {# Media could be an image or video. #}
-  {% if image %}
-    <div class="hero__media">
-      {%
-        include '@accessibility_theme/media-item/media-item.twig' with {
-          "image": image
-        } only
-      %}
-    </div>
-  {% endif %}
+  <div class="hero__inner">
+    {# Media could be an image or video. #}
+    {% if image %}
+      <div class="hero__media">
+        {%
+          include '@accessibility_theme/media-item/media-item.twig' with {
+            "image": image
+          } only
+        %}
+      </div>
+    {% endif %}
 
-  {% if eybrow or heading or body %}
-    <div class="hero__content-wrapper">
-      <div class="hero__content">
-        {% if eyebrow %}
-          <div class="hero__eyebrow">
+    {% if eybrow or heading or body %}
+      <div class="hero__content-wrapper">
+        <div class="hero__content">
+          {% if eyebrow %}
+            <div class="hero__eyebrow">
+              {%
+                include '@accessibility_theme/eyebrow/eyebrow.twig' with {
+                  "eyebrow": eyebrow
+                } only
+              %}
+            </div>
+          {% endif %}
+
+          {% if heading %}
             {%
-              include '@accessibility_theme/eyebrow/eyebrow.twig' with {
-                "eyebrow": eyebrow
+              include '@accessibility_theme/heading/heading.twig' with {
+                "heading": heading
               } only
             %}
-          </div>
-        {% endif %}
+          {% endif %}
 
-        {% if heading %}
-          {%
-            include '@accessibility_theme/heading/heading.twig' with {
-              "heading": heading
-            } only
-          %}
-        {% endif %}
-
-        {% if body %}
-          <div class="hero__body">
-            {{ body }}
-          </div>
-        {% endif %}
+          {% if body %}
+            <div class="hero__body">
+              {{ body }}
+            </div>
+          {% endif %}
+        </div>
       </div>
-    </div>
-  {% endif %}
+    {% endif %}
+  </div>
 </section>

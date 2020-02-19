@@ -2,7 +2,16 @@
 @import '../../global/utils/init';
 
 .hero {
-  position: relative;
+  @include component-space;
+  margin-bottom: 50px;
+
+  .hero__inner {
+    position: relative;
+  }
+
+  @include breakpoint($bp-sm) {
+    margin-top: -80px;
+  }
 }
 
 .hero__content-wrapper {

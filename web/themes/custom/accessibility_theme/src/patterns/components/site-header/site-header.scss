@@ -7,7 +7,12 @@
 
 .site-header__inner {
   display: flex;
-  max-width: 1600px;
-  margin: 0 auto;
+  max-width: $bp-max;
+  margin: 20px;
   width: 100%;
+
+  // Centers entire page after 1961px
+  @include breakpoint($bp-max + 41px) {
+    margin: 20px auto;
+  }
 }

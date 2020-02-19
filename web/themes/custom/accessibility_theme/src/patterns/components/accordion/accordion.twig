@@ -1,6 +1,6 @@
 {{ attach_library('accessibility_theme/accordion') }}
 
-<div class="accordion{{ attributes ? ' ' ~ attributes.class}}"
+<section class="accordion{{ attributes ? ' ' ~ attributes.class}}"
 {{- attributes ? attributes|without(class) -}}>
   <div class="accordion__container">
     {% if heading %}
