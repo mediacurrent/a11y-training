@@ -1,22 +1,22 @@
-uuid: da75759a-660d-4d94-b3c5-1183c19c82d5
+uuid: 639536e9-bb3e-4de4-8c0b-1018347a495f
 langcode: en
 status: true
 dependencies:
   content:
-    - 'block_content:basic:813a9564-d933-4c5d-8703-364b77a190c3'
+    - 'block_content:basic:adff7920-c8c2-478b-80d2-2824f738006d'
   module:
     - block_content
   theme:
     - accessibility_theme
-id: footercontact
+id: footeraddress
 theme: accessibility_theme
 region: footer
-weight: -4
+weight: -5
 provider: null
-plugin: 'block_content:813a9564-d933-4c5d-8703-364b77a190c3'
+plugin: 'block_content:adff7920-c8c2-478b-80d2-2824f738006d'
 settings:
-  id: 'block_content:813a9564-d933-4c5d-8703-364b77a190c3'
-  label: 'Footer Contact'
+  id: 'block_content:adff7920-c8c2-478b-80d2-2824f738006d'
+  label: 'Footer Address'
   provider: block_content
   label_display: '0'
   status: true
