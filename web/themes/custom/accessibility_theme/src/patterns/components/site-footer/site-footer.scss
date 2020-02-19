@@ -46,6 +46,7 @@
     width: 100%;
 
     @include breakpoint($bp-md) {
+      align-items: center;
       display: flex;
       justify-content: space-between;
     }
