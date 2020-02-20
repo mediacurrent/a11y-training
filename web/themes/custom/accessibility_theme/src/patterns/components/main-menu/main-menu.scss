@@ -1,6 +1,10 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
+.main-menu {
+  margin-left: 20px;
+}
+
 .main-menu__list {
   display: flex;
   list-style: none;

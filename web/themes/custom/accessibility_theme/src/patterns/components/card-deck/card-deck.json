@@ -6,7 +6,7 @@
   },
   "heading": {
     "heading_level": "",
-    "modifier": "",
+    "modifier": "card-deck__title",
     "title": "Card Deck Title",
     "url": ""
   },

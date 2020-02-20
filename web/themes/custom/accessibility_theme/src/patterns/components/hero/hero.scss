@@ -16,7 +16,7 @@
     // is present, remove negative margin on
     // hero to avoid collapsing with primary-tabs.
     .is-logged-in & {
-      margin-top: 0;
+      margin-top: 40px;
     }
   }
 }
@@ -55,7 +55,7 @@
     padding: 3.2rem;
     text-align: left;
     transform: none;
-    width: 70%;
+    width: 72%;
   }
 }
 

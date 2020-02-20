@@ -6,6 +6,10 @@
   @include component-space;
 }
 
+.card-deck__title {
+  margin-bottom: 40px;
+}
+
 .card-deck__items {
   display: flex;
   flex-direction: row;
@@ -43,6 +47,10 @@
     width: inherit;
     flex: 0 0 260px;
   }
+}
+
+.card__media img {
+  margin: 0 auto;
 }
 
 .card-deck__cta--wrapper {
