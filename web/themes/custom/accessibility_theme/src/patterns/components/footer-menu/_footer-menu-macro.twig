@@ -1,0 +1,26 @@
+{% import _self as menus %}
+
+{{ menus.menu_links(items, 0) }}
+
+{% macro menu_links(items, menu_level) %}
+  {% import _self as menus %}
+  {% if items %}
+    {% if item.menu_level == 0 %}
+      <ul class="footer-menu__list">
+    {% else %}
+      <ul class="footer-menu__submenu">
+    {% endif %}
+    {% for item in items %}
+      <li class="footer-menu__item {{- item.below ? ' footer-menu__item--with-submenu' -}}
+        {{- item.in_active_trail ? ' footer-menu__item--active-trail' -}}">
+          <a class="footer-menu__link" href="{{ item.url }}">
+            {{ item.title }}
+          </a>
+        {% if item.below %}
+          {{ menus.menu_links(item.below, item.menu_level + 1) }}
+        {% endif %}
+      </li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+{% endmacro %}
