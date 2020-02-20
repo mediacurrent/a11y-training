@@ -1,0 +1,25 @@
+uuid: 2a55daf5-8144-4a63-87d4-2bf368f289ea
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a1687917-3235-427a-a24d-75e567e263ac'
+  module:
+    - block_content
+  theme:
+    - accessibility_theme
+id: footerbrandingblock
+theme: accessibility_theme
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:a1687917-3235-427a-a24d-75e567e263ac'
+settings:
+  id: 'block_content:a1687917-3235-427a-a24d-75e567e263ac'
+  label: 'Footer Branding Block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
