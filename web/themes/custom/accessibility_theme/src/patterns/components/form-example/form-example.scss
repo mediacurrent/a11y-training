@@ -1,0 +1,26 @@
+// Import site utilities.
+@import '../../global/utils/init';
+
+.form-example {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  input {
+    margin-bottom: 1rem;
+    width: 200px;
+  }
+
+  &.display-none {
+
+    label {
+      display: none;
+    }
+  }
+}
+
+.form-example__text {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
