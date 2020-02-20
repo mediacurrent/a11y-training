@@ -7,11 +7,14 @@
 }
 
 .card-deck__items {
-  align-items: stretch;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  @include breakpoint($bp-xsm) {
+    justify-content: space-between;
+  }
 }
 
 .card-deck__inner {
@@ -26,47 +29,19 @@
 
 .card-deck__item {
   margin-bottom: 2.4rem;
-  width: 100%;
 
-  @include breakpoint ($bp-sm) {
-    width: 50%;
-
-    &:nth-child(2n-1) {
-      padding-right: 1.2rem;
-    }
-
-    &:nth-child(2n-2) {
-      padding-left: 1.2rem;
-    }
+  @include breakpoint($bp-xsm) {
+    flex: 0 0 200px;
   }
 
-  @include breakpoint ($bp-md) {
-    margin-bottom: 0;
-    width: 25%;
+  @include breakpoint($bp-sm) {
+    width: inherit;
+    flex: 0 0 220px;
+  }
 
-    &:nth-child(2n-2),
-    &:nth-child(2n-1) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-
-    &:nth-child(4n-4) {
-      padding-left: 16px;
-    }
-
-    &:nth-child(4n-3) {
-      padding-right: 16px;
-    }
-
-    &:nth-child(4n-2) {
-      padding-left: 10px;
-      padding-right: 13px;
-    }
-
-    &:nth-child(4n-1) {
-      padding-left: 13px;
-      padding-right: 10px;
-    }
+  @include breakpoint($bp-md) {
+    width: inherit;
+    flex: 0 0 260px;
   }
 }
 
