@@ -17,7 +17,7 @@
 {% set rendered_content = content|render %}
 
 {% if content %}
-  <header attributes.addClass('site-header') }} role="banner">
+  <header{{ attributes.addClass('site-header') }} role="banner">
     <div class="site-header__inner">
       {{ content }}
     </div>
