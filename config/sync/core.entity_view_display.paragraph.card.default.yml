@@ -7,10 +7,10 @@ dependencies:
     - field.field.paragraph.card.field_image
     - field.field.paragraph.card.field_text
     - field.field.paragraph.card.field_title
+    - image.style.max_325x325
     - paragraphs.paragraphs_type.card
-    - responsive_image.styles.square_max_480px
   module:
-    - responsive_image
+    - image
 id: paragraph.card.default
 targetEntityType: paragraph
 bundle: card
@@ -28,10 +28,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      responsive_image_style: square_max_480px
+      image_style: max_325x325
       image_link: ''
     third_party_settings: {  }
-    type: responsive_image
+    type: image
     region: content
   field_text:
     weight: 3

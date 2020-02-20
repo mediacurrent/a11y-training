@@ -54,7 +54,8 @@
       text: content.field_text|render|trim is not empty ? content.field_text
     },
     heading: content.field_title|render|trim is not empty ? {
-      title: content.field_title
+      title: content.field_title,
+      modifier: 'card-deck__title',
     },
     button: cta
   }

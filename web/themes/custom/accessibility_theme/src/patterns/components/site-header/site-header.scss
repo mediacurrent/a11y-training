@@ -2,17 +2,24 @@
 @import '../../global/utils/init';
 
 .site-header {
-  background-color: rgba($color-white, 0.6);
+  background-color: rgba($color-white, 0.8);
+  position: relative;
+  z-index: $zi-low;
+
+  .is-logged-in & {
+    margin-top: 10px;
+  }
 }
 
 .site-header__inner {
+  align-items: center;
   display: flex;
-  max-width: $bp-max;
-  margin: 20px;
+  max-width: $bp-lg;
+  margin: 0 20px;
   width: 100%;
 
   // Centers entire page after 1961px
-  @include breakpoint($bp-max + 41px) {
-    margin: 20px auto;
+  @include breakpoint($bp-lg + 41px) {
+    margin: 0 auto;
   }
 }
