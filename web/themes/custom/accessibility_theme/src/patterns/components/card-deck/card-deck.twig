@@ -27,13 +27,15 @@
     </div>
   </div>
 
-  <div class="card-deck__cta--wrapper">
-    {%
-      include '@accessibility_theme/button/button.twig' with {
-        text: button.text,
-        modifier: button.modifier,
-        url: button.url
-      } only
-    %}
-  </div>
+  {% if button.url %}
+    <div class="card-deck__cta--wrapper">
+      {%
+        include '@accessibility_theme/button/button.twig' with {
+          text: button.text,
+          modifier: button.modifier,
+          url: button.url
+        } only
+      %}
+    </div>
+  {% endif %}
 </section>

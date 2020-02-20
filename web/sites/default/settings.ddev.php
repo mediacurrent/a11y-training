@@ -46,4 +46,4 @@ $settings['config_sync_directory'] = '../config/sync';
 
 // TODO: This enables twig debugging and should be removed
 // on a prod site.
-$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
+// $settings['container_yamls'][] = DRUPAL_ROOT . '/sites/default/services.yml';
