@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "title":  "Legal",
+      "url":  "#",
+      "menu_level": "0"
+    },
+    {
+      "title":  "Privacy",
+      "url":  "#",
+      "menu_level": "0"
+    },
+    {
+      "title":  "Accessibility",
+      "url":  "#",
+      "menu_level": "0"
+    }
+  ]
+}
