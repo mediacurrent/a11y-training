@@ -81,13 +81,6 @@
   }
 }
 
-.site-footer__contact--links {
-
-  a {
-    text-decoration: none;
-  }
-}
-
 .site-footer__address {
   @include breakpoint($bp-xsm) {
     margin-right: 30px;
@@ -111,5 +104,6 @@
 }
 
 .site-footer__copyright {
+  font-size: 1.4rem;
   text-align: center;
 }

@@ -2,18 +2,15 @@
   "items": [
     {
       "title":  "Legal",
-      "url":  "#",
-      "menu_level": "0"
+      "url":  "#"
     },
     {
       "title":  "Privacy",
-      "url":  "#",
-      "menu_level": "0"
+      "url":  "#"
     },
     {
       "title":  "Accessibility",
-      "url":  "#",
-      "menu_level": "0"
+      "url":  "#"
     }
   ]
 }
