@@ -11,6 +11,13 @@
 
   @include breakpoint($bp-sm) {
     margin-top: -80px;
+
+    // If user is logged in and admin toolbar
+    // is present, remove negative margin on
+    // hero to avoid collapsing with primary-tabs.
+    .is-logged-in & {
+      margin-top: 0;
+    }
   }
 }
 
