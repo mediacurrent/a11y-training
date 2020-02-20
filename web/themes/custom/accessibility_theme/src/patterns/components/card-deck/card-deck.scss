@@ -5,3 +5,71 @@
   @include component-wrapper;
   @include component-space;
 }
+
+.card-deck__items {
+  align-items: stretch;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card-deck__inner {
+  @include breakpoint ($bp-md) {
+    margin-bottom: 3.2rem;
+  }
+
+  .heading {
+    text-align: center;
+  }
+}
+
+.card-deck__item {
+  margin-bottom: 2.4rem;
+  width: 100%;
+
+  @include breakpoint ($bp-sm) {
+    width: 50%;
+
+    &:nth-child(2n-1) {
+      padding-right: 1.2rem;
+    }
+
+    &:nth-child(2n-2) {
+      padding-left: 1.2rem;
+    }
+  }
+
+  @include breakpoint ($bp-md) {
+    margin-bottom: 0;
+    width: 25%;
+
+    &:nth-child(2n-2),
+    &:nth-child(2n-1) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &:nth-child(4n-4) {
+      padding-left: 16px;
+    }
+
+    &:nth-child(4n-3) {
+      padding-right: 16px;
+    }
+
+    &:nth-child(4n-2) {
+      padding-left: 10px;
+      padding-right: 13px;
+    }
+
+    &:nth-child(4n-1) {
+      padding-left: 13px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.card-deck__cta--wrapper {
+  text-align: center;
+}

@@ -1,2 +1,16 @@
 // Import site utilities.
 @import '../../global/utils/init';
+
+.card__content {
+  padding: 2.4rem 1.6rem;
+  text-align: center;
+
+  .heading {
+    font-size: 2.4rem;
+    margin: 1.8rem 0;
+  }
+}
+
+.card__text {
+  font-weight: 300;
+}
