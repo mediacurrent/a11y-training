@@ -17,28 +17,15 @@
 
 .site-footer__container {
   margin: 0 auto;
-  max-width: 1008px;
+  max-width: $bp-lg;
 }
 
 .site-footer__content {
-  display: flex;
-  flex-flow: row wrap;
 
-  @include breakpoint($bp-xsm) {
-    justify-content: space-around;
-  }
-
-  @include breakpoint($bp-md) {
+  @include breakpoint($bp-sm) {
     display: flex;
-    justify-content: space-between;
-  }
-
-  & > div {
-    margin-bottom: 30px;
-
-    @include breakpoint($bp-lg) {
-      margin-bottom: 72px;
-    }
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .site-footer__bottom {
@@ -50,56 +37,52 @@
       display: flex;
       justify-content: space-between;
     }
-
-    @include breakpoint($bp-lg) {
-      margin-bottom: 0;
-    }
   }
 }
 
-.site-footer__logo {
+.site-footer__logo,
+.site-footer__address,
+.site-footer__contact,
+.site-footer__social {
   display: flex;
   justify-content: center;
-  width: 100%;
+  margin: 0 auto 30px;
 
   @include breakpoint($bp-sm) {
-    width: auto;
+    flex: 0 0 45%;
+    justify-content: flex-start;
   }
 
-  .site-logo__icon {
-    fill: $color-white;
-  }
-}
-
-.site-footer__contact {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-
-  @include breakpoint($bp-xsm) {
-    width: auto;
-  }
-}
-
-.site-footer__address {
-  @include breakpoint($bp-xsm) {
-    margin-right: 30px;
+  @include breakpoint($bp-lg) {
+    flex: 0 0 25%;
+    justify-content: flex-start;
   }
 
-  @include breakpoint($bp-md) {
-    margin-right: 0;
+  p {
+    margin-top: 0;
   }
 }
 
 .site-footer__social {
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
 
-  @include breakpoint($bp-md) {
-    width: 300px;
-    margin-left: 0;
-    margin-right: 0;
+  .social-icons__list {
+    width: 85%;
+
+    @include breakpoint($bp-lg) {
+      width: 100%;
+    }
+  }
+
+  @include breakpoint($bp-lg) {
+    align-items: flex-start;
+  }
+}
+
+.site-footer__logo {
+  margin-bottom: 40px;
+
+  .site-logo__icon {
+    fill: $color-white;
   }
 }
 

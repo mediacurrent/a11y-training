@@ -1,48 +1,19 @@
-// Social media icons
-//
-// Icon links to social media networks in the footer.
-
 // Import site utilities.
 @import '../../global/utils/init';
 
-$available-icons: ['facebook', 'instagram', 'linkedin', 'pinterest', 'twitter', 'youtube'];
-
-.social-icons__heading {
-  @include element-invisible;
+.pl-js-pattern-example,
+.social-icons {
+  background-color: $color-navy-blue;
 }
 
-.social-icons__icons {
+.social-icons__list {
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  list-style: none;
 }
 
 .social-icons__item {
-  display: none;
   width: 56px;
   height: 56px;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  @each $icon in $available-icons {
-
-    &[data-network='#{$icon}'] {
-      display: block;
-      background-image: url('../images/#{$icon}.svg');
-    }
-  }
-
-  a {
-    @include hide-text;
-    width: 100%;
-    height: 100%;
-    border-radius: 9999px;
-
-    &:hover,
-    &:active,
-    &:focus {
-      background-color: rgba(white, 0.1);
-    }
-  }
 }

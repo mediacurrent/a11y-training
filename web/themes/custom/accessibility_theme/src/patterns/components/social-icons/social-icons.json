@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "title": "facebook",
+      "url": "https://www.facebook.com/mediacurrent/"
+    },
+    {
+      "title": "twitter",
+      "url": "https://twitter.com/mediacurrent/"
+    },
+    {
+      "title": "youtube",
+      "url": "https://www.youtube.com/user/MediacurrentDrupal/"
+    },
+    {
+      "title": "linkedin",
+      "url": "https://www.linkedin.com/company/mediacurrent/"
+    }
+  ]
+}

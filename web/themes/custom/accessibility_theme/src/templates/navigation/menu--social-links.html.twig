@@ -18,7 +18,5 @@
  *   - in_active_trail: TRUE if the link is in the active trail.
  */
 #}
-{{ attach_library('accessibility_theme/footer-menu') }}
-
-{% import '@accessibility_theme/footer-menu/_footer-menu-macro.twig' as menus %}
-{{ menus.menu_links(items, attributes, 0, menu_name) }}
+{% import '@accessibility_theme/social-icons/social-icons.twig' as menus %}
+{{ menus.menu_links(items, attributes) }}
