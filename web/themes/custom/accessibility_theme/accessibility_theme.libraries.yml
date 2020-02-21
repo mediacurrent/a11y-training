@@ -63,11 +63,17 @@ site-footer:
   dependencies:
     - accessibility_theme/contact
     - accessibility_theme/footer-menu
+    - accessibility_theme/social-icons
 
 footer-menu:
   css:
     component:
       dist/css/footer-menu.css: {}
+
+social-icons:
+  css:
+    component:
+      dist/css/social-icons.css: {}
 
 heading:
   css:

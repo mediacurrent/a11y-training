@@ -32,6 +32,6 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    {{ content }}
+    {%- include '@accessibility_theme/site-logo/_site-logo.twig' -%}
   {% endblock %}
 </div>
