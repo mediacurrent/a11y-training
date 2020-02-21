@@ -1,7 +1,6 @@
 // Import site utilities.
 @import '../../global/utils/init';
 
-.pl-js-pattern-example,
 .social-icons {
   background-color: $color-navy-blue;
 }
@@ -11,6 +10,11 @@
   display: flex;
   justify-content: space-between;
   list-style: none;
+
+  // Adds dark background color to icons in patternalb.
+  .pl-js-pattern-example & {
+    background-color: $color-navy-blue;
+  }
 }
 
 .social-icons__item {
