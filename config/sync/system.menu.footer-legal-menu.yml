@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: footer-legal-menu
 label: 'Footer Legal Menu'
-description: ''
+description: 'Footer legal menu links'
 locked: false

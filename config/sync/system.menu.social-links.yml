@@ -4,5 +4,5 @@ status: true
 dependencies: {  }
 id: social-links
 label: 'Social Links'
-description: ''
+description: 'Footer social links menu'
 locked: false
