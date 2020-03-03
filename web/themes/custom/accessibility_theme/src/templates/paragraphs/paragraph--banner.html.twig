@@ -41,12 +41,11 @@
 {% set rendered_content = content|render %}
 
 {# Sets variable for cta. #}
-{# TODO:  Improve this with twig_field_value. #}
 {% set cta = {
-    text: content.field_cta.0['#title'],
-    url: content.field_cta.0['#url'].uri,
+    text: content.field_cta|field_raw('title'),
+    url: content.field_cta|field_raw('uri'),
     modifier: 'button'
-  }
+  } only
 %}
 
 {% include '@accessibility_theme/banner/banner.twig' with
