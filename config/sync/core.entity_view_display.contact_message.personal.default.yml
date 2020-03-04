@@ -1,0 +1,13 @@
+uuid: 4f77b1c2-fc35-472c-9244-3d04db0db5a7
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.personal
+id: contact_message.personal.default
+targetEntityType: contact_message
+bundle: personal
+mode: default
+content: {  }
+hidden:
+  message: true

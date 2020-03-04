@@ -29,6 +29,17 @@ global:
 #     - accessibility_theme/clearfix
 #     - accessibility_theme/visually-hidden
 
+accordion:
+  css:
+    component:
+      dist/css/accordion.css: {}
+  js:
+    dist/js/accordion.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+    - core/jquery.once
+
 banner:
   css:
     component:
@@ -40,6 +51,23 @@ button:
   css:
     component:
       dist/css/button.css: {}
+
+card:
+  css:
+    component:
+      dist/css/card.css: {}
+
+card-50-50:
+  css:
+    component:
+      dist/css/card-50-50.css: {}
+
+card-deck:
+  css:
+    component:
+      dist/css/card-deck.css: {}
+  dependencies:
+    - accessibility_theme/card
 
 contact:
   css:
@@ -56,24 +84,10 @@ fonts:
     theme:
       'https://fonts.googleapis.com/css?family=Raleway:400,700': { type: external, minified: true }
 
-site-footer:
-  css:
-    component:
-      dist/css/site-footer.css: {}
-  dependencies:
-    - accessibility_theme/contact
-    - accessibility_theme/footer-menu
-    - accessibility_theme/social-icons
-
 footer-menu:
   css:
     component:
       dist/css/footer-menu.css: {}
-
-social-icons:
-  css:
-    component:
-      dist/css/social-icons.css: {}
 
 heading:
   css:
@@ -100,45 +114,38 @@ message:
     component:
       dist/css/message.css: {}
 
-site-logo:
+site-footer:
   css:
     component:
-      dist/css/site-logo.css: {}
-
-tabs:
-  css:
-    component:
-      dist/css/tabs.css: {}
-
-accordion:
-  css:
-    component:
-      dist/css/accordion.css: {}
-  js:
-    dist/js/accordion.js: {}
+      dist/css/site-footer.css: {}
   dependencies:
-    - core/drupal
-    - core/jquery
-    - core/jquery.once
+    - accessibility_theme/contact
+    - accessibility_theme/footer-menu
+    - accessibility_theme/social-icons
 
 site-header:
   css:
     component:
       dist/css/site-header.css: {}
 
-card:
+site-logo:
   css:
     component:
-      dist/css/card.css: {}
+      dist/css/site-logo.css: {}
 
-card-50-50:
+social-icons:
   css:
     component:
-      dist/css/card-50-50.css: {}
+      dist/css/social-icons.css: {}
 
-card-deck:
+survey-form:
   css:
     component:
-      dist/css/card-deck.css: {}
+      dist/css/survey-form.css: {}
   dependencies:
-    - accessibility_theme/card
+    - accessibility_theme/button
+
+tabs:
+  css:
+    component:
+      dist/css/tabs.css: {}

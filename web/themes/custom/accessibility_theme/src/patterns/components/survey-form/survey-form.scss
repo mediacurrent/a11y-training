@@ -1,0 +1,26 @@
+@import '../../global/utils/init';
+
+.survey-form {
+  @include component-wrapper;
+  @include component-space;
+
+  // Places form elements labels above form elements.
+  .form-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  // Updates styles for preview button
+  input[data-drupal-selector='edit-preview'] {
+    @include button-ghost
+  }
+
+  // Adds spacing between Send and Preview buttons.
+  .form-actions {
+
+    input {
+      margin-right: 20px;
+    }
+  }
+}
