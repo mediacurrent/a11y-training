@@ -1,0 +1,16 @@
+// Form elements styles.
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='number'],
+textarea {
+  background-color: $color-white;
+  border: 1px solid $color-blue-gray;
+  color: $color-navy-blue;
+  height: 50px;
+}
+
+textarea {
+  height: inherit;
+  width: 100%;
+}

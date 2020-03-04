@@ -11,7 +11,7 @@ _core:
 id: accessibility_theme_content
 theme: accessibility_theme
 region: content
-weight: -1
+weight: -3
 provider: null
 plugin: system_main_block
 settings:

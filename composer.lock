@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d289f5a0a388fafabc971ef4fa40e9db",
+    "content-hash": "b2b6a2b9546a20c27a8bc5b47acf620b",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -2418,6 +2418,57 @@
             ],
             "description": "Drupal Console Extend Plugin",
             "time": "2019-11-07T20:15:27+00:00"
+        },
+        {
+            "name": "drupal/contact_block",
+            "version": "1.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/contact_block.git",
+                "reference": "8.x-1.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/contact_block-8.x-1.4.zip",
+                "reference": "8.x-1.4",
+                "shasum": "0e10326e33c02f821c0f20885a3662f8c3e34c64"
+            },
+            "require": {
+                "drupal/core": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "8.x-1.4",
+                    "datestamp": "1493036943",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sutharsan",
+                    "homepage": "https://www.drupal.org/user/73854"
+                },
+                {
+                    "name": "vuil",
+                    "homepage": "https://www.drupal.org/user/3568458"
+                }
+            ],
+            "description": "Provides blocks for Contact form module.",
+            "homepage": "https://www.drupal.org/project/contact_block",
+            "support": {
+                "source": "https://git.drupalcode.org/project/contact_block"
+            }
         },
         {
             "name": "drupal/core",

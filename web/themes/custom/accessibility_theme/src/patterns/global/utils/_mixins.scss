@@ -96,3 +96,22 @@
     margin-bottom: 100px;
   }
 }
+
+// Buttons mixins
+
+// Ghost button
+@mixin button-ghost {
+  background-color: $color-white;
+  border: 3px solid $color-navy-blue;
+  border-radius: 3px;
+  color: $color-navy-blue;
+  text-decoration: none;
+
+  &:hover,
+  &:active {
+    background-color: rgba($color-white, 0.85);
+    border: 3px solid darken($color-navy-blue, 15);
+    color: darken($color-navy-blue, 15);
+    text-decoration: none;
+  }
+}

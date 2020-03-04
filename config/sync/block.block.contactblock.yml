@@ -1,0 +1,29 @@
+uuid: 3c2899d8-6bc1-47cb-bd6f-f6cfac8f3d6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - contact.form.feedback
+  module:
+    - contact_block
+    - system
+  theme:
+    - accessibility_theme
+id: contactblock
+theme: accessibility_theme
+region: content
+weight: 0
+provider: null
+plugin: contact_block
+settings:
+  id: contact_block
+  label: 'Take the Accessibility Survey'
+  provider: contact_block
+  label_display: visible
+  contact_form: feedback
+visibility:
+  request_path:
+    id: request_path
+    pages: /survey
+    negate: false
+    context_mapping: {  }
